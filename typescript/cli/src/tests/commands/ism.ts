@@ -1,7 +1,7 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainName, type IsmConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainName, type IsmConfig } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../utils/files.js';
 
@@ -40,7 +40,7 @@ export class HyperlaneE2EIsmTestCommands {
     configPath: string,
     outPath: string,
   ): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane ism deploy \
+    return $`${this.cmdPrefix} rlink ism deploy \
       --registry ${this.registryPath} \
       --chain ${this.chain} \
       --config ${configPath} \
@@ -54,7 +54,7 @@ export class HyperlaneE2EIsmTestCommands {
    * Reads an ISM config from the specified address.
    */
   public read(address: string, outPath: string): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane ism read \
+    return $`${this.cmdPrefix} rlink ism read \
       --registry ${this.registryPath} \
       --chain ${this.chain} \
       --address ${address} \

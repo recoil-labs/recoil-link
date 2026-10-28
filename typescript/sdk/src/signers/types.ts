@@ -1,4 +1,4 @@
-import { Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType } from '@recoillink/utils';
 
 import { SendTransactionOptions } from '../providers/MultiProvider.js';
 import { ProtocolTypedTransaction } from '../providers/ProviderType.js';

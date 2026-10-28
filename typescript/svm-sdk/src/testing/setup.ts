@@ -15,7 +15,7 @@ import * as os from 'os';
 // eslint-disable-next-line import/no-nodejs-modules
 import * as path from 'path';
 
-import { assert, retryAsync } from '@hyperlane-xyz/utils';
+import { assert, retryAsync } from '@recoillink/utils';
 import type { SvmSigner } from '../clients/signer.js';
 import {
   SPL_TOKEN_PROGRAM_ADDRESS,

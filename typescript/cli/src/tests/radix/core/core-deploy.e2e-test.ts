@@ -5,13 +5,13 @@ import {
   type DerivedCoreConfig,
   HookType,
   IsmType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   assert,
   objLength,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -26,7 +26,7 @@ import {
   TEST_CHAIN_NAMES_BY_PROTOCOL,
 } from '../../constants.js';
 
-describe('hyperlane core deploy (Radix E2E tests)', async function () {
+describe('rlink core deploy (Radix E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -123,7 +123,7 @@ describe('hyperlane core deploy (Radix E2E tests)', async function () {
     expect(maybeMessageIdIsm.validators.length).to.equal(1);
   }
 
-  describe('hyperlane core deploy --yes --key ...', () => {
+  describe('rlink core deploy --yes --key ...', () => {
     const testCases: {
       description: string;
       expect: CoreConfigOwnershipAssertion;

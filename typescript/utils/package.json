@@ -1,15 +1,15 @@
 {
-  "name": "@hyperlane-xyz/utils",
+  "name": "@recoillink/utils",
   "version": "45.0.1",
-  "description": "General utilities and types for the Hyperlane network",
+  "description": "General utilities and types for Recoil Link",
   "keywords": [
     "Hyperlane",
     "Typescript",
     "Utilities"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist"
   ],
@@ -82,7 +82,7 @@
     "yaml": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/bs58": "catalog:",
     "@types/chai": "catalog:",
     "@types/lodash-es": "catalog:",

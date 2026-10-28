@@ -12,8 +12,8 @@ import * as os from 'os';
 // eslint-disable-next-line import/no-nodejs-modules
 import * as path from 'path';
 
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, isNullish, retryAsync } from '@hyperlane-xyz/utils';
+import { type TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { assert, isNullish, retryAsync } from '@recoillink/utils';
 import {
   GenericContainer,
   type StartedTestContainer,

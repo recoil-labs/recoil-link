@@ -1,8 +1,8 @@
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type DeployedRawIsmArtifact,
@@ -10,7 +10,7 @@ import {
   type IsmType,
   type RawIsmArtifactConfigs,
   altVMIsmTypeToProviderSdkType,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

@@ -3,7 +3,7 @@ import { Wallet, providers } from 'ethers';
 import { type StartedTestContainer } from 'testcontainers';
 import { $ } from 'zx';
 
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/core';
+import { CrossCollateralRouter__factory } from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -12,25 +12,25 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   SealevelSigner,
   SvmCrossCollateralTokenReader,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/sealevel-sdk';
 import {
   type SolanaTestValidator,
   airdropSol,
   createSplMint,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@recoillink/sealevel-sdk/testing';
 import {
   ProtocolType,
   addressToBytes32,
   assert,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -62,7 +62,7 @@ const EVM_KEY = HYP_KEY_BY_PROTOCOL.ethereum;
 const SVM_KEY = HYP_KEY_BY_PROTOCOL.sealevel;
 const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/cc-evm-svm-warp-deploy.yaml`;
 
-describe('hyperlane warp crossCollateral EVM+SVM e2e tests', function () {
+describe('rlink warp crossCollateral EVM+SVM e2e tests', function () {
   this.timeout(CROSS_CHAIN_E2E_TEST_TIMEOUT);
 
   let evmNodeInstance: StartedTestContainer;
@@ -242,7 +242,7 @@ describe('hyperlane warp crossCollateral EVM+SVM e2e tests', function () {
 
     // Combine routes to cross-enroll CC routers
     const mergedWarpRouteId = 'MULTI/test-cc-evm-svm';
-    await $`${localTestRunCmdPrefix()} hyperlane warp combine \
+    await $`${localTestRunCmdPrefix()} rlink warp combine \
       --registry ${REGISTRY_PATH} \
       --routes ${`${warpIdA},${warpIdB}`} \
       --output-warp-route-id ${mergedWarpRouteId} \

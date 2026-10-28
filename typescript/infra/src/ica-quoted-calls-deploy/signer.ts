@@ -1,7 +1,7 @@
 import { BigNumber, Wallet, constants, utils } from 'ethers';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
-import { Address, assert, objMerge } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
+import { Address, assert, objMerge } from '@recoillink/utils';
 
 import { describeError } from '../aggregation-hook-upgrade/redact.js';
 

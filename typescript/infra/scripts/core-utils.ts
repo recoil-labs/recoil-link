@@ -4,8 +4,8 @@ import {
   MultiProvider,
   OwnableConfig,
   RouterConfig,
-} from '@hyperlane-xyz/sdk';
-import { mustGet, objMap, objMerge } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { mustGet, objMap, objMerge } from '@recoillink/utils';
 
 import { Contexts } from '../config/contexts.js';
 import { environments } from '../config/environments/index.js';

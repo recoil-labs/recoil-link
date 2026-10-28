@@ -1,8 +1,8 @@
 import type { Address, Hex } from 'viem';
 import { isHex } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 
 import type {
   AnyQuoteV2Entry,
@@ -169,7 +169,7 @@ function isHexBytes(value: unknown, ...byteLengths: number[]): boolean {
 
 // Valid SVM signed-quote `context` widths, by endpoint. Warp fee contexts are
 // 44B (leaf/routing) or 76B (cross-collateral); the IGP context is 68B (see
-// the IGP context layout in `@hyperlane-xyz/svm-sdk`). The two endpoints never
+// the IGP context layout in `@recoillink/svm-sdk`). The two endpoints never
 // share a width, so the guard is parameterized by endpoint to reject a
 // context that is well-formed for the other route.
 const WARP_CONTEXT_BYTES = [44, 76]; // non-CC | CC

@@ -7,8 +7,8 @@ import {
   ChainName,
   EV5GnosisSafeTxBuilder,
   getSafe,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import {

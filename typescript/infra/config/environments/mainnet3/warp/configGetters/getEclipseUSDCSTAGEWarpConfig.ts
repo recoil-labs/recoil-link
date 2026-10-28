@@ -1,4 +1,4 @@
-import { ChainMap, HypTokenRouterConfig } from '@hyperlane-xyz/sdk';
+import { ChainMap, HypTokenRouterConfig } from '@recoillink/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { DEPLOYER } from '../../owners.js';

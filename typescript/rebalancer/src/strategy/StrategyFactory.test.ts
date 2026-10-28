@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import { pino } from 'pino';
 
-import { type ChainMap, Token, TokenStandard } from '@hyperlane-xyz/sdk';
+import { type ChainMap, Token, TokenStandard } from '@recoillink/sdk';
 
 import {
   type MinAmountStrategyConfig,

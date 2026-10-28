@@ -9,7 +9,7 @@ import {
   HyperlaneSmartProvider,
   ProviderRetryOptions,
   safeApiKeyRequired,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   inCIMode,
@@ -18,7 +18,7 @@ import {
   objFilter,
   objMerge,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   getChain,

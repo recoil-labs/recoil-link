@@ -5,7 +5,7 @@ import { pino } from 'pino';
 import sinon from 'sinon';
 
 import { PartialRegistry } from '@hyperlane-xyz/registry';
-import { ProtocolType, fromHexString, strip0x } from '@hyperlane-xyz/utils';
+import { ProtocolType, fromHexString, strip0x } from '@recoillink/utils';
 
 import { RegistryService } from '../../src/services/registryService.js';
 import { SignerService } from '../../src/signer/signerService.js';

@@ -14,8 +14,8 @@ import {
   OwnerViolation,
   ProxyAdminViolation,
   ViolationType,
-} from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import { HyperlaneAppGovernor } from '../govern/HyperlaneAppGovernor.js';
 

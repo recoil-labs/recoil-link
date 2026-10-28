@@ -1,9 +1,5 @@
-import {
-  ChainMap,
-  ChainStatus,
-  defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { ChainMap, ChainStatus, defaultMultisigConfigs } from '@recoillink/sdk';
+import { eqAddress } from '@recoillink/utils';
 
 import { getChain } from '../../config/registry.js';
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';

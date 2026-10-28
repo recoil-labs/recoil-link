@@ -3,7 +3,7 @@ import {
   type HookType,
   type IsmConfig,
   type IsmType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { logGray } from '../logger.js';
 

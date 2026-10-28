@@ -4,12 +4,8 @@ import {
   type HookConfig,
   HookType,
   type IgpHookConfig as IgpHookModuleConfig,
-} from '@hyperlane-xyz/sdk';
-import {
-  assert,
-  normalizeAddressEvm,
-  ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, normalizeAddressEvm, ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -38,7 +34,7 @@ const HOOK_UNSUPPORTED_CONFIG_PATH = `${TEMP_PATH}/${CHAIN}/hook-unsupported-con
 const HOOK_INVALID_CONFIG_PATH = `${TEMP_PATH}/${CHAIN}/hook-invalid-config.yaml`;
 const HOOK_NEGATIVE_OUT_PATH = `${TEMP_PATH}/${CHAIN}/hook-negative-out.json`;
 
-describe('hyperlane hook deploy / apply (Sealevel IGP E2E tests)', function () {
+describe('rlink hook deploy / apply (Sealevel IGP E2E tests)', function () {
   this.timeout(SVM_DEPLOY_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

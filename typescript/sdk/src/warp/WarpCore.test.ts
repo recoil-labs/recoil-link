@@ -14,7 +14,7 @@ import {
   testXERC20,
   testXERC20Lockbox,
 } from '../consts/testChains.js';
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';
 import { ProviderType } from '../providers/ProviderType.js';

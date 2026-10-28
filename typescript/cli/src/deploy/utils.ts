@@ -2,8 +2,8 @@ import { confirm } from '@inquirer/prompts';
 import { BigNumber, ethers } from 'ethers';
 import path from 'path';
 
-import { type GasAction, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { type WarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
+import { type GasAction, ProtocolType } from '@recoillink/provider-sdk';
+import { type WarpArtifactConfig } from '@recoillink/provider-sdk/warp';
 import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
 import {
   type ChainMap,
@@ -15,8 +15,8 @@ import {
   type MultisigConfig,
   type WarpRouteDeployConfig,
   isIsmCompatible,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike, mustGet } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, isEVMLike, mustGet } from '@recoillink/utils';
 
 import { parseIsmConfig } from '../config/ism.js';
 import {

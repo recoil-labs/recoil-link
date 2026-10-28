@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { retryAsync } from '@recoillink/utils';
 
 import { GetEventLogsResponse } from '../rpc/evm/types.js';
 

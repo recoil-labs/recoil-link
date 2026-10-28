@@ -1,5 +1,5 @@
-import { TimelockController__factory } from '@hyperlane-xyz/core';
-import { HexString } from '@hyperlane-xyz/utils';
+import { TimelockController__factory } from '@recoillink/core';
+import { HexString } from '@recoillink/utils';
 
 import { TimelockTx } from '../types.js';
 

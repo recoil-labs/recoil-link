@@ -1,6 +1,6 @@
 import { type Address, type Rpc, type SolanaRpcApi } from '@solana/kit';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@recoillink/provider-sdk/altvm';
 
 import {
   type CompositeIsmStorage,

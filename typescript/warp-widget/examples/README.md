@@ -8,8 +8,8 @@ A single HTML file — no build tools, no dependencies. Just open `index.html` i
 
 A Vite + React app showing both integration methods:
 
-- **Component** — `<HyperlaneWarpWidget />` from `@hyperlane-xyz/warp-widget/react`
-- **Imperative** — `createWarpWidget()` from `@hyperlane-xyz/warp-widget`
+- **Component** — `<HyperlaneWarpWidget />` from `@recoillink/warp-widget/react`
+- **Imperative** — `createWarpWidget()` from `@recoillink/warp-widget`
 
 ```bash
 cd react-app

@@ -5,9 +5,9 @@ import { z } from 'zod';
 import {
   CctpService__factory,
   IMessageTransmitter__factory,
-} from '@hyperlane-xyz/core';
-import type { MultiProvider } from '@hyperlane-xyz/sdk/providers/MultiProvider';
-import { parseMessage } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import type { MultiProvider } from '@recoillink/sdk/providers/MultiProvider';
+import { parseMessage } from '@recoillink/utils';
 
 import type { CcipApp } from '../http.js';
 import {

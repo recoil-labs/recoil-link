@@ -3,7 +3,7 @@ import { OperationType } from '@safe-global/types-kit';
 import { expect } from 'chai';
 import { Signer, Wallet, ethers } from 'ethers';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { MultiProvider } from '../../../MultiProvider.js';
 import {

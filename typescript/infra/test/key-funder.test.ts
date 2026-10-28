@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import YAML from 'yaml';
 
-import { KeyFunderConfigSchema } from '@hyperlane-xyz/keyfunder';
+import { KeyFunderConfigSchema } from '@recoillink/keyfunder';
 
 import quoteSubmitterAddresses from '../config/quotesubmitter.json' with { type: 'json' };
 import { KeyFunderHelmManager } from '../src/funding/key-funder.js';

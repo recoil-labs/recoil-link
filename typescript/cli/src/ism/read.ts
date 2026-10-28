@@ -1,11 +1,11 @@
-import { createIsmReader } from '@hyperlane-xyz/deploy-sdk';
+import { createIsmReader } from '@recoillink/deploy-sdk';
 import {
   type ChainName,
   type DerivedIsmConfig,
   EvmIsmReader,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
-import { type Address, isEVMLike, stringifyObject } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, isEVMLike, stringifyObject } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { log, logBlue } from '../logger.js';

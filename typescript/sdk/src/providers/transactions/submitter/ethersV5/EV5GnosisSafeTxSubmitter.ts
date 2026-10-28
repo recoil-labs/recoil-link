@@ -4,7 +4,7 @@ import { MetaTransactionData, SafeTransaction } from '@safe-global/types-kit';
 import { Signer } from 'ethers';
 import { Logger } from 'pino';
 
-import { Address, assert, retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { Address, assert, retryAsync, rootLogger } from '@recoillink/utils';
 
 import {
   SAFE_API_BASE_RETRY_MS,

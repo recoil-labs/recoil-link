@@ -10,14 +10,14 @@ import {
   Mailbox__factory,
   ProxyAdmin__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
-import type { ZKSyncArtifact } from '@hyperlane-xyz/core';
+} from '@recoillink/core';
+import type { ZKSyncArtifact } from '@recoillink/core';
 import {
   Mailbox__factory as TronMailbox__factory,
   ProxyAdmin__factory as TronProxyAdmin__factory,
   TronContractFactory,
   TestRecipient__factory as TronTestRecipient__factory,
-} from '@hyperlane-xyz/tron-sdk';
+} from '@recoillink/tron-sdk';
 import { TestChainName, test1, test2 } from '../consts/testChains.js';
 import type { ProtocolTransaction, ProtocolReceipt } from './ProviderType.js';
 import {

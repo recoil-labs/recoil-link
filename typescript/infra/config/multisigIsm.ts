@@ -5,7 +5,7 @@ import {
   buildMultisigIsmConfigs,
   defaultMultisigConfigs,
   multisigConfigToIsmConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { DeployEnvironment } from '../src/config/deploy-environment.js';
 

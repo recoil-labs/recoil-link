@@ -1,8 +1,8 @@
 import { Wallet, ethers } from 'ethers';
 import { Wallet as ZkSyncWallet } from 'zksync-ethers';
 
-import { TronWallet } from '@hyperlane-xyz/tron-sdk/runtime';
-import { Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { TronWallet } from '@recoillink/tron-sdk/runtime';
+import { Address, ProtocolType, assert } from '@recoillink/utils';
 
 import { ChainTechnicalStack } from '../../metadata/chainMetadataTypes.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

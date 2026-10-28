@@ -6,8 +6,8 @@ import {
   DelayedFlowRouterHookIsm__factory,
   Mailbox__factory,
   MailboxClient__factory,
-} from '@hyperlane-xyz/core';
-import { type Address, assert, pollAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { type Address, assert, pollAsync } from '@recoillink/utils';
 
 const POLL_INTERVAL_MS = 2_000;
 const POLL_ATTEMPTS = 45;

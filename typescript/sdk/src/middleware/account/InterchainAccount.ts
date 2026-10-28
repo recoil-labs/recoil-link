@@ -2,7 +2,7 @@ import { BigNumber, PopulatedTransaction, ethers } from 'ethers';
 import {
   InterchainAccountRouter,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   ProtocolType,
@@ -19,7 +19,7 @@ import {
   objMap,
   parseStandardHookMetadata,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { appFromAddressesMapHelper } from '../../contracts/contracts.js';
 import {

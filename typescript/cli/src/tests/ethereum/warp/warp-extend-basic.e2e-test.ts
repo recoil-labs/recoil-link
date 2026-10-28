@@ -7,7 +7,7 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -36,7 +36,7 @@ import {
   WARP_DEPLOY_CONFIG_CHAIN_2,
 } from '../consts.js';
 
-describe('hyperlane warp apply basic extension tests', async function () {
+describe('rlink warp apply basic extension tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain3Addresses: ChainAddresses = {};

@@ -1,8 +1,8 @@
 import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { TokenType } from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import { HyperlaneE2EWarpTestCommands } from '../../commands/warp.js';
@@ -20,7 +20,7 @@ import {
   WARP_DEPLOY_CONFIG_PATH_1,
 } from '../consts.js';
 
-describe('hyperlane warp apply ISM updates (Cosmos E2E tests)', async function () {
+describe('rlink warp apply ISM updates (Cosmos E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore1 = new HyperlaneE2ECoreTestCommands(

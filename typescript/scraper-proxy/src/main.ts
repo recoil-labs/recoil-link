@@ -1,6 +1,6 @@
 import 'zod/compile';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
+import { rootLogger } from '@recoillink/utils';
+import { formatError } from '@recoillink/utils/errors';
 
 import { config } from './config.js';
 import { DbService } from './db/db.service.js';

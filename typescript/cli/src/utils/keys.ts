@@ -1,8 +1,8 @@
 import { input } from '@inquirer/prompts';
 import { ethers, type providers } from 'ethers';
 
-import { impersonateAccount } from '@hyperlane-xyz/sdk';
-import { type Address, ensure0x } from '@hyperlane-xyz/utils';
+import { impersonateAccount } from '@recoillink/sdk';
+import { type Address, ensure0x } from '@recoillink/utils';
 
 const ETHEREUM_ADDRESS_LENGTH = 42;
 

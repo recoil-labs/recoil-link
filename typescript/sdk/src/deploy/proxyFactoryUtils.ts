@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { objMap } from '@hyperlane-xyz/utils';
+import { objMap } from '@recoillink/utils';
 
 import { proxyFactoryFactories } from './contracts.js';
 import { ProxyFactoryFactoriesAddresses } from './types.js';

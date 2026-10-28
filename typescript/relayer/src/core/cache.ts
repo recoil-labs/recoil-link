@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { HookConfigSchema, IsmConfigSchema } from '@hyperlane-xyz/sdk';
+import { HookConfigSchema, IsmConfigSchema } from '@recoillink/sdk';
 
 const BacklogMessageSchema = z.object({
   attempts: z.number(),

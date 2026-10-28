@@ -5,12 +5,12 @@ import { Wallet } from 'ethers';
 import { z } from 'zod';
 
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@recoillink/sdk';
 import {
   applyRpcUrlOverridesFromEnv,
   createServiceLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { RelayerConfigInput } from '../config/schema.js';
 

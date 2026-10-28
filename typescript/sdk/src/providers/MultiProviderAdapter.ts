@@ -5,7 +5,7 @@ import {
   objFilter,
   objMap,
   pick,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ChainTechnicalStack } from '../metadata/chainMetadataTypes.js';
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';

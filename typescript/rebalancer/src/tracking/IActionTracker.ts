@@ -1,4 +1,4 @@
-import type { Address, Domain } from '@hyperlane-xyz/utils';
+import type { Address, Domain } from '@recoillink/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type { ExternalBridgeRegistry } from '../interfaces/IExternalBridge.js';

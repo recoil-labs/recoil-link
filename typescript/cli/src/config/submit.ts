@@ -8,14 +8,14 @@ import {
   type ChainName,
   EV5JsonRpcSubmissionError,
   EV5JsonRpcTxSubmitter,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
   eqAddress,
   errorToString,
   isValidAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   type CommandContext,

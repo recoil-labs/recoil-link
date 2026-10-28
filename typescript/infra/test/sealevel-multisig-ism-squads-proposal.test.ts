@@ -10,18 +10,14 @@ import {
 import { getVaultPda, instructions, PROGRAM_ID } from '@sqds/multisig';
 import { expect } from 'chai';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { RoutingMessageIdMultisigIsmArtifactConfig } from '@hyperlane-xyz/provider-sdk/ism';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import type { RoutingMessageIdMultisigIsmArtifactConfig } from '@recoillink/provider-sdk/ism';
 import {
   type SealevelRpc,
   type SealevelSigner,
   SealevelRoutingMessageIdMultisigIsmWriter,
-} from '@hyperlane-xyz/sealevel-sdk';
-import {
-  type NonEmptyArray,
-  assert,
-  nonEmptyArray,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/sealevel-sdk';
+import { type NonEmptyArray, assert, nonEmptyArray } from '@recoillink/utils';
 
 import { buildInstructionsFromPrintable } from '../src/utils/warp-propose-squads.js';
 

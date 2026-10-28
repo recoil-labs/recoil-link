@@ -1,7 +1,7 @@
 import { GenericContainer, StartedTestContainer } from 'testcontainers';
 
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, retryAsync, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { assert, retryAsync, rootLogger, sleep } from '@recoillink/utils';
 
 import {
   STARKNET_DEVNET_IMAGE,

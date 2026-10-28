@@ -21,7 +21,7 @@ import {
   RateLimitedHook__factory,
   StaticAggregationHook__factory,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   WithAddress,
@@ -33,7 +33,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { DispatchedMessage } from '../core/types.js';

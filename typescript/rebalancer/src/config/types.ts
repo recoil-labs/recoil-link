@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ProtocolType, isAddressEvm } from '@hyperlane-xyz/utils';
+import { ProtocolType, isAddressEvm } from '@recoillink/utils';
 
 export enum RebalancerStrategyOptions {
   Weighted = 'weighted',

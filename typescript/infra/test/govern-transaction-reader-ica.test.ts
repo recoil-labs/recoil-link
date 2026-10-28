@@ -5,13 +5,13 @@ import sinon from 'sinon';
 import {
   InterchainAccountRouter__factory,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   InterchainAccount,
   MultiProvider,
   TestChainName,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { GovernTransactionReader } from '../src/tx/govern-transaction-reader.js';
 

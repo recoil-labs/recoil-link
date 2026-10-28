@@ -1,14 +1,14 @@
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedMailboxAddress,
   type IRawMailboxArtifactManager,
   type MailboxType,
   type RawMailboxArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/mailbox';
+import { assert } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

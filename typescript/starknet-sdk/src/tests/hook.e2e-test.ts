@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert, eqAddressStarknet } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { assert, eqAddressStarknet } from '@recoillink/utils';
 
 import { StarknetSigner } from '../clients/signer.js';
 import { StarknetHookArtifactManager } from '../hook/hook-artifact-manager.js';

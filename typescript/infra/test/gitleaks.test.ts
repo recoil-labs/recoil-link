@@ -10,8 +10,8 @@ import {
   stringify as stringifyToml,
 } from 'smol-toml';
 
-import { bufferToBase58, setEquality } from '@hyperlane-xyz/utils';
-import { readFileAtPath, writeToFile } from '@hyperlane-xyz/utils/fs';
+import { bufferToBase58, setEquality } from '@recoillink/utils';
+import { readFileAtPath, writeToFile } from '@recoillink/utils/fs';
 
 describe('GitLeaks CLI Integration Tests', function () {
   let tempDir: string;

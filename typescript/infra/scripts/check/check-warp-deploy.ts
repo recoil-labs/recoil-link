@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { Gauge, Registry } from 'prom-client';
 import { stringify as yamlStringify } from 'yaml';
 
-import { submitMetrics } from '@hyperlane-xyz/metrics';
+import { submitMetrics } from '@recoillink/metrics';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
 import {
   type ChainName,
@@ -14,8 +14,8 @@ import {
   WarpRouteDeployConfigMailboxRequiredSchema,
   checkWarpRouteDeployConfig,
   resolveWarpDeployConfigRouterKeys,
-} from '@hyperlane-xyz/sdk';
-import { assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, objFilter } from '@recoillink/utils';
 
 import { WarpRouteIds } from '../../config/environments/mainnet3/warp/warpIds.js';
 import { DEFAULT_REGISTRY_URI } from '../../config/registry.js';

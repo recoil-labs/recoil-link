@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { HyperlaneCore } from '@hyperlane-xyz/sdk';
+import { HyperlaneCore } from '@recoillink/sdk';
 
 import {
   buildTestMovableCollateralRoute,

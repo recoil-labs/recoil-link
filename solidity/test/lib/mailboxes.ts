@@ -12,7 +12,7 @@ import {
     formatMessage,
     messageId,
     parseMessage,
-} from "@hyperlane-xyz/utils";
+} from "@recoillink/utils";
 
 import {
     LegacyMultisigIsm,

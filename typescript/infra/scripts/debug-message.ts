@@ -1,11 +1,11 @@
-import { TestRecipient__factory } from '@hyperlane-xyz/core';
+import { TestRecipient__factory } from '@recoillink/core';
 import {
   ChainName,
   DispatchedMessage,
   HyperlaneCore,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { bytes32ToAddress, ensure0x, messageId } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { bytes32ToAddress, ensure0x, messageId } from '@recoillink/utils';
 
 import { getChainMetadata } from '../config/registry.js';
 import { assertChain } from '../src/utils/utils.js';

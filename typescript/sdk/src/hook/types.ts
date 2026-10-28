@@ -7,7 +7,7 @@ import {
   isNullish,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   ProtocolAgnositicGasOracleConfigSchema,

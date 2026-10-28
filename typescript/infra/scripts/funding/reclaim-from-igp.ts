@@ -1,14 +1,14 @@
 import chalk from 'chalk';
 import { formatEther, formatUnits, parseEther } from 'ethers/lib/utils.js';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
-import { HyperlaneIgp } from '@hyperlane-xyz/sdk';
+import { ERC20__factory } from '@recoillink/core';
+import { HyperlaneIgp } from '@recoillink/sdk';
 import {
   isZeroishAddress,
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getEnvAddresses } from '../../config/registry.js';
 import { getKeyFunderConfig } from '../../src/funding/key-funder.js';

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import tmp from 'tmp';
 
-import { rootLogger, stringifyObject } from '@hyperlane-xyz/utils';
+import { rootLogger, stringifyObject } from '@recoillink/utils';
 
 import {
   HelmChartConfig,

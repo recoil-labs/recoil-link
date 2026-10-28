@@ -4,8 +4,8 @@ import {
   IERC4626__factory,
   IXERC20Lockbox__factory,
   MovableCollateralRouter__factory,
-} from '@hyperlane-xyz/core';
-import { isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { isEVMLike } from '@recoillink/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 

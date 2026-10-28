@@ -10,7 +10,7 @@ import {
 } from '@solana/web3.js';
 import { deserializeUnchecked, serialize } from 'borsh';
 
-import { Address, Domain, assert } from '@hyperlane-xyz/utils';
+import { Address, Domain, assert } from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import { SEALEVEL_PRIORITY_FEES } from '../../consts/sealevel.js';

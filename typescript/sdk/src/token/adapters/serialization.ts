@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { Domain, assert } from '@hyperlane-xyz/utils';
+import { Domain, assert } from '@recoillink/utils';
 
 import {
   SealevelInterchainGasPaymasterConfig,

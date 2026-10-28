@@ -9,7 +9,7 @@ import {
   retryAsync,
   sleep,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   MAX_TRON_ORIGIN_ENERGY_LIMIT,

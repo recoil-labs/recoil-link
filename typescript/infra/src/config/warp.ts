@@ -1,4 +1,4 @@
-import { OwnableConfig, RouterConfig } from '@hyperlane-xyz/sdk';
+import { OwnableConfig, RouterConfig } from '@recoillink/sdk';
 
 // Common collateral tokens to be used by warp route deployments.
 export const tokens = {

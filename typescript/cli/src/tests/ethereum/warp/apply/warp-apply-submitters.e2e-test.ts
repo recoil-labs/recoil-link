@@ -7,7 +7,7 @@ import {
   MockSafe__factory,
   type TimelockController,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type CallData,
@@ -20,7 +20,7 @@ import {
   TxSubmitterType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   type Domain,
@@ -28,7 +28,7 @@ import {
   assert,
   bytes32ToAddress,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   CustomTxSubmitterType,
@@ -58,7 +58,7 @@ import {
 import { createMockSafeApi } from '../../commands/helpers.js';
 import { WarpTestFixture } from '../../fixtures/warp-test-fixture.js';
 
-describe('hyperlane warp apply with submitters', async function () {
+describe('rlink warp apply with submitters', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const fixture = new WarpTestFixture({

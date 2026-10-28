@@ -1,6 +1,6 @@
 import { Gauge, Registry } from 'prom-client';
 
-import { submitMetrics } from '@hyperlane-xyz/metrics';
+import { submitMetrics } from '@recoillink/metrics';
 
 import type { MetricsConfig } from '../config/types.js';
 

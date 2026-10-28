@@ -4,13 +4,13 @@ import {
   CoreFactories,
   HyperlaneContracts,
   HyperlaneCore,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   objFilter,
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { Contexts } from '../config/contexts.js';
 import { Owner, determineGovernanceType } from '../src/governance.js';

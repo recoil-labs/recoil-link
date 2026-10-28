@@ -1,19 +1,19 @@
 import { expect } from 'chai';
 
-import { type IsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
+import { type IsmConfig } from '@recoillink/provider-sdk/ism';
 import {
   type DerivedWarpRouteDeployConfig,
   IsmType,
   type RoutingIsmConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   type ProtocolType,
   assert,
   normalizeAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../utils/files.js';
 import { type HyperlaneE2ECoreTestCommands } from '../commands/core.js';

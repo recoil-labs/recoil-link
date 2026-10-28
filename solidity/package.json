@@ -1,12 +1,12 @@
 {
-  "name": "@hyperlane-xyz/core",
-  "description": "Core solidity contracts for Hyperlane",
+  "name": "@recoillink/core",
+  "description": "Core solidity contracts for Recoil Link",
   "version": "12.2.0",
   "devDependencies": {
     "@ethersproject/abi": "*",
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/tsconfig": "workspace:^",
+    "@recoillink/utils": "workspace:*",
     "@matterlabs/hardhat-zksync-solc": "1.2.5",
     "@matterlabs/hardhat-zksync-verify": "1.7.1",
     "@nomicfoundation/hardhat-foundry": "1.2.0",
@@ -61,8 +61,8 @@
   "engines": {
     "node": ">=16"
   },
-  "homepage": "https://www.hyperlane.xyz",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "keywords": [
     "Hyperlane",
     "Solidity"

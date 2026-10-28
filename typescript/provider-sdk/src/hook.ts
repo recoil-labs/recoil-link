@@ -5,7 +5,7 @@ import {
   deepEquals,
   normalizeConfig,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import * as AltVM from './altvm.js';
 import {

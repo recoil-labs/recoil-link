@@ -9,7 +9,7 @@ import {
   PredicateRouterWrapper__factory,
   StaticAggregationHook__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
@@ -18,8 +18,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -41,7 +41,7 @@ chai.use(chaiAsPromised);
 const expect = chai.expect;
 chai.should();
 
-describe('hyperlane warp deploy with Predicate e2e tests', async function () {
+describe('rlink warp deploy with Predicate e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Metadata: ChainMetadata;

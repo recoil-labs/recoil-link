@@ -2,13 +2,13 @@ import { confirm, input, password, select } from '@inquirer/prompts';
 import { Wallet } from 'ethers';
 import { stringify as yamlStringify } from 'yaml';
 
-import { TxSubmitterType } from '@hyperlane-xyz/sdk';
+import { TxSubmitterType } from '@recoillink/sdk';
 import {
   assert,
   isAddress,
   isEVMLike,
   isPrivateKeyEvm,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, log, logBlue, logGreen } from '../logger.js';

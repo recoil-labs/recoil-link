@@ -1,6 +1,6 @@
 import { providers } from 'ethers';
 
-import { Address, isValidAddressEvm, rootLogger } from '@hyperlane-xyz/utils';
+import { Address, isValidAddressEvm, rootLogger } from '@recoillink/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName } from '../types.js';

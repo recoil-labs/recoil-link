@@ -1,6 +1,6 @@
 import { type CommandModule } from 'yargs';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   type CommandModuleWithContext,
@@ -36,7 +36,7 @@ export const hookCommand: CommandModule = {
 };
 
 // Apply updates to an IGP hook on a chain:
-//     hyperlane hook apply --chain svmlocal1 --address <hook-pda> --config ./igp-hook-config.yaml --key.sealevel <key>
+//     rlink hook apply --chain svmlocal1 --address <hook-pda> --config ./igp-hook-config.yaml --key.sealevel <key>
 export const apply: CommandModuleWithWriteContext<{
   chain: string;
   address: string;
@@ -72,9 +72,9 @@ export const apply: CommandModuleWithWriteContext<{
 
 // Examples for testing:
 // Deploy a Hook:
-//     hyperlane hook deploy --chain sepolia --config ./hook-config.yaml
+//     rlink hook deploy --chain sepolia --config ./hook-config.yaml
 // Deploy with output file:
-//     hyperlane hook deploy --chain sepolia --config ./hook-config.yaml --out ./deployed-hook.json
+//     rlink hook deploy --chain sepolia --config ./hook-config.yaml --out ./deployed-hook.json
 export const deploy: CommandModuleWithWriteContext<{
   chain: string;
   config: string;
@@ -110,9 +110,9 @@ export const deploy: CommandModuleWithWriteContext<{
 
 // Examples for testing:
 // Fallback routing hook on polygon (may take 5s):
-//     hyperlane hook read --chain polygon --address 0xca4cCe24E7e06241846F5EA0cda9947F0507C40C
+//     rlink hook read --chain polygon --address 0xca4cCe24E7e06241846F5EA0cda9947F0507C40C
 // IGP hook on inevm (may take 5s):
-//     hyperlane hook read --chain inevm --address 0x19dc38aeae620380430C200a6E990D5Af5480117
+//     rlink hook read --chain inevm --address 0x19dc38aeae620380430C200a6E990D5Af5480117
 export const read: CommandModuleWithContext<{
   chain: string;
   address: string;

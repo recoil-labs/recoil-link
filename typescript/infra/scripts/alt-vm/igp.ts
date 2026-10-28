@@ -7,16 +7,16 @@ import {
   createHookReader,
   createHookWriter,
   loadProtocolProviders,
-} from '@hyperlane-xyz/deploy-sdk';
-import { getProtocolProvider, hasProtocol } from '@hyperlane-xyz/provider-sdk';
-import { HookConfig as ProviderHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/deploy-sdk';
+import { getProtocolProvider, hasProtocol } from '@recoillink/provider-sdk';
+import { HookConfig as ProviderHookConfig } from '@recoillink/provider-sdk/hook';
 import {
   IgpConfig,
   MultiProvider,
   altVmChainLookup,
   getProtocolExchangeRateScale,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChainAddresses } from '../../config/registry.js';

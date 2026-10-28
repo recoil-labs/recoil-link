@@ -3,8 +3,8 @@ import { expect } from 'chai';
 import { constants } from 'ethers';
 import hre from 'hardhat';
 
-import { ERC20Test, ERC20Test__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { ERC20Test, ERC20Test__factory } from '@recoillink/core';
+import { assert } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

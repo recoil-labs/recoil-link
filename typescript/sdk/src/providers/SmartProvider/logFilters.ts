@@ -5,7 +5,7 @@ import {
   isNullish,
   isValidAddressEvm,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ProviderMethod } from './ProviderMethods.js';
 import { HyperlaneLogFilter } from './types.js';

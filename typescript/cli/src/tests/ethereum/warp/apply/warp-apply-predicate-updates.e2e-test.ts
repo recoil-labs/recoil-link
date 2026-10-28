@@ -7,14 +7,14 @@ import {
   PredicateRouterWrapper__factory,
   StaticAggregationHook__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   OnchainHookType,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';
@@ -92,7 +92,7 @@ const BASE_DEPLOY_CONFIG: WarpRouteDeployConfig = {
   },
 };
 
-describe('hyperlane warp apply E2E (predicate wrapper updates)', async function () {
+describe('rlink warp apply E2E (predicate wrapper updates)', async function () {
   this.timeout(3 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let mockPredicateRegistryAddress: string;

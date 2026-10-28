@@ -1,17 +1,17 @@
 import { type DeliverTxResponse } from '@cosmjs/stargate';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type MerkleTreeHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { getNewContractAddress } from '../utils/base.js';

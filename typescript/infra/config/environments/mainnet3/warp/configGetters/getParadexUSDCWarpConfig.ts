@@ -1,5 +1,5 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ChainMap, HypTokenRouterConfig, TokenType } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { usdcTokenAddresses } from '../cctp.js';

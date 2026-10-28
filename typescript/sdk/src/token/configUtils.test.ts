@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { constants, providers, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   DEFAULT_ROUTER_KEY,

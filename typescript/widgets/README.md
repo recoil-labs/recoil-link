@@ -6,15 +6,15 @@ Common react components for projects using Hyperlane.
 
 ```sh
 # Install with npm
-npm install @hyperlane-xyz/widgets
+npm install @recoillink/widgets
 
 # Or install with pnpm
-pnpm add @hyperlane-xyz/widgets
+pnpm add @recoillink/widgets
 ```
 
 ### Peer dependencies
 
-This package requires `@hyperlane-xyz/sdk`, `react`, and `react-dom`.
+This package requires `@recoillink/sdk`, `react`, and `react-dom`.
 
 ## Contents
 

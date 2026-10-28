@@ -10,8 +10,8 @@ import {
   TurnkeyEvmSigner,
   getSafe,
   getSafeService,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, assert, rootLogger } from '@recoillink/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import { GovernanceType } from '../../src/governanceTypes.js';

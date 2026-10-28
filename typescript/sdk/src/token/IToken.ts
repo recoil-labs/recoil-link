@@ -1,4 +1,4 @@
-import type { Address } from '@hyperlane-xyz/utils';
+import type { Address } from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../providers/MultiProviderAdapter.js';
 import type { ChainName } from '../types.js';

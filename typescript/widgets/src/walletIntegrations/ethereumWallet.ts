@@ -2,8 +2,8 @@ import { useConnectModal } from '@rainbow-me/rainbowkit';
 import { useCallback, useMemo } from 'react';
 import { useAccount, useDisconnect } from 'wagmi';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@recoillink/sdk/providers/MinimalProviderRegistry';
+import { ProtocolType } from '@recoillink/utils';
 
 import type { AccountInfo, ActiveChainInfo, WalletDetails } from './types.js';
 

@@ -19,8 +19,8 @@ import {
   WarpCoreConfig,
   getDomainId as resolveDomainId,
   getReorgPeriod as resolveReorgPeriod,
-} from '@hyperlane-xyz/sdk';
-import { assert, objFilter, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, objFilter, rootLogger } from '@recoillink/utils';
 
 import type { DeployEnvironment } from '../src/config/deploy-environment.js';
 

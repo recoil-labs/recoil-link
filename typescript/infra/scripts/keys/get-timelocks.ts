@@ -1,10 +1,10 @@
-import { EvmTimelockDeployer } from '@hyperlane-xyz/sdk';
+import { EvmTimelockDeployer } from '@recoillink/sdk';
 import {
   LogFormat,
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   getGovernanceIcas,

@@ -15,8 +15,8 @@ import {
   RoutingIsmConfig,
   defaultMultisigConfigs,
   multisigConfigToIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { getOverhead } from '../../../src/config/gas-oracle.js';
 

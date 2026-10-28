@@ -1,7 +1,7 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap, ChainName } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 import { GovernanceType } from '../governanceTypes.js';
 

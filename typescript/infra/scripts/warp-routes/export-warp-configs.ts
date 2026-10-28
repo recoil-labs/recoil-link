@@ -1,12 +1,12 @@
 import { stringify as yamlStringify, parse as yamlParse } from 'yaml';
 
-import { WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { WarpRouteDeployConfig } from '@recoillink/sdk';
 import {
   objMap,
   sortNestedArrays,
   sortObjectKeys,
   WARP_YAML_SORT_CONFIG,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getRegistry } from '../../config/registry.js';
 import { getWarpConfig, warpConfigGetterMap } from '../../config/warp.js';

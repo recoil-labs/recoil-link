@@ -13,13 +13,13 @@ import {
   NoQuoteAvailableReason,
   type SealevelQuoteV2Entry,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   type FeeArtifactConfig,
   FeeParamsType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 import {
   EIP712_DOMAIN,

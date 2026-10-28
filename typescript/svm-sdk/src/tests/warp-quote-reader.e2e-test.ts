@@ -3,12 +3,12 @@ import { address as parseAddress } from '@solana/kit';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { FeeParamsType, FeeType } from '@hyperlane-xyz/provider-sdk/fee';
+import { FeeParamsType, FeeType } from '@recoillink/provider-sdk/fee';
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/quote';
+import { assert } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmOffchainQuotedLinearFeeWriter } from '../fee/offchain-quoted-linear-fee.js';

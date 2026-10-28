@@ -37,8 +37,8 @@ import {
   TestIsm__factory,
   TrustedRelayerIsm,
   TrustedRelayerIsm__factory,
-} from '@hyperlane-xyz/core';
-import { WithAddress, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { WithAddress, addressToBytes32, assert } from '@recoillink/utils';
 
 import { TestChainName, test2 } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

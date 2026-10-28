@@ -14,7 +14,7 @@ import {
   MultiProvider,
   buildAgentConfig,
   getCosmosChainGasPrice,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
@@ -23,8 +23,8 @@ import {
   objMerge,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import {

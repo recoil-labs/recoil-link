@@ -6,8 +6,8 @@ import {
   InterchainQueryRouter,
   TestQuery,
   TestQuery__factory,
-} from '@hyperlane-xyz/core';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { TestChainName, test1, test2 } from '../../consts/testChains.js';
 import { HyperlaneContractsMap } from '../../contracts/types.js';

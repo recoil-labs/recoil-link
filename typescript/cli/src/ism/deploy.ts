@@ -1,10 +1,10 @@
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
-import { createIsmWriter } from '@hyperlane-xyz/deploy-sdk';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
+import { createIsmWriter } from '@recoillink/deploy-sdk';
 import {
   type IsmConfig as ProviderIsmConfig,
   ismConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk/ism';
+import { GasAction } from '@recoillink/provider-sdk';
 import {
   ContractVerifier,
   EvmIsmModule,
@@ -14,8 +14,8 @@ import {
   altVmChainLookup,
   extractIsmAndHookFactoryAddresses,
   isIsmCompatible,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike, mustGet } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, isEVMLike, mustGet } from '@recoillink/utils';
 
 import { requestAndSaveApiKeys } from '../context/apiKeys.js';
 import { type WriteCommandContext } from '../context/types.js';

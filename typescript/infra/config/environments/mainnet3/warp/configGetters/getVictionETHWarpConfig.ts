@@ -9,7 +9,7 @@ import {
   SubmitterMetadata,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { legacyEthIcaRouter } from '../../../../../src/config/chain.js';
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';

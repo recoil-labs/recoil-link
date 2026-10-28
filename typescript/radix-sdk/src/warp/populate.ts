@@ -14,7 +14,7 @@ import {
   isNullish,
   isZeroishAddress,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { RadixBase } from '../utils/base.js';
 import { EntityDetails, INSTRUCTIONS } from '../utils/types.js';

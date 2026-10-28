@@ -27,8 +27,8 @@ import yargs from 'yargs';
 import { confirm } from '@inquirer/prompts';
 
 import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { MultiProvider } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { getRegistry } from '../../config/registry.js';
 

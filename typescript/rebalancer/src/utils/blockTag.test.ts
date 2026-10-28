@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { providers } from 'ethers';
 import Sinon from 'sinon';
 
-import { MultiProtocolProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { MultiProtocolProvider } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getConfirmedBlockTag } from './blockTag.js';
 

@@ -9,7 +9,7 @@ import {
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 
 import { SvmSigner } from '../clients/signer.js';
 import { buildClaimProtocolFeesInstruction } from '../core/mailbox-tx.js';

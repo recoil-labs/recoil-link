@@ -1,8 +1,8 @@
 {
-  "name": "@hyperlane-xyz/tsconfig",
+  "name": "@recoillink/tsconfig",
   "version": "45.0.1",
   "private": true,
-  "description": "Hyperlane TypeScript config",
+  "description": "Recoil Link TypeScript config",
   "license": "Apache-2.0",
   "type": "module"
 }

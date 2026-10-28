@@ -5,8 +5,8 @@ import {
   ProxyAdmin__factory,
   TransparentUpgradeableProxy__factory,
   ZKSyncArtifact,
-} from '@hyperlane-xyz/core';
-import { Address, assert, eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address, assert, eqAddress } from '@recoillink/utils';
 
 import { tryGetContractDeploymentTransaction } from '../../block-explorer/etherscan.js';
 import { ExplorerFamily } from '../../metadata/chainMetadataTypes.js';

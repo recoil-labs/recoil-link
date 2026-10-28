@@ -6,7 +6,7 @@ import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { DeployEnvironment } from '../config/deploy-environment.js';
 import { HelmManager } from '../utils/helm.js';
 import { getInfraPath } from '../utils/utils.js';
-import { readYaml } from '@hyperlane-xyz/utils/fs';
+import { readYaml } from '@recoillink/utils/fs';
 
 export class FeeQuotingHelmManager extends HelmManager {
   readonly helmChartPath: string = path.join(

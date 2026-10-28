@@ -1,7 +1,7 @@
 import { constants } from 'ethers';
 
-import { MailboxClient__factory, Router__factory } from '@hyperlane-xyz/core';
-import { Address, eqAddress, rootLogger } from '@hyperlane-xyz/utils';
+import { MailboxClient__factory, Router__factory } from '@recoillink/core';
+import { Address, eqAddress, rootLogger } from '@recoillink/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { EvmHookReader } from '../hook/EvmHookReader.js';

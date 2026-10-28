@@ -1,9 +1,9 @@
-import type { ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import type { ArtifactDeployed } from '@recoillink/provider-sdk/artifact';
 import {
   computeRemoteRoutersUpdates,
   type DeployedWarpAddress,
   type RawWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   assert,
   eqAddressAleo,
@@ -11,7 +11,7 @@ import {
   isNullish,
   isZeroishAddress,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { AnyAleoNetworkClient } from '../clients/base.js';
 import {

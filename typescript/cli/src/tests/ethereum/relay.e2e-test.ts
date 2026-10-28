@@ -1,5 +1,5 @@
 import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
+import { TokenType } from '@recoillink/sdk';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 
@@ -20,7 +20,7 @@ import {
 const SYMBOL = 'ETH';
 const WARP_ID = createWarpRouteConfigId(SYMBOL, CHAIN_NAME_3);
 
-describe('hyperlane relayer e2e tests', async function () {
+describe('rlink relayer e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   before(async () => {

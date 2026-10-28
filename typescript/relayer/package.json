@@ -1,7 +1,7 @@
 {
-  "name": "@hyperlane-xyz/relayer",
+  "name": "@recoillink/relayer",
   "version": "4.0.4",
-  "description": "Hyperlane Message Relayer Service",
+  "description": "Recoil Link Message Relayer Service",
   "keywords": [
     "blockchain",
     "hyperlane",
@@ -11,7 +11,7 @@
   ],
   "license": "Apache-2.0",
   "author": "Abacus Works, Inc.",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "dist",
     "src"
@@ -60,11 +60,11 @@
   "dependencies": {
     "@arbitrum/sdk": "catalog:",
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/metrics": "workspace:*",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/metrics": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "ethers": "catalog:",
     "pino": "catalog:",
     "pino-pretty": "catalog:",
@@ -74,7 +74,7 @@
   },
   "devDependencies": {
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@nomiclabs/hardhat-ethers": "catalog:",
     "@nomiclabs/hardhat-waffle": "catalog:",
     "@types/chai": "catalog:",

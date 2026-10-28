@@ -1,4 +1,4 @@
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 export const irregularSigners: Address[] = [
   '0x67476b5f4f7a812B11D1b25D574376a24d3E9349',

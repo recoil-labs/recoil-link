@@ -8,7 +8,7 @@
  * barrel optimization (optimizePackageImports) with webpackBuildWorker.
  *
  * This replaces the `utils` import with a direct `Interface` import from
- * `@ethersproject/abi` (already a peerDependency of @hyperlane-xyz/core).
+ * `@ethersproject/abi` (already a peerDependency of @recoillink/core).
  *
  * Usage: node fix-typechain-ethers.mjs <factoriesDir> [<factoriesDir2> ...]
  */

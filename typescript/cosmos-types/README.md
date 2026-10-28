@@ -7,10 +7,10 @@ It can be used inside an SDK for type support and for encoding and decoding the 
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/cosmos-types
+npm install @recoillink/cosmos-types
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/cosmos-types
+pnpm add @recoillink/cosmos-types
 ```
 
 ## Setup

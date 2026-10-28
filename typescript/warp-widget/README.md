@@ -1,19 +1,19 @@
-# @hyperlane-xyz/warp-widget
+# @recoillink/warp-widget
 
 Embed the [Hyperlane Warp](https://docs.hyperlane.xyz/docs/reference/applications/warp-routes) bridge widget in any web app. This package wraps the hosted Warp UI in an iframe with a simple API for configuration and event handling.
 
 ## Installation
 
 ```bash
-pnpm add @hyperlane-xyz/warp-widget
+pnpm add @recoillink/warp-widget
 # or
-npm install @hyperlane-xyz/warp-widget
+npm install @recoillink/warp-widget
 ```
 
 ## React Usage
 
 ```tsx
-import { HyperlaneWarpWidget } from '@hyperlane-xyz/warp-widget/react';
+import { HyperlaneWarpWidget } from '@recoillink/warp-widget/react';
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
 ## Vanilla JS Usage
 
 ```ts
-import { createWarpWidget } from '@hyperlane-xyz/warp-widget';
+import { createWarpWidget } from '@recoillink/warp-widget';
 
 const container = document.getElementById('widget-root');
 if (!container) throw new Error('missing #widget-root');

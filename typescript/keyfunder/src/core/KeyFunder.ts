@@ -1,9 +1,9 @@
 import { BigNumber, ethers } from 'ethers';
 import type { Logger } from 'pino';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
-import { HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ERC20__factory } from '@recoillink/core';
+import { HyperlaneIgp, MultiProvider } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import type {
   ChainConfig,

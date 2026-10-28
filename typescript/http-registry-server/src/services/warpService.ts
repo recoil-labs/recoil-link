@@ -5,7 +5,7 @@ import {
   WarpRouteFilterParams,
   WarpRouteId,
 } from '@hyperlane-xyz/registry';
-import { WarpCoreConfig, WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { WarpCoreConfig, WarpRouteDeployConfig } from '@recoillink/sdk';
 
 import { NotFoundError } from '../errors/ApiError.js';
 

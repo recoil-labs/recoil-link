@@ -3,8 +3,8 @@ import {
   ExplorerLicenseType,
   PostDeploymentContractVerifier,
   VerificationInput,
-} from '@hyperlane-xyz/sdk';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sdk';
+import { readJson } from '@recoillink/utils/fs';
 
 import { assertEnvironment } from '../src/config/deploy-environment.js';
 import {

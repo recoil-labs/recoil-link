@@ -2,16 +2,16 @@ import { address, type Address } from '@solana/kit';
 import { expect } from 'chai';
 import { it } from 'mocha';
 
-import type { ArtifactWriter } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert } from '@hyperlane-xyz/utils';
+import type { ArtifactWriter } from '@recoillink/provider-sdk/artifact';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { assert } from '@recoillink/utils';
 
 import { supportsFeeConfig } from '../version/version-query.js';
 import type {
   DeployedWarpAddress,
   RawNativeWarpArtifactConfig,
   RawWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { SvmSigner } from '../clients/signer.js';
 import { getProgramUpgradeAuthority } from '../deploy/program-deployer.js';

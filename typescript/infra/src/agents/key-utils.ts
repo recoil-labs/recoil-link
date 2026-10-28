@@ -3,7 +3,7 @@ import chalk from 'chalk';
 import { existsSync } from 'fs';
 import { basename, dirname, join } from 'path';
 
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainName } from '@recoillink/sdk';
 import {
   Address,
   ProtocolType,
@@ -11,8 +11,8 @@ import {
   deepEquals,
   objMap,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { readJsonFromDir } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { readJsonFromDir } from '@recoillink/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChain } from '../../config/registry.js';

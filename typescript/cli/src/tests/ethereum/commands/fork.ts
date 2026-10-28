@@ -11,7 +11,7 @@ export function hyperlaneForkRaw({
   forkConfigPath: string;
   port: number;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane fork \
+  return $`${localTestRunCmdPrefix()} rlink fork \
         --registry ${registry} \
         --fork-config ${forkConfigPath} \
         --port ${port} \

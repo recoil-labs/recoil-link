@@ -12,7 +12,7 @@ import {
   MultiProtocolProvider,
   MultiProvider,
   collectValidators,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   ProtocolType,
@@ -23,8 +23,8 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { mergeJson, readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { mergeJson, readJson } from '@recoillink/utils/fs';
 
 import { Contexts } from '../config/contexts.js';
 import { agents } from '../config/environments/agents.js';

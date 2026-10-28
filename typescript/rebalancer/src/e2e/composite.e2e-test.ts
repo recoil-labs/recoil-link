@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { BigNumber, ethers, providers } from 'ethers';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
+import { ERC20__factory } from '@recoillink/core';
+import { HyperlaneCore, MultiProvider, snapshot } from '@recoillink/sdk';
 
 import {
   RebalancerMinAmountType,

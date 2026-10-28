@@ -3,7 +3,7 @@ import { BigNumber } from 'bignumber.js';
 import type {
   RadixProvider,
   RadixSDKTransaction,
-} from '@hyperlane-xyz/radix-sdk/runtime';
+} from '@recoillink/radix-sdk/runtime';
 import {
   Address,
   Domain,
@@ -11,7 +11,7 @@ import {
   assert,
   fromWei,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseRadixAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

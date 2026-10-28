@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import type { ChainMap, Token } from '@hyperlane-xyz/sdk';
+import type { ChainMap, Token } from '@recoillink/sdk';
 
 import {
   RebalancerStrategyOptions,

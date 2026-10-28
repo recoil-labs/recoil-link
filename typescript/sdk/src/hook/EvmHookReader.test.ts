@@ -32,8 +32,8 @@ import {
   RateLimitedHook__factory,
   StorageGasOracle,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
-import { WithAddress, addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { WithAddress, addressToBytes32 } from '@recoillink/utils';
 
 import { TestChainName, test1 } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

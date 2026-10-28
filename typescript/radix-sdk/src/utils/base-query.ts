@@ -5,7 +5,7 @@ import {
   StateEntityDetailsResponseItemDetails,
 } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { assert, isNullish, sleep } from '@hyperlane-xyz/utils';
+import { assert, isNullish, sleep } from '@recoillink/utils';
 
 import { EntityDetails, EntityField, RadixElement } from './types.js';
 

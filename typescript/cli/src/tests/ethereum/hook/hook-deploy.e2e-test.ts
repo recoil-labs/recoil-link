@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { HookType } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { HookType } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -20,7 +20,7 @@ import {
 const HOOK_CONFIG_PATH = `${TEMP_PATH}/hook-deploy-evm-config.yaml`;
 const HOOK_OUTPUT_PATH = `${TEMP_PATH}/hook-deploy-evm-output.json`;
 
-describe('hyperlane hook deploy e2e tests (EVM)', async function () {
+describe('rlink hook deploy e2e tests (EVM)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

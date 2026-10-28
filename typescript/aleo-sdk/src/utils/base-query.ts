@@ -1,6 +1,6 @@
 import { Plaintext } from '@provablehq/sdk';
 
-import { assert, isNullish, retryAsync } from '@hyperlane-xyz/utils';
+import { assert, isNullish, retryAsync } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 

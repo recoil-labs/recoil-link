@@ -4,7 +4,7 @@ import { BytesLike, ethers, providers } from 'ethers';
 import { Logger } from 'pino';
 import { z } from 'zod';
 
-import { OpL2toL1Service__factory } from '@hyperlane-xyz/core';
+import { OpL2toL1Service__factory } from '@recoillink/core';
 
 import type { CcipApp } from '../http.js';
 import {

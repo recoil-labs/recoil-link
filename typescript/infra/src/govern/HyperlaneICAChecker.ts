@@ -5,8 +5,8 @@ import {
   InterchainAccountChecker,
   MissingRouterViolation,
   RouterViolationType,
-} from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import { deploymentChains as ousdtChains } from '../../config/environments/mainnet3/warp/configGetters/getoUSDTTokenWarpConfig.js';
 

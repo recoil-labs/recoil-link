@@ -7,7 +7,7 @@ import {
   type ChainName,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { RebalancerMinAmountType } from '../config/types.js';
 import { type MonitorEvent } from '../interfaces/IMonitor.js';

@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
-import type { ChainMetadataManager } from '@hyperlane-xyz/sdk/metadata/ChainMetadataManager';
-import { fetchWithTimeout } from '@hyperlane-xyz/utils';
+import type { ChainMetadataManager } from '@recoillink/sdk/metadata/ChainMetadataManager';
+import { fetchWithTimeout } from '@recoillink/utils';
 
 import { HYPERLANE_EXPLORER_API_URL } from '../consts.js';
 import { widgetLogger } from '../logger.js';

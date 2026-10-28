@@ -5,12 +5,12 @@ import { it } from 'mocha';
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { FeeParamsType } from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/artifact';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { FeeParamsType } from '@recoillink/provider-sdk/fee';
 
-import type { BaseFeeConfig, FeeParams } from '@hyperlane-xyz/provider-sdk/fee';
-import { assert } from '@hyperlane-xyz/utils';
+import type { BaseFeeConfig, FeeParams } from '@recoillink/provider-sdk/fee';
+import { assert } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { ASSOCIATED_TOKEN_PROGRAM_ADDRESS } from '../constants.js';

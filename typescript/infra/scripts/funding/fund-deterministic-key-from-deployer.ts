@@ -1,7 +1,7 @@
 import { BigNumber } from 'ethers';
 import { format } from 'util';
 
-import { promiseObjAll, rootLogger } from '@hyperlane-xyz/utils';
+import { promiseObjAll, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import {

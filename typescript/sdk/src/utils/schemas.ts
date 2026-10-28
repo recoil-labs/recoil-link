@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 export function isCompliant<S extends z.ZodType>(schema: S) {
   return (config: unknown): config is z.infer<S> => z.validate(schema, config);

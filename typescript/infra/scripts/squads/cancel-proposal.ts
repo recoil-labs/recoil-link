@@ -2,8 +2,8 @@ import { confirm } from '@inquirer/prompts';
 import chalk from 'chalk';
 import yargs from 'yargs';
 
-import { SvmMultiProtocolSignerAdapter } from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+import { SvmMultiProtocolSignerAdapter } from '@recoillink/sdk';
+import { ProtocolType, rootLogger } from '@recoillink/utils';
 
 import { chainsToSkip } from '../../src/config/chain.js';
 import { getSquadsKeys } from '../../src/config/squads.js';

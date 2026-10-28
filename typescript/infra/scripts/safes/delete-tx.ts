@@ -1,6 +1,6 @@
 import yargs from 'yargs';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getGovernanceSafes } from '../../config/environments/mainnet3/governance/utils.js';

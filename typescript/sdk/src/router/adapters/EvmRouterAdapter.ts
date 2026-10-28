@@ -3,8 +3,8 @@ import {
   GasRouter__factory,
   Router,
   Router__factory,
-} from '@hyperlane-xyz/core';
-import { Address, Domain, bytes32ToAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address, Domain, bytes32ToAddress } from '@recoillink/utils';
 
 import { BaseEvmAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

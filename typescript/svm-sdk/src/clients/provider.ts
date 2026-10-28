@@ -9,13 +9,13 @@ import {
   setTransactionMessageLifetimeUsingBlockhash,
 } from '@solana/kit';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { type AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 import {
   composeWarpDeployGas,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/warp';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import {
   DEFAULT_COMPUTE_UNITS,

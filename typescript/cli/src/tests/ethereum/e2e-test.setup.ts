@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-import { type ChainMetadata } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { type ChainMetadata } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import {
   DEFAULT_E2E_TEST_TIMEOUT,

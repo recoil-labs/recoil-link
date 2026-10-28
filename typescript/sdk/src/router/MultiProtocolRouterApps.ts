@@ -1,4 +1,4 @@
-import { Address, Domain, ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+import { Address, Domain, ProtocolType, isEVMLike } from '@recoillink/utils';
 
 import { AdapterClassType, MultiProtocolApp } from '../app/MultiProtocolApp.js';
 import { ChainMap, ChainName } from '../types.js';

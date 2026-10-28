@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { retryAsync } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { ChainMap } from '@recoillink/sdk';
+import { retryAsync } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { THRESHOLD_CONFIG_PATH } from '../src/config/funding/balances.js';
 import {

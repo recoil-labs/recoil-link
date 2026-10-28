@@ -8,7 +8,7 @@ import {
   convertDecimals,
   objMap,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getProtocolExchangeRateDecimals } from '../consts/igp.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';

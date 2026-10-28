@@ -1,9 +1,9 @@
 import { clsx } from 'clsx';
 import React, { ButtonHTMLAttributes } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import { ProtocolType, shortenAddress } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@recoillink/sdk/providers/MinimalProviderRegistry';
+import type { ChainName } from '@recoillink/sdk/types';
+import { ProtocolType, shortenAddress } from '@recoillink/utils';
 
 import { Button } from '../components/Button.js';
 import { ChevronIcon } from '../icons/Chevron.js';

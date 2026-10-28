@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import type { ExtendedChainSubmissionStrategy } from '../submitters/types.js';
 

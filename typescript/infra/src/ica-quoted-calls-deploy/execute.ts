@@ -3,19 +3,19 @@ import { constants, utils } from 'ethers';
 import {
   InterchainAccountRouter__factory,
   QuotedCalls__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   ChainName,
   ContractVerificationInput,
   MultiProvider,
   PERMIT2_ADDRESS,
   verificationUtils,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   addBufferToGasLimit,
   addressToBytes32,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEFAULT_OFFCHAIN_LOOKUP_ISM_URLS } from '../../config/environments/utils.js';
 import { describeError } from '../aggregation-hook-upgrade/redact.js';

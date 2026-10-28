@@ -1,8 +1,8 @@
 {
-  "name": "@hyperlane-xyz/rebalancer-sim",
+  "name": "@recoillink/rebalancer-sim",
   "version": "0.2.45",
   "private": true,
-  "description": "Fast real-time simulation framework for testing Hyperlane warp route rebalancers",
+  "description": "Fast real-time simulation framework for testing Recoil Link warp route rebalancers",
   "keywords": [
     "hyperlane",
     "rebalancer",
@@ -12,7 +12,7 @@
   ],
   "license": "Apache-2.0",
   "author": "Abacus Works, Inc.",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "dist",
     "src",
@@ -32,19 +32,19 @@
     "test:ci": "mocha --config .mocharc.json './test/scenarios/**/*.test.ts' --exit"
   },
   "dependencies": {
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/rebalancer": "workspace:*",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
+    "@recoillink/rebalancer": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "ethers": "catalog:",
     "pino": "catalog:",
     "pino-pretty": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

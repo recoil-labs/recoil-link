@@ -2,7 +2,7 @@ import {
   InterchainGasPaymaster__factory,
   ProxyAdmin__factory,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 export const igpFactories = {
   interchainGasPaymaster: new InterchainGasPaymaster__factory(),

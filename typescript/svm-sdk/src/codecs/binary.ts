@@ -12,7 +12,7 @@ import {
   type ReadonlyUint8Array,
 } from '@solana/kit';
 
-import { assert, isNullish } from '@hyperlane-xyz/utils';
+import { assert, isNullish } from '@recoillink/utils';
 
 import { MAX_ACCOUNT_DATA_SIZE } from '../constants.js';
 

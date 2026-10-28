@@ -3,7 +3,7 @@ import { BigNumber, ethers, providers } from 'ethers';
 import {
   ERC20__factory,
   MovableCollateralRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 export async function setupCollateralBalances(
   providers: Map<string, providers.JsonRpcProvider>,

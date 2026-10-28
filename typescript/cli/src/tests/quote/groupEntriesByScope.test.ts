@@ -5,8 +5,8 @@ import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
   WILDCARD_BYTES32,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/quote';
+import { assert } from '@recoillink/utils';
 
 import { groupEntriesByScope } from '../../read/warp-quote.js';
 

@@ -1,6 +1,6 @@
 import { type QueryClient } from '@cosmjs/stargate';
 
-import { ZERO_ADDRESS_HEX_32, assert } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32, assert } from '@recoillink/utils';
 
 import { type CoreExtension } from '../hyperlane/core/query.js';
 import { type CosmosMailboxConfig } from '../utils/types.js';

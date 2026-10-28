@@ -3,8 +3,8 @@ import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 import {
   getSafeChains,

@@ -1,4 +1,4 @@
-import { Logger, rootLogger } from '@hyperlane-xyz/utils';
+import { Logger, rootLogger } from '@recoillink/utils';
 
 import { IImpersonatingSigner, ISigner } from './altvm.js';
 import { AnnotatedTx, TxReceipt } from './module.js';

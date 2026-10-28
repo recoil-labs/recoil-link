@@ -1,10 +1,10 @@
-import { TestQuerySender__factory } from '@hyperlane-xyz/core';
+import { TestQuerySender__factory } from '@recoillink/core';
 import {
   ChainName,
   ContractVerifier,
   HyperlaneDeployer,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 export const TEST_QUERY_SENDER_FACTORIES = {
   TestQuerySender: new TestQuerySender__factory(),

@@ -6,14 +6,14 @@ import {
   LinearFee__factory,
   OffchainQuotedLinearFee__factory,
   RoutingFee__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   WithAddress,
   assert,
   concurrentMap,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { MultiProvider } from '../providers/MultiProvider.js';
@@ -34,7 +34,7 @@ import {
   getCrossCollateralRouterKeys,
   getEffectiveCrossCollateralDestinations,
 } from './crossCollateralUtils.js';
-import { bpsToRawFeeParams } from '@hyperlane-xyz/provider-sdk/fee';
+import { bpsToRawFeeParams } from '@recoillink/provider-sdk/fee';
 
 import { ASSUMED_MAX_AMOUNT_FOR_ZERO_SUPPLY, convertToBps } from './utils.js';
 

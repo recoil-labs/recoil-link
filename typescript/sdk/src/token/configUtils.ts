@@ -4,8 +4,8 @@ import { zeroAddress } from 'viem';
 import {
   HypXERC20Lockbox__factory,
   HypXERC20__factory,
-} from '@hyperlane-xyz/core';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/core';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   Address,
   TransformObjectTransformer,
@@ -22,7 +22,7 @@ import {
   promiseObjAll,
   sortArraysInObject,
   transformObj,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { isProxy } from '../deploy/proxy.js';
 import { IsmConfig, IsmType } from '../ism/types.js';

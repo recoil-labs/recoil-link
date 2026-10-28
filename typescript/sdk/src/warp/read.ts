@@ -1,4 +1,4 @@
-import type { Address } from '@hyperlane-xyz/utils';
+import type { Address } from '@recoillink/utils';
 
 import type { ChainMap } from '../types.js';
 import type { TokenArgs } from '../token/ITokenMetadata.js';

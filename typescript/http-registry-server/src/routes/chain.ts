@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express';
 
 import { UpdateChainSchema } from '@hyperlane-xyz/registry';
-import { ZChainName } from '@hyperlane-xyz/sdk';
+import { ZChainName } from '@recoillink/sdk';
 
 import { AppConstants } from '../constants/AppConstants.js';
 import {

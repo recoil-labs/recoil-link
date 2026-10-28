@@ -1,4 +1,4 @@
-import { ChainMap, GasPriceConfig } from '@hyperlane-xyz/sdk';
+import { ChainMap, GasPriceConfig } from '@recoillink/sdk';
 
 import {
   AllStorageGasOracleConfigs,

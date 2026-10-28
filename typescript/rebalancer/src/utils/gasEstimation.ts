@@ -8,12 +8,12 @@ import {
   type MultiProvider,
   type Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   addBufferToGasLimit,
   isEVMLike,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 /**
  * Fallback gas limit for transferRemote when eth_estimateGas fails.

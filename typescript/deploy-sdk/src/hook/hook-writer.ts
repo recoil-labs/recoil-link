@@ -1,14 +1,14 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+} from '@recoillink/provider-sdk';
+import { ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   ArtifactNew,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@recoillink/provider-sdk/artifact';
+import { ChainLookup } from '@recoillink/provider-sdk/chain';
 import {
   DeployedHookAddress,
   DeployedHookArtifact,
@@ -18,9 +18,9 @@ import {
   MUTABLE_HOOK_TYPE,
   hookConfigToArtifact,
   shouldDeployNewHook,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { Address, isEmptyAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
+import { Address, isEmptyAddress } from '@recoillink/utils';
 
 import { HookReader } from './hook-reader.js';
 

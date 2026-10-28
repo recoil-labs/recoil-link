@@ -1,5 +1,5 @@
-import { GasRouter } from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+import { GasRouter } from '@recoillink/core';
+import { Address } from '@recoillink/utils';
 
 import {
   HyperlaneContracts,

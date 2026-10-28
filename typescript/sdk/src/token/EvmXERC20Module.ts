@@ -1,13 +1,13 @@
 import { PopulatedTransaction } from 'ethers';
 
-import { IXERC20Lockbox__factory } from '@hyperlane-xyz/core';
+import { IXERC20Lockbox__factory } from '@recoillink/core';
 import {
   Address,
   ProtocolType,
   assert,
   normalizeAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import {

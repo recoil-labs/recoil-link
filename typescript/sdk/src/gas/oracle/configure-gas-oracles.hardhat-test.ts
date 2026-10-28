@@ -5,8 +5,8 @@ import hre from 'hardhat';
 import {
   InterchainGasPaymaster,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
-import { eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { eqAddress } from '@recoillink/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

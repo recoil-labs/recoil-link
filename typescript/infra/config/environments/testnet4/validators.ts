@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { ValidatorBaseChainConfigMap } from '../../../src/config/agent/validator.js';
 import { Contexts } from '../../contexts.js';

@@ -2,13 +2,13 @@ import {
   AltVM,
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import {
   ArtifactDeployed,
   ArtifactReader,
   isArtifactDeployed,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@recoillink/provider-sdk/artifact';
+import { ChainLookup } from '@recoillink/provider-sdk/chain';
 import {
   DeployedIsmAddress,
   DeployedIsmArtifact,
@@ -18,8 +18,8 @@ import {
   ismArtifactToDerivedConfig,
   RawRoutingIsmArtifactConfig,
   RoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { Logger, rootLogger, isNonEmptyArray } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { Logger, rootLogger, isNonEmptyArray } from '@recoillink/utils';
 
 /**
  * Factory function to create an IsmReader instance.

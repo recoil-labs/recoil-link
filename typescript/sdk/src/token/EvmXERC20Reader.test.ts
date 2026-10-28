@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { BigNumber, providers, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType, assert } from '@recoillink/utils';
 
 import { ChainMetadata, RpcUrl } from '../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

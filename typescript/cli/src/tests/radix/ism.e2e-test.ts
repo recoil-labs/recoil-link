@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { normalizeConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType, deepEquals } from '@hyperlane-xyz/utils';
+import { normalizeConfig } from '@recoillink/sdk';
+import { ProtocolType, deepEquals } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../commands/core.js';
@@ -27,7 +27,7 @@ const VALIDATOR_ADDRESS = '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266';
 
 const DEFAULT_E2E_TEST_TIMEOUT = 100_000;
 
-describe('hyperlane ism e2e tests (radix)', function () {
+describe('rlink ism e2e tests (radix)', function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   let ismCommands: HyperlaneE2EIsmTestCommands;

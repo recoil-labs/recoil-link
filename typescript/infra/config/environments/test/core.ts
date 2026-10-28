@@ -10,8 +10,8 @@ import {
   MerkleTreeHookConfig,
   ProtocolFeeHookConfig,
   RoutingIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { objMap } from '@recoillink/utils';
 
 import { aggregationIsm } from './aggregationIsm.js';
 import { igp } from './igp.js';

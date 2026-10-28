@@ -1,18 +1,18 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   DeployedHookAddress,
   IgpHookConfig,
   MerkleTreeHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { assert, eqAddressRadix } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
+import { assert, eqAddressRadix } from '@recoillink/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixHookArtifactManager } from '../hook/hook-artifact-manager.js';

@@ -9,7 +9,7 @@ import { join } from 'path';
 import {
   FallbackDomainRoutingHook__factory,
   StaticAggregationHookFactory__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { PartialRegistry } from '@hyperlane-xyz/registry';
 import type { ChainAddresses } from '@hyperlane-xyz/registry';
 import {
@@ -18,8 +18,8 @@ import {
   MultiProvider,
   OnchainHookType,
   testChainMetadata,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType } from '@recoillink/utils';
 
 import { Contexts } from '../config/contexts.js';
 import {

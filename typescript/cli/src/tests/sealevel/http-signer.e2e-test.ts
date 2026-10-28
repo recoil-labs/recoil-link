@@ -7,14 +7,14 @@ import {
   getTransactionEncoder,
 } from '@solana/kit';
 
-import { loadProtocolProviders } from '@hyperlane-xyz/deploy-sdk';
+import { loadProtocolProviders } from '@recoillink/deploy-sdk';
 import {
   HttpServer,
   type TransactionSignerBackend,
-} from '@hyperlane-xyz/http-registry-server';
+} from '@recoillink/http-registry-server';
 import { FileSystemRegistry } from '@hyperlane-xyz/registry/fs';
-import { SealevelSigner } from '@hyperlane-xyz/sealevel-sdk';
-import { ProtocolType, assert, fromHexString } from '@hyperlane-xyz/utils';
+import { SealevelSigner } from '@recoillink/sealevel-sdk';
+import { ProtocolType, assert, fromHexString } from '@recoillink/utils';
 
 import { createAltVMSigners } from '../../context/altvm.js';
 import {

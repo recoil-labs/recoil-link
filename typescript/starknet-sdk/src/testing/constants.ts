@@ -1,5 +1,5 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
 
 export const DEFAULT_E2E_TEST_TIMEOUT = 300_000;
 

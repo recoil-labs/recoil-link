@@ -6,7 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { toWei } from '@hyperlane-xyz/utils';
+import { toWei } from '@recoillink/utils';
 
 import { ScenarioGenerator } from '../src/index.js';
 import type {

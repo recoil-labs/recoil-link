@@ -1,4 +1,4 @@
-import { Address, ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType, rootLogger } from '@recoillink/utils';
 
 import {
   getExplorerAddressUrl,

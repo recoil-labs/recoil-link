@@ -29,16 +29,15 @@ import 'zod/compile';
 import { Wallet } from 'ethers';
 import { Keypair } from '@solana/web3.js';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider, RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk';
 import {
   applyRpcUrlOverridesFromEnv,
   createServiceLogger,
   isEVMLike,
   ProtocolType,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { RebalancerConfig } from './config/RebalancerConfig.js';
 import { RebalancerService } from './core/RebalancerService.js';
@@ -123,7 +122,7 @@ async function main(): Promise<void> {
 
     // Initialize registry (uses env var or defaults to GitHub registry)
     // For GitHub registries, REGISTRY_URI can include /tree/{commit} to pin to a specific version
-    const registryUri = process.env.REGISTRY_URI || DEFAULT_GITHUB_REGISTRY;
+    const registryUri = process.env.REGISTRY_URI || RECOIL_LINK_REGISTRY_URL;
     const registry = getRegistry({
       registryUris: [registryUri],
       enableProxy: true,

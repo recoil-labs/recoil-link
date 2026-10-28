@@ -5,9 +5,9 @@ import {
   IPostDispatchHook__factory,
   Mailbox__factory,
   StaticAggregationHook__factory,
-} from '@hyperlane-xyz/core';
-import { fetchPackageVersion } from '@hyperlane-xyz/sdk/utils/contract';
-import { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { fetchPackageVersion } from '@recoillink/sdk/utils/contract';
+import { Address, Logger } from '@recoillink/utils';
 
 export interface ChainReader {
   defaultHook(mailbox: Address): Promise<Address>;

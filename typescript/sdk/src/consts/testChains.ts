@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { ExplorerFamily } from '../metadata/chainMetadataTypes.js';
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';

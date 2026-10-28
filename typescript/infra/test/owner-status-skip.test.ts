@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { WARP_ROUTE_CHECK_TYPE } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { WARP_ROUTE_CHECK_TYPE } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import {
   OWNER_STATUS_SKIP,

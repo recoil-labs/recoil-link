@@ -36,7 +36,7 @@ import {
   StaticAggregationHook__factory,
   TokenRouter,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   Domain,
@@ -54,7 +54,7 @@ import {
   isZeroishAddress,
   normalizeAddress,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseEvmAdapter } from '../../app/MultiProtocolApp.js';
 import { UIN256_MAX_VALUE } from '../../consts/numbers.js';

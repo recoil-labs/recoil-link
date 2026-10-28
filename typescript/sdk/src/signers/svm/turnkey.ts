@@ -1,7 +1,7 @@
 import { PublicKey, Transaction, VersionedTransaction } from '@solana/web3.js';
 import { TurnkeySigner as TurnkeySolanaSigner } from '@turnkey/solana';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import {
   TurnkeyClientManager,

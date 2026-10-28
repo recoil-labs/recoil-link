@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { type ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { type ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { TokenType } from '@recoillink/provider-sdk/warp';
+import { retryAsync } from '@recoillink/utils';
 
 import { StarknetWarpArtifactManager } from '../warp/warp-artifact-manager.js';
 

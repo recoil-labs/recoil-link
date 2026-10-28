@@ -15,9 +15,9 @@ import {
 } from '@cosmjs/stargate';
 import { type CometClient, connectComet } from '@cosmjs/tendermint-rpc';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, isUrl, strip0x } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { assert, isUrl, strip0x } from '@recoillink/utils';
 
 import { COSMOS_MODULE_MESSAGE_REGISTRY as R } from '../registry.js';
 

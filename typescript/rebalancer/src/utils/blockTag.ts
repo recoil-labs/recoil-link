@@ -5,8 +5,8 @@ import { providers } from 'ethers';
 import {
   EthJsonRpcBlockParameterTag,
   type MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
-import { isEVMLike, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { isEVMLike, ProtocolType } from '@recoillink/utils';
 import type { ConfirmedBlockTag } from '../interfaces/IMonitor.js';
 
 /**

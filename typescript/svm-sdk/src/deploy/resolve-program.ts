@@ -1,6 +1,6 @@
 import type { Address } from '@solana/kit';
 
-import { pollAsync } from '@hyperlane-xyz/utils';
+import { pollAsync } from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import type { SvmProgramTarget, SvmReceipt, SvmRpc } from '../types.js';

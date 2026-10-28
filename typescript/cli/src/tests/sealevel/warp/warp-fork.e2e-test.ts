@@ -4,15 +4,15 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol, createSplMint } from '@hyperlane-xyz/sealevel-sdk/testing';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
+import { airdropSol, createSplMint } from '@recoillink/sealevel-sdk/testing';
 import {
   TokenFeeType,
   TokenType,
   TxSubmitterType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, pollAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert, pollAsync } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -87,7 +87,7 @@ async function waitForFinalizedSlot(
   );
 }
 
-describe('hyperlane warp fork CLI e2e tests (Sealevel)', function () {
+describe('rlink warp fork CLI e2e tests (Sealevel)', function () {
   this.timeout(FORK_TIMEOUT);
 
   let rpc: ReturnType<typeof createRpc>;

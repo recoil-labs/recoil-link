@@ -3,14 +3,14 @@ import { address, type Rpc, type SolanaRpcApi } from '@solana/kit';
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   DeployedRawWarpArtifact,
   DeployedWarpAddress,
   IRawWarpArtifactManager,
   RawWarpArtifactConfigs,
   WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import type { SvmSigner } from '../clients/signer.js';
 import { resolveFeeSalt } from '../fee/types.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

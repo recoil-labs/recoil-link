@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { BigNumber, ethers } from 'ethers';
 
-import { TimelockController__factory } from '@hyperlane-xyz/core';
+import { TimelockController__factory } from '@recoillink/core';
 import {
   CANCELLER_ROLE,
   ChainMap,
@@ -12,7 +12,7 @@ import {
   PROPOSER_ROLE,
   TimelockConfig,
   getTimelockExecutableTransactionFromBatch,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   HexString,
@@ -21,7 +21,7 @@ import {
   isObjEmpty,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEPLOYER } from '../../config/environments/mainnet3/owners.js';
 

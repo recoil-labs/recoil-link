@@ -1,6 +1,6 @@
 import { type EncodeObject } from '@cosmjs/proto-signing';
 
-import { type pdTx } from '@hyperlane-xyz/cosmos-types';
+import { type pdTx } from '@recoillink/cosmos-types';
 
 import { type COSMOS_MODULE_MESSAGE_REGISTRY as R } from '../../registry.js';
 

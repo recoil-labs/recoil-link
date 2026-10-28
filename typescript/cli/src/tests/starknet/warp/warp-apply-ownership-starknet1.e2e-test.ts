@@ -9,7 +9,7 @@ import { normalizeStarknetAddress } from '../helpers.js';
 import { describeStarknetDualChainWarpApplyTest } from './warp-apply.shared.js';
 
 describeStarknetDualChainWarpApplyTest(
-  'hyperlane warp apply ownership (Starknet E2E tests)',
+  'rlink warp apply ownership (Starknet E2E tests)',
   'should transfer ownership on starknet1',
   async ({
     chainName1,

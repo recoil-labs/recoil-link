@@ -1,4 +1,4 @@
-import { Address, Domain } from '@hyperlane-xyz/utils';
+import { Address, Domain } from '@recoillink/utils';
 
 import { BaseAppAdapter } from '../../app/MultiProtocolApp.js';
 import { ChainName } from '../../types.js';

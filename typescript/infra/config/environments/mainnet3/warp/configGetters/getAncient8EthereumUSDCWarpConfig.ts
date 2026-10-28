@@ -7,7 +7,7 @@ import {
   TokenType,
   buildAggregationIsmConfigs,
   defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   RouterConfigWithoutOwner,

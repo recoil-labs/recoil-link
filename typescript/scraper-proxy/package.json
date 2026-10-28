@@ -1,13 +1,13 @@
 {
-  "name": "@hyperlane-xyz/scraper-proxy",
+  "name": "@recoillink/scraper-proxy",
   "version": "0.1.2",
   "private": true,
   "description": "GraphQL proxy for the scraper database",
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperlane-xyz/hyperlane-monorepo"
+    "url": "https://github.com/recoil-labs/recoil-link"
   },
   "files": [
     "src",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@fastify/cors": "catalog:",
-    "@hyperlane-xyz/utils": "workspace:^",
+    "@recoillink/utils": "workspace:^",
     "dotenv-flow": "^4.1.0",
     "fastify": "catalog:",
     "graphql": "catalog:",
@@ -42,7 +42,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "@types/pg": "^8.16.0",
     "@types/ws": "catalog:",

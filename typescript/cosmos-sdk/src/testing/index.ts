@@ -1,6 +1,6 @@
 /**
  * Test utilities for Cosmos SDK
- * Export via @hyperlane-xyz/cosmos-sdk/testing
+ * Export via @recoillink/cosmos-sdk/testing
  */
 
 // Constants

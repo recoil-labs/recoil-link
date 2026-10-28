@@ -1,6 +1,6 @@
 import { confirm } from '@inquirer/prompts';
 
-import { pollAsync } from '@hyperlane-xyz/utils';
+import { pollAsync } from '@recoillink/utils';
 
 import { HelmManager } from './helm.js';
 import { execCmd } from './utils.js';

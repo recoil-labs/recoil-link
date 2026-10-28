@@ -1,12 +1,12 @@
 import { ethers } from 'ethers';
 
-import { Ownable__factory, ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { Ownable__factory, ProxyAdmin__factory } from '@recoillink/core';
 import {
   Address,
   eqAddress,
   normalizeAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { proxyAdmin } from '../deploy/proxy.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

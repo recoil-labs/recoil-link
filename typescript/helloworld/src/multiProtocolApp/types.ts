@@ -1,9 +1,5 @@
-import {
-  ChainName,
-  IRouterAdapter,
-  TypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainName, IRouterAdapter, TypedTransaction } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 export interface IHelloWorldAdapter extends IRouterAdapter {
   populateSendHelloTx: (

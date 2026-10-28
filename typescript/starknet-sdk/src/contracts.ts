@@ -15,7 +15,7 @@ import {
 import {
   ContractType,
   getContractAbi as getPublishedContractAbi,
-} from '@hyperlane-xyz/starknet-core/runtime';
+} from '@recoillink/starknet-core/runtime';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
@@ -25,7 +25,7 @@ import {
   isZeroishAddress,
   normalizeAddressStarknet,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { StarknetAnnotatedTx } from './types.js';
 

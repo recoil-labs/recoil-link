@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { isValidAddressEvm } from '@hyperlane-xyz/utils';
+import { isValidAddressEvm } from '@recoillink/utils';
 
 import { GovernanceType } from '../src/governanceTypes.js';
 import { getGovernanceTimelocks } from '../config/environments/mainnet3/governance/utils.js';

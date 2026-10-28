@@ -1,8 +1,8 @@
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type DeployedHookArtifact,
@@ -11,8 +11,8 @@ import {
   type RawHookArtifactConfigs,
   altVmHookTypeToProviderHookType,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { assert } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

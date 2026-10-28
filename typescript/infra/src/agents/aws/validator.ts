@@ -1,4 +1,4 @@
-import { S3Receipt, S3Validator } from '@hyperlane-xyz/sdk';
+import { S3Receipt, S3Validator } from '@recoillink/sdk';
 import {
   BaseValidator,
   Checkpoint,
@@ -7,7 +7,7 @@ import {
   S3CheckpointWithId,
   SignatureLike,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 export enum CheckpointStatus {
   EXTRA = '➕',

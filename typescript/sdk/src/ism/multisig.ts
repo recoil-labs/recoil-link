@@ -1,4 +1,4 @@
-import { objFilter, objMap } from '@hyperlane-xyz/utils';
+import { objFilter, objMap } from '@recoillink/utils';
 
 import { ChainMap, ChainName } from '../types.js';
 

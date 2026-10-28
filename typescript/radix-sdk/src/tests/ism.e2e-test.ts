@@ -1,21 +1,21 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   DeployedIsmAddress,
   IsmType,
   MultisigIsmConfig,
   RawRoutingIsmArtifactConfig,
   TestIsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { assert, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
+import { assert, normalizeConfig } from '@recoillink/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixIsmArtifactManager } from '../ism/ism-artifact-manager.js';

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { Ownable__factory } from '@hyperlane-xyz/core';
+import { Ownable__factory } from '@recoillink/core';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 

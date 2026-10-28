@@ -4,8 +4,8 @@ import {
   type CoreConfig,
   type DerivedCoreConfig,
   IsmType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -23,7 +23,7 @@ const CORE_COMPOSITE_ISM_CONFIG_PATH =
 // so the suite needs a generous timeout.
 const SVM_DEPLOY_TIMEOUT = 600_000;
 
-describe('hyperlane core deploy/read/check with a compositeIsm defaultIsm (Sealevel E2E tests)', async function () {
+describe('rlink core deploy/read/check with a compositeIsm defaultIsm (Sealevel E2E tests)', async function () {
   this.timeout(SVM_DEPLOY_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

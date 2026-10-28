@@ -3,7 +3,7 @@ import {
   HypERC20__factory,
   HypXERC20Lockbox__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

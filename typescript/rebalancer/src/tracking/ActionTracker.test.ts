@@ -3,8 +3,8 @@ import chaiAsPromised from 'chai-as-promised';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { EthJsonRpcBlockParameterTag } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { EthJsonRpcBlockParameterTag } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import {
   DEFAULT_INTENT_TTL_MS,

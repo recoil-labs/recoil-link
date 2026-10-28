@@ -6,8 +6,8 @@ import {
   Token,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { ExplorerPendingTransfersClient } from './explorer.js';
 import {

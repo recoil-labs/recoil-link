@@ -5,7 +5,7 @@ import sinon from 'sinon';
 import {
   bytes32ToAddress,
   formatStandardHookMetadata,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName } from '../../../consts/testChains.js';
 import { MultiProvider } from '../../MultiProvider.js';

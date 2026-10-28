@@ -1,8 +1,4 @@
-import {
-  Mailbox,
-  Mailbox__factory,
-  Ownable__factory,
-} from '@hyperlane-xyz/core';
+import { Mailbox, Mailbox__factory, Ownable__factory } from '@recoillink/core';
 import {
   Address,
   Domain,
@@ -11,7 +7,7 @@ import {
   assert,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import type { ContractTransaction } from 'ethers';
 
 import {

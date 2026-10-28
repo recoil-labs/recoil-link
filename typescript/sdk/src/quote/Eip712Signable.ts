@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 /**
  * Cross-VM `SignableInput` shape for EVM EIP-712 typed-data signing.

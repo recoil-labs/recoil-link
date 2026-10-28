@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { ethers, providers } from 'ethers';
 
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
+import { HyperlaneCore, MultiProvider, snapshot } from '@recoillink/sdk';
 
 import { ExternalBridgeType } from '../config/types.js';
 

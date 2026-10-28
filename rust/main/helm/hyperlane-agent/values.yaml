@@ -47,7 +47,7 @@ hyperlane:
   aws: # true | false
 
   # -- Chain overrides, a sequence
-  # This should mirror @hyperlane-xyz/sdk AgentChainMetadata
+  # This should mirror @recoillink/sdk AgentChainMetadata
   chains:
     - name: examplechain
       rpcConsensusType: fallback

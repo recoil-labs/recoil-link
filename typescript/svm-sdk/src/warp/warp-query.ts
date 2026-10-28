@@ -1,6 +1,6 @@
 import { type Address, fetchEncodedAccount } from '@solana/kit';
 
-import { assert, fromHexString, toHexString } from '@hyperlane-xyz/utils';
+import { assert, fromHexString, toHexString } from '@recoillink/utils';
 
 import {
   COLLATERAL_PLUGIN_SIZE,

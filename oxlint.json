@@ -190,17 +190,17 @@
                 "message": "Please use a logger and/or the utils package assert"
               },
               {
-                "name": "@hyperlane-xyz/sdk",
-                "message": "Imports from @hyperlane-xyz/sdk are not allowed in this package"
+                "name": "@recoillink/sdk",
+                "message": "Imports from @recoillink/sdk are not allowed in this package"
               },
               {
-                "name": "@hyperlane-xyz/utils",
+                "name": "@recoillink/utils",
                 "importNames": [
                   "ProtocolType",
                   "ProtocolTypeValue",
                   "ProtocolSmallestUnit"
                 ],
-                "message": "Use the export from the `@hyperlane-xyz/provider-sdk` package"
+                "message": "Use the export from the `@recoillink/provider-sdk` package"
               }
             ]
           }
@@ -227,21 +227,21 @@
                 "message": "Please use a logger and/or the utils package assert"
               },
               {
-                "name": "@hyperlane-xyz/sdk",
-                "message": "Imports from @hyperlane-xyz/sdk are not allowed in this package"
+                "name": "@recoillink/sdk",
+                "message": "Imports from @recoillink/sdk are not allowed in this package"
               },
               {
-                "name": "@hyperlane-xyz/utils/fs",
-                "message": "The @hyperlane-xyz/utils/fs submodule requires Node.js and cannot be used in browser packages"
+                "name": "@recoillink/utils/fs",
+                "message": "The @recoillink/utils/fs submodule requires Node.js and cannot be used in browser packages"
               },
               {
-                "name": "@hyperlane-xyz/utils",
+                "name": "@recoillink/utils",
                 "importNames": [
                   "ProtocolType",
                   "ProtocolTypeValue",
                   "ProtocolSmallestUnit"
                 ],
-                "message": "Use the export from the `@hyperlane-xyz/provider-sdk` package"
+                "message": "Use the export from the `@recoillink/provider-sdk` package"
               }
             ]
           }

@@ -5,7 +5,7 @@
 # instead of transferRemote() on the underlying warp route.
 #
 # Usage:
-#   hyperlane warp deploy --config warp-config-predicate-base-ethereum.yaml --key <private-key>
+#   rlink warp deploy --config warp-config-predicate-base-ethereum.yaml --key <private-key>
 
 base:
   type: collateral

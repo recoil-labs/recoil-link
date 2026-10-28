@@ -6,29 +6,26 @@ import type {
   ProtocolProvider,
   SignerConfig,
   TransactionSubmitterConfig,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import {
   AltVMImpersonatedSubmitter,
   AltVMJsonRpcSubmitter,
   SubmitterType,
-} from '@hyperlane-xyz/provider-sdk';
-import type { IProvider } from '@hyperlane-xyz/provider-sdk/altvm';
-import type { IRawHookArtifactManager } from '@hyperlane-xyz/provider-sdk/hook';
-import type { IRawIsmArtifactManager } from '@hyperlane-xyz/provider-sdk/ism';
-import type {
-  AnnotatedTx,
-  TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { type IRawWarpArtifactManager } from '@hyperlane-xyz/provider-sdk/warp';
-import { type NonEmptyArray, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk';
+import type { IProvider } from '@recoillink/provider-sdk/altvm';
+import type { IRawHookArtifactManager } from '@recoillink/provider-sdk/hook';
+import type { IRawIsmArtifactManager } from '@recoillink/provider-sdk/ism';
+import type { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
+import { type IRawWarpArtifactManager } from '@recoillink/provider-sdk/warp';
+import { type NonEmptyArray, assert } from '@recoillink/utils';
 import { address as parseAddress } from '@solana/kit';
 
-import { type IRawMailboxArtifactManager } from '@hyperlane-xyz/provider-sdk/mailbox';
+import { type IRawMailboxArtifactManager } from '@recoillink/provider-sdk/mailbox';
 import {
   type FeeReadContext,
   type IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { type IRawValidatorAnnounceArtifactManager } from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@recoillink/provider-sdk/fee';
+import { type IRawValidatorAnnounceArtifactManager } from '@recoillink/provider-sdk/validator-announce';
 import { SvmMailboxArtifactManager } from '../core/mailbox-artifact-manager.js';
 import { SvmValidatorAnnounceArtifactManager } from '../core/validator-announce-artifact-manager.js';
 import { SvmFeeArtifactManager } from '../fee/fee-artifact-manager.js';

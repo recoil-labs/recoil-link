@@ -42,7 +42,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/infra...'
+          build-filter: '@recoillink/infra...'
 
       - name: Checkout registry
         uses: ./.github/actions/checkout-registry

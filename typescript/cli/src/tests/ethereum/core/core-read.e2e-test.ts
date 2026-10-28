@@ -5,8 +5,8 @@ import {
   type ChainMetadata,
   type CoreConfig,
   type ProtocolFeeHookConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -20,7 +20,7 @@ import {
   REGISTRY_PATH,
 } from '../consts.js';
 
-describe('hyperlane core read e2e tests', async function () {
+describe('rlink core read e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

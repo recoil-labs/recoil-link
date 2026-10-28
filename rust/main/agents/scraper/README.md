@@ -85,6 +85,6 @@ the confirmed frontier and stores swaps as synthetic message/delivery pairs.
 
 Synthetic IDs are `0x00000000 || keccak256("SameChainCCR" || txHash32 || logIndex8)[0..28]`.
 Clients can reproduce them with `syntheticCcrSwapMessageId` from
-`@hyperlane-xyz/utils`. Nonces increment per source router; message bodies encode
+`@recoillink/utils`. Nonces increment per source router; message bodies encode
 the recipient and received amount. Missing transaction data keeps the batch
 retryable so later swaps cannot consume earlier nonces.

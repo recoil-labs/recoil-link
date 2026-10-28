@@ -4,8 +4,8 @@ import {
   DEFAULT_ROUTER_KEY,
   TokenFeeConfigInput,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, assert } from '@recoillink/utils';
 
 import { getDomainId, getRegistry } from '../../../../registry.js';
 import { WarpRouteIds } from '../warpIds.js';

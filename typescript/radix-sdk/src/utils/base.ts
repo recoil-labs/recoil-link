@@ -20,7 +20,7 @@ import {
 import { BigNumber } from 'bignumber.js';
 import { Decimal } from 'decimal.js';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   EPOCH_VALIDITY_RANGE,

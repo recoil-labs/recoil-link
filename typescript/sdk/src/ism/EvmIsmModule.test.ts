@@ -7,8 +7,8 @@ import {
   BlacklistIsm__factory,
   StaticAggregationIsm,
   StaticAggregationIsm__factory,
-} from '@hyperlane-xyz/core';
-import { Address, eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address, eqAddress } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

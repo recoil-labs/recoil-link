@@ -1,8 +1,8 @@
 import { $, type ProcessPromise } from 'zx';
 
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { type DerivedCoreConfig } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { type DerivedCoreConfig } from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { getContext } from '../../../context/context.js';
 import { readYamlOrJson } from '../../../utils/files.js';
@@ -21,7 +21,7 @@ export function hyperlaneCoreDeployRaw(
 ): ProcessPromise {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane core deploy \
+  } ${localTestRunCmdPrefix()} rlink core deploy \
         --registry ${REGISTRY_PATH} \
         --config ${coreInputPath} \
         ${privateKey ? getKeyFlags(privateKey) : []} \
@@ -37,7 +37,7 @@ export async function hyperlaneCoreDeploy(
   coreInputPath: string,
   key: string = ANVIL_KEY,
 ) {
-  return $`${localTestRunCmdPrefix()} hyperlane core deploy \
+  return $`${localTestRunCmdPrefix()} rlink core deploy \
         --registry ${REGISTRY_PATH} \
         --config ${coreInputPath} \
         --chain ${chain} \
@@ -50,7 +50,7 @@ export async function hyperlaneCoreDeploy(
  * Reads a Hyperlane core deployment on the specified chain using the provided config.
  */
 export async function hyperlaneCoreRead(chain: string, coreOutputPath: string) {
-  return $`${localTestRunCmdPrefix()} hyperlane core read \
+  return $`${localTestRunCmdPrefix()} rlink core read \
         --registry ${REGISTRY_PATH} \
         --config ${coreOutputPath} \
         --chain ${chain} \
@@ -66,7 +66,7 @@ export function hyperlaneCoreCheck(
   coreOutputPath: string,
   mailbox?: Address,
 ): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane core check \
+  return $`${localTestRunCmdPrefix()} rlink core check \
         --registry ${REGISTRY_PATH} \
         --config ${coreOutputPath} \
         --chain ${chain} \
@@ -85,7 +85,7 @@ export function hyperlaneCoreInit(
 ): ProcessPromise {
   return $`${
     hyp_key ? ['HYP_KEY=' + hyp_key] : []
-  } ${localTestRunCmdPrefix()} hyperlane core init \
+  } ${localTestRunCmdPrefix()} rlink core init \
         --registry ${REGISTRY_PATH} \
         --config ${coreOutputPath} \
         ${privateKey ? getKeyFlags(privateKey) : []} \
@@ -100,7 +100,7 @@ export async function hyperlaneCoreApply(
   chain: string,
   coreOutputPath: string,
 ) {
-  return $`${localTestRunCmdPrefix()} hyperlane core apply \
+  return $`${localTestRunCmdPrefix()} rlink core apply \
         --registry ${REGISTRY_PATH} \
         --config ${coreOutputPath} \
         --chain ${chain} \

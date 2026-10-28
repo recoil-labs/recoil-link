@@ -4,7 +4,7 @@ import {
   Ownable,
   ProxyAdmin__factory,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   isEVMLike,
@@ -15,7 +15,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import { BytecodeHash } from '../consts/bytecode.js';

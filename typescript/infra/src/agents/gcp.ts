@@ -3,16 +3,16 @@ import { Keypair } from '@solana/web3.js';
 import { Wallet, ethers } from 'ethers';
 import { Logger } from 'pino';
 import { Provider as ZkProvider, Wallet as ZkWallet } from 'zksync-ethers';
-import { TronJsonRpcProvider, TronWallet } from '@hyperlane-xyz/tron-sdk';
+import { TronJsonRpcProvider, TronWallet } from '@recoillink/tron-sdk';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { ChainName } from '@recoillink/sdk';
 import {
   HexString,
   ProtocolType,
   isEVMLike,
   rootLogger,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChain } from '../../config/registry.js';

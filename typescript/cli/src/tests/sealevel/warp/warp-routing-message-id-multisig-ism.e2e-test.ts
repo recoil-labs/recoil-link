@@ -4,15 +4,15 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
+import { airdropSol } from '@recoillink/sealevel-sdk/testing';
 import {
   IsmType,
   type RoutingMessageIdMultisigIsmConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -71,7 +71,7 @@ const REDUCED_DOMAINS: Domains = {
   [DOMAIN_C]: UPDATED_DOMAINS[DOMAIN_C],
 };
 
-describe('hyperlane warp routingMessageIdMultisigIsm CLI e2e tests (Sealevel)', function () {
+describe('rlink warp routingMessageIdMultisigIsm CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_ROUTING_ISM_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

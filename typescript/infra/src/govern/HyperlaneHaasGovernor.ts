@@ -9,7 +9,7 @@ import {
   HyperlaneCoreChecker,
   InterchainAccount,
   ViolationType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   formatStandardHookMetadata,
   hasValidRefundAddress,
@@ -17,7 +17,7 @@ import {
   isZeroishAddress,
   parseStandardHookMetadata,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { chainsToSkip } from '../config/chain.js';
 

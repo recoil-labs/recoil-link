@@ -7,7 +7,7 @@
  */
 import type { Address } from '@solana/kit';
 
-import { assert, eqAddressSol } from '@hyperlane-xyz/utils';
+import { assert, eqAddressSol } from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import {

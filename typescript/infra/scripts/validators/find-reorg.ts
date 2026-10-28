@@ -1,6 +1,6 @@
-import { MerkleTreeHook, MerkleTreeHook__factory } from '@hyperlane-xyz/core';
-import { getValidatorFromStorageLocation } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { MerkleTreeHook, MerkleTreeHook__factory } from '@recoillink/core';
+import { getValidatorFromStorageLocation } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import { getArgs, withChainRequired } from '../agent-utils.js';
 import { getHyperlaneCore } from '../core-utils.js';

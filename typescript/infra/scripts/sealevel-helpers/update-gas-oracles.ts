@@ -20,8 +20,8 @@ import {
   SealevelOverheadIgpDataSchema,
   SealevelRemoteGasData,
   SvmMultiProtocolSignerAdapter,
-} from '@hyperlane-xyz/sdk';
-import { Domain, ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Domain, ProtocolType, rootLogger } from '@recoillink/utils';
 
 import { getChain } from '../../config/registry.js';
 import { chainsToSkip } from '../../src/config/chain.js';

@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { getSecretRpcEndpoints } from '../../src/agents/index.js';
 import { getArgs } from '../agent-utils.js';

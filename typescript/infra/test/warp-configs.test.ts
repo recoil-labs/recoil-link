@@ -8,8 +8,8 @@ import {
   MultiProvider,
   WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { WarpRouteIds } from '../config/environments/mainnet3/warp/warpIds.js';
 import { getWarpConfig, warpConfigGetterMap } from '../config/warp.js';

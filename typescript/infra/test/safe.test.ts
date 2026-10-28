@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 import Safe from '@safe-global/protocol-kit';
 
-import { ISafe__factory } from '@hyperlane-xyz/core';
+import { ISafe__factory } from '@recoillink/core';
 
 import {
   getOwnerChanges,

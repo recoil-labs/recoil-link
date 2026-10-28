@@ -1,17 +1,13 @@
 import { confirm, input } from '@inquirer/prompts';
 import { z } from 'zod';
 
-import {
-  type ChainMap,
-  type MultisigIsmConfig,
-  ZHash,
-} from '@hyperlane-xyz/sdk';
+import { type ChainMap, type MultisigIsmConfig, ZHash } from '@recoillink/sdk';
 import {
   type Address,
   isValidAddress,
   normalizeAddressEvm,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, log, logBlue, logGreen } from '../logger.js';

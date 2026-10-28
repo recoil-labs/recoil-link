@@ -5,13 +5,13 @@ import {
   ProxyAdmin,
   StorageGasOracle,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   addBufferToGasLimit,
   assert,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TOKEN_EXCHANGE_RATE_SCALE_ETHEREUM } from '../consts/igp.js';
 import { HyperlaneContracts } from '../contracts/types.js';

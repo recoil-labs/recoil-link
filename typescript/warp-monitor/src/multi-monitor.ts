@@ -1,6 +1,6 @@
-import { startMetricsServer } from '@hyperlane-xyz/metrics';
+import { startMetricsServer } from '@recoillink/metrics';
 import type { IRegistry } from '@hyperlane-xyz/registry';
-import { assert, sleep } from '@hyperlane-xyz/utils';
+import { assert, sleep } from '@recoillink/utils';
 
 import { metricsRegister } from './metrics.js';
 import {

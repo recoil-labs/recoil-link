@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import {
   test1,

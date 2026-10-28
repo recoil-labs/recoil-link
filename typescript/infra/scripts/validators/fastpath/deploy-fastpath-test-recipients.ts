@@ -16,9 +16,9 @@
 import { ethers } from 'ethers';
 import { stringify as yamlStringify } from 'yaml';
 
-import { MultiProvider, TestRecipientDeployer } from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { mergeJson, readJson } from '@hyperlane-xyz/utils/fs';
+import { MultiProvider, TestRecipientDeployer } from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
+import { mergeJson, readJson } from '@recoillink/utils/fs';
 
 import { join } from 'path';
 

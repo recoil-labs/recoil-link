@@ -1,11 +1,11 @@
-import { ChainName, OnchainHookType } from '@hyperlane-xyz/sdk';
-import { isMissingSelectorCallException } from '@hyperlane-xyz/sdk/utils/contract';
+import { ChainName, OnchainHookType } from '@recoillink/sdk';
+import { isMissingSelectorCallException } from '@recoillink/sdk/utils/contract';
 import {
   Address,
   assert,
   concurrentMap,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { isFixedVersion } from './plan.js';
 import type { ChainReader } from './reader.js';

@@ -4,15 +4,15 @@ import { connectComet } from '@cosmjs/tendermint-rpc';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedMailboxAddress,
   type DeployedRawMailboxArtifact,
   type IRawMailboxArtifactManager,
   type MailboxType,
   type RawMailboxArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { LazyAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/mailbox';
+import { LazyAsync } from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { setupCoreExtension } from '../hyperlane/core/query.js';

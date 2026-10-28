@@ -9,9 +9,9 @@ import {
   NoQuoteAvailableReason,
   type MultiProvider,
   QuoteV2Endpoint,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { assert, isEVMLike } from '@recoillink/utils';
 
 import { QuoteMode } from '../config.js';
 import { ApiError, NoQuoteAvailableError } from '../middleware/errorHandler.js';

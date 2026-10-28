@@ -197,7 +197,7 @@ End your message with:
 
 For getter-backed routes, **both** changes ship as PRs in Step 11:
 
-- Monorepo PR for the getter edit (no changeset needed — `@hyperlane-xyz/infra` is `private: true`).
+- Monorepo PR for the getter edit (no changeset needed — `@recoillink/infra` is `private: true`).
 - Registry PR for the regenerated YAML + changeset (per the standard Step 11 flow).
 
 Step 11 covers the registry PR; for the monorepo PR open it separately with a normal `gh pr create` against `main`, scoping `git add` to the specific getter file + `typescript/infra/config/warp.ts` if you touched the map.
@@ -477,7 +477,7 @@ EOF
 )"
 ```
 
-No changeset needed (`@hyperlane-xyz/infra` is `"private": true` and isn't published). Surface this PR URL to the user too.
+No changeset needed (`@recoillink/infra` is `"private": true` and isn't published). Surface this PR URL to the user too.
 
 ---
 

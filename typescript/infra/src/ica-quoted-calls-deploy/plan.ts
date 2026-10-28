@@ -1,13 +1,13 @@
 import { BigNumber, constants, providers } from 'ethers';
 
-import { PERMIT2_ADDRESS } from '@hyperlane-xyz/sdk';
-import { isValidContractVersion } from '@hyperlane-xyz/sdk/utils/contract';
+import { PERMIT2_ADDRESS } from '@recoillink/sdk';
+import { isValidContractVersion } from '@recoillink/sdk/utils/contract';
 import {
   Address,
   addBufferToGasLimit,
   addressToBytes32,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   Adoption,

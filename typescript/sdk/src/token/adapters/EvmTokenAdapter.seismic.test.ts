@@ -1,4 +1,4 @@
-import { ERC20__factory } from '@hyperlane-xyz/core';
+import { ERC20__factory } from '@recoillink/core';
 import { expect } from 'chai';
 import { BigNumber, Signer, providers, utils } from 'ethers';
 import sinon from 'sinon';

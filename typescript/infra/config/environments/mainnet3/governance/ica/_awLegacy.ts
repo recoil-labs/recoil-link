@@ -1,6 +1,6 @@
 // Found by running:
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 // pnpm tsx ./scripts/keys/get-owner-ica.ts -e mainnet3 --ownerChain ethereum --destinationChains <chain1> <chain2> ...
 export const awIcasLegacy: ChainMap<Address> = {

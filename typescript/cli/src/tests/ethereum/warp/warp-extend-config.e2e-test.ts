@@ -8,8 +8,8 @@ import {
   type WarpRouteDeployConfig,
   normalizeConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -35,7 +35,7 @@ import {
   WARP_DEPLOY_2_ID,
 } from '../consts.js';
 
-describe('hyperlane warp apply config extension tests', async function () {
+describe('rlink warp apply config extension tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain3Addresses: ChainAddresses = {};

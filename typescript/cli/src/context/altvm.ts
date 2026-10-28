@@ -6,13 +6,13 @@ import {
   type ProtocolProvider,
   getProtocolProvider,
   hasProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert, ProtocolType } from '@hyperlane-xyz/utils';
-import { SealevelSigner } from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/provider-sdk/module';
+import { assert, ProtocolType } from '@recoillink/utils';
+import { SealevelSigner } from '@recoillink/sealevel-sdk';
 
 import { type ExtendedChainSubmissionStrategy } from '../submitters/types.js';
 

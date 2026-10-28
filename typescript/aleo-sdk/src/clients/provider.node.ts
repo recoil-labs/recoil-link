@@ -1,7 +1,7 @@
 import * as mainnetSdk from '@provablehq/sdk/mainnet.js';
 import * as testnetSdk from '@provablehq/sdk/testnet.js';
 
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 
 import type { AleoSdk } from '../utils/provable.js';
 import { AleoNetworkId, toAleoNetworkId } from '../utils/types.js';

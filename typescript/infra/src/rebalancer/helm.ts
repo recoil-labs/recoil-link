@@ -7,10 +7,10 @@ import {
   type RebalancerConfigFileInput,
   RebalancerConfigSchema,
   getStrategyChainNames,
-} from '@hyperlane-xyz/rebalancer';
+} from '@recoillink/rebalancer';
 import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readYaml } from '@hyperlane-xyz/utils/fs';
+import { rootLogger } from '@recoillink/utils';
+import { readYaml } from '@recoillink/utils/fs';
 
 import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { getWarpCoreConfig } from '../../config/registry.js';

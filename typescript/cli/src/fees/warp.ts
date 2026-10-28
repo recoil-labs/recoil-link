@@ -3,13 +3,13 @@ import {
   CoinGeckoTokenPriceGetter,
   WarpCore,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   bytesToAddressCosmos,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logBlue, logGreen, logTable, warnYellow } from '../logger.js';

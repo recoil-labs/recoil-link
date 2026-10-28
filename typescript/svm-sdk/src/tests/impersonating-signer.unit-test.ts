@@ -11,9 +11,9 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { describe, it } from 'mocha';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { assert } from '@recoillink/utils';
 
 import { SvmImpersonatingSigner } from '../clients/impersonating-signer.js';
 import type { SvmRpc, SvmTransaction } from '../types.js';

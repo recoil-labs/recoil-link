@@ -9,14 +9,14 @@ import {
 import {
   TimelockController,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   arrayToObject,
   objFilter,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { MultiProvider } from '../../providers/MultiProvider.js';
 import {

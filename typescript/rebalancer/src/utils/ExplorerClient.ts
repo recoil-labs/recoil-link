@@ -4,7 +4,7 @@ import {
   addressToByteHexString,
   isEVMLike,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 export type InflightRebalanceQueryParams = {
   bridges: string[];

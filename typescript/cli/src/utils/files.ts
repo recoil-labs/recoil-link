@@ -25,11 +25,11 @@ import {
   writeYaml,
   writeYamlOrJson,
   yamlParse,
-} from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils/fs';
 
 import { log } from '../logger.js';
 
-export type { FileFormat } from '@hyperlane-xyz/utils/fs';
+export type { FileFormat } from '@recoillink/utils/fs';
 
 // Re-export all the core fs utilities
 export {
@@ -61,7 +61,7 @@ export type ArtifactsFile = {
 };
 
 /**
- * @deprecated Use tryReadYaml from @hyperlane-xyz/utils/fs instead
+ * @deprecated Use tryReadYaml from @recoillink/utils/fs instead
  */
 export const tryReadYamlAtPath = tryReadYaml;
 

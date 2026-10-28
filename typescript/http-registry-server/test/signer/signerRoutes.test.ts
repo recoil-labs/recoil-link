@@ -26,7 +26,7 @@ import {
   ensure0x,
   fromHexString,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HttpServer } from '../../HttpServer.js';
 import {

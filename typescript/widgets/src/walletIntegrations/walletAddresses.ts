@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import { type KnownProtocolType, ProtocolType } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@recoillink/sdk/providers/MinimalProviderRegistry';
+import type { ChainName } from '@recoillink/sdk/types';
+import { type KnownProtocolType, ProtocolType } from '@recoillink/utils';
 
 import { useAccounts } from './accounts.js';
 import { type AccountInfo, type ChainAddress } from './types.js';

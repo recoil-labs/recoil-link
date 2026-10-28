@@ -6,8 +6,8 @@ import {
   type ChainName,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { Address } from '@recoillink/utils';
 
 import { ExternalBridgeType } from '../config/types.js';
 import type {

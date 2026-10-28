@@ -1,16 +1,16 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { WARP_TARGET_ROUTER_NONE } from '@hyperlane-xyz/provider-sdk/quote';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { WARP_TARGET_ROUTER_NONE } from '@recoillink/provider-sdk/quote';
 import {
   DEFAULT_ROUTER_KEY,
   type DerivedTokenFeeConfig,
   MultiProvider,
   type OffchainQuotedLinearFeeConfig,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, type WithAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, type WithAddress } from '@recoillink/utils';
 
 import { resolveTargetRouterForVariant } from '../../deploy/warp-quote.js';
 

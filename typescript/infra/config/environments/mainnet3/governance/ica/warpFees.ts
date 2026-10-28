@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 export const warpFeesIcas: ChainMap<Address> = {
   // Jan 9, 2026 - First-Party Warp Route ICAs

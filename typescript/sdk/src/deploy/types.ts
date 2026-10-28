@@ -5,8 +5,8 @@ import type {
   AccessControl,
   Ownable,
   TimelockController,
-} from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address } from '@recoillink/utils';
 
 import type { ChainName } from '../types.js';
 

@@ -1,6 +1,6 @@
 import { getAddressCodec, type Address } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { decodeAccountData } from '../codecs/account-data.js';
 import type { ByteCursor } from '../codecs/binary.js';

@@ -1,13 +1,13 @@
 import { Logger } from 'pino';
 
-import { buildArtifact as zksyncBuildArtifact } from '@hyperlane-xyz/core/buildArtifact-zksync.js';
+import { buildArtifact as zksyncBuildArtifact } from '@recoillink/core/buildArtifact-zksync.js';
 import {
   Address,
   assert,
   retryAsync,
   rootLogger,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   checkContractVerificationStatus,

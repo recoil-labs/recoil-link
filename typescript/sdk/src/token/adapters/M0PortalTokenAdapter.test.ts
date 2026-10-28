@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { test1, test2 } from '../../consts/testChains.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

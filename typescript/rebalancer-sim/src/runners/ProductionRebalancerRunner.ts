@@ -7,10 +7,10 @@ import {
   RebalancerConfig,
   RebalancerService,
   RebalancerStrategyOptions,
-} from '@hyperlane-xyz/rebalancer';
-import type { StrategyConfig } from '@hyperlane-xyz/rebalancer';
-import { MultiProtocolProvider, MultiProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/rebalancer';
+import type { StrategyConfig } from '@recoillink/rebalancer';
+import { MultiProtocolProvider, MultiProvider } from '@recoillink/sdk';
+import { ProtocolType, rootLogger } from '@recoillink/utils';
 
 import type { IRebalancerRunner, RebalancerSimConfig } from '../types.js';
 

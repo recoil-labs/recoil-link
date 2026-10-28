@@ -4,7 +4,7 @@ import {
   CrossCollateralRoutingFee__factory,
   OffchainQuotedLinearFee__factory,
   RoutingFee__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   ProtocolType,
@@ -17,7 +17,7 @@ import {
   objOmit,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import {

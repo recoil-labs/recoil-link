@@ -1,5 +1,5 @@
-import type { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { ChainMap, ChainName } from '@recoillink/sdk';
+import type { Address } from '@recoillink/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type { StrategyRoute } from '../interfaces/IStrategy.js';

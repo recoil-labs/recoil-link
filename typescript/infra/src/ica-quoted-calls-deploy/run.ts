@@ -4,19 +4,14 @@ import {
   CONTRACTS_PACKAGE_VERSION,
   InterchainAccountRouter__factory,
   QuotedCalls__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   ChainName,
   ChainTechnicalStack,
   ContractVerificationInput,
   PERMIT2_ADDRESS,
-} from '@hyperlane-xyz/sdk';
-import {
-  Address,
-  assert,
-  concurrentMap,
-  eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, assert, concurrentMap, eqAddress } from '@recoillink/utils';
 
 import { DEFAULT_OFFCHAIN_LOOKUP_ISM_URLS } from '../../config/environments/utils.js';
 import { verifyDeployed } from '../aggregation-hook-upgrade/execute.js';

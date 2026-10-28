@@ -15,7 +15,7 @@ export async function hyperlaneSubmit({
 }) {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane submit \
+  } ${localTestRunCmdPrefix()} rlink submit \
         --registry ${registry} \
         --transactions ${transactions} \
         ${privateKey ? ['--key', privateKey] : []} \

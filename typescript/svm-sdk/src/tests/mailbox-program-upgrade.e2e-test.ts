@@ -5,9 +5,9 @@ import { before, describe, it } from 'mocha';
 
 chai.use(chaiAsPromised);
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { MailboxOnChain } from '@hyperlane-xyz/provider-sdk/mailbox';
-import { sleep } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import type { MailboxOnChain } from '@recoillink/provider-sdk/mailbox';
+import { sleep } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmMailboxReader, SvmMailboxWriter } from '../core/mailbox.js';

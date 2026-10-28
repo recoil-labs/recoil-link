@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { chunk } from '@hyperlane-xyz/utils';
+import { chunk } from '@recoillink/utils';
 
 import { ChainName } from '../types.js';
 

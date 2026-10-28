@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { utils } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   type ReplayFixture,

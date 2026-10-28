@@ -4,8 +4,8 @@ import {
   InterchainAccountRouter,
   MinimalInterchainAccountRouter__factory,
   Router,
-} from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { assert } from '@recoillink/utils';
 
 import { HyperlaneContracts } from '../../contracts/types.js';
 import { ContractVerifier } from '../../deploy/verify/ContractVerifier.js';

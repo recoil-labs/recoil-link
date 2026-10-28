@@ -9,14 +9,14 @@ import {
   ERC20Test__factory,
   OffchainQuotedLinearFee,
   OffchainQuotedLinearFee__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
   WILDCARD_BYTES32,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/quote';
+import { assert } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

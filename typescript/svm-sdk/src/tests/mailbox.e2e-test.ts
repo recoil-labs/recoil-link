@@ -2,9 +2,9 @@ import { address, type Address } from '@solana/kit';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { MailboxOnChain } from '@hyperlane-xyz/provider-sdk/mailbox';
-import { assert, ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import type { MailboxOnChain } from '@recoillink/provider-sdk/mailbox';
+import { assert, ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmMailboxArtifactManager } from '../core/mailbox-artifact-manager.js';

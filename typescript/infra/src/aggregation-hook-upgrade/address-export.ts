@@ -1,6 +1,6 @@
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
-import { Address, deepEquals, eqAddress } from '@hyperlane-xyz/utils';
-import { pathExists, readJson } from '@hyperlane-xyz/utils/fs';
+import { ChainMap, ChainName } from '@recoillink/sdk';
+import { Address, deepEquals, eqAddress } from '@recoillink/utils';
+import { pathExists, readJson } from '@recoillink/utils/fs';
 
 import { writeAndFormatJsonAtPath } from '../utils/utils.js';
 

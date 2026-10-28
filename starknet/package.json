@@ -1,15 +1,15 @@
 {
-  "name": "@hyperlane-xyz/starknet-core",
+  "name": "@recoillink/starknet-core",
   "version": "45.0.1",
-  "description": "Core cairo contracts for Hyperlane",
+  "description": "Core cairo contracts for Recoil Link",
   "keywords": [
     "Cairo",
     "Hyperlane",
     "Starknet"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "dist"
   ],
@@ -38,7 +38,7 @@
     "starknet": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "globby": "^14.1.0",
     "tsx": "catalog:",

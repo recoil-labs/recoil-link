@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { BigNumber, ethers, providers } from 'ethers';
 
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
-import { toWei } from '@hyperlane-xyz/utils';
+import { HyperlaneCore, MultiProvider, snapshot } from '@recoillink/sdk';
+import { toWei } from '@recoillink/utils';
 
 import {
   RebalancerStrategyOptions,
@@ -161,7 +161,7 @@ describe('Collateral Deficit E2E', function () {
 
     const ethProvider = localProviders.get('anvil1')!;
     const deployer = new ethers.Wallet(ANVIL_TEST_PRIVATE_KEY, ethProvider);
-    const token = (await import('@hyperlane-xyz/core')).ERC20__factory.connect(
+    const token = (await import('@recoillink/core')).ERC20__factory.connect(
       deployedAddresses.tokens.anvil1,
       deployer,
     );

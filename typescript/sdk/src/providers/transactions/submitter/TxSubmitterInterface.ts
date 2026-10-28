@@ -1,4 +1,4 @@
-import { Annotated, ProtocolType } from '@hyperlane-xyz/utils';
+import { Annotated, ProtocolType } from '@recoillink/utils';
 
 import {
   ProtocolTypedProvider,

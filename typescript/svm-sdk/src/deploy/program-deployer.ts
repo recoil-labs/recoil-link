@@ -12,7 +12,7 @@ import {
   type TransactionSigner,
 } from '@solana/kit';
 
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { LOADER_V3_PROGRAM_ADDRESS } from '../constants.js';
 import { getUpgradeInstruction } from '../instructions/loader.js';

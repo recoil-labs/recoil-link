@@ -6,7 +6,7 @@ import { normalizeStarknetAddress } from '../helpers.js';
 import { describeStarknetDualChainWarpApplyTest } from './warp-apply.shared.js';
 
 describeStarknetDualChainWarpApplyTest(
-  'hyperlane warp apply ownership (Starknet E2E tests)',
+  'rlink warp apply ownership (Starknet E2E tests)',
   'should preserve owners when reapplying the same config',
   async ({ chainName1, chainName2, applyWarpConfig, readWarpConfig }) => {
     await applyWarpConfig();

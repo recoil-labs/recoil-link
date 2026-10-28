@@ -1,5 +1,5 @@
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { retryAsync, rootLogger } from '@recoillink/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 

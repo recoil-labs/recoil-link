@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { pino } from 'pino';
 
 import type { LiFiStep } from '@lifi/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import type {
   BridgeQuote,

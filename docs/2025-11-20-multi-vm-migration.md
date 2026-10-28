@@ -6,10 +6,10 @@ This guide covers changes introduced in PR #7385 which restructures AltVM (Alter
 
 The Hyperlane SDK has been reorganized to better separate EVM and multi-VM concerns:
 
-- **New Package**: `@hyperlane-xyz/provider-sdk` - Protocol-agnostic provider abstractions and interfaces
-- **New Package**: `@hyperlane-xyz/deploy-sdk` - Deployment modules for all VM types (EVM + AltVM)
-- **Updated**: `@hyperlane-xyz/sdk` - Core SDK with EVM-specific implementations
-- **Updated**: `@hyperlane-xyz/utils` - Shared utilities (no breaking changes)
+- **New Package**: `@recoillink/provider-sdk` - Protocol-agnostic provider abstractions and interfaces
+- **New Package**: `@recoillink/deploy-sdk` - Deployment modules for all VM types (EVM + AltVM)
+- **Updated**: `@recoillink/sdk` - Core SDK with EVM-specific implementations
+- **Updated**: `@recoillink/utils` - Shared utilities (no breaking changes)
 
 ## Who is Affected?
 
@@ -19,7 +19,7 @@ If the client application:
 
 - Only uses EVM chains (Ethereum, Polygon, Arbitrum, etc.)
 - Imports from `@hyperlane-xyz/registry`
-- Imports from `@hyperlane-xyz/widgets`
+- Imports from `@recoillink/widgets`
 - Uses `ProtocolType`, `ChainMetadata`, `MultiProvider` from SDK/utils
 - Uses the Warp UI template or Explorer without modifications
 
@@ -42,16 +42,16 @@ If the client application:
 
 This is a **non-breaking refactor** for external repositories. All commonly-used exports remain in their original locations:
 
-- ✅ `ProtocolType` - Still in `@hyperlane-xyz/utils`
-- ✅ `MultiProvider` - Still in `@hyperlane-xyz/sdk`
-- ✅ `ChainMetadata` - Still in `@hyperlane-xyz/sdk`
-- ✅ All EVM modules - Still in `@hyperlane-xyz/sdk`
+- ✅ `ProtocolType` - Still in `@recoillink/utils`
+- ✅ `MultiProvider` - Still in `@recoillink/sdk`
+- ✅ `ChainMetadata` - Still in `@recoillink/sdk`
+- ✅ All EVM modules - Still in `@recoillink/sdk`
 
 ### Internal Reorganization
 
 The following exports have been **moved** to new packages:
 
-#### Moved to `@hyperlane-xyz/provider-sdk`
+#### Moved to `@recoillink/provider-sdk`
 
 ```typescript
 // Protocol types and enums
@@ -66,21 +66,21 @@ The following exports have been **moved** to new packages:
 - Transaction types
 ```
 
-#### Moved to `@hyperlane-xyz/deploy-sdk`
+#### Moved to `@recoillink/deploy-sdk`
 
 ```typescript
 // Core deployment
-import { AltVMCoreModule, AltVMCoreReader } from '@hyperlane-xyz/deploy-sdk';
+import { AltVMCoreModule, AltVMCoreReader } from '@recoillink/deploy-sdk';
 // Hook deployment
-import { AltVMHookModule, AltVMHookReader } from '@hyperlane-xyz/deploy-sdk';
+import { AltVMHookModule, AltVMHookReader } from '@recoillink/deploy-sdk';
 // ISM deployment
-import { AltVMIsmModule, AltVMIsmReader } from '@hyperlane-xyz/deploy-sdk';
+import { AltVMIsmModule, AltVMIsmReader } from '@recoillink/deploy-sdk';
 // Warp deployment
 import {
   AltVMDeployer,
   AltVMWarpModule,
   AltVMWarpRouteReader,
-} from '@hyperlane-xyz/deploy-sdk';
+} from '@recoillink/deploy-sdk';
 ```
 
 ## Migration Steps
@@ -90,8 +90,8 @@ import {
 For monorepo internal packages, dependencies are already in place. For external consumers using AltVM features:
 
 ```bash
-yarn add @hyperlane-xyz/provider-sdk@^0.3.0
-yarn add @hyperlane-xyz/deploy-sdk@^0.3.0
+yarn add @recoillink/provider-sdk@^0.3.0
+yarn add @recoillink/deploy-sdk@^0.3.0
 ```
 
 ### Step 2: Update Import Statements
@@ -102,33 +102,33 @@ Update AltVM modules as indicated above.
 
 ```typescript
 // Before
-import { AltVM } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/utils';
 
 // After
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 ```
 
 #### Gas Action Imports
 
 ```typescript
 // Before
-import { GasAction, MinimumRequiredGasByAction } from '@hyperlane-xyz/utils';
+import { GasAction, MinimumRequiredGasByAction } from '@recoillink/utils';
 
 // After
 import {
   GasAction,
   MinimumRequiredGasByAction,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 ```
 
 #### Protocol Type Imports (No Change Needed)
 
 ```typescript
 // Before (still works)
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 // After (also works, preferred for new consumers)
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 ```
 
 ### Step 3: Update Module Instantiation
@@ -142,7 +142,7 @@ AltVM modules have updated constructor signatures. The main change is replacing 
 A new adapter function decouples chain metadata lookup between the SDK and AltVM modules:
 
 ```typescript
-import { altVmChainLookup } from '@hyperlane-xyz/sdk';
+import { altVmChainLookup } from '@recoillink/sdk';
 
 const chainLookup = altVmChainLookup(multiProvider);
 
@@ -152,10 +152,10 @@ const coreModule = new AltVMCoreModule(chainLookup, signer, { ... });
 
 ### Config Utilities
 
-Some utilities for config normalization moved to `@hyperlane-xyz/utils` but are not yet completely removed from the SDK:
+Some utilities for config normalization moved to `@recoillink/utils` but are not yet completely removed from the SDK:
 
 ```typescript
-import { normalizeConfig, sortArraysInConfig } from '@hyperlane-xyz/utils';
+import { normalizeConfig, sortArraysInConfig } from '@recoillink/utils';
 
 const normalized = normalizeConfig(config);
 const sorted = sortArraysInConfig(config);

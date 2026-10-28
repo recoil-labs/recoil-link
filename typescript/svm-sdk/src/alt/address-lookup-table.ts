@@ -6,7 +6,7 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   assert,
   chunk,
@@ -16,7 +16,7 @@ import {
   nonEmptyArray,
   normalizeAddressSealevel,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { fetchAddressLookupTableState } from '../accounts/address-lookup-table.js';
 import type { SvmSigner } from '../clients/signer.js';

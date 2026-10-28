@@ -5,7 +5,7 @@ export {
   isBpsPrecisionValid,
   assertBpsPrecision,
   computeBps as convertToBps,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 /**
  * Assumed maximum transfer amount for zero-supply tokens.

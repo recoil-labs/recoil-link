@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import http from 'http';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { HyperlaneSmartProvider } from '../providers/SmartProvider/SmartProvider.js';
 

@@ -7,17 +7,17 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/tron-sdk
+npm install @recoillink/tron-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/tron-sdk
+pnpm add @recoillink/tron-sdk
 ```
 
 ## Usage
 
 ```ts
-import { TronProvider, TronSigner } from "@hyperlane-xyz/tron-sdk";
-import { ChainMetadataForAltVM, ProtocolType } from "@hyperlane-xyz/provider-sdk";
+import { TronProvider, TronSigner } from "@recoillink/tron-sdk";
+import { ChainMetadataForAltVM, ProtocolType } from "@recoillink/provider-sdk";
 
 const metadata: ChainMetadataForAltVM = {
   name: 'tron',

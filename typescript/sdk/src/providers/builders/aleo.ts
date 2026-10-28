@@ -1,4 +1,4 @@
-import { AleoProvider as AleoSDKProvider } from '@hyperlane-xyz/aleo-sdk/runtime';
+import { AleoProvider as AleoSDKProvider } from '@recoillink/aleo-sdk/runtime';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { AleoProvider } from '../ProviderType.js';

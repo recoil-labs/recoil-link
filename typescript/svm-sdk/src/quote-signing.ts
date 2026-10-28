@@ -6,7 +6,7 @@ import {
   getAddressCodec,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { concatBytes, u32le, u48be } from './codecs/binary.js';
 import type { SvmSignedQuote } from './codecs/fee.js';

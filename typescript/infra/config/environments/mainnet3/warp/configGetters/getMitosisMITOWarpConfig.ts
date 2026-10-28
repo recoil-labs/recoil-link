@@ -5,7 +5,7 @@ import {
   HypTokenRouterConfig,
   IsmType,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 

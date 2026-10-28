@@ -1,8 +1,8 @@
 import { $, type ProcessPromise } from 'zx';
 
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { type ChainName, type DerivedCoreConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainName, type DerivedCoreConfig } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getContext } from '../../context/context.js';
 import { readYamlOrJson } from '../../utils/files.js';
@@ -94,14 +94,14 @@ export class HyperlaneE2ECoreTestCommands {
       privateKeyEnv
         ? this.hypKeyEnvNames.map((name) => `${name}=${privateKeyEnv}`)
         : []
-    } ${this.cmdPrefix} hyperlane core init ${flags}`;
+    } ${this.cmdPrefix} rlink core init ${flags}`;
   }
 
   /**
    * Reads a Hyperlane core deployment on the specified chain using the provided config.
    */
   public read(): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane core read \
+    return $`${this.cmdPrefix} rlink core read \
         --registry ${this.registryPath} \
         --config ${this.coreOutputPath} \
         --chain ${this.chain} \
@@ -137,7 +137,7 @@ export class HyperlaneE2ECoreTestCommands {
       flags.push('--mailbox', mailbox);
     }
 
-    return $`${this.cmdPrefix} hyperlane core check ${flags}`;
+    return $`${this.cmdPrefix} rlink core check ${flags}`;
   }
 
   /**
@@ -174,14 +174,14 @@ export class HyperlaneE2ECoreTestCommands {
       privateKeyEnv
         ? this.hypKeyEnvNames.map((name) => `${name}=${privateKeyEnv}`)
         : []
-    } ${this.cmdPrefix} hyperlane core deploy ${flags}`;
+    } ${this.cmdPrefix} rlink core deploy ${flags}`;
   }
 
   /**
    * Deploys the Hyperlane core contracts to the specified chain using the provided config.
    */
   public deploy(privateKey: string): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane core deploy \
+    return $`${this.cmdPrefix} rlink core deploy \
         --registry ${this.registryPath} \
         --config ${this.coreInputPath} \
         --chain ${this.chain} \
@@ -216,7 +216,7 @@ export class HyperlaneE2ECoreTestCommands {
    * Updates a Hyperlane core deployment on the specified chain using the provided config.
    */
   public apply(privateKey: string): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane core apply \
+    return $`${this.cmdPrefix} rlink core apply \
         --registry ${this.registryPath} \
         --config ${this.coreOutputPath} \
         --chain ${this.chain} \

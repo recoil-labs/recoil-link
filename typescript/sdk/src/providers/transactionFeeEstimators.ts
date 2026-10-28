@@ -17,7 +17,7 @@ import {
   StargateClientCache,
   disconnectStargateClient,
   shouldCacheStargateClient,
-} from '@hyperlane-xyz/cosmos-sdk';
+} from '@recoillink/cosmos-sdk';
 import {
   Address,
   HexString,
@@ -26,7 +26,7 @@ import {
   assert,
   convertToProtocolAddress,
   isNullish,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 

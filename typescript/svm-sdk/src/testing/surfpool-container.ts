@@ -1,4 +1,4 @@
-import { isNullish, retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { isNullish, retryAsync, rootLogger } from '@recoillink/utils';
 import {
   GenericContainer,
   type StartedTestContainer,
@@ -43,7 +43,7 @@ function rewriteDatasourceForDocker(
 /**
  * Starts a surfpool node in a Docker container via testcontainers. Test-only:
  * this module (and its `testcontainers` dependency) must never be reachable
- * from the `@hyperlane-xyz/sealevel-sdk/fork` production entrypoint.
+ * from the `@recoillink/sealevel-sdk/fork` production entrypoint.
  */
 export async function runSurfpoolContainer(
   config: SurfpoolNodeConfig,

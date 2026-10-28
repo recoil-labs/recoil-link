@@ -9,20 +9,15 @@ import {
   IERC20__factory,
   InterchainGasPaymaster__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import type { ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   ChainMap,
   ChainMetadata,
   MultiProvider,
   getDomainId as resolveDomainId,
-} from '@hyperlane-xyz/sdk';
-import {
-  Address,
-  ProtocolType,
-  assert,
-  rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType, assert, rootLogger } from '@recoillink/utils';
 
 import { supportedChainNames } from '../config/environments/mainnet3/supportedChainNames.js';
 import { getChainMetadata, getDomainId } from '../config/registry.js';

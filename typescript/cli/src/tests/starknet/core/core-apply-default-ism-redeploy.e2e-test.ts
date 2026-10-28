@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { type CoreConfig, IsmType, randomAddress } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { type CoreConfig, IsmType, randomAddress } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {

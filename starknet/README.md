@@ -11,10 +11,10 @@ The Hyperlane Starknet Core package provides TypeScript tooling for interacting 
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/starknet-core
+npm install @recoillink/starknet-core
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/starknet-core
+pnpm add @recoillink/starknet-core
 ```
 
 ## Requirements
@@ -28,7 +28,7 @@ pnpm add @hyperlane-xyz/starknet-core
 import {
   ContractType,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
+} from '@recoillink/starknet-core';
 
 // Get the Hyperlane mailbox contract
 const mailboxContract = getCompiledContract('mailbox');

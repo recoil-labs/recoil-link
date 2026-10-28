@@ -3,11 +3,11 @@ import { address, type Address, generateKeyPairSigner } from '@solana/kit';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { HookType, IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType, IsmType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type CrossCollateralRoutingFeeArtifactConfig,
   FeeParamsType,
@@ -15,17 +15,17 @@ import {
   FeeType,
   type LinearFeeConfig,
   type RoutingFeeArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/fee';
+import type { IgpHookConfig } from '@recoillink/provider-sdk/hook';
 import {
   type CompositeIsmArtifactConfig,
   CompositeIsmNodeType,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 import {
   type CrossCollateralWarpArtifactConfig,
   type DeployedWarpAddress,
   TokenType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { createWarpAltReader } from '../alt/warp-alt-manager.js';
 import { deriveCoreDeploymentAltAddresses } from '../alt/warp-alt.js';

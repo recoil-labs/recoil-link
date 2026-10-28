@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { providers } from 'ethers';
 
-import { assert, ProtocolType } from '@hyperlane-xyz/utils';
+import { assert, ProtocolType } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 

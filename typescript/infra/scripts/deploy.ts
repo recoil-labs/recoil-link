@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import prompts from 'prompts';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   ChainMap,
   ContractVerifier,
@@ -23,9 +23,9 @@ import {
   IsmType,
   RouterConfig,
   TestRecipientDeployer,
-} from '@hyperlane-xyz/sdk';
-import { inCIMode, objFilter, objMap } from '@hyperlane-xyz/utils';
-import { writeYaml } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sdk';
+import { inCIMode, objFilter, objMap } from '@recoillink/utils';
+import { writeYaml } from '@recoillink/utils/fs';
 
 import { Contexts } from '../config/contexts.js';
 import { getCore as getCoreConfig } from '../config/environments/mainnet3/core.js';

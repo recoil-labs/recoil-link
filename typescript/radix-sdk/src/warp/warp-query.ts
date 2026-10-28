@@ -1,7 +1,7 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, ensure0x } from '@hyperlane-xyz/utils';
+import { TokenType } from '@recoillink/provider-sdk/warp';
+import { assert, ensure0x } from '@recoillink/utils';
 
 import {
   getComponentOwner,

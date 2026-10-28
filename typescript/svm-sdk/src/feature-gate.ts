@@ -1,6 +1,6 @@
 import type { Address } from '@solana/kit';
 
-import { eqAddressSol, isNullish } from '@hyperlane-xyz/utils';
+import { eqAddressSol, isNullish } from '@recoillink/utils';
 
 import { FEATURE_GATE_PROGRAM_ADDRESS } from './constants.js';
 import type { SvmRpc } from './types.js';

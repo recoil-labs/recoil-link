@@ -2,7 +2,7 @@ import type { FastifyReply, FastifyRequest } from 'fastify';
 import { type Address, isAddress } from 'viem';
 import { z } from 'zod';
 
-import { FeeQuotingCommand } from '@hyperlane-xyz/sdk';
+import { FeeQuotingCommand } from '@recoillink/sdk';
 
 import type { FeeQuotingApp } from '../http.js';
 import type { createApiKeyAuth } from '../middleware/apiKeyAuth.js';

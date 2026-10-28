@@ -1,4 +1,4 @@
-import { IsmType } from '@hyperlane-xyz/sdk';
+import { IsmType } from '@recoillink/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import { multisigIsms } from '../../config/multisigIsm.js';

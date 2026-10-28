@@ -8,8 +8,8 @@ import {
   type ChainName,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -38,7 +38,7 @@ chai.use(chaiAsPromised);
 const expect = chai.expect;
 chai.should();
 
-describe('hyperlane warp deploy e2e tests', async function () {
+describe('rlink warp deploy e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore1 = new HyperlaneE2ECoreTestCommands(
@@ -103,7 +103,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     );
   }
 
-  describe('hyperlane warp deploy', () => {
+  describe('rlink warp deploy', () => {
     it(`should exit early when the provided deployment file does not exist`, async function () {
       const nonExistingFilePath = 'non-existing-path';
       // Currently if the file provided in the config flag does not exist a prompt will still be shown to the
@@ -261,7 +261,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     });
   });
 
-  describe('hyperlane warp deploy --yes', () => {
+  describe('rlink warp deploy --yes', () => {
     it(`should exit early when the provided deployment file does not exist and the skip flag is provided`, async function () {
       const nonExistingFilePath = 'non-existing-path';
       // Currently if the file provided in the config flag does not exist a prompt will still be shown to the

@@ -6,7 +6,7 @@ import {
   eqAddress,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { HyperlaneContracts } from '../../contracts/types.js';
 import { HyperlaneDeployer } from '../../deploy/HyperlaneDeployer.js';

@@ -1,25 +1,25 @@
-import { type ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
+import { type ChainMetadataForAltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type RawHookArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk/module';
 import {
   assert,
   eqAddressStarknet,
   isNullish,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import { hash } from 'starknet';
 
 import { StarknetProvider } from '../clients/provider.js';

@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 import { Wallet, ethers } from 'ethers';
 
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
+import { InterchainAccountRouter__factory } from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type AccountConfig,
   type ChainMetadata,
   InterchainAccount,
   isContractAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   addressToBytes32,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getContext } from '../../../context/context.js';
 import { IcaDeployStatus } from '../../../deploy/ica.js';
@@ -34,7 +34,7 @@ import {
   REGISTRY_PATH,
 } from '../consts.js';
 
-describe('hyperlane ica deploy e2e tests', async function () {
+describe('rlink ica deploy e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Addresses: ChainAddresses;
@@ -142,7 +142,7 @@ describe('hyperlane ica deploy e2e tests', async function () {
     }
   });
 
-  describe('hyperlane ica deploy', () => {
+  describe('rlink ica deploy', () => {
     it('should deploy ICAs on destination chains', async function () {
       // Ensure ICA routers are deployed
       expect(chain2Addresses.interchainAccountRouter).to.not.be.undefined;

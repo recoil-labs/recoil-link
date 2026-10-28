@@ -1,6 +1,6 @@
 import { Provider as ZKProvider } from 'zksync-ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { ZKSyncProvider } from '../ProviderType.js';

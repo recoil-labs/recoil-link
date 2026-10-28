@@ -1,7 +1,7 @@
 import { BytesLike, ethers } from 'ethers';
 import { Logger } from 'pino';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { AttestationPendingError } from '../utils/errors.js';
 

@@ -3,12 +3,8 @@ import { ethers } from 'ethers';
 import { readFileSync } from 'fs';
 import * as path from 'path';
 
-import {
-  ChainName,
-  ChainTechnicalStack,
-  GcpValidator,
-} from '@hyperlane-xyz/sdk';
-import { addBufferToGasLimit, assert } from '@hyperlane-xyz/utils';
+import { ChainName, ChainTechnicalStack, GcpValidator } from '@recoillink/sdk';
+import { addBufferToGasLimit, assert } from '@recoillink/utils';
 
 import { getChains } from '../../config/registry.js';
 import { InfraS3Validator } from '../../src/agents/aws/validator.js';

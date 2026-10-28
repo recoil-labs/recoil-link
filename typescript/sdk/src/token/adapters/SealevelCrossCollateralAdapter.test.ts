@@ -6,7 +6,7 @@ import {
   Domain,
   addressToBytes,
   padBytesToLength,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName, testChainMetadata } from '../../consts/testChains.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

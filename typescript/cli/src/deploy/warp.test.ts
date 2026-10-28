@@ -1,11 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import {
-  ProtocolType,
-  addressToBytes32,
-  rootLogger,
-} from '@hyperlane-xyz/utils';
+import { ProtocolType, addressToBytes32, rootLogger } from '@recoillink/utils';
 import {
   EvmWarpModule,
   HyperlaneDeployer,
@@ -16,7 +12,7 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   fullyConnectTokens,

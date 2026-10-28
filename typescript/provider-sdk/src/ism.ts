@@ -8,7 +8,7 @@ import {
   normalizeConfig,
   type NonEmptyArray,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { IsmType as AltVMIsmType } from './altvm.js';
 import {
@@ -103,7 +103,7 @@ export interface DomainRoutingIsmConfig {
  * Discriminants for composite ISM tree nodes — used to compare/narrow
  * `CompositeIsmNodeConfig`/`CompositeIsmNodeArtifactConfig` without
  * hardcoding string literals at each comparison site (mirrors
- * `@hyperlane-xyz/sdk`'s `CompositeIsmNodeType`, redeclared here since
+ * `@recoillink/sdk`'s `CompositeIsmNodeType`, redeclared here since
  * provider-sdk doesn't depend on the top-level sdk package).
  */
 export const CompositeIsmNodeType = {

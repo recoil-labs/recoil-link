@@ -1,6 +1,6 @@
 import yargs from 'yargs';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { THRESHOLD_CONFIG_PATH } from '../../src/config/funding/balances.js';
 import { alertConfigMapping } from '../../src/config/funding/grafanaAlerts.js';

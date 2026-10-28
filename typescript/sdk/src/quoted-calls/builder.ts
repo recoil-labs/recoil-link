@@ -1,7 +1,7 @@
 import type { Address, Hex } from 'viem';
 import { zeroAddress } from 'viem';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   type Quote,

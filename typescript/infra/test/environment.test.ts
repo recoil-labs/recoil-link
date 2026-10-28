@@ -7,8 +7,8 @@ import {
   DomainRoutingIsmConfig,
   HookType,
   IsmType,
-} from '@hyperlane-xyz/sdk';
-import { assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, objFilter } from '@recoillink/utils';
 
 import { environments } from '../config/environments/index.js';
 import { isEthereumProtocolChain } from '../src/utils/utils.js';

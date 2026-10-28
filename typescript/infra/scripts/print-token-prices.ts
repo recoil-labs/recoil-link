@@ -1,8 +1,8 @@
 import chalk from 'chalk';
 import path from 'path';
 
-import { ChainMap, ChainMetadata, ChainStatus } from '@hyperlane-xyz/sdk';
-import { objMap, pick } from '@hyperlane-xyz/utils';
+import { ChainMap, ChainMetadata, ChainStatus } from '@recoillink/sdk';
+import { objMap, pick } from '@recoillink/utils';
 
 // Intentionally circumvent `{mainnet3,testnet4}/index.ts` and `getEnvironmentConfig({'mainnet3','testnet4'})`
 // to avoid circular dependencies.

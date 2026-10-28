@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { HookType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { HookType } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import {
   BURN_ADDRESS_BY_PROTOCOL,
@@ -12,7 +12,7 @@ import { normalizeStarknetAddress } from '../helpers.js';
 import { describeStarknetSingleChainWarpApplyTest } from './warp-apply.shared.js';
 
 describeStarknetSingleChainWarpApplyTest(
-  'hyperlane warp apply Hook updates (Starknet E2E tests)',
+  'rlink warp apply Hook updates (Starknet E2E tests)',
   'should update protocolFee Hook config without redeployment',
   async ({
     chainName,

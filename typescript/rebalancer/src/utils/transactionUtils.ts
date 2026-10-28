@@ -2,12 +2,12 @@ import {
   assert,
   type KnownProtocolType,
   type ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import {
   PROTOCOL_TO_DEFAULT_PROVIDER_TYPE,
   type ProtocolTypedTransaction,
   type WarpTypedTransaction,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 /**
  * Runtime-validated cast from WarpTypedTransaction to ProtocolTypedTransaction.

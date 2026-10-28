@@ -6,8 +6,8 @@ import {
   type Eip712Payload,
   type SignerAccountResponse,
   type EncodedBytes,
-} from '@hyperlane-xyz/http-registry-server';
-import { errorToString, strip0x } from '@hyperlane-xyz/utils';
+} from '@recoillink/http-registry-server';
+import { errorToString, strip0x } from '@recoillink/utils';
 
 const DEFAULT_HTTP_SIGNER_TIMEOUT_MS = 30_000;
 export class HttpSignerClient {

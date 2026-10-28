@@ -7,7 +7,7 @@ import {
   IMessageRecipient__factory,
   MailboxClient__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   AddressBytes32,
@@ -23,7 +23,7 @@ import {
   parseMessage,
   pollAsync,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import { appFromAddressesMapHelper } from '../contracts/contracts.js';

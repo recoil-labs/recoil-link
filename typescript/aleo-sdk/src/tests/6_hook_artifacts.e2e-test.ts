@@ -1,21 +1,21 @@
 import { expect } from 'chai';
 import { step } from 'mocha-steps';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { HookType, type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { HookType, type ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type IgpHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/module';
+import { assert, normalizeConfig } from '@recoillink/utils';
 
 import { AleoSigner } from '../clients/signer.js';
 import { AleoHookArtifactManager } from '../hook/hook-artifact-manager.js';

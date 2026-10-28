@@ -5,8 +5,8 @@ import {
   type DerivedWarpRouteDeployConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -27,7 +27,7 @@ import {
   getWarpId,
 } from '../../constants.js';
 
-describe('hyperlane warp apply ownership (Aleo E2E tests)', async function () {
+describe('rlink warp apply ownership (Aleo E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const nativeTokenData =

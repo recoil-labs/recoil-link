@@ -1,4 +1,4 @@
-import type { Token } from '@hyperlane-xyz/sdk';
+import type { Token } from '@recoillink/sdk';
 
 /**
  * Formats a bigint value to a number using the token's decimal precision.

@@ -1,9 +1,9 @@
-import { type ArtifactNew } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactNew } from '@recoillink/provider-sdk/artifact';
 import {
   TokenType,
   type RawWarpArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, eqAddressStarknet } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/warp';
+import { assert, eqAddressStarknet } from '@recoillink/utils';
 
 import { normalizeStarknetAddressSafe } from '../contracts.js';
 

@@ -1,14 +1,14 @@
 import { address as parseAddress } from '@solana/kit';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { MerkleTreeHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/artifact';
+import type { MerkleTreeHookConfig } from '@recoillink/provider-sdk/hook';
 
 import type { SvmSigner } from '../clients/signer.js';
 import type {

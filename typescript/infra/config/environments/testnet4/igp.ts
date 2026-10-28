@@ -1,5 +1,5 @@
-import { ChainMap, ChainName, HookType, IgpConfig } from '@hyperlane-xyz/sdk';
-import { Address, exclude, objMap } from '@hyperlane-xyz/utils';
+import { ChainMap, ChainName, HookType, IgpConfig } from '@recoillink/sdk';
+import { Address, exclude, objMap } from '@recoillink/utils';
 
 import {
   AllStorageGasOracleConfigs,

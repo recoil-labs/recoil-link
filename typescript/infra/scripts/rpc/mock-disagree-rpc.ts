@@ -25,7 +25,7 @@ import { createHash, randomBytes } from 'crypto';
 import http from 'http';
 import yargs from 'yargs';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 const logger = rootLogger.child({ module: 'mock-disagree-rpc' });
 

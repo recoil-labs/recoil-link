@@ -1,4 +1,4 @@
-import { Address, assert, concurrentMap } from '@hyperlane-xyz/utils';
+import { Address, assert, concurrentMap } from '@recoillink/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

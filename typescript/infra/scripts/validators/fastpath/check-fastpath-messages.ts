@@ -26,9 +26,9 @@
  *     [--ismsFile      config/environments/mainnet3/fastpath/isms.json] \
  *     [--chains base ethereum ...]
  */
-import { Mailbox, TestRecipient__factory } from '@hyperlane-xyz/core';
-import { assert, eqAddress } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { Mailbox, TestRecipient__factory } from '@recoillink/core';
+import { assert, eqAddress } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { join } from 'path';
 

@@ -3,14 +3,14 @@ import { type Address, address as parseAddress } from '@solana/kit';
 import {
   computeRemoteRoutersUpdates,
   type RawWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   assert,
   eqAddressSol,
   eqOptionalAddress,
   isZeroishAddress,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { u32le } from '../codecs/binary.js';

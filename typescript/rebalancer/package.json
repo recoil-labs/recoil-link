@@ -1,7 +1,7 @@
 {
-  "name": "@hyperlane-xyz/rebalancer",
+  "name": "@recoillink/rebalancer",
   "version": "29.0.4",
-  "description": "Hyperlane Warp Route Collateral Rebalancer Service",
+  "description": "Recoil Link Warp Route Collateral Rebalancer Service",
   "keywords": [
     "blockchain",
     "collateral",
@@ -12,7 +12,7 @@
   ],
   "license": "Apache-2.0",
   "author": "Abacus Works, Inc.",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "bin": {
     "hyperlane-rebalancer": "./dist/service.js"
   },
@@ -40,12 +40,12 @@
   },
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/metrics": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/metrics": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@inquirer/prompts": "catalog:",
     "@inquirer/select": "catalog:",
     "@lifi/sdk": "catalog:",
@@ -63,8 +63,8 @@
   },
   "devDependencies": {
     "@ethersproject/constants": "*",
-    "@hyperlane-xyz/relayer": "workspace:*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/relayer": "workspace:*",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

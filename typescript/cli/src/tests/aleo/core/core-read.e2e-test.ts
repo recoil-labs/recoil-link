@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { type CoreConfig, HookType, IsmType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { type CoreConfig, HookType, IsmType } from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import {
@@ -14,7 +14,7 @@ import {
   TEST_CHAIN_NAMES_BY_PROTOCOL,
 } from '../../constants.js';
 
-describe('hyperlane core read (Aleo E2E tests)', async function () {
+describe('rlink core read (Aleo E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

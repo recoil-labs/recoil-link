@@ -4,8 +4,8 @@ import {
   HyperlaneCore,
   MultiProvider,
   attachContractsMap,
-} from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { Address } from '@recoillink/utils';
 
 import { HelloWorldApp } from '../app/app.js';
 import { helloWorldFactories } from '../app/contracts.js';

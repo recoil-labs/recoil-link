@@ -2,15 +2,15 @@ import { expect } from 'chai';
 import { Connection } from '@solana/web3.js';
 import { zeroAddress, zeroHash } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { EvmQuotedTransferProvider } from '@hyperlane-xyz/sdk/quoted-calls/EvmQuotedTransferProvider';
-import type { QuotedTransferProvider } from '@hyperlane-xyz/sdk/quoted-calls/QuotedTransferProvider';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { EvmQuotedTransferProvider } from '@recoillink/sdk/quoted-calls/EvmQuotedTransferProvider';
+import type { QuotedTransferProvider } from '@recoillink/sdk/quoted-calls/QuotedTransferProvider';
 import {
   SealevelQuotedTransferProvider,
   type SealevelQuotedTransferProviderOpts,
-} from '@hyperlane-xyz/sdk/quoted-calls/SealevelQuotedTransferProvider';
-import { FeeQuotingV2Client } from '@hyperlane-xyz/sdk/quoted-calls/client';
-import { TokenPullMode } from '@hyperlane-xyz/sdk/quoted-calls/types';
+} from '@recoillink/sdk/quoted-calls/SealevelQuotedTransferProvider';
+import { FeeQuotingV2Client } from '@recoillink/sdk/quoted-calls/client';
+import { TokenPullMode } from '@recoillink/sdk/quoted-calls/types';
 
 describe('quoted transfer provider subpath exports', () => {
   it('exports the EVM implementation with the public provider interface', () => {

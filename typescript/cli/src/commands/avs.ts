@@ -1,7 +1,7 @@
 import { type CommandModule, type Options } from 'yargs';
 
-import { type ChainName } from '@hyperlane-xyz/sdk';
-import { type Address, isEVMLike } from '@hyperlane-xyz/utils';
+import { type ChainName } from '@recoillink/sdk';
+import { type Address, isEVMLike } from '@recoillink/utils';
 
 import { checkValidatorAvsSetup } from '../avs/check.js';
 import {

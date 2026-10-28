@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils/validation';
+import { assert } from '@recoillink/utils/validation';
 
 import { tableFields, type TableName } from './schema.js';
 

@@ -3,14 +3,14 @@ import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 import {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   DeployedRawWarpArtifact,
   DeployedWarpAddress,
   IRawWarpArtifactManager,
   RawWarpArtifactConfigs,
   WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixBase } from '../utils/base.js';

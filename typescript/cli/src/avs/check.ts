@@ -5,14 +5,14 @@ import {
   IDelegationManager__factory,
   MerkleTreeHook__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainMap,
   type ChainName,
   type MultiProvider,
   isValidValidatorStorageLocation,
-} from '@hyperlane-xyz/sdk';
-import { type Address, isEVMLike, isObjEmpty } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, isEVMLike, isObjEmpty } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import {

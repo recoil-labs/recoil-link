@@ -3,8 +3,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { z } from 'zod';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
-import { Address, eqAddress } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
+import { Address, eqAddress } from '@recoillink/utils';
 
 import { getSafesByGovernanceForChain } from '../../config/environments/mainnet3/governance/utils.js';
 import { GovernanceType } from '../governanceTypes.js';

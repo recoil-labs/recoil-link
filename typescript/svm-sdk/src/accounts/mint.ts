@@ -8,7 +8,7 @@ import {
   getUtf8Encoder,
 } from '@solana/kit';
 
-import { assert, isNullish, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, isNullish, rootLogger } from '@recoillink/utils';
 
 import { ByteCursor } from '../codecs/binary.js';
 import {

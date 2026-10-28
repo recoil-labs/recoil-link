@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { TxSubmitterType } from '@hyperlane-xyz/sdk';
+import { TxSubmitterType } from '@recoillink/sdk';
 
 import { type ExtendedSubmissionStrategy } from '../../../submitters/types.js';
 

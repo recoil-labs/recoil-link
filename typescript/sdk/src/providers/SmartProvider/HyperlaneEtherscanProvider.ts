@@ -1,6 +1,6 @@
 import { providers } from 'ethers';
 
-import { isNullish, objFilter, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { isNullish, objFilter, rootLogger, sleep } from '@recoillink/utils';
 
 import { readPaginatedExplorerLogs } from '../../block-explorer/etherscan.js';
 import { BlockExplorer } from '../../metadata/chainMetadataTypes.js';

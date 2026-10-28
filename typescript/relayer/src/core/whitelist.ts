@@ -1,5 +1,5 @@
-import type { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address, ParsedMessage, bytes32ToAddress } from '@hyperlane-xyz/utils';
+import type { ChainMap } from '@recoillink/sdk';
+import { Address, ParsedMessage, bytes32ToAddress } from '@recoillink/utils';
 
 export type MessageWhitelist = ChainMap<Set<Address>>;
 

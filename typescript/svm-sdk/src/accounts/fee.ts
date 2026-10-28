@@ -1,6 +1,6 @@
 import type { Address } from '@solana/kit';
 
-import { assert, toHexString } from '@hyperlane-xyz/utils';
+import { assert, toHexString } from '@recoillink/utils';
 import {
   decodeDiscriminatedAccount,
   readAddress,

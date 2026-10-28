@@ -1,5 +1,5 @@
-import { TestRecipient, TestRecipient__factory } from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import { TestRecipient, TestRecipient__factory } from '@recoillink/core';
+import { Address, rootLogger } from '@recoillink/utils';
 
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';
 import { ContractVerifier } from '../deploy/verify/ContractVerifier.js';

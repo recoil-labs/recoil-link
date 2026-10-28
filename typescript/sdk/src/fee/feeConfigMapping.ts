@@ -3,8 +3,8 @@ import {
   type FeeConfig,
   type FeeParams,
   type FeeStrategy,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { assert, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/fee';
+import { assert, objMap } from '@recoillink/utils';
 
 import { TokenFeeType, type TokenFeeConfigInput } from './types.js';
 

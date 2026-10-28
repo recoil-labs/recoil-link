@@ -1,7 +1,7 @@
 import Safe from '@safe-global/protocol-kit';
 import yargs from 'yargs';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import {

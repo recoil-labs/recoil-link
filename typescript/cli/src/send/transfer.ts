@@ -7,12 +7,12 @@ import { type Address, type Hex, isHex } from 'viem';
 import {
   CrossCollateralRouter__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/core';
+import { GasAction } from '@recoillink/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk/module';
 import {
   type ChainMap,
   type ChainName,
@@ -39,7 +39,7 @@ import {
   WarpTxCategory,
   computeScopedSalt,
   isPredicateCapableAdapter,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   addressToByteHexString,
   addressToBytes32,
@@ -53,7 +53,7 @@ import {
   parseWarpRouteMessage,
   sleep,
   timeout,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { EXPLORER_URL } from '../consts.js';
 import { type WriteCommandContext } from '../context/types.js';

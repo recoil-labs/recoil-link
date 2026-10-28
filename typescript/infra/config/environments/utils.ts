@@ -2,7 +2,7 @@ import {
   ChainName,
   ChainSubmissionStrategy,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   CheckpointSyncerType,

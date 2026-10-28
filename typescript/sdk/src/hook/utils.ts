@@ -1,10 +1,7 @@
 import { Logger } from 'pino';
 
-import {
-  DomainRoutingHook,
-  FallbackDomainRoutingHook,
-} from '@hyperlane-xyz/core';
-import { Address, addBufferToGasLimit, eqAddress } from '@hyperlane-xyz/utils';
+import { DomainRoutingHook, FallbackDomainRoutingHook } from '@recoillink/core';
+import { Address, addBufferToGasLimit, eqAddress } from '@recoillink/utils';
 
 import { submitBatched } from '../deploy/utils.js';
 import { ChainTechnicalStack } from '../metadata/chainMetadataTypes.js';

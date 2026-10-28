@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import { Logger } from 'pino';
 import { Log, parseEventLogs } from 'viem';
 
-import { HypXERC20Lockbox__factory } from '@hyperlane-xyz/core';
+import { HypXERC20Lockbox__factory } from '@recoillink/core';
 import {
   Address,
   assert,
@@ -10,7 +10,7 @@ import {
   eqAddress,
   normalizeAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { proxyImplementation } from '../deploy/proxy.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

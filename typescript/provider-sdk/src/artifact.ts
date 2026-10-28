@@ -1,8 +1,4 @@
-import {
-  assert,
-  isEmptyAddress,
-  ZERO_ADDRESS_HEX_32,
-} from '@hyperlane-xyz/utils';
+import { assert, isEmptyAddress, ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 import { ISigner } from './altvm.js';
 import { AnnotatedTx, TxReceipt } from './module.js';
 

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { after, describe, it } from 'mocha';
 
-import { assert, pollAsync } from '@hyperlane-xyz/utils';
+import { assert, pollAsync } from '@recoillink/utils';
 
 import {
   SurfpoolDatasourceMode,

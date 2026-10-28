@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 import {
   ZBigNumberish,

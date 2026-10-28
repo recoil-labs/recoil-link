@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { TronWeb } from 'tronweb';
 
-import { assert, ensure0x, strip0x } from '@hyperlane-xyz/utils';
+import { assert, ensure0x, strip0x } from '@recoillink/utils';
 
 import {
   TronNodeInfo,

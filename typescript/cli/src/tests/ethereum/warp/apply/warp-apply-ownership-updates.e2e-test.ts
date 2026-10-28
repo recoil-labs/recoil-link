@@ -5,7 +5,7 @@ import {
   ProxyAdmin__factory,
   TimelockController__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   CANCELLER_ROLE,
   EXECUTOR_ROLE,
@@ -15,12 +15,12 @@ import {
   TokenType,
   proxyAdmin,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   normalizeAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';
@@ -42,7 +42,7 @@ import {
 } from '../../../constants.js';
 import { WarpTestFixture } from '../../fixtures/warp-test-fixture.js';
 
-describe('hyperlane warp apply E2E (ownership updates)', async function () {
+describe('rlink warp apply E2E (ownership updates)', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const fixture = new WarpTestFixture({

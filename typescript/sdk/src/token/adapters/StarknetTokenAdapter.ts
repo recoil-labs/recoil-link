@@ -20,7 +20,7 @@ import {
   assert,
   ensure0x,
   isNullish,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseStarknetAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

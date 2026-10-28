@@ -1,6 +1,6 @@
-import { MerkleTreeHook__factory } from '@hyperlane-xyz/core';
-import { HyperlaneCore, S3Validator } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { MerkleTreeHook__factory } from '@recoillink/core';
+import { HyperlaneCore, S3Validator } from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, logBlue, logGreen, warnYellow } from '../logger.js';

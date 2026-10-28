@@ -27,7 +27,7 @@ import {
   XERC20Test__factory,
   XERC20VSTest,
   XERC20VSTest__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   ProtocolType,
@@ -38,7 +38,7 @@ import {
   isNullish,
   isZeroishAddress,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { TestCoreApp } from '../core/TestCoreApp.js';
@@ -495,8 +495,10 @@ describe('TokenDeployer', async () => {
         config[chain] = {
           ...config[chain],
           type,
-          // @ts-expect-error - Synthetic test configurations omit the token address.
-          token: token(),
+          // CAST: synthetic test configs deliberately omit the token address. An
+          // expect-error directive is unusable here: where TS reports this union
+          // mismatch depends on type ordering and moved after the package rename.
+          token: token() as string,
           xERC20:
             type === TokenType.XERC20
               ? {
@@ -873,8 +875,10 @@ describe('TokenDeployer', async () => {
         config[chain] = {
           ...config[chain],
           type,
-          // @ts-expect-error - Synthetic test configurations omit the token address.
-          token: token(),
+          // CAST: synthetic test configs deliberately omit the token address. An
+          // expect-error directive is unusable here: where TS reports this union
+          // mismatch depends on type ordering and moved after the package rename.
+          token: token() as string,
         };
         const warpRoute = await deployer.deploy(config);
         routerAddress = warpRoute[chain][type].address;

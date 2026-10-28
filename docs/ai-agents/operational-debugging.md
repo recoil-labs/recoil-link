@@ -856,7 +856,7 @@ grep -i "0x36f2bd8200ede5f969d63a0a28e654392c51a193" typescript/sdk/src/consts/m
 **Programmatic Access:**
 
 ```typescript
-import { defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
+import { defaultMultisigConfigs } from '@recoillink/sdk';
 
 // Get validator info for a chain
 const chainValidators = defaultMultisigConfigs.ethereum.validators;

@@ -1,16 +1,16 @@
 {
-  "name": "@hyperlane-xyz/helloworld",
+  "name": "@recoillink/helloworld",
   "version": "45.0.1",
-  "description": "A basic skeleton of an Hyperlane app",
+  "description": "A basic skeleton of a Recoil Link app",
   "keywords": [
     "HelloWorld",
     "Hyperlane",
     "Solidity",
     "Typescript"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist",
     "/contracts"
@@ -29,10 +29,10 @@
     "test:ci": "pnpm test"
   },
   "dependencies": {
-    "@hyperlane-xyz/core": "workspace:*",
+    "@recoillink/core": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@openzeppelin/contracts": "catalog:",
     "@openzeppelin/contracts-upgradeable": "catalog:",
     "@solana/web3.js": "catalog:",

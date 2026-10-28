@@ -1,9 +1,9 @@
 {
-  "name": "@hyperlane-xyz/provider-sdk",
+  "name": "@recoillink/provider-sdk",
   "version": "11.0.1",
-  "description": "Protocol Provider SDK for the Hyperlane Protocol",
+  "description": "Protocol Provider SDK for Recoil Link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "dist"
   ],
@@ -38,12 +38,12 @@
     "test:ci": "mocha --config .mocharc.json"
   },
   "dependencies": {
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "pino": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/mocha": "catalog:",
     "@types/node": "catalog:",

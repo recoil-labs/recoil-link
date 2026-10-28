@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   TronNodeInfo,
@@ -9,8 +9,8 @@ import {
   runTronNode,
   stopTronNode,
 } from '../testing/node.js';
-import { TestStorage } from '@hyperlane-xyz/core/tron/typechain/contracts/test/TestStorage.js';
-import { TestStorage__factory } from '@hyperlane-xyz/core/tron/typechain/factories/contracts/test/TestStorage__factory.js';
+import { TestStorage } from '@recoillink/core/tron/typechain/contracts/test/TestStorage.js';
+import { TestStorage__factory } from '@recoillink/core/tron/typechain/factories/contracts/test/TestStorage__factory.js';
 
 import { TronContractFactory } from './TronContractFactory.js';
 import { TronJsonRpcProvider } from './TronJsonRpcProvider.js';

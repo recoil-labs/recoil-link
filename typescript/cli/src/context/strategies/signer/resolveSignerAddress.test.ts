@@ -2,12 +2,8 @@ import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
 import { PartialRegistry } from '@hyperlane-xyz/registry';
-import {
-  IsmType,
-  MultiProtocolProvider,
-  MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+import { IsmType, MultiProtocolProvider, MultiProvider } from '@recoillink/sdk';
+import { ProtocolType, normalizeAddressEvm } from '@recoillink/utils';
 
 import { createTrustedRelayerConfig } from '../../../config/ism.js';
 import { type CommandContext } from '../../types.js';

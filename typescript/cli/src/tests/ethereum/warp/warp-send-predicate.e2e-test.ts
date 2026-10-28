@@ -9,7 +9,7 @@ import { Wallet } from 'ethers';
 import {
   ERC20Test__factory,
   MockPredicateRegistry__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -19,8 +19,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { WarpSendLogs } from '../../../send/transfer.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
@@ -43,7 +43,7 @@ import {
 chai.use(chaiAsPromised);
 const expect = chai.expect;
 
-describe('hyperlane warp send with Predicate e2e tests', async function () {
+describe('rlink warp send with Predicate e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Metadata: ChainMetadata;

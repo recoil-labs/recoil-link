@@ -1,7 +1,7 @@
 import {
   testChainMetadata as defaultTestChainMetadata,
   testChains as defaultTestChains,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { AgentChainNames, Role } from '../../../src/roles.js';
 

@@ -13,14 +13,14 @@ import {
   TransferParams,
   getCollateralTokenAdapter,
   getSignerForChain,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   ProtocolType,
   assert,
   rootLogger,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getDeployerKey } from '../../src/agents/key-utils.js';

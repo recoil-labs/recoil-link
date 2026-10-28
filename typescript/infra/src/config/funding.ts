@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
-import type { ChainConfig } from '@hyperlane-xyz/keyfunder';
+import type { ChainConfig } from '@recoillink/keyfunder';
 
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainName } from '@recoillink/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import { FundableRole, Role } from '../roles.js';

@@ -11,7 +11,7 @@ import {
   getAddressCodec,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { fetchMintTokenProgram } from '../accounts/mint.js';
 import { concatBytes, i64le, option, u8, u32le } from '../codecs/binary.js';

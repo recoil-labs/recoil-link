@@ -1,5 +1,5 @@
 /**
- * @hyperlane-xyz/rebalancer
+ * @recoillink/rebalancer
  *
  * Hyperlane Warp Route Collateral Rebalancer
  *

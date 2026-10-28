@@ -1,16 +1,16 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { type ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk/module';
 import {
   type DeployedWarpAddress,
   type RawCollateralWarpArtifactConfig,
@@ -18,12 +18,12 @@ import {
   type RawWarpArtifactConfig,
   type WarpArtifactConfig,
   type WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
   eqAddressCosmos,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { CosmosIsmArtifactManager } from '../ism/ism-artifact-manager.js';

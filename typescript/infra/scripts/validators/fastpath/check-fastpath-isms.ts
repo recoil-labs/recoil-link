@@ -13,10 +13,10 @@ import { ethers } from 'ethers';
 import {
   IInterchainSecurityModule__factory,
   IMultisigIsm__factory,
-} from '@hyperlane-xyz/core';
-import { ModuleType } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/core';
+import { ModuleType } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { Contexts } from '../../../config/contexts.js';
 import { DEFAULT_FASTPATH_VALIDATORS } from '../../../config/environments/mainnet3/fastpath/validators.js';

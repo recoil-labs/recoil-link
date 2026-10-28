@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import type { KnownProtocolType, TypedProvider } from './ProviderType.js';
 import { ProviderType } from './ProviderType.js';

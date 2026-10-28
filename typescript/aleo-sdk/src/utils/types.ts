@@ -3,9 +3,9 @@ import {
   type ExecuteOptions,
 } from '@provablehq/sdk';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { type RawWarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
-import { type Annotated, assert } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { type RawWarpArtifactConfig } from '@recoillink/provider-sdk/warp';
+import { type Annotated, assert } from '@recoillink/utils';
 
 import { AleoNetworkId } from '../constants.js';
 

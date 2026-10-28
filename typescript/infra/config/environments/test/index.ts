@@ -1,6 +1,6 @@
 import { JsonRpcProvider } from '@ethersproject/providers';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@recoillink/sdk';
 
 import type { EnvironmentConfig } from '../../../src/config/environment.js';
 

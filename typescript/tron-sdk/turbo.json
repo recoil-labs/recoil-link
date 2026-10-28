@@ -2,7 +2,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "dependsOn": ["@hyperlane-xyz/core#build:tron", "^build"],
+      "dependsOn": ["@recoillink/core#build:tron", "^build"],
       "outputs": ["dist/**"]
     }
   }

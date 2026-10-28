@@ -7,20 +7,20 @@ import {
 import {
   type RawCrossCollateralWarpArtifactConfig,
   TokenType as ArtifactTokenType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   SealevelSigner,
   SvmCrossCollateralTokenReader,
   SvmCrossCollateralTokenWriter,
   SvmWarpArtifactManager,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/sealevel-sdk';
 import {
   LEGACY_SVM_PROGRAM_BYTES,
   TEST_ATA_PAYER_FUNDING_AMOUNT,
   airdropSol,
   createSplMint,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@recoillink/sealevel-sdk/testing';
 import { Connection, PublicKey } from '@solana/web3.js';
 import {
   TokenFeeType,
@@ -28,8 +28,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -86,7 +86,7 @@ async function programsOwnedBy(
   return owned;
 }
 
-describe('hyperlane warp legacy-upgrade + fee apply CLI e2e tests (Sealevel)', function () {
+describe('rlink warp legacy-upgrade + fee apply CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_LEGACY_UPGRADE_FEE_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

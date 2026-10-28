@@ -8,8 +8,8 @@ import {
   IsmConfig,
   IsmType,
   TokenType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, assert } from '@recoillink/utils';
 
 import fastpathIsms from '../../fastpath/isms.json' with { type: 'json' };
 import { awIcas } from '../../governance/ica/aw.js';

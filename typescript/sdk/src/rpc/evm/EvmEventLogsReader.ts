@@ -7,7 +7,7 @@ import {
   isNullish,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   getContractDeploymentTransaction,

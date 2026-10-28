@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 /**
  * Outcome of attempting to propose a single warp-apply receipt file.

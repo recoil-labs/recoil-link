@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import hre from 'hardhat';
 import sinon from 'sinon';
 
-import { TestCcipReadIsm, TestCcipReadIsm__factory } from '@hyperlane-xyz/core';
+import { TestCcipReadIsm, TestCcipReadIsm__factory } from '@recoillink/core';
 import {
   EvmIsmReader,
   HyperlaneCore,
@@ -15,8 +15,8 @@ import {
   TestCoreDeployer,
   TestRecipientDeployer,
   offchainLookupRequestMessageHash,
-} from '@hyperlane-xyz/sdk';
-import { WithAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { WithAddress } from '@recoillink/utils';
 
 import { BaseMetadataBuilder } from './builder.js';
 import { MetadataContext, isMetadataBuildable } from './types.js';

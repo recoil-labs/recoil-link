@@ -20,23 +20,23 @@ import {
   XERC20LockboxTest__factory,
   type XERC20VSTest,
   XERC20VSTest__factory,
-} from '@hyperlane-xyz/core';
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@recoillink/core';
+import { type TestChainMetadata } from '@recoillink/provider-sdk/chain';
 import {
   type MultiProvider,
   type WarpCoreConfig,
   WarpCoreConfigSchema,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   assert,
   ensure0x,
   inCIMode,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
+import { TronWallet } from '@recoillink/tron-sdk';
 
 import { getContext } from '../../../context/context.js';
 import { configureLocalPolling } from '../localProvider.js';
@@ -379,7 +379,7 @@ export async function deployEverclearBridgeAdapter(
 // Verifies if the IS_CI var is set and generates the correct prefix for running the command
 // in the current env
 export function localTestRunCmdPrefix() {
-  return inCIMode() ? [] : ['pnpm', '--filter', '@hyperlane-xyz/cli', 'run'];
+  return inCIMode() ? [] : ['pnpm', '--filter', '@recoillink/cli', 'run'];
 }
 
 export async function hyperlaneSendMessage(
@@ -387,7 +387,7 @@ export async function hyperlaneSendMessage(
   destination: string,
   { quick = false }: { quick?: boolean } = {},
 ) {
-  return $`${localTestRunCmdPrefix()} hyperlane send message \
+  return $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${REGISTRY_PATH} \
         --origin ${origin} \
         --destination ${destination} \
@@ -412,7 +412,7 @@ export function hyperlaneStatus({
   key?: string;
   quick?: boolean;
 }) {
-  return $`${localTestRunCmdPrefix()} hyperlane status \
+  return $`${localTestRunCmdPrefix()} rlink status \
         --registry ${REGISTRY_PATH} \
         --origin ${origin} \
         ${messageId ? ['--id', messageId] : []} \
@@ -425,7 +425,7 @@ export function hyperlaneStatus({
 }
 
 export function hyperlaneRelayer(chains: string[], warpRouteId?: string) {
-  return $`${localTestRunCmdPrefix()} hyperlane relayer \
+  return $`${localTestRunCmdPrefix()} rlink relayer \
         --registry ${REGISTRY_PATH} \
         ${chains.flatMap((c) => ['--chains', c])} \
         ${warpRouteId ? ['--warp-route-id', warpRouteId] : []} \
@@ -508,7 +508,7 @@ export async function hyperlaneSubmit({
 }) {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane submit \
+  } ${localTestRunCmdPrefix()} rlink submit \
         --registry ${REGISTRY_PATH} \
         --transactions ${transactionsPath} \
         ${

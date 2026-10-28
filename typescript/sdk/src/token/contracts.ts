@@ -24,7 +24,7 @@ import {
   TokenBridgeCctpV1__factory,
   TokenBridgeCctpV2__factory,
   TokenBridgeDepositAddress__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import { DeployableTokenType, TokenType } from './config.js';
 

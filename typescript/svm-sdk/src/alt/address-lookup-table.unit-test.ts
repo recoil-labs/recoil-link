@@ -6,8 +6,8 @@ import { describe, it } from 'mocha';
 import {
   ArtifactState,
   type ArtifactDeployed,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/artifact';
+import { assert } from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import type { SvmRpc } from '../types.js';

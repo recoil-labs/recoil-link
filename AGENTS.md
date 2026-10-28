@@ -88,10 +88,10 @@ Restructures the registry code.
 │   │   └── token/         # Warp route token contracts
 │   └── test/              # Contract tests
 ├── typescript/
-│   ├── sdk/               # Core SDK (@hyperlane-xyz/sdk)
+│   ├── sdk/               # Core SDK (@recoillink/sdk)
 │   ├── cli/               # Hyperlane CLI tool
 │   ├── infra/             # Infrastructure and deployment scripts
-│   ├── utils/             # Shared utilities (@hyperlane-xyz/utils)
+│   ├── utils/             # Shared utilities (@recoillink/utils)
 │   └── [other packages]/  # cosmos-sdk, widgets, etc.
 ├── rust/
 │   └── main/              # Rust agents monorepo
@@ -119,7 +119,7 @@ Restructures the registry code.
 The codebase uses `assert()` as the primary error handling pattern:
 
 ```typescript
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 // Validate preconditions - fails fast with clear message
 assert(config, `Missing config for chain ${chain}`);
@@ -233,9 +233,9 @@ forge test --match-test <pattern>       # Run specific Forge tests
 pnpm -C typescript/cli build && npm link
 
 # Run CLI commands
-hyperlane --help
-hyperlane core deploy --help
-hyperlane warp deploy --help
+rlink --help
+rlink core deploy --help
+rlink warp deploy --help
 ```
 
 ## Architecture
@@ -271,11 +271,11 @@ hyperlane warp deploy --help
 
 For AltVM (Cosmos, Sealevel, Starknet, Radix) development:
 
-| Package                       | Purpose                                 |
-| ----------------------------- | --------------------------------------- |
-| `@hyperlane-xyz/provider-sdk` | Protocol-agnostic provider abstractions |
-| `@hyperlane-xyz/deploy-sdk`   | Deployment modules for all VM types     |
-| `@hyperlane-xyz/sdk`          | Core SDK (EVM-specific)                 |
+| Package                    | Purpose                                 |
+| -------------------------- | --------------------------------------- |
+| `@recoillink/provider-sdk` | Protocol-agnostic provider abstractions |
+| `@recoillink/deploy-sdk`   | Deployment modules for all VM types     |
+| `@recoillink/sdk`          | Core SDK (EVM-specific)                 |
 
 See `docs/2025-11-20-multi-vm-migration.md` for full migration guide.
 
@@ -563,7 +563,7 @@ When you encounter a type error, the fix priority is:
 
 - Use `ChainMap<T>` for per-chain configurations
 - Use `MultiProvider` for multi-chain provider management
-- Import types from `@hyperlane-xyz/sdk` rather than redefining
+- Import types from `@recoillink/sdk` rather than redefining
 - Use `MultiProtocolProvider` for cross-VM abstractions
 
 ### Schema Validation
@@ -592,7 +592,7 @@ Available MCP servers:
 
 1. **Run tests incrementally** - Don't run full test suite; run specific tests for changed code
 2. **Check existing patterns** - Search codebase for similar implementations before writing new code
-3. **Use TypeScript SDK types** - The SDK has comprehensive types; import from `@hyperlane-xyz/sdk`
+3. **Use TypeScript SDK types** - The SDK has comprehensive types; import from `@recoillink/sdk`
 4. **Solidity inheritance** - Many contracts inherit from base classes; check the hierarchy
 5. **Config-driven** - Most deployments are config-driven; check `typescript/infra/config/` for examples
 6. **Registry is external** - Chain metadata lives in `@hyperlane-xyz/registry`, not this repo

@@ -28,7 +28,7 @@ import {
 
 import { compareVersions as compareSemver } from 'compare-versions';
 
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { ByteCursor } from '../codecs/binary.js';
 import { buildGetProgramVersionInstruction } from '../instructions/version.js';

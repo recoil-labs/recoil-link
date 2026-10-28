@@ -81,7 +81,7 @@ jobs:
               exit 0
             else
               echo ""
-              echo "ERROR: Interface removals (breaking changes) require a changeset for @hyperlane-xyz/core with a 'major' bump."
+              echo "ERROR: Interface removals (breaking changes) require a changeset for @recoillink/core with a 'major' bump."
               exit 1
             fi
           elif [ "$EXIT_CODE" -eq 2 ]; then
@@ -93,7 +93,7 @@ jobs:
               exit 0
             else
               echo ""
-              echo "ERROR: Interface additions require a changeset for @hyperlane-xyz/core with at least a 'minor' bump."
+              echo "ERROR: Interface additions require a changeset for @recoillink/core with at least a 'minor' bump."
               exit 1
             fi
           else

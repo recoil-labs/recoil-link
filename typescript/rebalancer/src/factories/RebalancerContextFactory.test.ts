@@ -8,8 +8,8 @@ import {
   MultiProvider,
   TokenStandard,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import type { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

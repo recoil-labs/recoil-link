@@ -1,6 +1,6 @@
-import type { AleoProvider as AleoSDKProvider } from '@hyperlane-xyz/aleo-sdk/runtime';
-import { AleoNetworkId } from '@hyperlane-xyz/aleo-sdk/constants';
-import { LazyAsync } from '@hyperlane-xyz/utils';
+import type { AleoProvider as AleoSDKProvider } from '@recoillink/aleo-sdk/runtime';
+import { AleoNetworkId } from '@recoillink/aleo-sdk/constants';
+import { LazyAsync } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { AleoProvider } from '../ProviderType.js';
@@ -25,9 +25,9 @@ type AleoProviderLoader = (
 const loadAleoProvider: AleoProviderLoader = (network) => {
   switch (+network) {
     case AleoNetworkId.MAINNET:
-      return import('@hyperlane-xyz/aleo-sdk/runtime/mainnet');
+      return import('@recoillink/aleo-sdk/runtime/mainnet');
     case AleoNetworkId.TESTNET:
-      return import('@hyperlane-xyz/aleo-sdk/runtime/testnet');
+      return import('@recoillink/aleo-sdk/runtime/testnet');
     default:
       throw new Error(`Unsupported Aleo network id ${network}`);
   }

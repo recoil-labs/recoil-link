@@ -1,6 +1,6 @@
 import React, { Component, PropsWithChildren, ReactNode } from 'react';
 
-import { errorToString } from '@hyperlane-xyz/utils';
+import { errorToString } from '@recoillink/utils';
 
 import { ErrorIcon } from '../icons/Error.js';
 import { widgetLogger } from '../logger.js';

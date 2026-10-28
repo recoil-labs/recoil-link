@@ -5,11 +5,8 @@ import {
   airdropSol,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
-import {
-  FALLBACK_SIMULATION_PAYER,
-  createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/sealevel-sdk/testing';
+import { FALLBACK_SIMULATION_PAYER, createRpc } from '@recoillink/sealevel-sdk';
 
 import {
   HYP_DEPLOYER_ADDRESS_BY_PROTOCOL,
@@ -39,7 +36,7 @@ before(async function () {
 
   // Write the Token-2022 override programs to temp files and start the validator.
   // Core programs (mailbox, ISM, hooks, VA) are deployed from embedded bytes
-  // by the writers during `hyperlane core deploy`.
+  // by the writers during `rlink core deploy`.
   const { programs, cleanup } = getPreloadedPrograms([]);
   programCleanup = cleanup;
 

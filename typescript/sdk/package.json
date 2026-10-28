@@ -1,15 +1,15 @@
 {
-  "name": "@hyperlane-xyz/sdk",
+  "name": "@recoillink/sdk",
   "version": "45.0.1",
-  "description": "The official SDK for the Hyperlane Network",
+  "description": "The official SDK for Recoil Link",
   "keywords": [
     "Hyperlane",
     "SDK",
     "Typescript"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist"
   ],
@@ -28,6 +28,10 @@
     "./core/*": {
       "types": "./dist/core/*.d.ts",
       "default": "./dist/core/*.js"
+    },
+    "./consts/registry": {
+      "types": "./dist/consts/registry.d.ts",
+      "default": "./dist/consts/registry.js"
     },
     "./fee/*": {
       "types": "./dist/fee/*.d.ts",
@@ -189,15 +193,15 @@
     "@cosmjs/proto-signing": "catalog:",
     "@cosmjs/stargate": "catalog:",
     "@cosmjs/tendermint-rpc": "catalog:",
-    "@hyperlane-xyz/aleo-sdk": "workspace:*",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/cosmos-sdk": "workspace:*",
-    "@hyperlane-xyz/deploy-sdk": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/radix-sdk": "workspace:*",
-    "@hyperlane-xyz/starknet-core": "workspace:*",
-    "@hyperlane-xyz/tron-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/aleo-sdk": "workspace:*",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/cosmos-sdk": "workspace:*",
+    "@recoillink/deploy-sdk": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
+    "@recoillink/radix-sdk": "workspace:*",
+    "@recoillink/starknet-core": "workspace:*",
+    "@recoillink/tron-sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@safe-global/api-kit": "catalog:",
     "@safe-global/protocol-kit": "catalog:",
     "@safe-global/safe-deployments": "catalog:",
@@ -223,7 +227,7 @@
   },
   "devDependencies": {
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@nomiclabs/hardhat-ethers": "catalog:",
     "@nomiclabs/hardhat-waffle": "catalog:",
     "@types/chai": "catalog:",

@@ -1,9 +1,9 @@
-import { AltVM, type ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM, type ChainMetadataForAltVM } from '@recoillink/provider-sdk';
+import { type ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type DeployedHookArtifact,
@@ -11,12 +11,12 @@ import {
   type IRawHookArtifactManager,
   type RawHookArtifactConfigs,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/module';
+import { assert } from '@recoillink/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

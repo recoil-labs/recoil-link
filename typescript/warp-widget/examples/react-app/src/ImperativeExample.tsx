@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { createWarpWidget } from '@hyperlane-xyz/warp-widget';
-import type { WarpWidgetConfig } from '@hyperlane-xyz/warp-widget';
+import { createWarpWidget } from '@recoillink/warp-widget';
+import type { WarpWidgetConfig } from '@recoillink/warp-widget';
 
 const themes: Record<string, WarpWidgetConfig> = {
   blue: {
@@ -64,7 +64,7 @@ export function ImperativeExample() {
     <div>
       <h2>Imperative API</h2>
       <p>
-        <code>createWarpWidget()</code> from <code>@hyperlane-xyz/warp-widget</code>
+        <code>createWarpWidget()</code> from <code>@recoillink/warp-widget</code>
         {readyCount > 0 && (
           <span style={{ color: '#22c55e', marginLeft: 8 }}>Ready ({readyCount})</span>
         )}

@@ -2,10 +2,10 @@ import { address, type Address } from '@solana/kit';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { FeeParamsType, FeeType } from '@hyperlane-xyz/provider-sdk/fee';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { FeeParamsType, FeeType } from '@recoillink/provider-sdk/fee';
+import type { IgpHookConfig } from '@recoillink/provider-sdk/hook';
+import { TokenType } from '@recoillink/provider-sdk/warp';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmMailboxWriter } from '../core/mailbox.js';

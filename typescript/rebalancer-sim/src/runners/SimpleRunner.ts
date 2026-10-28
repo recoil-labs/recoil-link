@@ -5,7 +5,7 @@ import { pino } from 'pino';
 import {
   ERC20Test__factory,
   HypERC20Collateral__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import type {
   DeployedDomain,

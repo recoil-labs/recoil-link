@@ -5,7 +5,7 @@ import {
   difference,
   isNullish,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   Artifact,

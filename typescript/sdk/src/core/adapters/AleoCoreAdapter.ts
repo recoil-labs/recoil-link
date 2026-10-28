@@ -1,4 +1,4 @@
-import { Address, HexString, assert, pollAsync } from '@hyperlane-xyz/utils';
+import { Address, HexString, assert, pollAsync } from '@recoillink/utils';
 
 import { BaseAleoAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

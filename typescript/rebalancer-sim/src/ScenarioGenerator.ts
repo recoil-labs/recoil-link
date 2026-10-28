@@ -1,5 +1,5 @@
-import { randomAddress } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import { randomAddress } from '@recoillink/sdk';
+import type { Address } from '@recoillink/utils';
 
 import type {
   RandomTrafficOptions,

@@ -4,8 +4,8 @@ import {
   ChainName,
   defaultMultisigConfigs,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';
 import { getArgs, withChains } from '../agent-utils.js';

@@ -1,16 +1,16 @@
 {
-  "name": "@hyperlane-xyz/cosmos-sdk",
+  "name": "@recoillink/cosmos-sdk",
   "version": "45.0.1",
-  "description": "Hyperlane TypeScript SDK for the Cosmos Hyperlane SDK module",
+  "description": "Recoil Link TypeScript SDK for the Cosmos Hyperlane SDK module",
   "keywords": [
     "blockchain",
     "cosmos",
     "hyperlane",
     "sdk"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist"
   ],
@@ -47,12 +47,12 @@
     "@cosmjs/proto-signing": "catalog:",
     "@cosmjs/stargate": "catalog:",
     "@cosmjs/tendermint-rpc": "catalog:",
-    "@hyperlane-xyz/cosmos-types": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*"
+    "@recoillink/cosmos-types": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

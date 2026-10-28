@@ -1,4 +1,4 @@
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 export type TronTransaction = {
   visible: boolean;

@@ -6,8 +6,8 @@ import { ethers } from 'ethers';
 import hre from 'hardhat';
 import sinon from 'sinon';
 
-import { ERC20Test, ERC20Test__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { ERC20Test, ERC20Test__factory } from '@recoillink/core';
+import { assert } from '@recoillink/utils';
 
 import {
   EXPLORER_API_URL,

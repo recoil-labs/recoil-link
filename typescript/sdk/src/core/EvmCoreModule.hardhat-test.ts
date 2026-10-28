@@ -10,8 +10,8 @@ import {
   TestRecipient__factory,
   TimelockController__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
-import { eqAddress, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { eqAddress, objMap } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HookConfig, HookType } from '../hook/types.js';

@@ -1,6 +1,6 @@
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { TokenType } from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import { HyperlaneE2EWarpTestCommands } from '../../commands/warp.js';
@@ -21,7 +21,7 @@ import {
 } from '../../constants.js';
 import { createIsmUpdateTests } from '../../helpers/warp-ism-test-factory.js';
 
-describe('hyperlane warp apply ISM updates (Radix E2E tests)', async function () {
+describe('rlink warp apply ISM updates (Radix E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const nativeTokenData =

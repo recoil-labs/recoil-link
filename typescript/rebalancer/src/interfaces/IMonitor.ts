@@ -2,7 +2,7 @@ import {
   type ChainMap,
   EthJsonRpcBlockParameterTag,
   type Token,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { WrappedError } from '../utils/errors.js';
 

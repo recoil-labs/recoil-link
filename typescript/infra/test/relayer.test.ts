@@ -5,7 +5,7 @@ import {
   ZERO_ADDRESS_HEX_32,
   addressToBytes32,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getIcaRouterAddresses, getRegistry } from '../config/registry.js';
 

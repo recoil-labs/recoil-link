@@ -3,7 +3,7 @@ import type { TActivity } from '@turnkey/sdk-server';
 import { TurnkeyServerClient } from '@turnkey/sdk-server';
 import { z } from 'zod';
 
-import { deepCopy, rootLogger } from '@hyperlane-xyz/utils';
+import { deepCopy, rootLogger } from '@recoillink/utils';
 
 const logger = rootLogger.child({ module: 'sdk:turnkey-client' });
 

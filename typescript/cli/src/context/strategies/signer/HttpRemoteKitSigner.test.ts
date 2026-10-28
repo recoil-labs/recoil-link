@@ -18,8 +18,8 @@ import {
 import { expect } from 'chai';
 import { afterEach, describe, it } from 'mocha';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
-import { SignerTransactionRequestSchema } from '@hyperlane-xyz/http-registry-server';
+import { ProtocolType } from '@recoillink/utils';
+import { SignerTransactionRequestSchema } from '@recoillink/http-registry-server';
 
 import { HttpRemoteKitSigner } from './HttpRemoteKitSigner.js';
 import { HttpSignerClient } from './HttpSignerClient.js';

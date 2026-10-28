@@ -7,7 +7,7 @@ import {
   ValidatorConfig,
   ValidatorMetadata,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { S3Config, S3Wrapper } from './s3.js';
 

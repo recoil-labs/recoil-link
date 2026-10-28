@@ -1,5 +1,5 @@
-import type { ChainName, TokenStandard } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { ChainName, TokenStandard } from '@recoillink/sdk';
+import type { Address } from '@recoillink/utils';
 
 /**
  * xERC20 minting and burning limits for a token.

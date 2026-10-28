@@ -11,7 +11,7 @@ import {
   PausableIsm__factory,
   RateLimitedIsm__factory,
   StaticAggregationIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   Domain,
@@ -24,7 +24,7 @@ import {
   intersection,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { CCIPContractCache } from '../ccip/utils.js';
 import { transferOwnershipTransactions } from '../contracts/contracts.js';

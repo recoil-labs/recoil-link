@@ -5,8 +5,8 @@ import {
   IsmConfig,
   IsmType,
   TokenType,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, assert } from '@recoillink/utils';
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { awIcas } from '../../governance/ica/aw.js';
 import { awProxyAdmins } from '../../governance/proxy-admin/aw.js';

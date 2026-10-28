@@ -9,12 +9,12 @@ import {
   type ChainMetadata,
   HyperlaneCore,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type ChainMetadataForAltVM,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk';
-import { assert, createServiceLogger, pick } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk';
+import { assert, createServiceLogger, pick } from '@recoillink/utils';
 
 import packageJson from './package.json' with { type: 'json' };
 import type { ServerConfig } from './src/config.js';

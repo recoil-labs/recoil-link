@@ -21,7 +21,7 @@ import type {
   DerivedIsmConfig,
   IsmArtifactConfig,
 } from './ism.js';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 // Artifact API types
 

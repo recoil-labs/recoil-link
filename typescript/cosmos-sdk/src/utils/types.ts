@@ -1,7 +1,7 @@
 import { type EncodeObject } from '@cosmjs/proto-signing';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type Annotated } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@recoillink/provider-sdk';
+import { type Annotated } from '@recoillink/utils';
 
 /**
  * Cosmos transaction with optional annotation field.

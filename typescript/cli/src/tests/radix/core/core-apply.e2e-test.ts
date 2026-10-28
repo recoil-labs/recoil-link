@@ -7,8 +7,8 @@ import {
   type IsmConfig,
   IsmType,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, normalizeConfig } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -23,7 +23,7 @@ import {
   TEST_CHAIN_NAMES_BY_PROTOCOL,
 } from '../../constants.js';
 
-describe('hyperlane core apply (Radix E2E tests)', async function () {
+describe('rlink core apply (Radix E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -53,7 +53,7 @@ describe('hyperlane core apply (Radix E2E tests)', async function () {
 
   type CoreConfigField = keyof CoreConfig;
 
-  describe('hyperlane core apply (mailbox updates)', function () {
+  describe('rlink core apply (mailbox updates)', function () {
     it(`should update the mailbox owner to the specified one`, async () => {
       const coreConfig: CoreConfig = await readYamlOrJson(
         CORE_CONFIG_PATH_BY_PROTOCOL.radix,
@@ -72,7 +72,7 @@ describe('hyperlane core apply (Radix E2E tests)', async function () {
     });
   });
 
-  describe('hyperlane core apply (hook updates)', function () {
+  describe('rlink core apply (hook updates)', function () {
     const testCases: Partial<Record<HookType, Exclude<HookConfig, string>>> = {
       [HookType.MERKLE_TREE]: {
         type: HookType.MERKLE_TREE,
@@ -127,7 +127,7 @@ describe('hyperlane core apply (Radix E2E tests)', async function () {
     }
   });
 
-  describe('hyperlane core apply (ism updates)', function () {
+  describe('rlink core apply (ism updates)', function () {
     const testCases: Partial<Record<IsmType, Exclude<IsmConfig, string>>> = {
       [IsmType.TEST_ISM]: {
         type: IsmType.TEST_ISM,

@@ -8,15 +8,15 @@ import {
   CommitmentReadIsmService__factory,
   InterchainAccountRouter__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
-import { InterchainAccount, MultiProvider } from '@hyperlane-xyz/sdk';
-import { offchainLookupRequestMessageHash } from '@hyperlane-xyz/sdk/ism/utils';
+} from '@recoillink/core';
+import { InterchainAccount, MultiProvider } from '@recoillink/sdk';
+import { offchainLookupRequestMessageHash } from '@recoillink/sdk/ism/utils';
 import {
   commitmentFromIcaCalls,
   encodeIcaCalls,
   normalizeCalls,
-} from '@hyperlane-xyz/sdk/middleware/account/icaCalls';
-import { addressToBytes32, formatMessage } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/middleware/account/icaCalls';
+import { addressToBytes32, formatMessage } from '@recoillink/utils';
 
 import { prisma } from '../../src/db.js';
 import { CallCommitmentsService } from '../../src/services/CallCommitmentsService.js';

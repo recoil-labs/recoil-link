@@ -17,8 +17,8 @@ import {
   ChainName,
   MultiProtocolProvider,
   SvmMultiProtocolSignerAdapter,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import {
   type SquadsKeys,

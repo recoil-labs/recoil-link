@@ -1,4 +1,4 @@
-import { objMap, rootLogger } from '@hyperlane-xyz/utils';
+import { objMap, rootLogger } from '@recoillink/utils';
 
 import {
   connectContracts,

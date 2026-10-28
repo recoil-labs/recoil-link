@@ -8,8 +8,8 @@ import {
   type IsmConfig,
   IsmType,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, normalizeAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, normalizeAddress } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../utils/files.js';
 import { type HyperlaneE2ECoreTestCommands } from '../commands/core.js';

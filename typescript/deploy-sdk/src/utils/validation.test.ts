@@ -1,10 +1,10 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   type DomainMultisigConfig,
   type IsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 
 import {
   UnsupportedIsmTypeError,

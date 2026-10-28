@@ -151,7 +151,7 @@ jobs:
         if: (matrix.e2e-type == 'evm' || matrix.e2e-type == 'tron') && steps.check-conditions.outputs.skip-e2e != 'true'
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: ${{ matrix.e2e-type == 'evm' && '@hyperlane-xyz/infra...' || '@hyperlane-xyz/cli...' }}
+          build-filter: ${{ matrix.e2e-type == 'evm' && '@recoillink/infra...' || '@recoillink/cli...' }}
 
       - name: Install system dependencies
         if: steps.check-conditions.outputs.skip-e2e != 'true'

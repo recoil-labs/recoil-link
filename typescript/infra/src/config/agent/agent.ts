@@ -9,8 +9,8 @@ import {
   ChainMap,
   ChainName,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, objMap } from '@recoillink/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import { getChain } from '../../../config/registry.js';

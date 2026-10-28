@@ -1,24 +1,24 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { type ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type HookType,
   type IgpHookConfig,
   type MerkleTreeHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { ZERO_ADDRESS_HEX_32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/module';
+import { ZERO_ADDRESS_HEX_32, assert } from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { CosmosHookArtifactManager } from '../hook/hook-artifact-manager.js';

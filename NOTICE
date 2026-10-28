@@ -1,0 +1,11 @@
+Recoil Link
+Copyright 2026 Recoil Labs
+
+This product is a modified version of the Hyperlane monorepo
+(https://github.com/hyperlane-xyz/hyperlane-monorepo), which is licensed under
+the Apache License, Version 2.0. Original work copyright Abacus Works, Inc. and
+the Hyperlane contributors.
+
+Recoil Labs has modified the original work, including renaming packages,
+command-line tools and configuration defaults. The full history of these
+modifications is recorded in this repository's git history.

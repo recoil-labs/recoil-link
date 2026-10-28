@@ -5,7 +5,7 @@ import {
   getMultiSendDeployment,
 } from '@safe-global/safe-deployments';
 
-import { Address, assert, retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { Address, assert, retryAsync, rootLogger } from '@recoillink/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName, ChainNameOrId } from '../types.js';

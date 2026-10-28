@@ -6,13 +6,13 @@ import {
   IXERC20__factory,
   PackageVersioned__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { ethers } from 'ethers';
 import sinon from 'sinon';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import {

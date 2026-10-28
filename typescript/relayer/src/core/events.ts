@@ -1,6 +1,6 @@
 import type { providers } from 'ethers';
 
-import type { DispatchedMessage } from '@hyperlane-xyz/sdk';
+import type { DispatchedMessage } from '@recoillink/sdk';
 
 /**
  * Relayer events, useful for metrics and monitoring

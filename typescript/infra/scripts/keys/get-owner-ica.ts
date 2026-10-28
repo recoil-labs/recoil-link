@@ -1,9 +1,5 @@
 import { IRegistry } from '@hyperlane-xyz/registry';
-import {
-  AccountConfig,
-  ChainName,
-  InterchainAccount,
-} from '@hyperlane-xyz/sdk';
+import { AccountConfig, ChainName, InterchainAccount } from '@recoillink/sdk';
 import {
   Address,
   LogFormat,
@@ -14,7 +10,7 @@ import {
   isZeroishAddress,
   mapAllSettled,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getGovernanceSafes } from '../../config/environments/mainnet3/governance/utils.js';
 import { icaOwnerChain } from '../../config/environments/mainnet3/owners.js';

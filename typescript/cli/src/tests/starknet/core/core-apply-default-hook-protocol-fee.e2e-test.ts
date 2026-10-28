@@ -4,8 +4,8 @@ import {
   type CoreConfig,
   type DerivedCoreConfig,
   HookType,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {

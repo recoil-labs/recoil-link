@@ -1,12 +1,12 @@
 import { expect } from 'chai';
 
-import { IsmType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { IsmType } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { describeStarknetSingleChainWarpApplyTest } from './warp-apply.shared.js';
 
 describeStarknetSingleChainWarpApplyTest(
-  'hyperlane warp apply ISM updates (Starknet E2E tests)',
+  'rlink warp apply ISM updates (Starknet E2E tests)',
   'should update ISM from nothing to testIsm',
   async ({
     chainName,

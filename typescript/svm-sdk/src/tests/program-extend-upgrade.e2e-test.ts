@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { assert, sleep } from '@hyperlane-xyz/utils';
+import { assert, sleep } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import {

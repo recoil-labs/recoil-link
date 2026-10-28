@@ -1,9 +1,9 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { eqAddressAleo } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { eqAddressAleo } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { AleoSigner } from '../clients/signer.js';

@@ -6,8 +6,8 @@ import {
   Router,
   TimelockController,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
-import { eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { eqAddress } from '@recoillink/utils';
 
 import { HyperlaneContracts, HyperlaneFactories } from '../contracts/types.js';
 import { DeployerOptions } from '../deploy/HyperlaneDeployer.js';

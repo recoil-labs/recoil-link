@@ -1,5 +1,5 @@
-import { CoreConfig } from '@hyperlane-xyz/sdk';
-import { objFilter, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+import { CoreConfig } from '@recoillink/sdk';
+import { objFilter, objMap, promiseObjAll } from '@recoillink/utils';
 
 import {
   ComparableValidator,

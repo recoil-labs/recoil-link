@@ -4,7 +4,7 @@ import { Wallet, providers } from 'ethers';
 import {
   type DelayedFlowRouterHookIsm,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -17,8 +17,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, addressToBytes32, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

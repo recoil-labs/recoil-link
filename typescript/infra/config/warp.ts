@@ -8,8 +8,8 @@ import {
   OwnableConfig,
   WarpRouteDeployConfig,
   WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
-import { assert, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, objMap, promiseObjAll } from '@recoillink/utils';
 
 import { getRouterConfigsForAllVms } from '../scripts/core-utils.js';
 import { EnvironmentConfig } from '../src/config/environment.js';

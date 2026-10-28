@@ -13,7 +13,7 @@ SNAPSHOT_TESTS=(
 )
 
 # Tests to skip for Tron for reasons other than snapshots: they drive the CLI
-# relayer (`hyperlane relayer` / `hyperlane send message`), whose test helpers
+# relayer (`rlink relayer` / `rlink send message`), whose test helpers
 # pass a single `--key`, which the CLI maps to the ethereum protocol only, so no
 # Tron signer is available.
 TRON_INCOMPATIBLE_TESTS=(

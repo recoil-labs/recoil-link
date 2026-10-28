@@ -7,16 +7,16 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/radix-sdk
+npm install @recoillink/radix-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/radix-sdk
+pnpm add @recoillink/radix-sdk
 ```
 
 ## Usage
 
 ```ts
-import { RadixSDK, RadixSigningSDK } from "@hyperlane-xyz/radix-sdk";
+import { RadixSDK, RadixSigningSDK } from "@recoillink/radix-sdk";
 
 const signingSdk = await RadixSigningSDK.fromPrivateKey(
   PRIV_KEY,

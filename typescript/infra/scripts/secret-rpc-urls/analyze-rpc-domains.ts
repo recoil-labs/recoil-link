@@ -1,5 +1,5 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ChainName } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { getArgs } from '../agent-utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

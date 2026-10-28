@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 import { BigNumber as BigNumberJs } from 'bignumber.js';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getTokenGasOracleConfigs } from '../config/environments/mainnet3/tokenGasOracles.js';
 import { getIgp } from '../config/environments/mainnet3/igp.js';

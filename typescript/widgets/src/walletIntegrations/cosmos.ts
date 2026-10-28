@@ -3,17 +3,17 @@ import type { DeliverTxResponse } from '@cosmjs/cosmwasm-stargate';
 import { useChains } from '@cosmos-kit/react';
 import { useCallback } from 'react';
 
-import { CosmosNativeSigner } from '@hyperlane-xyz/cosmos-sdk/runtime';
-import { chainMetadataToCosmosChain } from '@hyperlane-xyz/sdk/metadata/chainMetadataConversion';
+import { CosmosNativeSigner } from '@recoillink/cosmos-sdk/runtime';
+import { chainMetadataToCosmosChain } from '@recoillink/sdk/metadata/chainMetadataConversion';
 import {
   type TypedTransactionReceipt,
   ProviderType,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@recoillink/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@recoillink/sdk/token/ITokenMetadata';
+import type { ChainName } from '@recoillink/sdk/types';
+import type { WarpTypedTransaction } from '@recoillink/sdk/warp/types';
+import { assert } from '@recoillink/utils';
 
 import { widgetLogger } from '../logger.js';
 

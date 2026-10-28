@@ -7,9 +7,9 @@ import type {
   RebalanceAction,
   RebalanceIntent,
   Transfer,
-} from '@hyperlane-xyz/rebalancer';
-import type { Domain } from '@hyperlane-xyz/utils';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/rebalancer';
+import type { Domain } from '@recoillink/utils';
+import { rootLogger } from '@recoillink/utils';
 
 const logger = rootLogger.child({ module: 'MockActionTracker' });
 

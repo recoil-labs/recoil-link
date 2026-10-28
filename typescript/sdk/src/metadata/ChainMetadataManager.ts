@@ -8,7 +8,7 @@ import {
   isEVMLike,
   pick,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { isEtherscanApiCompatibleFamily } from '../block-explorer/utils.js';
 import { ChainMap, ChainName, ChainNameOrId } from '../types.js';

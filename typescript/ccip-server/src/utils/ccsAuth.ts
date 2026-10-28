@@ -2,8 +2,8 @@ import { utils } from 'ethers';
 import type { FastifyReply } from 'fastify';
 import { z } from 'zod';
 
-import { offchainLookupRequestMessageHash } from '@hyperlane-xyz/sdk/ism/utils';
-import { assert } from '@hyperlane-xyz/utils';
+import { offchainLookupRequestMessageHash } from '@recoillink/sdk/ism/utils';
+import { assert } from '@recoillink/utils';
 
 import type { CcipRequest } from '../http.js';
 

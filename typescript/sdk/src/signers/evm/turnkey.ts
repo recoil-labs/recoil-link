@@ -1,7 +1,7 @@
 import type { TActivity } from '@turnkey/sdk-server';
 import { ethers } from 'ethers';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import {
   TurnkeyClientManager,

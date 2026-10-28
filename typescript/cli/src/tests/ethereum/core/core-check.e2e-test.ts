@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { $ } from 'zx';
 
-import { randomAddress } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { randomAddress } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -15,7 +15,7 @@ import {
   REGISTRY_PATH,
 } from '../consts.js';
 
-describe('hyperlane core check e2e tests', async function () {
+describe('rlink core check e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -31,8 +31,7 @@ describe('hyperlane core check e2e tests', async function () {
   });
 
   it('should throw an error if the --chain param is not provided', async () => {
-    const wrongCommand =
-      $`pnpm --filter @hyperlane-xyz/cli run hyperlane core check \
+    const wrongCommand = $`pnpm --filter @recoillink/cli run rlink core check \
               --registry ${REGISTRY_PATH} \
               --config ${CORE_CONFIG_PATH} \
               --verbosity debug \

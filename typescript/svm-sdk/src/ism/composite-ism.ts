@@ -12,19 +12,19 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   CompositeIsmNodeType,
   IsmType,
   type CompositeIsmArtifactConfig,
   type CompositeIsmNodeArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 import {
   assert,
   deepEquals,
   isEmptyAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   decodeCompositeIsmStorageAccount,
@@ -286,7 +286,7 @@ function isValidDecimalStringBoundedBy(value: string, max: bigint): boolean {
  * Validates a composite ISM artifact tree against the same semantic rules
  * enforced by the Rust program's validate_config/validate_domain_ism
  * (rust/sealevel/programs/ism/composite-ism/src/processor.rs), mirroring
- * `@hyperlane-xyz/sdk`'s CompositeIsmConfigSchema superRefine checks.
+ * `@recoillink/sdk`'s CompositeIsmConfigSchema superRefine checks.
  *
  * The SDK schema only protects config-file/YAML callers parsed through
  * CompositeIsmConfigSchema — a caller constructing a CompositeIsmArtifactConfig

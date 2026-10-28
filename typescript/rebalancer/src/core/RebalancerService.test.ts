@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import type { MultiProvider, Token, WarpCore } from '@hyperlane-xyz/sdk';
+import type { MultiProvider, Token, WarpCore } from '@recoillink/sdk';
 
 import type { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

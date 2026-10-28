@@ -6,12 +6,12 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   DeployedValidatorAnnounceAddress,
   RawValidatorAnnounceConfig,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { assert, eqAddressSol, isNullish } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/validator-announce';
+import { assert, eqAddressSol, isNullish } from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { resolveProgram } from '../deploy/resolve-program.js';

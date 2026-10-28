@@ -3,9 +3,9 @@ import { BigNumber } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import type { ChainName, MultiProvider, Token } from '@hyperlane-xyz/sdk';
-import { TokenStandard } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ChainName, MultiProvider, Token } from '@recoillink/sdk';
+import { TokenStandard } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import {
   calculateTransferCosts,

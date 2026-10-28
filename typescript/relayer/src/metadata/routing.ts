@@ -1,7 +1,7 @@
 import {
   DefaultFallbackRoutingIsm__factory,
   IRoutingIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   ChainName,
   DerivedIsmConfig,
@@ -11,8 +11,8 @@ import {
   MailboxDefaultIsmConfig,
   RoutingIsmConfig,
   isDynamicallyRoutedIsmType,
-} from '@hyperlane-xyz/sdk';
-import { WithAddress, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { WithAddress, assert } from '@recoillink/utils';
 
 import type { BaseMetadataBuilder } from './builder.js';
 import type {

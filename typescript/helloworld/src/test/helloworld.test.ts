@@ -10,7 +10,7 @@ import {
   TestChainName,
   TestCoreApp,
   TestCoreDeployer,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { HelloWorldConfig } from '../deploy/config.js';
 import { HelloWorldDeployer } from '../deploy/deploy.js';

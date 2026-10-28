@@ -2,15 +2,15 @@ import util from 'util';
 import { stringify as yamlStringify } from 'yaml';
 import { type CommandModule } from 'yargs';
 
-import { RebalancerConfig, RebalancerService } from '@hyperlane-xyz/rebalancer';
-import { checkWarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { RebalancerConfig, RebalancerService } from '@recoillink/rebalancer';
+import { checkWarpRouteDeployConfig } from '@recoillink/sdk';
 import {
   assert,
   difference,
   intersection,
   isEVMLike,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   checkCrossCollateralWarpRoute,
@@ -79,7 +79,7 @@ import { quoteCommand } from './warp-quote.js';
  */
 export const warpCommand: CommandModule = {
   command: 'warp',
-  describe: 'Manage Hyperlane warp routes',
+  describe: 'Manage Recoil Link warp routes',
   builder: (yargs) =>
     yargs
       .command(altCommand)

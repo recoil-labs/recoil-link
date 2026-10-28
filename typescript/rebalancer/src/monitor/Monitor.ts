@@ -5,8 +5,8 @@ import {
   type ChainName,
   type Token,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, fromWei, sleep } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType, fromWei, sleep } from '@recoillink/utils';
 
 import {
   type ConfirmedBlockTag,

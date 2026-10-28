@@ -6,8 +6,8 @@ import {
   QuotedCalls__factory,
   TestRecipient,
   ValidatorAnnounce,
-} from '@hyperlane-xyz/core';
-import { Address, assert, eqAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address, assert, eqAddress, rootLogger } from '@recoillink/utils';
 
 import { HyperlaneContracts } from '../contracts/types.js';
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';

@@ -1,13 +1,13 @@
 import { ethers } from 'ethers';
 
-import { Router } from '@hyperlane-xyz/core';
+import { Router } from '@recoillink/core';
 import {
   AddressBytes32,
   addressToBytes32,
   eqAddress,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HyperlaneFactories } from '../contracts/types.js';
 import { HyperlaneAppChecker } from '../deploy/HyperlaneAppChecker.js';

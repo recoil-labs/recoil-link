@@ -11,7 +11,7 @@ import {
   HyperlaneCore,
   IsmConfig,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   WithAddress,
@@ -22,7 +22,7 @@ import {
   parseMessage,
   promiseObjAll,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseMetadataBuilder } from '../metadata/builder.js';
 import { isMetadataBuildable } from '../metadata/types.js';

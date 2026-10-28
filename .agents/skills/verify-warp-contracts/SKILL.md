@@ -104,13 +104,13 @@ On any one of the target proxy contracts:
 cast call <proxy_address> "PACKAGE_VERSION()(string)" --rpc-url <rpc_url>
 ```
 
-This returns the `@hyperlane-xyz/core` version (e.g., "11.1.0").
+This returns the `@recoillink/core` version (e.g., "11.1.0").
 
 ### Step 4: Build Solidity artifacts at the correct version
 
 ```bash
 # Find the git tag
-git rev-parse "@hyperlane-xyz/core@<version>"
+git rev-parse "@recoillink/core@<version>"
 ```
 
 Check if a worktree already exists at `/tmp/hyp-verify-<version>`. If it does and already has built artifacts (`out/` directory in `solidity/`), reuse it. Otherwise create a new one:
@@ -120,7 +120,7 @@ Check if a worktree already exists at `/tmp/hyp-verify-<version>`. If it does an
 if [ -d /tmp/hyp-verify-<version> ]; then
   echo "Worktree already exists, reusing"
 else
-  git worktree add /tmp/hyp-verify-<version> "@hyperlane-xyz/core@<version>"
+  git worktree add /tmp/hyp-verify-<version> "@recoillink/core@<version>"
   cd /tmp/hyp-verify-<version> && pnpm install
   cd /tmp/hyp-verify-<version>/solidity && forge soldeer install
   cd /tmp/hyp-verify-<version>/solidity && forge build

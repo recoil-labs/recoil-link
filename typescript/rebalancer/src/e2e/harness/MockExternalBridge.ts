@@ -5,10 +5,10 @@ import {
   ERC20Test__factory,
   HypERC20Collateral__factory,
   HypNative__factory,
-} from '@hyperlane-xyz/core';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
-import { HyperlaneCore, type MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { HyperlaneRelayer } from '@recoillink/relayer';
+import { HyperlaneCore, type MultiProvider } from '@recoillink/sdk';
+import { assert, ProtocolType } from '@recoillink/utils';
 
 import type {
   BridgeQuote,

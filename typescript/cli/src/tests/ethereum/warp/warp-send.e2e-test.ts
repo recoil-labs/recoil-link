@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Wallet, ethers } from 'ethers';
 import { parseEther } from 'ethers/lib/utils.js';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
+import { ERC20__factory } from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -17,8 +17,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, randomInt } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, randomInt } from '@recoillink/utils';
 
 import { WarpSendLogs } from '../../../send/transfer.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
@@ -41,7 +41,7 @@ import {
   getCombinedWarpRoutePath,
 } from '../consts.js';
 
-describe('hyperlane warp send e2e tests', async function () {
+describe('rlink warp send e2e tests', async function () {
   this.timeout(200_000);
 
   let chain2Addresses: ChainAddresses = {};

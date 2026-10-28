@@ -1,22 +1,22 @@
 import { address as parseAddress, type Address } from '@solana/kit';
 import { keccak_256 } from '@noble/hashes/sha3';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/artifact';
+import type { IgpHookConfig } from '@recoillink/provider-sdk/hook';
 import {
   assert,
   difference,
   isNullish,
   isZeroishAddress,
   ZERO_ADDRESS_HEX_32,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { SetQuoteSignerOp } from '../codecs/fee.js';
 import type { IgpFeeConfig } from '../codecs/igp.js';

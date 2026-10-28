@@ -1,6 +1,6 @@
 import { FC, SVGProps } from 'react';
 
-import { KnownProtocolType, ProtocolType } from '@hyperlane-xyz/utils';
+import { KnownProtocolType, ProtocolType } from '@recoillink/utils';
 
 import { AleoLogo } from './Aleo.js';
 import { CosmosLogo } from './Cosmos.js';

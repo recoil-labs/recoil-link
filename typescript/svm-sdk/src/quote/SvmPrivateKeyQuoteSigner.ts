@@ -5,8 +5,8 @@ import {
   type QuoteSignature,
   type RawQuoteSigner,
   type SignableInput,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/quote';
+import { assert } from '@recoillink/utils';
 
 import { u48be } from '../codecs/binary.js';
 import {

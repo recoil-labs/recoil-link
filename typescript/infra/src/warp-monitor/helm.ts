@@ -9,8 +9,8 @@ import {
   SealevelHypTokenAdapter,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { difference, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { difference, rootLogger } from '@recoillink/utils';
 
 import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { getRegistry, getWarpCoreConfig } from '../../config/registry.js';

@@ -1,5 +1,5 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 
 export type ChainName = string;
 export type ChainMap<T> = Record<ChainName, T>;

@@ -1,30 +1,24 @@
-# Hyperlane
+# Recoil Link
 
-[![GitHub Actions][gha-badge]][gha] [![codecov](https://codecov.io/gh/hyperlane-xyz/hyperlane-monorepo/branch/main/graph/badge.svg?token=APC7C3Q2GS)](https://codecov.io/gh/hyperlane-xyz/hyperlane-monorepo) [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
+Recoil Link is an interchain messaging protocol by [Recoil Labs](https://github.com/recoil-labs) that lets applications send messages and tokens between blockchains.
 
-[gha]: https://github.com/hyperlane-xyz/hyperlane-monorepo/actions
-[gha-badge]: https://github.com/PaulRBerg/prb-math/actions/workflows/ci.yml/badge.svg
-[codecov-badge]: https://img.shields.io/codecov/c/github/hyperlane-xyz/hyperlane-monorepo
-[foundry]: https://getfoundry.sh/
-[foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
-[license]: https://www.apache.org/licenses/LICENSE-2.0
-[license-badge]: https://img.shields.io/badge/License-Apache-blue.svg
+Developers use Recoil Link to share state across chains and build applications that live natively on many networks at once: EVM chains, Solana (SVM), Cosmos, Starknet, Aleo, Radix and Tron today, with Move-based chains (the Aptos and Sui families) on the roadmap.
 
-## Versioning
+## Quick start
 
-Note this is the branch for Hyperlane v3.
+```sh
+pnpm install
+pnpm build
+pnpm --filter @recoillink/cli run rlink --help
+```
 
-V2 is deprecated in favor of V3. The code for V2 can be found in the [v2](https://github.com/hyperlane-xyz/hyperlane-monorepo/tree/v2) branch. For V1 code, refer to the [v1](https://github.com/hyperlane-xyz/hyperlane-monorepo/tree/v1) branch.
+The CLI reads chain metadata and deployment addresses from the [Recoil Link registry](https://github.com/recoil-labs/recoil-link-registry) by default, plus any local overrides in `~/.recoil-link`.
 
-## Overview
+## Attribution
 
-Hyperlane is an interchain messaging protocol that allows applications to communicate between blockchains.
+Recoil Link is a fork of [Hyperlane](https://github.com/hyperlane-xyz/hyperlane-monorepo), licensed under the Apache License 2.0. See [NOTICE](./NOTICE) for details. Internal contract, crate and type names (for example `Mailbox`, `HyperlaneCore`) are kept from upstream so that upstream fixes can still be merged; see [`scripts/recoil-link/rebrand.sh`](./scripts/recoil-link/rebrand.sh) for what is renamed.
 
-Developers can use Hyperlane to share state between blockchains, allowing them to build interchain applications that live natively across multiple chains.
-
-To read more about interchain applications, how the protocol works, and how to integrate with Hyperlane, please see the [documentation](https://docs.hyperlane.xyz).
-
-## Working on Hyperlane
+## Working on Recoil Link
 
 ### Prerequisites
 

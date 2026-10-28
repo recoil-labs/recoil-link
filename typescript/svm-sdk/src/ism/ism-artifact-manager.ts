@@ -1,16 +1,16 @@
 import { address as parseAddress } from '@solana/kit';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@recoillink/provider-sdk/altvm';
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   DeployedRawIsmArtifact,
   IRawIsmArtifactManager,
   RawIsmArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { type NonEmptyArray, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { type NonEmptyArray, assert } from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

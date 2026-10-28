@@ -7,7 +7,7 @@ import {
   HyperlaneIsmFactory,
   HyperlaneRouterDeployer,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { HelloWorldFactories, helloWorldFactories } from '../app/contracts.js';
 import { HelloWorld } from '../types/index.js';

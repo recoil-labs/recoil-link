@@ -3,9 +3,9 @@ import { existsSync } from 'node:fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-import { HypTokenConfig, TokenStandard } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readFileAtPath } from '@hyperlane-xyz/utils/fs';
+import { HypTokenConfig, TokenStandard } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
+import { readFileAtPath } from '@recoillink/utils/fs';
 
 import { getChain, getRegistry } from '../../config/registry.js';
 import { getArgs, withWarpRouteId } from '../agent-utils.js';

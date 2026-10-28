@@ -1,5 +1,5 @@
 import { IRegistry } from '@hyperlane-xyz/registry';
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { ChainName } from '@recoillink/sdk';
 
 import {
   getKeysForRole,

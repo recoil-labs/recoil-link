@@ -14,7 +14,7 @@ import {
   MultiProtocolProvider,
   SvmMultiProtocolSignerAdapter,
   testSealevelChain,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { getSquadsKeys } from '../src/config/squads.js';
 import { GovernanceType } from '../src/governanceTypes.js';

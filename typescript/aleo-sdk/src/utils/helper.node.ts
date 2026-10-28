@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 
 import { Program } from '@provablehq/sdk/mainnet.js';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { programRegistry } from '../artifacts.js';
 import { type AleoProgram } from '../programs.js';

@@ -6,7 +6,7 @@
  *   pnpm tsx scripts/validators/fastpath/check-fastpath-validator-announce.ts \
  *     -e mainnet3 [--chains arbitrum base ...]
  */
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { eqAddress } from '@recoillink/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import { FASTPATH_VALIDATORS } from '../../../config/environments/mainnet3/fastpath/validators.js';

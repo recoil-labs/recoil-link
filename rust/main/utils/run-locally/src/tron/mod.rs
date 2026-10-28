@@ -261,7 +261,7 @@ fn run_locally() {
             .cmd("turbo")
             .cmd("run")
             .cmd("build")
-            .arg("filter", "@hyperlane-xyz/cli...")
+            .arg("filter", "@recoillink/cli...")
             .run()
             .join();
     }

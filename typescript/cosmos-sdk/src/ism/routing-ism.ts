@@ -1,6 +1,6 @@
 import { type DeliverTxResponse } from '@cosmjs/stargate';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
@@ -8,12 +8,12 @@ import {
   ArtifactState,
   type ArtifactUnderived,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type RawRoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { eqAddressCosmos, isNullish } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { eqAddressCosmos, isNullish } from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { getNewContractAddress } from '../utils/base.js';

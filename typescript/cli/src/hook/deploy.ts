@@ -1,7 +1,7 @@
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
-import { createHookWriter } from '@hyperlane-xyz/deploy-sdk';
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
-import { hookConfigToArtifact } from '@hyperlane-xyz/provider-sdk/hook';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
+import { createHookWriter } from '@recoillink/deploy-sdk';
+import { GasAction } from '@recoillink/provider-sdk';
+import { hookConfigToArtifact } from '@recoillink/provider-sdk/hook';
 import {
   ContractVerifier,
   EvmHookModule,
@@ -10,8 +10,8 @@ import {
   HookType,
   altVmChainLookup,
   extractIsmAndHookFactoryAddresses,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike, mustGet } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, isEVMLike, mustGet } from '@recoillink/utils';
 
 import { requestAndSaveApiKeys } from '../context/apiKeys.js';
 import { type WriteCommandContext } from '../context/types.js';

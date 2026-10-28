@@ -3,8 +3,8 @@ import {
   ChainName,
   ChainTechnicalStack,
   isStaticDeploymentSupported,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType, isEVMLike } from '@recoillink/utils';
 
 import { SkipReason, SkipLists } from './types.js';
 

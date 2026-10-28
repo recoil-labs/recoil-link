@@ -1,6 +1,6 @@
 import { StartedTestContainer } from 'testcontainers';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { DEFAULT_E2E_TEST_TIMEOUT } from '../testing/constants.js';
 import { runStarknetNode } from '../testing/node.js';

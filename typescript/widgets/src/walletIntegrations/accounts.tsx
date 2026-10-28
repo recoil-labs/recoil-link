@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
+import type { MinimalProviderRegistry } from '@recoillink/sdk/providers/MinimalProviderRegistry';
+import type { ChainName } from '@recoillink/sdk/types';
 import {
   type Address,
   type KnownProtocolType,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { useAleoAccount } from './aleoWallet.js';
 import { getAccountAddressForChain } from './accountUtils.js';

@@ -11,14 +11,14 @@ import {
 } from '@cosmjs/stargate';
 import { type CometClient, connectComet } from '@cosmjs/tendermint-rpc';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { type AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 import {
   composeWarpDeployGas,
   nativeAmountFromGasUnits,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/warp';
+import { assert, strip0x } from '@recoillink/utils';
 
 import { type MsgRemoteTransferEncodeObject } from '../hyperlane/warp/messages.js';
 import {

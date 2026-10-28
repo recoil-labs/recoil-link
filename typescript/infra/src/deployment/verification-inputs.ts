@@ -1,8 +1,8 @@
 import { join } from 'path';
 
-import { ChainMap, ContractVerificationInput } from '@hyperlane-xyz/sdk';
-import { deepCopy, eqAddress, rootLogger } from '@hyperlane-xyz/utils';
-import { pathExists, readJson } from '@hyperlane-xyz/utils/fs';
+import { ChainMap, ContractVerificationInput } from '@recoillink/sdk';
+import { deepCopy, eqAddress, rootLogger } from '@recoillink/utils';
+import { pathExists, readJson } from '@recoillink/utils/fs';
 
 import { Modules, getModuleDirectory } from '../../scripts/agent-utils.js';
 import { DeployEnvironment } from '../config/deploy-environment.js';

@@ -1,6 +1,6 @@
 import { Pushgateway, Registry } from 'prom-client';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 // Shared PushGateway delete helper for the clear-* scripts.
 //
@@ -18,7 +18,7 @@ import { assert } from '@hyperlane-xyz/utils';
 // event without aborting the socket, so a server that accepts the request and
 // never responds still hangs. The deadline is therefore enforced explicitly by
 // racing the delete against a timer (see withDeadline). `getPushGateway` from
-// @hyperlane-xyz/metrics hardcodes no timeout, so the default gateway is built
+// @recoillink/metrics hardcodes no timeout, so the default gateway is built
 // directly here.
 const PUSHGATEWAY_TIMEOUT_MS = 30_000;
 

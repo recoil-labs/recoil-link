@@ -1,4 +1,4 @@
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainName } from '@recoillink/sdk';
 
 import { getDisabledChains } from '../config/chain.js';
 import {

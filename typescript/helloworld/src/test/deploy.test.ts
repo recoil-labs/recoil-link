@@ -9,7 +9,7 @@ import {
   MultiProvider,
   TestCoreApp,
   TestCoreDeployer,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { HelloWorldApp } from '../app/app.js';
 import { HelloWorldFactories } from '../app/contracts.js';

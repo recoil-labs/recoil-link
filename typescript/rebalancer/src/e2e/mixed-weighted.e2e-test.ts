@@ -6,7 +6,7 @@ import {
   MultiProvider,
   revertToSnapshot,
   snapshot,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   ExecutionType,

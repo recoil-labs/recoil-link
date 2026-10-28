@@ -48,7 +48,7 @@
  */
 import { expect } from 'chai';
 
-import { toWei } from '@hyperlane-xyz/utils';
+import { toWei } from '@recoillink/utils';
 
 import { ScenarioGenerator } from '../../src/index.js';
 

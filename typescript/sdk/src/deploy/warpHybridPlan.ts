@@ -1,11 +1,11 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   Address,
   assert,
   deepEquals,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HookConfig, HookConfigSchema, HookType } from '../hook/types.js';
 import {

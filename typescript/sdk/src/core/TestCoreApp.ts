@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 
-import { TestMailbox, TestMailbox__factory } from '@hyperlane-xyz/core';
-import { messageId } from '@hyperlane-xyz/utils';
+import { TestMailbox, TestMailbox__factory } from '@recoillink/core';
+import { messageId } from '@recoillink/utils';
 
 import { HyperlaneContracts } from '../contracts/types.js';
 import { ChainName } from '../types.js';

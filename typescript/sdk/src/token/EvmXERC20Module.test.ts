@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { IXERC20Lockbox__factory, Ownable__factory } from '@hyperlane-xyz/core';
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { IXERC20Lockbox__factory, Ownable__factory } from '@recoillink/core';
+import { eqAddress } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@hyperlane-xyz/provider-sdk/warp';
+import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@recoillink/provider-sdk/warp';
 
 import {
   ZBigNumberish,

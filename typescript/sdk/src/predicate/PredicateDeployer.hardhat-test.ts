@@ -10,8 +10,8 @@ import {
   MockPredicateRegistry__factory,
   PredicateRouterWrapper__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { Address } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HyperlaneContracts } from '../contracts/types.js';

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import { pino } from 'pino';
 
-import type { ChainMap, ChainName, Token } from '@hyperlane-xyz/sdk';
+import type { ChainMap, ChainName, Token } from '@recoillink/sdk';
 
 import type { RawBalances } from '../interfaces/IStrategy.js';
 import { extractBridgeConfigs } from '../test/helpers.js';

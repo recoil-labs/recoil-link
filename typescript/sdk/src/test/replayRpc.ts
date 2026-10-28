@@ -6,7 +6,7 @@ import http from 'http';
 // eslint-disable-next-line import/no-nodejs-modules
 import { gunzipSync, gzipSync } from 'zlib';
 
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { ExplorerFamily } from '../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

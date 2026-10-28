@@ -2,7 +2,7 @@ import { keccak_256 } from '@noble/hashes/sha3';
 import type { Address, Instruction, TransactionSigner } from '@solana/kit';
 import { getAddressCodec } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { concatBytes, u32le, u8, vecBytes } from '../codecs/binary.js';
 import { encodeH160 } from '../codecs/shared.js';

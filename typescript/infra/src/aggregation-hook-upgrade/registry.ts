@@ -1,5 +1,5 @@
 import type { ChainAddresses } from '@hyperlane-xyz/registry';
-import { Address, objMerge } from '@hyperlane-xyz/utils';
+import { Address, objMerge } from '@recoillink/utils';
 
 export interface RegistryAddressUpdate {
   staticAggregationHookFactory?: Address;

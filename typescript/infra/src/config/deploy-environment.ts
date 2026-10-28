@@ -1,4 +1,4 @@
-import type { ChainName } from '@hyperlane-xyz/sdk';
+import type { ChainName } from '@recoillink/sdk';
 
 const deployEnvironments = ['test', 'testnet4', 'mainnet3'] as const;
 

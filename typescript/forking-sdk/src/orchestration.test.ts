@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 
 import { buildForkedChainMetadata } from './orchestration.js';
 import { ForkManagerRegistry } from './registry.js';

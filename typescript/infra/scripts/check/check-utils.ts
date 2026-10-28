@@ -15,8 +15,8 @@ import {
   InterchainQueryChecker,
   IsmType,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { objFilter, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { objFilter, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { DEPLOYER } from '../../config/environments/mainnet3/owners.js';

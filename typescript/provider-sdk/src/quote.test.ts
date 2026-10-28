@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,

@@ -4,7 +4,7 @@ import {
   QuoteSignature,
   RawQuoteSigner,
   SignableInput,
-} from '@hyperlane-xyz/provider-sdk/quote';
+} from '@recoillink/provider-sdk/quote';
 
 import { parseEip712Signable } from './Eip712Signable.js';
 

@@ -1,5 +1,5 @@
-import type { RadixProvider as RadixSDKProvider } from '@hyperlane-xyz/radix-sdk/runtime';
-import { LazyAsync, assert, isNumeric } from '@hyperlane-xyz/utils';
+import type { RadixProvider as RadixSDKProvider } from '@recoillink/radix-sdk/runtime';
+import { LazyAsync, assert, isNumeric } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { RadixProvider } from '../ProviderType.js';
@@ -25,7 +25,7 @@ interface RadixRuntimeModule {
 type RadixProviderLoader = () => Promise<RadixRuntimeModule>;
 
 const loadRadixProvider: RadixProviderLoader = () =>
-  import('@hyperlane-xyz/radix-sdk/runtime');
+  import('@recoillink/radix-sdk/runtime');
 
 function createAsyncMethodProxy<T extends object>(
   getTarget: () => Promise<T>,

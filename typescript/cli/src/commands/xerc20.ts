@@ -10,13 +10,13 @@ import {
   type WarpRouteDeployConfigMailboxRequired,
   type XERC20ModuleConfig,
   isXERC20TokenConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   assert,
   normalizeAddressEvm,
   objFilter,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { runSubmit } from '../config/submit.js';
 import {

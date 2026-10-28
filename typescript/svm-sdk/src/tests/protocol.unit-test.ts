@@ -9,8 +9,8 @@ import {
   type JsonRpcSubmitterConfig,
   ProtocolType,
   SubmitterType,
-} from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 
 import { SvmHookArtifactManager } from '../hook/hook-artifact-manager.js';
 import { SvmIsmArtifactManager } from '../ism/ism-artifact-manager.js';

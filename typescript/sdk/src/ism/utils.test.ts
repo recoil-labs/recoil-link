@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { formatMessage, messageId } from '@hyperlane-xyz/utils';
+import { formatMessage, messageId } from '@recoillink/utils';
 
 import type { HyperlaneContracts } from '../contracts/types.js';
 import type { ProxyFactoryFactories } from '../deploy/contracts.js';

@@ -8,8 +8,8 @@ import {
   TokenFeeType,
   TokenType,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, assert } from '@recoillink/utils';
 
 type TokenFeeInputShape = z.input<typeof TokenFeeConfigInputSchema>;
 
@@ -54,7 +54,7 @@ const WILDCARD_RECIPIENT = 'WILDCARD_RECIPIENT';
 const TARGET_ROUTER_NONE = 'TARGET_ROUTER_NONE';
 const DEFAULT_CROSS_COLLATERAL_ROUTER = 'DEFAULT_CROSS_COLLATERAL_ROUTER';
 
-describe('hyperlane warp quote e2e tests', async function () {
+describe('rlink warp quote e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let quoteSignerWallet: Wallet;

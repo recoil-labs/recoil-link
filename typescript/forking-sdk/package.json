@@ -1,9 +1,9 @@
 {
-  "name": "@hyperlane-xyz/forking-sdk",
+  "name": "@recoillink/forking-sdk",
   "version": "10.0.1",
-  "description": "VM-agnostic local forking abstraction for the Hyperlane Protocol",
+  "description": "VM-agnostic local forking abstraction for Recoil Link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "dist"
   ],
@@ -23,11 +23,11 @@
     "test:ci": "mocha --config .mocharc.json"
   },
   "dependencies": {
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*"
+    "@recoillink/provider-sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/mocha": "catalog:",
     "@types/node": "catalog:",

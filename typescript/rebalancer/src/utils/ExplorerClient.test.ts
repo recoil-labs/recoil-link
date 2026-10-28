@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { addressToByteHexString, ProtocolType } from '@hyperlane-xyz/utils';
+import { addressToByteHexString, ProtocolType } from '@recoillink/utils';
 
 import { ExplorerClient } from './ExplorerClient.js';
 

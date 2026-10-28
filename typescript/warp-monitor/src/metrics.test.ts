@@ -5,8 +5,8 @@ import type {
   NativeWalletBalance,
   WarpRouteBalance,
   XERC20Limit,
-} from '@hyperlane-xyz/metrics';
-import { TokenStandard } from '@hyperlane-xyz/sdk';
+} from '@recoillink/metrics';
+import { TokenStandard } from '@recoillink/sdk';
 
 import {
   metricsRegister,

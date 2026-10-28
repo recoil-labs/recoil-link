@@ -15,7 +15,7 @@ import {
   MockArbBridge__factory,
   MockArbSys__factory,
   TestRecipient,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   ArbL2ToL1HookConfig,
   ArbL2ToL1IsmConfig,
@@ -34,13 +34,13 @@ import {
   TestCoreDeployer,
   TestRecipientDeployer,
   testChains,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   WithAddress,
   bytes32ToAddress,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ArbL2ToL1MetadataBuilder } from './arbL2ToL1.js';
 import {

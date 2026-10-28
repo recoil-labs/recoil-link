@@ -1,10 +1,10 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   DeployedHookAddress,
   DeployedHookArtifact,
@@ -12,7 +12,7 @@ import {
   IRawHookArtifactManager,
   RawHookArtifactConfigs,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixBase } from '../utils/base.js';

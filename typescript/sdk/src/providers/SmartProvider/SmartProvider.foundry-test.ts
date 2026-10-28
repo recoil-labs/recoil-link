@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { errors as EthersError, Wallet, constants } from 'ethers';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
+import { ERC20__factory } from '@recoillink/core';
 
 import { randomAddress } from '../../test/testUtils.js';
 

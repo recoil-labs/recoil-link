@@ -1,8 +1,8 @@
 import { PublicKey } from '@solana/web3.js';
 import yargs from 'yargs';
 
-import { ChainName, SvmMultiProtocolSignerAdapter } from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainName, SvmMultiProtocolSignerAdapter } from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { getGovernanceSvmSigners } from '../../../config/environments/mainnet3/governance/utils.js';
 import { squadsConfigs } from '../../../src/config/squads.js';

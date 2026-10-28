@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import { ethers, Wallet } from 'ethers';
 
-import { DelayedFlowRouterHookIsm__factory } from '@hyperlane-xyz/core';
+import { DelayedFlowRouterHookIsm__factory } from '@recoillink/core';
 import {
   type CallData,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import {
   CustomTxSubmitterType,
@@ -50,7 +50,7 @@ import {
   WARP_ID,
 } from './delayedFlowApplyHelpers.js';
 
-describe('hyperlane warp apply with DelayedFlowRouterHookIsm e2e tests', async function () {
+describe('rlink warp apply with DelayedFlowRouterHookIsm e2e tests', async function () {
   this.timeout(5 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const {

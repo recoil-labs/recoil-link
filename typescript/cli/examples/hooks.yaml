@@ -1,5 +1,5 @@
 # A config to define the hooks for core contract deployments
-# Ideally, use the `hyperlane config create hooks` command to generate this file
+# Ideally, use the `rlink config create hooks` command to generate this file
 # but you we can refer to https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/hook/types.ts for the matching types
 
 # HooksConfig:

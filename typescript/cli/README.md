@@ -18,18 +18,18 @@ Node 22 or newer is required.
 
 ```bash
 # Install with NPM
-npm install -g @hyperlane-xyz/cli
+npm install -g @recoillink/cli
 # Or uninstall old versions
-npm uninstall -g @hyperlane-xyz/cli
+npm uninstall -g @recoillink/cli
 ```
 
 **Option 2: Temp install:**
 
 ```bash
 # Run via NPM's npx command
-npx @hyperlane-xyz/cli
+npx @recoillink/cli
 # Or via pnpm's dlx command
-pnpm dlx @hyperlane-xyz/cli
+pnpm dlx @recoillink/cli
 ```
 
 **Option 3: Run from source:**
@@ -39,28 +39,28 @@ git clone https://github.com/hyperlane-xyz/hyperlane-monorepo.git
 cd hyperlane-monorepo
 pnpm install && pnpm build
 cd typescript/cli
-pnpm hyperlane
+pnpm rlink
 ```
 
 ## Common commands
 
-View help: `hyperlane --help`
+View help: `rlink --help`
 
-Create a core deployment config: `hyperlane config create`
+Create a core deployment config: `rlink config create`
 
-Run hyperlane core deployments: `hyperlane deploy core`
+Run rlink core deployments: `hyperlane deploy core`
 
 Run warp route deployments: `hyperlane deploy warp`
 
 View SDK contract addresses: `hyperlane chains addresses`
 
-Send test message: `hyperlane send message`
+Send test message: `rlink send message`
 
 ### Address conversion utilities
 
-Convert address to bytes32: `hyperlane address to-bytes32 --address <address> [--protocol <protocol>]`
+Convert address to bytes32: `rlink address to-bytes32 --address <address> [--protocol <protocol>]`
 
-Convert bytes32 to address: `hyperlane address from-bytes32 --bytes32 <bytes32> --protocol <protocol> [--prefix <prefix> | --chain <chain>]`
+Convert bytes32 to address: `rlink address from-bytes32 --bytes32 <bytes32> --protocol <protocol> [--prefix <prefix> | --chain <chain>]`
 
 ## Logging
 
@@ -81,7 +81,7 @@ Convert an address to bytes32 format (used in Hyperlane messages).
 **Usage:**
 
 ```bash
-hyperlane address to-bytes32 --address <address> [--protocol <protocol>]
+rlink address to-bytes32 --address <address> [--protocol <protocol>]
 ```
 
 **Flags:**
@@ -93,13 +93,13 @@ hyperlane address to-bytes32 --address <address> [--protocol <protocol>]
 
 ```bash
 # EVM address (auto-detected)
-hyperlane address to-bytes32 --address 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+rlink address to-bytes32 --address 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
 
 # Solana address with explicit protocol
-hyperlane address to-bytes32 -a EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v -p sealevel
+rlink address to-bytes32 -a EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v -p sealevel
 
 # Cosmos address
-hyperlane address to-bytes32 --address cosmos1wxeyh7zgn4tctjzs0vtqpc6p5cxq5t2muzl7ng --protocol cosmos
+rlink address to-bytes32 --address cosmos1wxeyh7zgn4tctjzs0vtqpc6p5cxq5t2muzl7ng --protocol cosmos
 ```
 
 ### from-bytes32
@@ -109,7 +109,7 @@ Convert bytes32 to an address for a specific protocol.
 **Usage:**
 
 ```bash
-hyperlane address from-bytes32 --bytes32 <bytes32> --protocol <protocol> [--prefix <prefix> | --chain <chain>]
+rlink address from-bytes32 --bytes32 <bytes32> --protocol <protocol> [--prefix <prefix> | --chain <chain>]
 ```
 
 **Flags:**
@@ -123,19 +123,19 @@ hyperlane address from-bytes32 --bytes32 <bytes32> --protocol <protocol> [--pref
 
 ```bash
 # Convert to EVM address
-hyperlane address from-bytes32 --bytes32 0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266 --protocol ethereum
+rlink address from-bytes32 --bytes32 0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266 --protocol ethereum
 
 # Convert to Solana address (using aliases)
-hyperlane address from-bytes32 -b 0xc6fa7af3bedbad3a3d65f36aabc97431b1bbe4c2d2f6e0e47ca60203452f5d61 -p sealevel
+rlink address from-bytes32 -b 0xc6fa7af3bedbad3a3d65f36aabc97431b1bbe4c2d2f6e0e47ca60203452f5d61 -p sealevel
 
 # Convert to Cosmos address with explicit prefix
-hyperlane address from-bytes32 --bytes32 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b --protocol cosmos --prefix cosmos
+rlink address from-bytes32 --bytes32 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b --protocol cosmos --prefix cosmos
 
 # Convert to Osmosis address using chain lookup
-hyperlane address from-bytes32 -b 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b -p cosmos --chain osmosis
+rlink address from-bytes32 -b 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b -p cosmos --chain osmosis
 
 # Convert to Neutron address using chain name
-hyperlane address from-bytes32 -b 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b -p cosmos -c neutron
+rlink address from-bytes32 -b 0x00000000000000000000000071b24bf8489d5785c8507b1600e341a60c0a2d5b -p cosmos -c neutron
 ```
 
 **Supported Protocols:**

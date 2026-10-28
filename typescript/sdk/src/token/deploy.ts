@@ -16,7 +16,7 @@ import {
   TokenBridgeDepositAddress__factory,
   TokenRouter,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   addressToBytes32,
   isEVMLike,
@@ -26,7 +26,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   HyperlaneContracts,

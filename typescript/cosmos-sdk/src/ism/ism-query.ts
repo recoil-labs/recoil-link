@@ -1,8 +1,8 @@
 import { type QueryClient } from '@cosmjs/stargate';
 
-import { type isTypes } from '@hyperlane-xyz/cosmos-types';
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { type isTypes } from '@recoillink/cosmos-types';
+import { AltVM } from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 
 import {
   IsmTypes as CosmosNativeIsmTypes,

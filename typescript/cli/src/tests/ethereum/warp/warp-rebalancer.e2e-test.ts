@@ -10,11 +10,11 @@ import {
   ERC20__factory,
   HypERC20Collateral__factory,
   MockValueTransferBridge__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   RebalancerMinAmountType,
   RebalancerStrategyOptions,
-} from '@hyperlane-xyz/rebalancer';
+} from '@recoillink/rebalancer';
 import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
@@ -22,7 +22,7 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   type Domain,
@@ -30,7 +30,7 @@ import {
   bytes32ToAddress,
   sleep,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { createLocalProvider } from '../localProvider.js';
@@ -64,7 +64,7 @@ import {
 chai.use(chaiAsPromised);
 chai.should();
 
-describe('hyperlane warp rebalancer e2e tests', async function () {
+describe('rlink warp rebalancer e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   // How often the rebalancer will check for a rebalance to be triggered

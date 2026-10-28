@@ -1,9 +1,9 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
-import { type ChainName, HyperlaneCore } from '@hyperlane-xyz/sdk';
-import { addressToBytes32, isEVMLike, timeout } from '@hyperlane-xyz/utils';
+import { GasAction } from '@recoillink/provider-sdk';
+import { HyperlaneRelayer } from '@recoillink/relayer';
+import { type ChainName, HyperlaneCore } from '@recoillink/sdk';
+import { addressToBytes32, isEVMLike, timeout } from '@recoillink/utils';
 
 import { EXPLORER_URL } from '../consts.js';
 import { ensureEvmSignersForChains } from '../context/context.js';
@@ -50,7 +50,7 @@ export async function sendTestMessage({
 
   if (Object.keys(activeEvmChainMetadata).length === 0) {
     throw new Error(
-      `No EVM-compatible chains found in registry. 'hyperlane send message' only supports EVM-like chains.`,
+      `No EVM-compatible chains found in registry. 'rlink send message' only supports EVM-like chains.`,
     );
   }
 
@@ -76,14 +76,14 @@ export async function sendTestMessage({
   const originProtocol = multiProvider.getProtocol(origin);
   if (!isEVMLike(originProtocol)) {
     throw new Error(
-      `Origin chain '${origin}' uses protocol '${originProtocol}'. 'hyperlane send message' only supports EVM chains.`,
+      `Origin chain '${origin}' uses protocol '${originProtocol}'. 'rlink send message' only supports EVM chains.`,
     );
   }
 
   const destProtocol = multiProvider.getProtocol(destination);
   if (!isEVMLike(destProtocol)) {
     throw new Error(
-      `Destination chain '${destination}' uses protocol '${destProtocol}'. 'hyperlane send message' only supports EVM chains.`,
+      `Destination chain '${destination}' uses protocol '${destProtocol}'. 'rlink send message' only supports EVM chains.`,
     );
   }
 

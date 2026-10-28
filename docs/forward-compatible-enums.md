@@ -17,7 +17,7 @@ The Hyperlane registry may add new values to enums (e.g., new protocol types, IS
 
 | Enum                  | Unknown Variant | Location                                            |
 | --------------------- | --------------- | --------------------------------------------------- |
-| `ProtocolType`        | `Unknown`       | `@hyperlane-xyz/utils`                              |
+| `ProtocolType`        | `Unknown`       | `@recoillink/utils`                              |
 | `ExplorerFamily`      | `Unknown`       | `typescript/sdk/src/metadata/chainMetadataTypes.ts` |
 | `ChainTechnicalStack` | `Unknown`       | `typescript/sdk/src/metadata/chainMetadataTypes.ts` |
 | `TokenType`           | `unknown`       | `typescript/sdk/src/token/config.ts`                |

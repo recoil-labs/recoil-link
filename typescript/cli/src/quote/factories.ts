@@ -2,36 +2,33 @@ import {
   type AltVM,
   type ChainMetadataForAltVM,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk';
-import { type FeeReadContext } from '@hyperlane-xyz/provider-sdk/fee';
-import type {
-  AnnotatedTx,
-  TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk';
+import { type FeeReadContext } from '@recoillink/provider-sdk/fee';
+import type { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
 import {
   type IRawWarpQuoteArtifactManager,
   type RawQuoteSigner,
-} from '@hyperlane-xyz/provider-sdk/quote';
+} from '@recoillink/provider-sdk/quote';
 import {
   type ChainMap,
   EvmPrivateKeyQuoteSigner,
   EvmQuoteArtifactManager,
   type MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   SealevelSigner,
   SvmPrivateKeyQuoteSigner,
   SvmQuoteArtifactManager,
   createRpc,
   resolveFeeSalt,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { assert, mustGet, strip0x } from '@hyperlane-xyz/utils';
+} from '@recoillink/sealevel-sdk';
+import { assert, mustGet, strip0x } from '@recoillink/utils';
 
 /**
  * EVM↔AltVM bridge for warp-quote management. Owns the duality because
- * `@hyperlane-xyz/sdk` (EVM) does not implement `ProtocolProvider`; this is
- * the only place that imports both `@hyperlane-xyz/sdk` and
- * `@hyperlane-xyz/sealevel-sdk`.
+ * `@recoillink/sdk` (EVM) does not implement `ProtocolProvider`; this is
+ * the only place that imports both `@recoillink/sdk` and
+ * `@recoillink/sealevel-sdk`.
  */
 
 /**

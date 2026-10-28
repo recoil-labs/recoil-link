@@ -12,7 +12,7 @@ inputs:
   build-filter:
     description: 'Turbo filter to scope the build'
     required: false
-    default: '@hyperlane-xyz/cli...'
+    default: '@recoillink/cli...'
 runs:
   using: 'composite'
   steps:
@@ -55,7 +55,7 @@ runs:
         NO_CACHE: ${{ inputs.no-cache }}
       run: |
         if [ "$NO_CACHE" = 'false' ]; then
-          pnpm exec turbo run bundle --filter=@hyperlane-xyz/cli
+          pnpm exec turbo run bundle --filter=@recoillink/cli
         else
           pnpm -C typescript/cli bundle
         fi

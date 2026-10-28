@@ -1,10 +1,4 @@
-import {
-  Address,
-  assert,
-  objKeys,
-  rootLogger,
-  sleep,
-} from '@hyperlane-xyz/utils';
+import { Address, assert, objKeys, rootLogger, sleep } from '@recoillink/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 import { ChainMap, ChainName } from '../types.js';

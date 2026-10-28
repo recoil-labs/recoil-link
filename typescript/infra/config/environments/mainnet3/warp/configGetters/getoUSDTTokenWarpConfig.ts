@@ -14,8 +14,8 @@ import {
   XERC20TokenExtraBridgesLimits,
   XERC20Type,
   XERC20VSLimitConfig,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, assert } from '@recoillink/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { warpFeesIcas } from '../../governance/ica/warpFees.js';
@@ -57,7 +57,7 @@ const supportedCCIPChains = ['base', 'mode', 'optimism'];
 
 // Router implementation version to upgrade to. Deployed staging routers are on
 // core 6.1.0, which predates FungibleTokenRouter fee support; setting this makes
-// `warp apply` upgrade the proxy impl to the current @hyperlane-xyz/core release
+// `warp apply` upgrade the proxy impl to the current @recoillink/core release
 // (via ProxyAdmin.upgrade) so setFeeRecipient/feeRecipient exist for the OQLF fee.
 // Staging and production share the same impl version so the staging upgrade test
 // exercises exactly what production will apply.

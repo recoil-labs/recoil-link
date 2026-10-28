@@ -1,5 +1,5 @@
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
-import { assert } from '@hyperlane-xyz/utils';
+import { TronJsonRpcProvider } from '@recoillink/tron-sdk/runtime';
+import { assert } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { EthersV5Provider, TronProvider } from '../ProviderType.js';

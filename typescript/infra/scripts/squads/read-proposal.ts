@@ -7,7 +7,7 @@ import {
   configureRootLogger,
   rootLogger,
   stringifyObject,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getSquadsKeys, squadsConfigs } from '../../src/config/squads.js';
 import {

@@ -1,5 +1,5 @@
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { assert } from '@recoillink/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

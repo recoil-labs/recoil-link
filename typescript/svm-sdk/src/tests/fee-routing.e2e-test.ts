@@ -6,9 +6,9 @@ import {
   FeeParamsType,
   FeeStrategyType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/fee';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { assert } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { ASSOCIATED_TOKEN_PROGRAM_ADDRESS } from '../constants.js';

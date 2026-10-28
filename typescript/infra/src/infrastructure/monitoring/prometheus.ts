@@ -1,6 +1,6 @@
 import { ChildProcess, spawn } from 'child_process';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { InfrastructureConfig } from '../../config/infrastructure.js';
 import { fetchGCPSecret } from '../../utils/gcloud.js';

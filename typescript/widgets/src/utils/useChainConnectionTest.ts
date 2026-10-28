@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import type { ChainMetadata } from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
-import { isBlockExplorerHealthy } from '@hyperlane-xyz/sdk/providers/explorerHealthTest';
-import { isRpcHealthy } from '@hyperlane-xyz/sdk/providers/rpcHealthTest';
-import { timeout } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@recoillink/sdk/metadata/chainMetadataTypes';
+import { isBlockExplorerHealthy } from '@recoillink/sdk/providers/explorerHealthTest';
+import { isRpcHealthy } from '@recoillink/sdk/providers/rpcHealthTest';
+import { timeout } from '@recoillink/utils';
 
 import { ChainConnectionType } from '../chains/types.js';
 

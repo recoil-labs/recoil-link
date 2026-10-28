@@ -7,7 +7,7 @@ import {
   InterchainGasPaymaster__factory,
   PausableHook__factory,
   RateLimitedHook__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   WithAddress,
@@ -15,7 +15,7 @@ import {
   deepCopy,
   deepEquals,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName, testChains } from '../consts/testChains.js';
 import { HyperlaneAddresses, HyperlaneContracts } from '../contracts/types.js';

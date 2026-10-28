@@ -3,8 +3,8 @@ import {
   HookType,
   IgpConfig,
   multisigIsmVerificationCost,
-} from '@hyperlane-xyz/sdk';
-import { Address, exclude, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, exclude, objMap } from '@recoillink/utils';
 
 import { testChainNames } from './chains.js';
 import { multisigIsm } from './multisigIsm.js';

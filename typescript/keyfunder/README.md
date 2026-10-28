@@ -1,4 +1,4 @@
-# @hyperlane-xyz/keyfunder
+# @recoillink/keyfunder
 
 Standalone service for funding Hyperlane agent keys with native tokens across multiple chains.
 

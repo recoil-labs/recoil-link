@@ -1,7 +1,7 @@
 import { getAbiItem, parseEventLogs, toEventSelector } from 'viem';
 
-import { BlacklistIsm__factory } from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import { BlacklistIsm__factory } from '@recoillink/core';
+import { Address, rootLogger } from '@recoillink/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { EvmEventLogsReader } from '../rpc/evm/EvmEventLogsReader.js';

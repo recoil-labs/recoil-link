@@ -5,7 +5,7 @@ import {
   MergedRegistry,
   RegistryType,
 } from '@hyperlane-xyz/registry';
-import { LazyAsync, assert } from '@hyperlane-xyz/utils';
+import { LazyAsync, assert } from '@recoillink/utils';
 
 import { IWatcher } from './watcherService.js';
 

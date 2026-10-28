@@ -3,7 +3,7 @@ import {
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { FeeQuotingHelmManager } from '../../src/fee-quoting/helm.js';
 import { HelmCommand } from '../../src/utils/helm.js';

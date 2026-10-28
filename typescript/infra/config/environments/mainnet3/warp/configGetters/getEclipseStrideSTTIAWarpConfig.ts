@@ -3,7 +3,7 @@ import {
   HypTokenRouterConfig,
   OwnableConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { getOwnerConfigForAddress } from '../../../../../src/config/environment.js';
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';

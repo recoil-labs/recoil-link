@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import { ProviderType } from '../ProviderType.js';

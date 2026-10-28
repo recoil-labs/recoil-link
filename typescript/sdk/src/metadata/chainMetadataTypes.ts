@@ -4,7 +4,7 @@
  */
 import { z } from 'zod';
 
-import { ProtocolType, objMerge } from '@hyperlane-xyz/utils';
+import { ProtocolType, objMerge } from '@recoillink/utils';
 
 import type { ChainMap } from '../types.js';
 

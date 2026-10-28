@@ -4,12 +4,12 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedValidatorAnnounceAddress,
   type RawValidatorAnnounceConfig,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/validator-announce';
+import { assert } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

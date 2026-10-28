@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { Address, assert } from '@hyperlane-xyz/utils';
+import { Address, assert } from '@recoillink/utils';
 
 import { ChainName } from '../../../../types.js';
 import { TxSubmitterType } from '../TxSubmitterTypes.js';

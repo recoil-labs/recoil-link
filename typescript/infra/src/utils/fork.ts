@@ -1,6 +1,6 @@
 import { JsonRpcProvider, JsonRpcSigner } from '@ethersproject/providers';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
 
 export const resetFork = async (url: string) => {
   const provider = new JsonRpcProvider();
