@@ -1,11 +1,7 @@
 import { confirm, input } from '@inquirer/prompts';
 import { z } from 'zod';
 
-import {
-  type ChainMap,
-  type MultisigIsmConfig,
-  ZHash,
-} from '@recoillink/sdk';
+import { type ChainMap, type MultisigIsmConfig, ZHash } from '@recoillink/sdk';
 import {
   type Address,
   isValidAddress,

@@ -31,7 +31,7 @@ export const relayerCommand: CommandModuleWithContext<
   }
 > = {
   command: 'relayer',
-  describe: 'Run a Hyperlane message relayer',
+  describe: 'Run a Recoil Link message relayer',
   builder: {
     chains: agentTargetsCommandOption,
     cache: {

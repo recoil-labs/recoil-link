@@ -14,10 +14,7 @@ import {
   SealevelCoreAdapter,
   SvmMultiProtocolSignerAdapter,
 } from '@recoillink/sdk';
-import {
-  createRpc,
-  fetchMailboxInboxAccount,
-} from '@recoillink/sealevel-sdk';
+import { createRpc, fetchMailboxInboxAccount } from '@recoillink/sealevel-sdk';
 import { ProtocolType, assert, rootLogger } from '@recoillink/utils';
 import { readJson } from '@recoillink/utils/fs';
 import { address } from '@solana/kit';

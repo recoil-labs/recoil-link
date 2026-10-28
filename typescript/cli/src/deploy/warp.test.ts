@@ -1,11 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import {
-  ProtocolType,
-  addressToBytes32,
-  rootLogger,
-} from '@recoillink/utils';
+import { ProtocolType, addressToBytes32, rootLogger } from '@recoillink/utils';
 import {
   EvmWarpModule,
   HyperlaneDeployer,

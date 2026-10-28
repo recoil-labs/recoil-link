@@ -6,10 +6,7 @@ import {
   getPreloadedPrograms,
   runSolanaNode,
 } from '@recoillink/sealevel-sdk/testing';
-import {
-  FALLBACK_SIMULATION_PAYER,
-  createRpc,
-} from '@recoillink/sealevel-sdk';
+import { FALLBACK_SIMULATION_PAYER, createRpc } from '@recoillink/sealevel-sdk';
 
 import {
   HYP_DEPLOYER_ADDRESS_BY_PROTOCOL,

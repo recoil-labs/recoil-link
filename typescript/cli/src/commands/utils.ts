@@ -16,7 +16,7 @@ import { log, logGreen } from '../logger.js';
  */
 export const addressCommand: CommandModule = {
   command: 'address',
-  describe: 'Address conversion utilities for Hyperlane',
+  describe: 'Address conversion utilities for Recoil Link',
   builder: (yargs) =>
     yargs
       .command(addressToBytes32Command)
@@ -35,7 +35,8 @@ interface AddressToBytes32Args {
 
 const addressToBytes32Command: CommandModule<{}, AddressToBytes32Args> = {
   command: 'to-bytes32',
-  describe: 'Convert an address to bytes32 format (used in Hyperlane messages)',
+  describe:
+    'Convert an address to bytes32 format (used in Recoil Link messages)',
   builder: (yargs) =>
     yargs
       .option('address', {

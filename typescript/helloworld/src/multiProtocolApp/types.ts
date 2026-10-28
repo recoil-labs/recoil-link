@@ -1,8 +1,4 @@
-import {
-  ChainName,
-  IRouterAdapter,
-  TypedTransaction,
-} from '@recoillink/sdk';
+import { ChainName, IRouterAdapter, TypedTransaction } from '@recoillink/sdk';
 import { Address } from '@recoillink/utils';
 
 export interface IHelloWorldAdapter extends IRouterAdapter {

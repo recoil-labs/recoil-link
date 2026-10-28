@@ -27,6 +27,8 @@
     "@changesets/cli": "^2.26.2"
   },
   "devDependencies": {
+    "@hyperlane-xyz/sdk": "workspace:@recoillink/sdk@*",
+    "@hyperlane-xyz/utils": "workspace:@recoillink/utils@*",
     "@typescript/native": "catalog:",
     "husky": "^8.0.0",
     "lint-staged": "^15.5.2",

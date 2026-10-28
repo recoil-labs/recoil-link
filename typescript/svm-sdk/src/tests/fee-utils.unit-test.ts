@@ -1,9 +1,6 @@
 import { expect } from 'chai';
 
-import {
-  FeeParamsType,
-  FeeStrategyType,
-} from '@recoillink/provider-sdk/fee';
+import { FeeParamsType, FeeStrategyType } from '@recoillink/provider-sdk/fee';
 
 import {
   feeStrategiesEqual,

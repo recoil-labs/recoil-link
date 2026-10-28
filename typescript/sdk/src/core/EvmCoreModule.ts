@@ -1,8 +1,4 @@
-import {
-  Mailbox,
-  Mailbox__factory,
-  Ownable__factory,
-} from '@recoillink/core';
+import { Mailbox, Mailbox__factory, Ownable__factory } from '@recoillink/core';
 import {
   Address,
   Domain,

@@ -14,12 +14,7 @@ import {
   type WarpRouteDeployConfig,
   WarpRouteDeployConfigSchema,
 } from '@recoillink/sdk';
-import {
-  type Address,
-  assert,
-  eqAddress,
-  isNullish,
-} from '@recoillink/utils';
+import { type Address, assert, eqAddress, isNullish } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

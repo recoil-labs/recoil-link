@@ -31,8 +31,7 @@ describe('hyperlane cosmosnative core check e2e tests', async function () {
   });
 
   it('should throw an error if the --chain param is not provided', async () => {
-    const wrongCommand =
-      $`pnpm --filter @recoillink/cli run rlink core check \
+    const wrongCommand = $`pnpm --filter @recoillink/cli run rlink core check \
               --registry ${REGISTRY_PATH} \
               --config ${CORE_CONFIG_PATH} \
               --verbosity debug \

@@ -15,11 +15,7 @@ import {
   RawMailboxArtifactConfigs,
 } from '@recoillink/provider-sdk/mailbox';
 import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
-import {
-  assert,
-  eqAddressStarknet,
-  isZeroishAddress,
-} from '@recoillink/utils';
+import { assert, eqAddressStarknet, isZeroishAddress } from '@recoillink/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

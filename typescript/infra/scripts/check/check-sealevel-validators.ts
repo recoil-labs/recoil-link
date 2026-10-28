@@ -4,11 +4,7 @@ import fs from 'fs';
 // eslint-disable-next-line
 import path from 'path';
 
-import {
-  ChainMap,
-  ChainName,
-  defaultMultisigConfigs,
-} from '@recoillink/sdk';
+import { ChainMap, ChainName, defaultMultisigConfigs } from '@recoillink/sdk';
 import { rootLogger } from '@recoillink/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';

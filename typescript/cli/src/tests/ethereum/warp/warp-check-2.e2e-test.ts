@@ -2,10 +2,7 @@ import { expect } from 'chai';
 import { type Signer, Wallet, ethers } from 'ethers';
 import { zeroAddress } from 'viem';
 
-import {
-  type ERC20Test,
-  HypERC20Collateral__factory,
-} from '@recoillink/core';
+import { type ERC20Test, HypERC20Collateral__factory } from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,

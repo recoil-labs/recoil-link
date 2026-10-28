@@ -1,9 +1,6 @@
 import { ethers } from 'ethers';
 
-import {
-  ERC20__factory,
-  HypERC20Collateral__factory,
-} from '@recoillink/core';
+import { ERC20__factory, HypERC20Collateral__factory } from '@recoillink/core';
 import {
   type ChainMetadata,
   HyperlaneCore,

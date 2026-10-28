@@ -32,7 +32,7 @@ function bytes32WithAddress(
 
 export const messageCommand: CommandModule = {
   command: 'message',
-  describe: 'Hyperlane message encoding and decoding utilities',
+  describe: 'Recoil Link message encoding and decoding utilities',
   builder: (yargs) =>
     yargs
       .command(decodeMessageCommand)
@@ -47,7 +47,7 @@ interface DecodeMessageArgs {
 
 const decodeMessageCommand: CommandModuleWithContext<DecodeMessageArgs> = {
   command: 'decode',
-  describe: 'Decode a packed Hyperlane message hex string',
+  describe: 'Decode a packed Recoil Link message hex string',
   builder: {
     bytes: {
       type: 'string',
@@ -115,7 +115,7 @@ interface EncodeMessageArgs {
 
 const encodeMessageCommand: CommandModuleWithContext<EncodeMessageArgs> = {
   command: 'encode',
-  describe: 'Encode a Hyperlane message to packed hex bytes',
+  describe: 'Encode a Recoil Link message to packed hex bytes',
   builder: {
     msgVersion: {
       type: 'number',

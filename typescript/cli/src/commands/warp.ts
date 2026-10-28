@@ -79,7 +79,7 @@ import { quoteCommand } from './warp-quote.js';
  */
 export const warpCommand: CommandModule = {
   command: 'warp',
-  describe: 'Manage Hyperlane warp routes',
+  describe: 'Manage Recoil Link warp routes',
   builder: (yargs) =>
     yargs
       .command(altCommand)

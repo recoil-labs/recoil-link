@@ -17,11 +17,7 @@ import {
   type SealevelSigner,
   SealevelRoutingMessageIdMultisigIsmWriter,
 } from '@recoillink/sealevel-sdk';
-import {
-  type NonEmptyArray,
-  assert,
-  nonEmptyArray,
-} from '@recoillink/utils';
+import { type NonEmptyArray, assert, nonEmptyArray } from '@recoillink/utils';
 
 import { buildInstructionsFromPrintable } from '../src/utils/warp-propose-squads.js';
 

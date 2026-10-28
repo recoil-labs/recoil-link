@@ -1,11 +1,6 @@
 import { ExecuteInstruction } from '@cosmjs/cosmwasm-stargate';
 
-import {
-  Address,
-  difference,
-  objMap,
-  promiseObjAll,
-} from '@recoillink/utils';
+import { Address, difference, objMap, promiseObjAll } from '@recoillink/utils';
 
 import { BaseCosmWasmAdapter } from '../../app/MultiProtocolApp.js';
 import {

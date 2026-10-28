@@ -26,7 +26,7 @@ import {
 // Parent command to help configure and set up Hyperlane validators
 export const validatorCommand: CommandModule = {
   command: 'validator',
-  describe: 'Configure and manage Hyperlane validators',
+  describe: 'Configure and manage Recoil Link validators',
   builder: (yargs) =>
     yargs
       .command(addressCommand)

@@ -1,11 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import {
-  GasAction,
-  MockSigner,
-  ProtocolType,
-} from '@recoillink/provider-sdk';
+import { GasAction, MockSigner, ProtocolType } from '@recoillink/provider-sdk';
 import type { WarpArtifactConfig } from '@recoillink/provider-sdk/warp';
 import { MultiProvider } from '@recoillink/sdk';
 import type { ChainMetadata } from '@recoillink/sdk';

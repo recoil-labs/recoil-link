@@ -3,10 +3,7 @@ import { expect } from 'chai';
 import { AltVM } from '@recoillink/provider-sdk';
 import type { ISigner } from '@recoillink/provider-sdk/altvm';
 import { ArtifactState } from '@recoillink/provider-sdk/artifact';
-import type {
-  AnnotatedTx,
-  TxReceipt,
-} from '@recoillink/provider-sdk/module';
+import type { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
 import type {
   DeployedRawWarpArtifact,
   RawCollateralWarpArtifactConfig,

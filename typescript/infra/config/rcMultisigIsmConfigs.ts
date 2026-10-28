@@ -1,8 +1,4 @@
-import {
-  AW_VALIDATOR_ALIAS,
-  ChainMap,
-  MultisigConfig,
-} from '@recoillink/sdk';
+import { AW_VALIDATOR_ALIAS, ChainMap, MultisigConfig } from '@recoillink/sdk';
 
 export const rcMultisigIsmConfigs: ChainMap<MultisigConfig> = {
   // ----------------- Mainnets -----------------

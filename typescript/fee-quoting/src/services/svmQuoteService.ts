@@ -40,11 +40,7 @@ import {
   signSvmQuote,
   wildcardRecipient,
 } from '@recoillink/sealevel-sdk';
-import {
-  assert,
-  eqAddress,
-  isValidAddressSealevel,
-} from '@recoillink/utils';
+import { assert, eqAddress, isValidAddressSealevel } from '@recoillink/utils';
 
 import { QuoteMode } from '../config.js';
 import { ApiError, NoQuoteAvailableError } from '../middleware/errorHandler.js';

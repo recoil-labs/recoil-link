@@ -3,11 +3,7 @@ import { ethers } from 'ethers';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import {
-  MultiProtocolProvider,
-  Token,
-  TokenStandard,
-} from '@recoillink/sdk';
+import { MultiProtocolProvider, Token, TokenStandard } from '@recoillink/sdk';
 import { ProtocolType } from '@recoillink/utils';
 
 import {

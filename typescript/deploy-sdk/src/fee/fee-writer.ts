@@ -3,10 +3,7 @@ import {
   getProtocolProvider,
 } from '@recoillink/provider-sdk';
 import { ISigner } from '@recoillink/provider-sdk/altvm';
-import {
-  ArtifactNew,
-  ArtifactWriter,
-} from '@recoillink/provider-sdk/artifact';
+import { ArtifactNew, ArtifactWriter } from '@recoillink/provider-sdk/artifact';
 import {
   DeployedFeeAddress,
   DeployedFeeArtifact,

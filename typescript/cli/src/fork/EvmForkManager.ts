@@ -19,12 +19,7 @@ import {
   type RevertAssertion,
   TransactionDataType,
 } from '@recoillink/sdk';
-import {
-  type Address,
-  assert,
-  deepEquals,
-  timeout,
-} from '@recoillink/utils';
+import { type Address, assert, deepEquals, timeout } from '@recoillink/utils';
 
 import { logDebug, logGray } from '../logger.js';
 

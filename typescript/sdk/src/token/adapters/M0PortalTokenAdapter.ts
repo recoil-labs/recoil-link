@@ -5,12 +5,7 @@ import {
 } from 'ethers';
 
 import { ERC20__factory } from '@recoillink/core';
-import {
-  Address,
-  Domain,
-  addressToBytes32,
-  strip0x,
-} from '@recoillink/utils';
+import { Address, Domain, addressToBytes32, strip0x } from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 import { ChainName } from '../../types.js';

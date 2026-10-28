@@ -24,7 +24,10 @@ scope_files() {
 }
 
 echo "==> npm scope: $OLD_SCOPE -> $NEW_SCOPE (except registry)"
-scope_files | xargs -r perl -pi -e 's{\@hyperlane-xyz/(?!registry\b)}{\@recoillink/}g'
+# Lines aliasing an old name onto a workspace package (root package.json) stay:
+# @hyperlane-xyz/registry imports @hyperlane-xyz/sdk and /utils at runtime and
+# in its types, so those names must keep resolving to our packages.
+scope_files | xargs -r perl -pi -e 's{\@hyperlane-xyz/(?!registry\b)}{\@recoillink/}g unless m{workspace:\@recoillink/}'
 
 echo "==> package.json repository/homepage/bugs"
 git ls-files '*package.json' | xargs -r perl -pi -e '
@@ -40,11 +43,18 @@ perl -pi -e 's{/\.hyperlane`}{/.recoil-link`}' "$CLI/src/commands/options.ts"
 
 # Command invocations in CLI sources, tests, docs and examples.
 CMDS='avs|config|core|hook|ica|ism|registry|relayer|send|status|strategy|submit|address|message|validator|warp|fork'
-git ls-files "$CLI" ':!*CHANGELOG.md' | xargs -r perl -pi -e "
+git ls-files "$CLI" AGENTS.md ':!*CHANGELOG.md' | xargs -r perl -pi -e "
   s#\} hyperlane #} rlink #g;
   s#\bpnpm hyperlane\b#pnpm rlink#g;
-  s#(?<![\w./\@-])hyperlane (?=(?:$CMDS)\b)#rlink #g;
+  s#(?<![\w./\@-])hyperlane (?=(?:$CMDS)\b|--)#rlink #g;
 "
+
+echo "==> CLI help text"
+# "Hyperlane AVS" is Hyperlane's EigenLayer AVS, a real external system: keep it.
+git ls-files "$CLI/src/commands" | xargs -r perl -pi -e '
+  s{\bHyperlane\b(?! AVS)}{Recoil Link}g if /^\s*(describe|description):/;
+  s{\b(an|An) Recoil Link\b}{a Recoil Link}g;
+'
 
 echo "==> package.json descriptions"
 # Keep "<Chain> Hyperlane SDK module": that names the on-chain module, not our brand.
@@ -55,5 +65,14 @@ git ls-files "*package.json" | xargs -r perl -pi -e '
     s{the Recoil Link (Network|network|Protocol)}{Recoil Link}g;
   }
 '
+
+echo "==> format renamed TS files (longer names can overflow line width)"
+if [ -x node_modules/.bin/oxfmt ]; then
+  # Every file carrying a renamed token: import order changes with the new scope.
+  git grep -lE '@recoillink/|Recoil Link|rlink' -- '*.ts' '*.tsx' '*.mts' '*.mjs' |
+    xargs -r node_modules/.bin/oxfmt --ignore-path .gitignore --write >/dev/null
+else
+  echo "    skipped: run pnpm install, then re-run this script"
+fi
 
 echo "==> done. Next: pnpm install (regenerates pnpm-lock.yaml)"

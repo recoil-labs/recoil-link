@@ -17,12 +17,7 @@ import {
   MultiProvider,
   getDomainId as resolveDomainId,
 } from '@recoillink/sdk';
-import {
-  Address,
-  ProtocolType,
-  assert,
-  rootLogger,
-} from '@recoillink/utils';
+import { Address, ProtocolType, assert, rootLogger } from '@recoillink/utils';
 
 import { supportedChainNames } from '../config/environments/mainnet3/supportedChainNames.js';
 import { getChainMetadata, getDomainId } from '../config/registry.js';

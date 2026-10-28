@@ -21,14 +21,12 @@ export async function loadProtocolProviders(
         break;
       }
       case ProtocolType.Radix: {
-        const { RadixProtocolProvider } =
-          await import('@recoillink/radix-sdk');
+        const { RadixProtocolProvider } = await import('@recoillink/radix-sdk');
         registerProtocol(protocol, () => new RadixProtocolProvider());
         break;
       }
       case ProtocolType.Aleo: {
-        const { AleoProtocolProvider } =
-          await import('@recoillink/aleo-sdk');
+        const { AleoProtocolProvider } = await import('@recoillink/aleo-sdk');
         registerProtocol(protocol, () => new AleoProtocolProvider());
         break;
       }

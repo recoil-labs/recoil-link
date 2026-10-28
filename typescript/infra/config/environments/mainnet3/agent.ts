@@ -16,12 +16,7 @@ import {
   ModuleType,
   RpcConsensusType,
 } from '@recoillink/sdk';
-import {
-  Address,
-  addressToBytes32,
-  assert,
-  objMap,
-} from '@recoillink/utils';
+import { Address, addressToBytes32, assert, objMap } from '@recoillink/utils';
 
 import {
   AgentChainConfig,

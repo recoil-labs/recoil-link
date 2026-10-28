@@ -14,12 +14,7 @@ import {
   MultiProtocolProvider,
   MultiProvider,
 } from '@recoillink/sdk';
-import {
-  ProtocolType,
-  isEVMLike,
-  assert,
-  rootLogger,
-} from '@recoillink/utils';
+import { ProtocolType, isEVMLike, assert, rootLogger } from '@recoillink/utils';
 
 import { isSignCommand } from '../commands/signCommands.js';
 import { readChainSubmissionStrategyConfig } from '../config/strategy.js';

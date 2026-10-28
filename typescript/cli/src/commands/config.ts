@@ -15,7 +15,7 @@ import { inputFileCommandOption } from './options.js';
  */
 export const configCommand: CommandModule = {
   command: 'config',
-  describe: 'Create or validate Hyperlane configs',
+  describe: 'Create or validate Recoil Link configs',
   builder: (yargs) =>
     yargs.command(validateCommand).version(false).demandCommand(),
   handler: () => log('Command required'),

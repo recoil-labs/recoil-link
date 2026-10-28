@@ -5,11 +5,7 @@ import {
   HookType,
   type IgpHookConfig as IgpHookModuleConfig,
 } from '@recoillink/sdk';
-import {
-  assert,
-  normalizeAddressEvm,
-  ProtocolType,
-} from '@recoillink/utils';
+import { assert, normalizeAddressEvm, ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

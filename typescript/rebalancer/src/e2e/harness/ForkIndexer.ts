@@ -2,11 +2,7 @@ import { providers } from 'ethers';
 import type { Logger } from 'pino';
 
 import { HyperlaneCore } from '@recoillink/sdk';
-import {
-  bytes32ToAddress,
-  messageId,
-  parseMessage,
-} from '@recoillink/utils';
+import { bytes32ToAddress, messageId, parseMessage } from '@recoillink/utils';
 
 import type { ConfirmedBlockTags } from '../../interfaces/IMonitor.js';
 import type { ExplorerMessage } from '../../utils/ExplorerClient.js';

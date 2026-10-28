@@ -1,9 +1,5 @@
 import { IRegistry } from '@hyperlane-xyz/registry';
-import {
-  AccountConfig,
-  ChainName,
-  InterchainAccount,
-} from '@recoillink/sdk';
+import { AccountConfig, ChainName, InterchainAccount } from '@recoillink/sdk';
 import {
   Address,
   LogFormat,

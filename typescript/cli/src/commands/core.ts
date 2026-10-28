@@ -41,7 +41,7 @@ import {
  */
 export const coreCommand: CommandModule = {
   command: 'core',
-  describe: 'Manage core Hyperlane contracts & configs',
+  describe: 'Manage core Recoil Link contracts & configs',
   builder: (yargs) =>
     yargs
       .command(apply)
@@ -112,7 +112,7 @@ export const deploy: CommandModuleWithWriteContext<{
   multiProtocolSigner?: MultiProtocolSignerManager;
 }> = {
   command: 'deploy',
-  describe: 'Deploy Hyperlane contracts',
+  describe: 'Deploy Recoil Link contracts',
   builder: {
     chain: chainCommandOption,
     config: outputFileCommandOption(

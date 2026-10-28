@@ -1,7 +1,4 @@
-import {
-  type MerkleTreeHook,
-  type ValidatorAnnounce,
-} from '@recoillink/core';
+import { type MerkleTreeHook, type ValidatorAnnounce } from '@recoillink/core';
 import { getValidatorFromStorageLocation } from '@recoillink/sdk';
 import { type BaseValidator } from '@recoillink/utils';
 

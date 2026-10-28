@@ -25,10 +25,7 @@ import type {
   RoutingIsmArtifactConfig,
 } from '@recoillink/provider-sdk/ism';
 import { CompositeIsmNodeType, IsmType } from '@recoillink/provider-sdk/ism';
-import type {
-  AnnotatedTx,
-  TxReceipt,
-} from '@recoillink/provider-sdk/module';
+import type { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
 import {
   type DeployedFeeArtifact,
   type FeeArtifactConfig,

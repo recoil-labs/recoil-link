@@ -1,8 +1,4 @@
-import {
-  ChainMap,
-  ChainStatus,
-  defaultMultisigConfigs,
-} from '@recoillink/sdk';
+import { ChainMap, ChainStatus, defaultMultisigConfigs } from '@recoillink/sdk';
 import { eqAddress } from '@recoillink/utils';
 
 import { getChain } from '../../config/registry.js';

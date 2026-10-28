@@ -11,12 +11,7 @@ import {
   ContractVerificationInput,
   PERMIT2_ADDRESS,
 } from '@recoillink/sdk';
-import {
-  Address,
-  assert,
-  concurrentMap,
-  eqAddress,
-} from '@recoillink/utils';
+import { Address, assert, concurrentMap, eqAddress } from '@recoillink/utils';
 
 import { DEFAULT_OFFCHAIN_LOOKUP_ISM_URLS } from '../../config/environments/utils.js';
 import { verifyDeployed } from '../aggregation-hook-upgrade/execute.js';

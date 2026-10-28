@@ -20,7 +20,7 @@ import { type ChainType, ChainTypes } from './types.js';
  */
 export const registryCommand: CommandModule = {
   command: 'registry',
-  describe: 'Manage Hyperlane chains in a registry',
+  describe: 'Manage Recoil Link chains in a registry',
   builder: (yargs) =>
     yargs
       .command(addressesCommand)
@@ -84,7 +84,7 @@ const addressesCommand: CommandModuleWithContext<{
 }> = {
   command: 'addresses',
   aliases: ['address', 'addy'],
-  describe: 'Display the addresses of core Hyperlane contracts',
+  describe: 'Display the addresses of core Recoil Link contracts',
   builder: {
     name: {
       type: 'string',
@@ -123,7 +123,7 @@ const rpcCommand: CommandModuleWithContext<{
   index: number;
 }> = {
   command: 'rpc',
-  describe: 'Display the public rpc of a Hyperlane chain',
+  describe: 'Display the public rpc of a Recoil Link chain',
   builder: {
     name: {
       type: 'string',
@@ -207,7 +207,8 @@ const createAgentConfigCommand: CommandModuleWithContext<{
 
 const initCommand: CommandModuleWithContext<{}> = {
   command: 'init',
-  describe: 'Create a new, minimal Hyperlane chain config (aka chain metadata)',
+  describe:
+    'Create a new, minimal Recoil Link chain config (aka chain metadata)',
   handler: async ({ context }) => {
     await createChainConfig({ context });
     process.exit(0);

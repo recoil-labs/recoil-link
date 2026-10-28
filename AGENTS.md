@@ -233,9 +233,9 @@ forge test --match-test <pattern>       # Run specific Forge tests
 pnpm -C typescript/cli build && npm link
 
 # Run CLI commands
-hyperlane --help
-hyperlane core deploy --help
-hyperlane warp deploy --help
+rlink --help
+rlink core deploy --help
+rlink warp deploy --help
 ```
 
 ## Architecture
@@ -271,8 +271,8 @@ hyperlane warp deploy --help
 
 For AltVM (Cosmos, Sealevel, Starknet, Radix) development:
 
-| Package                       | Purpose                                 |
-| ----------------------------- | --------------------------------------- |
+| Package                    | Purpose                                 |
+| -------------------------- | --------------------------------------- |
 | `@recoillink/provider-sdk` | Protocol-agnostic provider abstractions |
 | `@recoillink/deploy-sdk`   | Deployment modules for all VM types     |
 | `@recoillink/sdk`          | Core SDK (EVM-specific)                 |

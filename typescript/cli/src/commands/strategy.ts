@@ -21,7 +21,7 @@ import {
  */
 export const strategyCommand: CommandModule = {
   command: 'strategy',
-  describe: 'Manage Hyperlane deployment strategies',
+  describe: 'Manage Recoil Link deployment strategies',
   builder: (yargs) =>
     yargs.command(init).command(read).version(false).demandCommand(),
   handler: () => log('Command required'),

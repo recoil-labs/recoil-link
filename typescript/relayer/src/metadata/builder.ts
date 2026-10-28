@@ -6,12 +6,7 @@ import {
   MerkleTreeHookConfig,
   MultiProvider,
 } from '@recoillink/sdk';
-import {
-  WithAddress,
-  assert,
-  deepFind,
-  rootLogger,
-} from '@recoillink/utils';
+import { WithAddress, assert, deepFind, rootLogger } from '@recoillink/utils';
 
 import { AggregationMetadataBuilder } from './aggregation.js';
 import { ArbL2ToL1MetadataBuilder } from './arbL2ToL1.js';

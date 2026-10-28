@@ -1,11 +1,6 @@
 import { CONTRACTS_PACKAGE_VERSION } from '@recoillink/core';
 import { ChainName, ContractVerificationInput } from '@recoillink/sdk';
-import {
-  Address,
-  assert,
-  concurrentMap,
-  eqAddress,
-} from '@recoillink/utils';
+import { Address, assert, concurrentMap, eqAddress } from '@recoillink/utils';
 
 import { Modules } from '../../scripts/agent-utils.js';
 import { DEPLOYERS, Owner, determineGovernanceType } from '../governance.js';

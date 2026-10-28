@@ -1,10 +1,7 @@
 import { expect } from 'chai';
 import { ethers, Wallet } from 'ethers';
 
-import {
-  type MailboxClient,
-  MailboxClient__factory,
-} from '@recoillink/core';
+import { type MailboxClient, MailboxClient__factory } from '@recoillink/core';
 import {
   type ChainMap,
   TokenType,

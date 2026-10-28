@@ -1,9 +1,6 @@
 import { Logger } from 'pino';
 
-import {
-  DomainRoutingHook,
-  FallbackDomainRoutingHook,
-} from '@recoillink/core';
+import { DomainRoutingHook, FallbackDomainRoutingHook } from '@recoillink/core';
 import { Address, addBufferToGasLimit, eqAddress } from '@recoillink/utils';
 
 import { submitBatched } from '../deploy/utils.js';
