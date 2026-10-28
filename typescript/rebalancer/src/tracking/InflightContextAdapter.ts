@@ -1,4 +1,4 @@
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
+import type { MultiProvider } from '@recoillink/sdk';
 
 import type {
   InflightContext,

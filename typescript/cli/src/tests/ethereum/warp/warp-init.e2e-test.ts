@@ -5,8 +5,8 @@ import {
   type ChainName,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../../utils/files.js';
 import {
@@ -35,7 +35,7 @@ import {
   WARP_CONFIG_PATH_2,
 } from '../consts.js';
 
-describe('hyperlane warp init e2e tests', async function () {
+describe('rlink warp init e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let initialOwnerAddress: Address;
@@ -45,7 +45,7 @@ describe('hyperlane warp init e2e tests', async function () {
     initialOwnerAddress = wallet.address;
   });
 
-  describe('hyperlane warp init --yes', () => {
+  describe('rlink warp init --yes', () => {
     function assertWarpConfig(
       warpConfig: WarpRouteDeployConfig,
       chainName: ChainName,

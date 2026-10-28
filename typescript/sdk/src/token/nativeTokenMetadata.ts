@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { NativeToken } from '../metadata/chainMetadataTypes.js';
 import { KnownProtocolType } from '../providers/ProviderType.js';

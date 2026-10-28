@@ -1,5 +1,5 @@
-import { RadixProvider as RadixSDKProvider } from '@hyperlane-xyz/radix-sdk/runtime';
-import { assert, isNumeric } from '@hyperlane-xyz/utils';
+import { RadixProvider as RadixSDKProvider } from '@recoillink/radix-sdk/runtime';
+import { assert, isNumeric } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { RadixProvider } from '../ProviderType.js';

@@ -4,15 +4,15 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@hyperlane-xyz/provider-sdk/warp';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol, createSplMint } from '@hyperlane-xyz/sealevel-sdk/testing';
+import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@recoillink/provider-sdk/warp';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
+import { airdropSol, createSplMint } from '@recoillink/sealevel-sdk/testing';
 import {
   TokenFeeType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -41,7 +41,7 @@ const SVM_WARP_READ_TIMEOUT = 600_000;
 const SPECIFIC_REMOTE_ROUTER =
   '0x000000000000000000000000000000000000000000000000000000000000beef';
 
-describe('hyperlane warp read CLI e2e tests (Sealevel)', function () {
+describe('rlink warp read CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_WARP_READ_TIMEOUT);
 
   let rpc: ReturnType<typeof createRpc>;

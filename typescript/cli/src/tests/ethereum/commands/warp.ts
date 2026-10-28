@@ -11,13 +11,13 @@ import {
   type WarpRouteDeployConfig,
   type WarpRouteDeployConfigMailboxRequired,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   assert,
   type Address,
   ProtocolType,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readChainSubmissionStrategyConfig } from '../../../config/strategy.js';
 import { createAltVMSigners } from '../../../context/altvm.js';
@@ -67,7 +67,7 @@ export function hyperlaneWarpInitRaw({
 }): ProcessPromise {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane warp init \
+  } ${localTestRunCmdPrefix()} rlink warp init \
         --registry ${REGISTRY_PATH} \
         ${warpCorePath ? ['--out', warpCorePath] : []} \
         ${privateKey ? getKeyFlags(privateKey) : []} \
@@ -97,7 +97,7 @@ export function hyperlaneWarpDeployRaw({
 }): ProcessPromise {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane warp deploy \
+  } ${localTestRunCmdPrefix()} rlink warp deploy \
         --registry ${REGISTRY_PATH} \
         ${privateKey ? getKeyFlags(privateKey) : []} \
         --verbosity debug \
@@ -291,7 +291,7 @@ export function hyperlaneWarpApplyRaw({
   relay?: boolean;
   receiptsDir?: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp apply \
+  return $`${localTestRunCmdPrefix()} rlink warp apply \
         --registry ${REGISTRY_PATH} \
         ${strategyUrl ? ['--strategy', strategyUrl] : []} \
         ${warpRouteId ? ['--warp-route-id', warpRouteId] : []} \
@@ -313,7 +313,7 @@ export function hyperlaneWarpReadRaw({
   outputPath?: string;
   warpRouteId?: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp read \
+  return $`${localTestRunCmdPrefix()} rlink warp read \
         --registry ${REGISTRY_PATH} \
         ${warpAddress ? ['--address', warpAddress] : []} \
         ${chain ? ['--chain', chain] : []} \
@@ -349,7 +349,7 @@ export function hyperlaneWarpCheckRaw({
   chains?: string[];
   registry?: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp check \
+  return $`${localTestRunCmdPrefix()} rlink warp check \
         --registry ${registry ?? REGISTRY_PATH} \
         --verbosity debug \
         ${warpRouteId ? ['--warp-route-id', warpRouteId] : []} \
@@ -372,7 +372,7 @@ export function hyperlaneWarpForkRaw({
   kill?: boolean;
   registry?: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp fork \
+  return $`${localTestRunCmdPrefix()} rlink warp fork \
         --registry ${registry ?? REGISTRY_PATH} \
         --warp-route-id ${warpRouteId} \
         --port ${port} \
@@ -416,7 +416,7 @@ export function hyperlaneWarpSendRelay({
   destinationToken?: string;
   skipValidation?: boolean;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp send \
+  return $`${localTestRunCmdPrefix()} rlink warp send \
         ${relay ? '--relay' : []} \
         --registry ${REGISTRY_PATH} \
         ${origin ? ['--origin', origin] : []} \
@@ -443,7 +443,7 @@ export function hyperlaneWarpCombine({
   routes: string;
   outputWarpRouteId: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp combine \
+  return $`${localTestRunCmdPrefix()} rlink warp combine \
         --registry ${REGISTRY_PATH} \
         --routes ${routes} \
         ${outputWarpRouteId ? ['--output-warp-route-id', outputWarpRouteId] : []} \
@@ -467,7 +467,7 @@ export function hyperlaneWarpRebalancer(
   const rebalancerAddress = key
     ? new Wallet(key).address
     : ANVIL_DEPLOYER_ADDRESS;
-  return $`${explorerUrl ? [`EXPLORER_API_URL=${explorerUrl}`] : []} REBALANCER=${rebalancerAddress} ${localTestRunCmdPrefix()} hyperlane warp rebalancer \
+  return $`${explorerUrl ? [`EXPLORER_API_URL=${explorerUrl}`] : []} REBALANCER=${rebalancerAddress} ${localTestRunCmdPrefix()} rlink warp rebalancer \
         --registry ${REGISTRY_PATH} \
         --checkFrequency ${checkFrequency} \
         --config ${config} \
@@ -504,7 +504,7 @@ export function hyperlaneWarpQuoteCreateRaw({
   quoteSignerKey: string;
   privateKey: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp quote create \
+  return $`${localTestRunCmdPrefix()} rlink warp quote create \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${warpRouteId} \
         --chain ${chain} \
@@ -531,7 +531,7 @@ export function hyperlaneWarpQuoteReadRaw({
   recipients?: string[];
   out?: string;
 }): ProcessPromise {
-  return $`${localTestRunCmdPrefix()} hyperlane warp quote read \
+  return $`${localTestRunCmdPrefix()} rlink warp quote read \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${warpRouteId} \
         ${chain ? ['--chain', chain] : []} \

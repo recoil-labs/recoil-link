@@ -6,9 +6,9 @@ import {
 } from 'ethers';
 import { readdirSync, rmSync, writeFileSync } from 'fs';
 
-import { type XERC20VSTest, XERC20VSTest__factory } from '@hyperlane-xyz/core';
-import { TxSubmitterType, randomAddress } from '@hyperlane-xyz/sdk';
-import { type Address, randomInt } from '@hyperlane-xyz/utils';
+import { type XERC20VSTest, XERC20VSTest__factory } from '@recoillink/core';
+import { TxSubmitterType, randomAddress } from '@recoillink/sdk';
+import { type Address, randomInt } from '@recoillink/utils';
 
 import { EV5FileSubmitter } from '../../../submitters/EV5FileSubmitter.js';
 import { CustomTxSubmitterType } from '../../../submitters/types.js';
@@ -58,7 +58,7 @@ async function expectUserBalances(
   }
 }
 
-describe('hyperlane submit', function () {
+describe('rlink submit', function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
   const ALICE = randomAddress();
   const BOB = randomAddress();

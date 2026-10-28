@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import { formatMessage, messageId } from '@hyperlane-xyz/utils';
+import { formatMessage, messageId } from '@recoillink/utils';
 
 import { ForkIndexer } from './ForkIndexer.js';
 

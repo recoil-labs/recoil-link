@@ -4,7 +4,7 @@ import {
   isNullish,
   objMap,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   ArtifactDeployed,

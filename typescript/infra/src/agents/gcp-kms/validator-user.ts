@@ -1,6 +1,6 @@
 import { createHash } from 'crypto';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { ChainName } from '@recoillink/sdk';
 
 import { Contexts } from '../../../config/contexts.js';
 import type { DeployEnvironment } from '../../config/deploy-environment.js';

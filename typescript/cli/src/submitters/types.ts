@@ -11,7 +11,7 @@ import {
   buildEvmTimelockControllerSubmitterPropsSchema,
   preprocessChainSubmissionStrategy,
   refineChainSubmissionStrategy,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 export const CustomTxSubmitterType = {
   ...TxSubmitterType,

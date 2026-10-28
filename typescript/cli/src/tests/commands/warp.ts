@@ -4,8 +4,8 @@ import {
   type WarpCoreConfig,
   WarpCoreConfigSchema,
   type WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../utils/files.js';
 
@@ -83,7 +83,7 @@ export class HyperlaneE2EWarpTestCommands {
     warpRouteId?: string;
     outputPath?: string;
   }): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp read \
+    return $`${localTestRunCmdPrefix()} rlink warp read \
             --registry ${this.registryPath} \
             ${warpAddress ? ['--address', warpAddress] : []} \
             ${chain ? ['--chain', chain] : []} \
@@ -134,7 +134,7 @@ export class HyperlaneE2EWarpTestCommands {
     this.syncWarpDeployConfigToRegistry(warpRouteId, warpDeployPath);
     return $`${
       hypKey ? [`${this.hypKeyEnvName}=${hypKey}`] : []
-    } ${localTestRunCmdPrefix()} hyperlane warp deploy \
+    } ${localTestRunCmdPrefix()} rlink warp deploy \
           --registry ${this.registryPath} \
           ${privateKey ? [this.privateKeyFlag, privateKey] : []} \
           --verbosity debug \
@@ -181,7 +181,7 @@ export class HyperlaneE2EWarpTestCommands {
   }): ProcessPromise {
     return $` ${
       hypKey ? [`${this.hypKeyEnvName}=${hypKey}`] : []
-    } ${localTestRunCmdPrefix()} hyperlane warp apply \
+    } ${localTestRunCmdPrefix()} rlink warp apply \
           --registry ${registry ?? this.registryPath} \
           ${strategyUrl ? ['--strategy', strategyUrl] : []} \
           ${warpRouteId ? ['--warp-route-id', warpRouteId] : []} \
@@ -200,7 +200,7 @@ export class HyperlaneE2EWarpTestCommands {
     warpRouteId?: string;
     registry?: string;
   }): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp check \
+    return $`${localTestRunCmdPrefix()} rlink warp check \
           --registry ${registry ?? this.registryPath} \
           ${warpRouteId ? ['--warp-route-id', warpRouteId] : []} \
           --verbosity debug`;
@@ -217,7 +217,7 @@ export class HyperlaneE2EWarpTestCommands {
     forkConfigPath?: string;
     kill?: boolean;
   }): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp fork \
+    return $`${localTestRunCmdPrefix()} rlink warp fork \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           --port ${port} \
@@ -240,7 +240,7 @@ export class HyperlaneE2EWarpTestCommands {
 
   /**
    * Creates the SVM Address Lookup Tables for a warp route and persists
-   * them to the registry. Wraps `hyperlane warp alt create`.
+   * them to the registry. Wraps `rlink warp alt create`.
    *
    * `force` recreates warp-specific ALTs while reusing the registered
    * core ALT; `fullForce` recreates everything.
@@ -250,7 +250,7 @@ export class HyperlaneE2EWarpTestCommands {
     warpRouteId: string,
     options?: { chain?: string; force?: boolean; fullForce?: boolean },
   ): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp alt create \
+    return $`${localTestRunCmdPrefix()} rlink warp alt create \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           ${options?.chain ? ['--chain', options.chain] : []} \
@@ -263,10 +263,10 @@ export class HyperlaneE2EWarpTestCommands {
 
   /**
    * Reads the on-chain contents of the SVM Address Lookup Tables
-   * registered for a warp route. Wraps `hyperlane warp alt read`.
+   * registered for a warp route. Wraps `rlink warp alt read`.
    */
   public altRead(warpRouteId: string, chain?: string): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp alt read \
+    return $`${localTestRunCmdPrefix()} rlink warp alt read \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           ${chain ? ['--chain', chain] : []} \
@@ -276,10 +276,10 @@ export class HyperlaneE2EWarpTestCommands {
   /**
    * Diffs the on-chain SVM Address Lookup Tables registered for a warp
    * route against what the SDK would regenerate. Wraps
-   * `hyperlane warp alt check`.
+   * `rlink warp alt check`.
    */
   public altCheck(warpRouteId: string, chain?: string): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp alt check \
+    return $`${localTestRunCmdPrefix()} rlink warp alt check \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           ${chain ? ['--chain', chain] : []} \
@@ -288,7 +288,7 @@ export class HyperlaneE2EWarpTestCommands {
 
   /**
    * Submits an offchain-signed standing warp fee quote. Wraps
-   * `hyperlane warp quote create` — ttl must be > 0 (the CLI rejects
+   * `rlink warp quote create` — ttl must be > 0 (the CLI rejects
    * standalone transient quotes, which would be unusable).
    */
   public quoteCreate({
@@ -314,7 +314,7 @@ export class HyperlaneE2EWarpTestCommands {
     ttl: number;
     quoteSignerKey: string;
   }): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp quote create \
+    return $`${localTestRunCmdPrefix()} rlink warp quote create \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           --chain ${chain} \
@@ -332,7 +332,7 @@ export class HyperlaneE2EWarpTestCommands {
 
   /**
    * Reads standing offchain-signed warp fee quotes for a deployed warp
-   * route. Wraps `hyperlane warp quote read`.
+   * route. Wraps `rlink warp quote read`.
    */
   public quoteRead({
     warpRouteId,
@@ -343,7 +343,7 @@ export class HyperlaneE2EWarpTestCommands {
     chain?: string;
     out?: string;
   }): ProcessPromise {
-    return $`${localTestRunCmdPrefix()} hyperlane warp quote read \
+    return $`${localTestRunCmdPrefix()} rlink warp quote read \
           --registry ${this.registryPath} \
           --warp-route-id ${warpRouteId} \
           ${chain ? ['--chain', chain] : []} \
@@ -382,7 +382,7 @@ export class HyperlaneE2EWarpTestCommands {
   }): ProcessPromise {
     return $`${
       hypKey ? [`${this.hypKeyEnvName}=${hypKey}`] : []
-    } ${localTestRunCmdPrefix()} hyperlane warp send \
+    } ${localTestRunCmdPrefix()} rlink warp send \
           --registry ${this.registryPath} \
           ${origin ? ['--origin', origin] : []} \
           ${destination ? ['--destination', destination] : []} \

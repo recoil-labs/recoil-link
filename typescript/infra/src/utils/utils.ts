@@ -5,15 +5,15 @@ import { ethers } from 'ethers';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-import { ChainMap, ChainName, NativeToken } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainName, NativeToken } from '@recoillink/sdk';
 import {
   Address,
   ProtocolType,
   isEVMLike,
   objFilter,
   stringifyObject,
-} from '@hyperlane-xyz/utils';
-import { pathExists, readJson, writeToFile } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { pathExists, readJson, writeToFile } from '@recoillink/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import { testChainNames } from '../../config/environments/test/chains.js';

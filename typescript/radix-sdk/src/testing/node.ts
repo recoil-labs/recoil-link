@@ -8,8 +8,8 @@ import {
 /* eslint-disable import/no-nodejs-modules */
 import { fileURLToPath } from 'url';
 
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, retryAsync, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { assert, retryAsync, rootLogger, sleep } from '@recoillink/utils';
 
 import {
   RadixContractArtifacts,

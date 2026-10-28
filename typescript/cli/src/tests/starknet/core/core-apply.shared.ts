@@ -1,5 +1,5 @@
-import { type CoreConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type CoreConfig } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -16,7 +16,7 @@ export function describeStarknetCoreApplyTest(
   description: string,
   test: (hyperlaneCore: HyperlaneE2ECoreTestCommands) => Promise<void>,
 ) {
-  describe('hyperlane core apply (Starknet E2E tests)', function () {
+  describe('rlink core apply (Starknet E2E tests)', function () {
     this.timeout(STARKNET_E2E_TEST_TIMEOUT);
 
     const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

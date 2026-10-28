@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import {
   isArtifactDeployed,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -14,16 +14,16 @@ import {
   SvmWarpArtifactManager,
   createRpc,
   createWarpAltReader,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@recoillink/sealevel-sdk';
+import { airdropSol } from '@recoillink/sealevel-sdk/testing';
 import {
   IsmType,
   TokenFeeType,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -46,7 +46,7 @@ const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/svm-alt-warp-deploy.yaml`;
 
 const SVM_WARP_ALT_TIMEOUT = 600_000;
 
-describe('hyperlane warp alt CLI e2e tests (Sealevel)', function () {
+describe('rlink warp alt CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_WARP_ALT_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

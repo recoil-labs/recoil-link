@@ -1,4 +1,4 @@
-import { ProtocolType, assert, objMap } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert, objMap } from '@recoillink/utils';
 
 import {
   KnownProtocolType,

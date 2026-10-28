@@ -5,8 +5,8 @@ import {
   localAmountFromMessage,
   type ChainMap,
   type Token,
-} from '@hyperlane-xyz/sdk';
-import { fromWei } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { fromWei } from '@recoillink/utils';
 
 import {
   type MinAmountStrategyConfig,

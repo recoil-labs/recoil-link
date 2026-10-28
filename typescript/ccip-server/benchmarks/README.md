@@ -3,8 +3,8 @@
 Build parent and head in separate checkouts with identical Node/dependency versions:
 
 ```sh
-pnpm --filter @hyperlane-xyz/ccip-server build
-pnpm --filter @hyperlane-xyz/ccip-server bundle
+pnpm --filter @recoillink/ccip-server build
+pnpm --filter @recoillink/ccip-server bundle
 ```
 
 Then compare the complete local bundle directories (not just copied index files):

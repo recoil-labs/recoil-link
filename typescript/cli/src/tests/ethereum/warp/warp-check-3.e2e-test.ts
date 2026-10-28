@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Wallet } from 'ethers';
 import { zeroAddress } from 'viem';
 
-import { type ERC20Test } from '@hyperlane-xyz/core';
+import { type ERC20Test } from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   HookType,
@@ -11,8 +11,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, addressToBytes32 } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -33,7 +33,7 @@ import {
   getWarpRouteId,
 } from '../consts.js';
 
-describe('hyperlane warp check e2e tests', async function () {
+describe('rlink warp check e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Addresses: ChainAddresses = {};
@@ -89,7 +89,7 @@ describe('hyperlane warp check e2e tests', async function () {
     };
   });
 
-  describe('hyperlane warp check --warp-route-id ...', () => {
+  describe('rlink warp check --warp-route-id ...', () => {
     it(`should not find any differences between the on chain config and the local one`, async function () {
       const { warpRouteId } = await deployAndExportWarpRoute();
 

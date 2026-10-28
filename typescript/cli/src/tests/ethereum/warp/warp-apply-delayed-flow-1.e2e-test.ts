@@ -5,8 +5,8 @@ import {
   type ChainMap,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { syncWarpDeployConfigToRegistry } from '../../commands/warp-config-sync.js';
@@ -33,7 +33,7 @@ import {
   WARP_ID,
 } from './delayedFlowApplyHelpers.js';
 
-describe('hyperlane warp apply with DelayedFlowRouterHookIsm e2e tests', async function () {
+describe('rlink warp apply with DelayedFlowRouterHookIsm e2e tests', async function () {
   this.timeout(5 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const {

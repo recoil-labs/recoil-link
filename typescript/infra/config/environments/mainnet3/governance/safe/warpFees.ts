@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 // Most chains use ICAs for warp fees. Chains listed here use Safes instead.
 export const warpFeesSafes: ChainMap<Address> = {

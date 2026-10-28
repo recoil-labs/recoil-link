@@ -2,11 +2,11 @@ import {
   ArtifactState,
   type ArtifactDeployed,
   type ArtifactReader,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type RawIsmArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { getAggregationIsmConfig, getPausableIsmConfig } from './ism-query.js';

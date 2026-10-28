@@ -1,23 +1,23 @@
 import { clsx } from 'clsx';
 import React, { useMemo, useState } from 'react';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk/consts/registry';
 import {
   ChainMetadata,
   ChainMetadataSchema,
   mergeChainMetadataMap,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
+} from '@recoillink/sdk/metadata/chainMetadataTypes';
 import {
   areChainIdsEqual,
   getEffectiveDomainId,
-} from '@hyperlane-xyz/sdk/metadata/chainIdUtils';
-import type { ChainMap } from '@hyperlane-xyz/sdk/types';
+} from '@recoillink/sdk/metadata/chainIdUtils';
+import type { ChainMap } from '@recoillink/sdk/types';
 import {
   Result,
   failure,
   success,
   tryParseJsonOrYaml,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ColorPalette } from '../color.js';
 import { Button } from '../components/Button.js';
@@ -65,7 +65,7 @@ function Header({ onClickBack }: Pick<ChainAddMenuProps, 'onClickBack'>) {
       <p className="htw-mt-1 htw-text-sm htw-text-gray-500">
         Add metadata for chains not yet included in the{' '}
         <a
-          href={DEFAULT_GITHUB_REGISTRY}
+          href={RECOIL_LINK_REGISTRY_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="htw-underline htw-underline-offset-2"

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import { existsSync, readFileSync, readdirSync } from 'fs';
 
-import { IsmType } from '@hyperlane-xyz/sdk';
+import { IsmType } from '@recoillink/sdk';
 
 import {
   AggregationMetadata,

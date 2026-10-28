@@ -4,7 +4,7 @@ import {
   CrossCollateralRouter,
   CrossCollateralRouter__factory,
   PredicateCrossCollateralRouterWrapper__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   Domain,
@@ -13,7 +13,7 @@ import {
   assert,
   isAddressEvm,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 import { ChainName } from '../../types.js';

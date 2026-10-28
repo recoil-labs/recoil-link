@@ -6,7 +6,7 @@ import {
   isZeroishAddress,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { AnyAleoNetworkClient } from '../clients/base.js';
 import {

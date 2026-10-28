@@ -15,13 +15,13 @@ import {
   MatchingList,
   ModuleType,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   addressToBytes32,
   assert,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   AgentChainConfig,

@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { EXTEND_PROGRAM_CHECKED_FEATURE } from '../constants.js';
 import { TEST_SVM_CHAIN_METADATA } from '../testing/constants.js';

@@ -9,14 +9,14 @@ import {
   HyperlaneFactories,
   MultiProvider,
   serializeContractsMap,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   isEVMLike,
   objFilter,
   objMerge,
   runWithTimeout,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import {
   Modules,

@@ -1,13 +1,13 @@
 import chalk from 'chalk';
 import yargs from 'yargs';
 
-import { AnnotatedEV5Transaction } from '@hyperlane-xyz/sdk';
+import { AnnotatedEV5Transaction } from '@recoillink/sdk';
 import {
   LogFormat,
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getGovernanceTimelocks } from '../../config/environments/mainnet3/governance/utils.js';
 import { withGovernanceType } from '../../src/governance.js';

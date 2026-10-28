@@ -1,14 +1,14 @@
 import type { TransactionReceipt } from '@ethersproject/providers';
 import { input } from '@inquirer/prompts';
 
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
+import { HyperlaneRelayer } from '@recoillink/relayer';
 import {
   type ChainName,
   type DispatchedMessage,
   HyperlaneCore,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
-import { isNullish } from '@hyperlane-xyz/utils';
+import { isNullish } from '@recoillink/utils';
 
 import { ensureEvmSignersForChains } from '../context/context.js';
 import {

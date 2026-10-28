@@ -8,10 +8,10 @@ import {
   CommitmentReadIsmService__factory,
   InterchainAccountRouter__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
-import { InterchainAccount } from '@hyperlane-xyz/sdk/middleware/account/InterchainAccount';
-import type { AccountConfig } from '@hyperlane-xyz/sdk/middleware/account/types';
-import type { MultiProvider } from '@hyperlane-xyz/sdk/providers/MultiProvider';
+} from '@recoillink/core';
+import { InterchainAccount } from '@recoillink/sdk/middleware/account/InterchainAccount';
+import type { AccountConfig } from '@recoillink/sdk/middleware/account/types';
+import type { MultiProvider } from '@recoillink/sdk/providers/MultiProvider';
 import {
   PostCallsIcaType,
   PostCallsLegacyType,
@@ -22,13 +22,13 @@ import {
   encodeIcaCalls,
   isPostCallsIca,
   normalizeCalls,
-} from '@hyperlane-xyz/sdk/middleware/account/icaCalls';
+} from '@recoillink/sdk/middleware/account/icaCalls';
 import {
   addressToBytes32,
   bytes32ToAddress,
   assert,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { prisma } from '../db.js';
 import type { Prisma } from '../generated/prisma/client.js';

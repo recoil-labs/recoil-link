@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 export const ousdtSafes: ChainMap<Address> = {
   celo: '0xf1b3fc934bB46c459253fb38555A400b94909800',

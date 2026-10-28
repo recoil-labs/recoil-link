@@ -2,13 +2,13 @@ import { confirm } from '@inquirer/prompts';
 import chalk from 'chalk';
 import yargs from 'yargs';
 
-import { ChainMap, SvmMultiProtocolSignerAdapter } from '@hyperlane-xyz/sdk';
+import { ChainMap, SvmMultiProtocolSignerAdapter } from '@recoillink/sdk';
 import {
   LogFormat,
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { squadsConfigs } from '../../src/config/squads.js';
 import { executePendingTransactions } from '../../src/tx/utils.js';

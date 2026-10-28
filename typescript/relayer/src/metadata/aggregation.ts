@@ -2,7 +2,7 @@ import {
   AggregationIsmConfig,
   DerivedIsmConfig,
   IsmType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   WithAddress,
   fromHexString,
@@ -10,7 +10,7 @@ import {
   rootLogger,
   timeout,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { BaseMetadataBuilder } from './builder.js';
 import {

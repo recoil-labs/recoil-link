@@ -5,7 +5,7 @@ import sinon from 'sinon';
 import {
   type ChainMetadataForAltVM,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 
 import type { SvmSigner } from '../clients/signer.js';
 import type { SvmRpc } from '../types.js';

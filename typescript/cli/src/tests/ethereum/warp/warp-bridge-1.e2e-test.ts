@@ -1,7 +1,7 @@
 import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { type WarpRouteDeployConfig } from '@recoillink/sdk';
 
 import { DEFAULT_E2E_TEST_TIMEOUT } from '../consts.js';
 
@@ -18,7 +18,7 @@ chai.should();
 
 const INDEX = 0;
 
-describe('hyperlane warp deploy and bridge e2e tests', async function () {
+describe('rlink warp deploy and bridge e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   let config: WarpBridgeTestConfig;

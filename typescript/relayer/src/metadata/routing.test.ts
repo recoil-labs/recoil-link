@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { IRoutingIsm__factory } from '@hyperlane-xyz/core';
+import { IRoutingIsm__factory } from '@recoillink/core';
 import {
   DispatchedMessage,
   EvmIsmReader,
@@ -11,14 +11,14 @@ import {
   MultiProvider,
   TestChainName,
   TrustedRelayerIsmConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   WithAddress,
   assert,
   formatMessage,
   messageId,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseMetadataBuilder } from './builder.js';
 import { DynamicRoutingMetadataBuilder } from './routing.js';

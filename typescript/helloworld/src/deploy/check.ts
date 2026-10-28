@@ -1,4 +1,4 @@
-import { HyperlaneRouterChecker } from '@hyperlane-xyz/sdk';
+import { HyperlaneRouterChecker } from '@recoillink/sdk';
 
 import { HelloWorldApp } from '../app/app.js';
 import { HelloWorldFactories } from '../app/contracts.js';

@@ -1,4 +1,4 @@
-import { strip0x } from '@hyperlane-xyz/utils';
+import { strip0x } from '@recoillink/utils';
 
 import { getWarpCoreConfig } from '../config/registry.js';
 

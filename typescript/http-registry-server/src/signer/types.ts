@@ -1,5 +1,5 @@
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
-import type { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@recoillink/sdk';
+import type { ProtocolType } from '@recoillink/utils';
 
 import type { Eip712Payload, SignerAccountResponse } from './schemas.js';
 

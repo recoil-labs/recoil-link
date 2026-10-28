@@ -1,5 +1,5 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+import { ChainMap, HypTokenRouterConfig, TokenType } from '@recoillink/sdk';
+import { addressToBytes32, assert } from '@recoillink/utils';
 
 import {
   RouterConfigWithoutOwner,

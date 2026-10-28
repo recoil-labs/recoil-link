@@ -15,14 +15,14 @@ import {
   RateLimitedIsm__factory,
   StaticAggregationIsm__factory,
   TestLegacyBlacklistIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import {
   Address,
   addressToBytes32,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName, testChains } from '../consts/testChains.js';
 import { HyperlaneAddresses, HyperlaneContracts } from '../contracts/types.js';

@@ -4,8 +4,8 @@ import { chainMetadata } from '@hyperlane-xyz/registry';
 import {
   ChainDisabledReason,
   ChainStatus,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
-import { pick } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/metadata/chainMetadataTypes';
+import { pick } from '@recoillink/utils';
 
 import {
   ChainSearchMenu,

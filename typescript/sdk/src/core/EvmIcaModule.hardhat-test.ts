@@ -9,7 +9,7 @@ import {
   IERC20__factory,
   Mailbox,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import { TestChainName } from '../consts/testChains.js';
 import { FeeTokenApproval, IcaRouterConfig } from '../ica/types.js';

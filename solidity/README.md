@@ -6,10 +6,10 @@ Hyperlane Core contains the contracts and typechain artifacts for the Hyperlane 
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/core
+npm install @recoillink/core
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/core
+pnpm add @recoillink/core
 ```
 
 Note, this package uses [ESM Modules](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c#pure-esm-package)
@@ -48,7 +48,7 @@ To add a changeset, run:
 pnpm changeset
 ```
 
-Select `@hyperlane-xyz/core` and choose the appropriate bump level based on your changes.
+Select `@recoillink/core` and choose the appropriate bump level based on your changes.
 
 ## License
 

@@ -14,14 +14,14 @@ import {
   WarpTxCategory,
   getSignerForChain,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
   ensure0x,
   fromWei,
   isEVMLike,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type {

@@ -1,7 +1,7 @@
 import { BigNumber } from 'ethers';
 
-import { OnchainHookType } from '@hyperlane-xyz/sdk';
-import { Address, concurrentMap, eqAddress } from '@hyperlane-xyz/utils';
+import { OnchainHookType } from '@recoillink/sdk';
+import { Address, concurrentMap, eqAddress } from '@recoillink/utils';
 
 import { isFixedVersion } from '../aggregation-hook-upgrade/plan.js';
 

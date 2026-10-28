@@ -6,17 +6,17 @@ import {
   ProtocolType,
   hasProtocol,
   registerProtocol,
-} from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
-import { DeployedHookArtifact } from '@hyperlane-xyz/provider-sdk/hook';
-import { DeployedIsmArtifact } from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { ChainLookup } from '@recoillink/provider-sdk/chain';
+import { DeployedHookArtifact } from '@recoillink/provider-sdk/hook';
+import { DeployedIsmArtifact } from '@recoillink/provider-sdk/ism';
 import {
   DeployedRawMailboxArtifact,
   IRawMailboxArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { ProtocolProvider } from '@hyperlane-xyz/provider-sdk/protocol';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/mailbox';
+import { ProtocolProvider } from '@recoillink/provider-sdk/protocol';
+import { ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 import { CoreArtifactReader } from './core-artifact-reader.js';
 

@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { type ChainMap, type ChainName, type Token } from '@hyperlane-xyz/sdk';
+import { type ChainMap, type ChainName, type Token } from '@recoillink/sdk';
 
 import {
   type CollateralDeficitStrategyConfig,

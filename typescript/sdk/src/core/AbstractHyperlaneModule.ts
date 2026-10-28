@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { Annotated, ProtocolType } from '@hyperlane-xyz/utils';
+import { Annotated, ProtocolType } from '@recoillink/utils';
 
 import { ProtocolTypedTransaction } from '../providers/ProviderType.js';
 import { ChainNameOrId } from '../types.js';

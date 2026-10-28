@@ -1,16 +1,16 @@
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type IgpHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { eqAddressAleo, isNullish } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { eqAddressAleo, isNullish } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

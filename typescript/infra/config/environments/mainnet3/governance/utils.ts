@@ -1,5 +1,5 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainName } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 import { GovernanceType } from '../../../../src/governanceTypes.js';
 

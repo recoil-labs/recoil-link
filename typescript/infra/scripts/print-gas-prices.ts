@@ -8,8 +8,8 @@ import {
   GasPriceConfig,
   MultiProtocolProvider,
   getCosmosChainGasPrice,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 // Intentionally circumvent `mainnet3/index.ts` and `getEnvironmentConfig('mainnet3')`
 // to avoid circular dependencies.

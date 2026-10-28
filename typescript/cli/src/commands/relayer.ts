@@ -1,13 +1,13 @@
-import { TokenRouter__factory } from '@hyperlane-xyz/core';
-import { HyperlaneRelayer, RelayerCacheSchema } from '@hyperlane-xyz/relayer';
+import { TokenRouter__factory } from '@recoillink/core';
+import { HyperlaneRelayer, RelayerCacheSchema } from '@recoillink/relayer';
 import {
   type ChainMap,
   EvmHookReader,
   HookType,
   HyperlaneCore,
   collectHybridHookNodes,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, isEVMLike } from '@recoillink/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { log } from '../logger.js';

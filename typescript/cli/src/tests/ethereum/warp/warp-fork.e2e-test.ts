@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { type BigNumber, Wallet, ethers } from 'ethers';
 import { type ProcessPromise } from 'zx';
 
-import { type ERC20Test } from '@hyperlane-xyz/core';
+import { type ERC20Test } from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -12,8 +12,8 @@ import {
   TransactionConfigType,
   TransactionDataType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, retryAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, retryAsync } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -97,7 +97,7 @@ async function waitForForkedRegistry(
   return getRpcHttpFromMetadata(await res.json());
 }
 
-describe('hyperlane warp fork e2e tests', async function () {
+describe('rlink warp fork e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Addresses: ChainAddresses = {};

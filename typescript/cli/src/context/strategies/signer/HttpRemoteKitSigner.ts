@@ -10,7 +10,7 @@ import {
   verifySignature,
 } from '@solana/kit';
 
-import { assert, eqAddressSol } from '@hyperlane-xyz/utils';
+import { assert, eqAddressSol } from '@recoillink/utils';
 
 import type { HttpSignerClient } from './HttpSignerClient.js';
 

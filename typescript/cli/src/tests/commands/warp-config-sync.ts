@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { isFile, readYamlOrJson, writeYamlOrJson } from '../../utils/files.js';
 

@@ -2,8 +2,8 @@ import { ethers } from 'ethers';
 import { Logger } from 'pino';
 import { Provider as ZkProvider, Wallet as ZkWallet } from 'zksync-ethers';
 
-import { AgentSignerKeyType } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { AgentSignerKeyType } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import type {
   AgentContextConfig,

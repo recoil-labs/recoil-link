@@ -7,16 +7,16 @@ import {
   isArtifactDeployed,
   isArtifactNew,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type RawIsmArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert, eqAddressStarknet } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/module';
+import { assert, eqAddressStarknet } from '@recoillink/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

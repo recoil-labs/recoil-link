@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { ethers } from 'ethers';
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import type { ScenarioFile, SimulationResult } from './types.js';
 import { generateTimelineHtml } from './visualizer/HtmlTimelineGenerator.js';

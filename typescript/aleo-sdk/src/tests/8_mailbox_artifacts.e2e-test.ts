@@ -1,22 +1,22 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@recoillink/provider-sdk';
+import { type ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedMailboxAddress,
   type MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@recoillink/provider-sdk/mailbox';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert, eqAddressAleo } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/module';
+import { assert, eqAddressAleo } from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { AleoSigner } from '../clients/signer.js';

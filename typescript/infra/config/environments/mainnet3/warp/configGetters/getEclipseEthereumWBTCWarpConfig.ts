@@ -5,7 +5,7 @@ import {
   HypTokenRouterConfig,
   OwnableConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   RouterConfigWithoutOwner,

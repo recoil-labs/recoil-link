@@ -6,7 +6,7 @@ import {
   pick,
   retryAsync,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { SolidityStandardJsonInput } from '../deploy/verify/types.js';
 import { GetEventLogsResponse } from '../rpc/evm/types.js';

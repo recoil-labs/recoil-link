@@ -6,8 +6,8 @@ import type {
   ContractVerificationInput,
   ContractVerifier,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import type { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { Address, Logger } from '@recoillink/utils';
 
 import type { Modules } from '../../scripts/agent-utils.js';
 import type { DeployEnvironment } from '../config/deploy-environment.js';

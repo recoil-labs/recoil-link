@@ -11,7 +11,7 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -32,7 +32,7 @@ import {
   getCombinedWarpRoutePath,
 } from '../consts.js';
 
-describe('hyperlane warp crossCollateral CLI e2e tests', function () {
+describe('rlink warp crossCollateral CLI e2e tests', function () {
   this.timeout(300_000);
 
   let chain2Addresses: ChainAddresses = {};

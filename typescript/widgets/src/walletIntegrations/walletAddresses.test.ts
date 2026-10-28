@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getAddressForChain } from './walletAddresses.js';
 

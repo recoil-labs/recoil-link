@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import type { Token, WarpCore } from '@hyperlane-xyz/sdk';
+import type { Token, WarpCore } from '@recoillink/sdk';
 import type {
   PendingDestinationTransfer,
   RouterNodeMetadata,

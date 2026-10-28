@@ -1,10 +1,10 @@
 import { type Address, address as parseAddress } from '@solana/kit';
 
-import { type ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactDeployed } from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedWarpAddress,
   type NativeWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { SYSTEM_PROGRAM_ADDRESS } from '../constants.js';
 import {

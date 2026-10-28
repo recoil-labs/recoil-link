@@ -6,7 +6,7 @@ import {
   bytesToProtocolAddress,
   ensure0x,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { log, logGreen } from '../logger.js';

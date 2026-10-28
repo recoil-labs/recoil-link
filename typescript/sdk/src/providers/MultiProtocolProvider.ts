@@ -1,4 +1,4 @@
-import { ProtocolType, pick } from '@hyperlane-xyz/utils';
+import { ProtocolType, pick } from '@recoillink/utils';
 
 import { multiProtocolTestChainMetadata } from '../consts/testChains.js';
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';

@@ -2,9 +2,9 @@ import { confirm } from '@inquirer/prompts';
 import { ChildProcess } from 'child_process';
 import yargs from 'yargs';
 
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { ChainMap } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import {
   BalanceThresholdType,

@@ -29,7 +29,7 @@ import {
   StaticAggregationHookFactory__factory,
   StorageGasOracle__factory,
   TestIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import type { ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   AnnotatedEV5Transaction,
@@ -38,9 +38,9 @@ import {
   ContractVerifier,
   ExplorerFamily,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { Address, Logger, assert, eqAddress } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sdk';
+import { Address, Logger, assert, eqAddress } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { Modules } from '../scripts/agent-utils.js';
 import {

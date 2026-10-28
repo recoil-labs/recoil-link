@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { assert, ensure0x, eqAddressEvm } from '@hyperlane-xyz/utils';
+import { assert, ensure0x, eqAddressEvm } from '@recoillink/utils';
 
 import type { HttpSignerClient } from './HttpSignerClient.js';
 

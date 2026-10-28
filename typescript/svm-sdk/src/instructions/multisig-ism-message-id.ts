@@ -5,7 +5,7 @@ import type {
   TransactionSigner,
 } from '@solana/kit';
 import { getAddressCodec } from '@solana/kit';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@recoillink/utils';
 
 const ADDRESS_CODEC = getAddressCodec();
 

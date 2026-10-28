@@ -25,9 +25,9 @@ import {
   IsmType,
   MultiProvider,
   MultisigIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { mergeJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
+import { mergeJson } from '@recoillink/utils/fs';
 
 import { join } from 'path';
 

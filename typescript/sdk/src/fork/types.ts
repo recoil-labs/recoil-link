@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { objMap, objMerge } from '@hyperlane-xyz/utils';
+import { objMap, objMerge } from '@recoillink/utils';
 
 import { ZHash } from '../metadata/customZodTypes.js';
 

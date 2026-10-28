@@ -2,10 +2,10 @@ import fs from 'fs';
 import http from 'http';
 import { Logger } from 'pino';
 
-import { startMetricsServer } from '@hyperlane-xyz/metrics';
+import { startMetricsServer } from '@recoillink/metrics';
 import { IRegistry } from '@hyperlane-xyz/registry';
-import { ChainMap, HyperlaneCore, MultiProvider } from '@hyperlane-xyz/sdk';
-import { Address, LazyAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap, HyperlaneCore, MultiProvider } from '@recoillink/sdk';
+import { Address, LazyAsync, rootLogger } from '@recoillink/utils';
 
 import { RelayerConfigInput } from '../config/schema.js';
 import { HyperlaneRelayer } from '../core/HyperlaneRelayer.js';

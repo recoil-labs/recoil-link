@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { ProtocolType, pick, rootLogger } from '@hyperlane-xyz/utils';
+import { ProtocolType, pick, rootLogger } from '@recoillink/utils';
 
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';

@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { BigNumber } from 'ethers';
 import prompts from 'prompts';
 
-import { Ownable__factory, ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { Ownable__factory, ProxyAdmin__factory } from '@recoillink/core';
 import {
   ChainMap,
   ChainName,
@@ -15,7 +15,7 @@ import {
   OwnableConfig,
   OwnerViolation,
   ProxyAdminViolation,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   assert,
@@ -25,7 +25,7 @@ import {
   objMap,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { awIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_awLegacy.js';
 import { regularIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_regularLegacy.js';

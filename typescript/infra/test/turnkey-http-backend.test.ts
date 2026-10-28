@@ -23,18 +23,18 @@ import {
   verifySignature,
 } from '@solana/kit';
 
-import { type TurnkeyConfig } from '@hyperlane-xyz/sdk';
+import { type TurnkeyConfig } from '@recoillink/sdk';
 import {
   Eip712PayloadSchema,
   SignerBackendError,
-} from '@hyperlane-xyz/http-registry-server';
+} from '@recoillink/http-registry-server';
 import {
   ProtocolType,
   assert,
   ensure0x,
   fromHexString,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TurnkeyTransactionSignerBackend } from '../src/utils/turnkey.js';
 

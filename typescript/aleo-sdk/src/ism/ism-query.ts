@@ -3,7 +3,7 @@ import {
   ensure0x,
   isNullish,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import {

@@ -8,7 +8,7 @@ import {
   type ERC20Test,
   type XERC20LockboxTest,
   type XERC20VSTest,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
@@ -17,8 +17,8 @@ import {
   type WarpRouteDeployConfig,
   XERC20Type,
   isXERC20TokenConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {
@@ -258,7 +258,7 @@ describe('xerc20 e2e tests', function () {
 
   describe('apply', function () {
     it('reports no updates when config matches on-chain state', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 apply \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 apply \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \
@@ -299,7 +299,7 @@ describe('xerc20 e2e tests', function () {
       };
       writeYamlOrJson(XERC20_VS_REGISTRY_DEPLOY_PATH, configWithLimits);
 
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 apply \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 apply \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \
@@ -310,7 +310,7 @@ describe('xerc20 e2e tests', function () {
     });
 
     it('applies to all chains when --chains is not specified', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 apply \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 apply \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --key ${ANVIL_KEY} \
@@ -346,7 +346,7 @@ describe('xerc20 e2e tests', function () {
       expect(ownerBefore).to.equal(ownerAddress);
 
       try {
-        await $`${localTestRunCmdPrefix()} hyperlane xerc20 apply \
+        await $`${localTestRunCmdPrefix()} rlink xerc20 apply \
           --registry ${REGISTRY_PATH} \
           --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
           --chains ${CHAIN_NAME_2} \
@@ -363,7 +363,7 @@ describe('xerc20 e2e tests', function () {
     });
 
     it('reports no updates when token owner already matches config', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 apply \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 apply \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \
@@ -376,7 +376,7 @@ describe('xerc20 e2e tests', function () {
 
   describe('read', function () {
     it('displays the XERC20 token owner', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 read \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 read \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \
@@ -386,7 +386,7 @@ describe('xerc20 e2e tests', function () {
     });
 
     it('displays current limits for Velodrome XERC20', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 read \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 read \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \
@@ -397,7 +397,7 @@ describe('xerc20 e2e tests', function () {
     });
 
     it('displays current limits for Standard XERC20', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 read \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 read \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_LOCKBOX_WARP_ROUTE_ID} \
         --verbosity debug`;
@@ -407,7 +407,7 @@ describe('xerc20 e2e tests', function () {
     });
 
     it('filters by chain when --chains is specified', async function () {
-      const result = await $`${localTestRunCmdPrefix()} hyperlane xerc20 read \
+      const result = await $`${localTestRunCmdPrefix()} rlink xerc20 read \
         --registry ${REGISTRY_PATH} \
         --warp-route-id ${XERC20_VS_WARP_ROUTE_ID} \
         --chains ${CHAIN_NAME_2} \

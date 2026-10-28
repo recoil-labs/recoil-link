@@ -19,7 +19,7 @@ Hyperlane uses bytes32 format for addresses in cross-chain messages to support m
 
 ```bash
 # Check if installed
-command -v hyperlane >/dev/null 2>&1 || npm install -g @hyperlane-xyz/cli
+command -v hyperlane >/dev/null 2>&1 || npm install -g @recoillink/cli
 
 # Or use from monorepo
 cd typescript/cli && pnpm hyperlane

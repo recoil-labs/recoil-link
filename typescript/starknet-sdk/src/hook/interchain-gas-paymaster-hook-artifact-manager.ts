@@ -1,13 +1,13 @@
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type RawHookArtifactConfigs,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 
 export function createStarknetInterchainGasPaymasterHookReader(): ArtifactReader<
   RawHookArtifactConfigs['interchainGasPaymaster'],

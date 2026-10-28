@@ -9,7 +9,7 @@ import React, {
   useState,
 } from 'react';
 
-import { deepEquals, isObject, toTitleCase } from '@hyperlane-xyz/utils';
+import { deepEquals, isObject, toTitleCase } from '@recoillink/utils';
 
 import { ColorPalette } from '../color.js';
 import { ArrowIcon } from '../icons/Arrow.js';

@@ -1,7 +1,7 @@
 import { createHash, timingSafeEqual } from 'node:crypto';
 import type { NextFunction, Request, Response } from 'express';
 
-import { assert, fromHexString } from '@hyperlane-xyz/utils';
+import { assert, fromHexString } from '@recoillink/utils';
 
 import { ApiError } from '../errors/ApiError.js';
 import { isCanonicalBase64 } from './encoding.js';

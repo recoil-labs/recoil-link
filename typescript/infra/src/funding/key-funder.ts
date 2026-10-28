@@ -3,7 +3,7 @@ import { join } from 'path';
 import YAML from 'yaml';
 import { z } from 'zod';
 
-import { KeyFunderConfigSchema } from '@hyperlane-xyz/keyfunder';
+import { KeyFunderConfigSchema } from '@recoillink/keyfunder';
 import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
 
 import { Contexts } from '../../config/contexts.js';

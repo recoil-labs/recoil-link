@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import { Wallet } from 'ethers';
 import { $ } from 'zx';
 
-import { type XERC20LockboxTest, type XERC20VSTest } from '@hyperlane-xyz/core';
+import { type XERC20LockboxTest, type XERC20VSTest } from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
@@ -13,13 +13,13 @@ import {
   TokenType,
   type WarpRouteDeployConfig,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   assert,
   eqAddress,
   isNullish,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -47,7 +47,7 @@ import {
 
 $.verbose = true;
 
-describe('hyperlane warp xERC20 token fee e2e tests', function () {
+describe('rlink warp xERC20 token fee e2e tests', function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const TOKEN_SYMBOL = 'XFEE';

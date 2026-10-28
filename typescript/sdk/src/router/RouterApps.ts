@@ -1,13 +1,13 @@
 import type { BigNumber } from 'ethers';
 import { Logger } from 'pino';
 
-import { GasRouter, Router } from '@hyperlane-xyz/core';
+import { GasRouter, Router } from '@recoillink/core';
 import {
   Address,
   isEVMLike,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import {

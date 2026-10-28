@@ -1,7 +1,7 @@
 {
-  "name": "@hyperlane-xyz/cosmos-types",
+  "name": "@recoillink/cosmos-types",
   "version": "45.0.1",
-  "description": "Hyperlane TypeScript SDK types for the Cosmos Hyperlane SDK module",
+  "description": "Recoil Link TypeScript SDK types for the Cosmos Hyperlane SDK module",
   "keywords": [
     "blockchain",
     "cosmos",
@@ -9,9 +9,9 @@
     "sdk",
     "types"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist"
   ],
@@ -33,7 +33,7 @@
     "protobufjs": "^7.4.0"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "oxfmt": "catalog:",
     "typescript": "catalog:"

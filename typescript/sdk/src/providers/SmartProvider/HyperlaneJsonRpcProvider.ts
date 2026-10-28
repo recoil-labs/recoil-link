@@ -5,7 +5,7 @@ import {
   isBigNumberish,
   isNullish,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   AllProviderMethods,

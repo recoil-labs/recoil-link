@@ -5,11 +5,11 @@ import {
   type ForkedChainMetadata,
   ForkManagerRegistry,
   type IForkManager,
-} from '@hyperlane-xyz/forking-sdk';
-import { HttpServer } from '@hyperlane-xyz/http-registry-server';
+} from '@recoillink/forking-sdk';
+import { HttpServer } from '@recoillink/http-registry-server';
 import { PartialRegistry } from '@hyperlane-xyz/registry';
-import { type ChainMetadata, MultiProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainMetadata, MultiProvider } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 

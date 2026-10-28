@@ -1,5 +1,5 @@
 import { ChainAddresses, UpdateChainParams } from '@hyperlane-xyz/registry';
-import { ChainMetadata, ChainName } from '@hyperlane-xyz/sdk';
+import { ChainMetadata, ChainName } from '@recoillink/sdk';
 
 import { NotFoundError } from '../errors/ApiError.js';
 

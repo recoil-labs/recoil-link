@@ -1,4 +1,4 @@
-import { AccountConfig, InterchainAccount } from '@hyperlane-xyz/sdk';
+import { AccountConfig, InterchainAccount } from '@recoillink/sdk';
 import {
   Address,
   LogFormat,
@@ -9,7 +9,7 @@ import {
   isZeroishAddress,
   mapAllSettled,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   getGovernanceIcas,

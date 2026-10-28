@@ -6,7 +6,7 @@ import {
   type ChainMetadata,
   type ChainName,
   ExplorerFamily,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { detectAndConfirmOrPrompt } from '../utils/input.js';
 

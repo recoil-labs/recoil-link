@@ -1,7 +1,7 @@
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, isNullish, retryAsync } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { TokenType } from '@recoillink/provider-sdk/warp';
+import { assert, isNullish, retryAsync } from '@recoillink/utils';
 
 import { type AleoProgram } from '../programs.js';
 import {

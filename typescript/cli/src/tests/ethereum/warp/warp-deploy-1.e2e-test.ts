@@ -5,7 +5,7 @@ import { Wallet } from 'ethers';
 import fs from 'fs';
 import path from 'path';
 
-import { type ERC20Test, type ERC4626Test } from '@hyperlane-xyz/core';
+import { type ERC20Test, type ERC4626Test } from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -21,8 +21,8 @@ import {
   TokenType,
   type WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {
@@ -71,7 +71,7 @@ const WARP_ROUTE_ID_2_3 = getWarpRouteId('VAULT', [
   WARP_DEPLOY_DEFAULT_FILE_NAME,
 ]);
 
-describe('hyperlane warp deploy e2e tests', async function () {
+describe('rlink warp deploy e2e tests', async function () {
   this.timeout(1.5 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Metadata: ChainMetadata;
@@ -125,7 +125,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     );
   }
 
-  describe('hyperlane warp deploy', () => {
+  describe('rlink warp deploy', () => {
     it(`should exit early when the provided deployment file does not exist`, async function () {
       const nonExistingFilePath = 'non-existing-path';
       // Currently if the file provided in the config flag does not exist a prompt will still be shown to the
@@ -464,7 +464,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     });
   });
 
-  describe('hyperlane warp deploy --yes', () => {
+  describe('rlink warp deploy --yes', () => {
     it(`should exit early when the provided deployment file does not exist and the skip flag is provided`, async function () {
       const nonExistingFilePath = 'non-existing-path';
       // Currently if the file provided in the config flag does not exist a prompt will still be shown to the
@@ -566,7 +566,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     });
   });
 
-  describe(`hyperlane warp deploy --yes --key ...`, () => {
+  describe(`rlink warp deploy --yes --key ...`, () => {
     let tokenChain2: ERC20Test;
     let vaultChain2: ERC4626Test;
 

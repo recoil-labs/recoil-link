@@ -3,9 +3,9 @@ import {
   TransactionManifest,
 } from '@radixdlt/radix-engine-toolkit';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { assert, strip0x } from '@recoillink/utils';
 
 import { RadixBaseSigner } from '../utils/signer.js';
 import {

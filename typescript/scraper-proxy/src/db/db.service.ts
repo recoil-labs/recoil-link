@@ -1,6 +1,6 @@
-import { rootLogger, type Logger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
-import { assert } from '@hyperlane-xyz/utils/validation';
+import { rootLogger, type Logger } from '@recoillink/utils';
+import { formatError } from '@recoillink/utils/errors';
+import { assert } from '@recoillink/utils/validation';
 import pg from 'pg';
 
 import { config } from '../config.js';

@@ -1,4 +1,4 @@
-import { HyperlaneRelayer, RelayerCacheSchema } from '@hyperlane-xyz/relayer';
+import { HyperlaneRelayer, RelayerCacheSchema } from '@recoillink/relayer';
 
 import { readFile, writeFile } from 'fs/promises';
 

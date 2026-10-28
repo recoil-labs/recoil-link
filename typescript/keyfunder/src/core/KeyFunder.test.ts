@@ -3,7 +3,7 @@ import { BigNumber, ethers } from 'ethers';
 import { pino, type Logger } from 'pino';
 import sinon from 'sinon';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@recoillink/sdk';
 
 import type { KeyFunderConfig } from '../config/types.js';
 import { KeyFunderMetrics } from '../metrics/Metrics.js';

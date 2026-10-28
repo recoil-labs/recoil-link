@@ -7,7 +7,7 @@ import {
   ValidatorConfig,
   ValidatorMetadata,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { GcpStorageWrapper, StorageConfig } from './storage.js';
 

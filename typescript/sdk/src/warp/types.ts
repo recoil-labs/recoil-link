@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { isValidAddressSealevel } from '@hyperlane-xyz/utils';
+import { isValidAddressSealevel } from '@recoillink/utils';
 
 import { ZChainName } from '../metadata/customZodTypes.js';
 import type { TypedTransaction } from '../providers/ProviderType.js';

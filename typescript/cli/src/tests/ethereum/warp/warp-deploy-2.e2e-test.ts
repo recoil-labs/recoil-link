@@ -3,14 +3,14 @@ import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { Wallet } from 'ethers';
 
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk';
+import { TronJsonRpcProvider } from '@recoillink/tron-sdk';
 
 import {
   type ERC20Test,
   EverclearTokenBridge__factory,
   type MockEverclearAdapter,
   MovableCollateralRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainMetadata,
   IsmType,
@@ -25,7 +25,7 @@ import {
   type WarpRouteDeployConfigMailboxRequired,
   WarpRouteDeployConfigSchema,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   addressToBytes32,
@@ -33,7 +33,7 @@ import {
   normalizeAddressEvm,
   objMap,
   pick,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -91,7 +91,7 @@ function extractInputOnlyFields(config: TokenFeeConfigInput): any {
   }
 }
 
-describe('hyperlane warp deploy e2e tests', async function () {
+describe('rlink warp deploy e2e tests', async function () {
   this.timeout(1.5 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Metadata: ChainMetadata;
@@ -127,7 +127,7 @@ describe('hyperlane warp deploy e2e tests', async function () {
     ]);
   });
 
-  describe(`hyperlane warp deploy --yes --key ...`, () => {
+  describe(`rlink warp deploy --yes --key ...`, () => {
     let tokenChain2: ERC20Test;
     let everclearBridgeAdapterMock: MockEverclearAdapter;
 

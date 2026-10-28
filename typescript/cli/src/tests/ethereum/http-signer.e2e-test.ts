@@ -6,9 +6,9 @@ import { $ } from 'zx';
 import {
   HttpServer,
   type TransactionSignerBackend,
-} from '@hyperlane-xyz/http-registry-server';
+} from '@recoillink/http-registry-server';
 import { FileSystemRegistry } from '@hyperlane-xyz/registry/fs';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 import { localTestRunCmdPrefix } from './commands/helpers.js';
@@ -114,7 +114,7 @@ describe('HTTP signer Anvil e2e', function () {
       'json',
     );
 
-    const result = await $`${localTestRunCmdPrefix()} hyperlane submit \
+    const result = await $`${localTestRunCmdPrefix()} rlink submit \
       --registry ${serverUrl} \
       --transactions ${transactionsPath} \
       --receipts ${receiptsPath} \

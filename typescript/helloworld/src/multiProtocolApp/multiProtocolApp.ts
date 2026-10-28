@@ -4,8 +4,8 @@ import {
   MultiProtocolRouterApp,
   RouterAddress,
   TypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType, isEVMLike } from '@recoillink/utils';
 
 import { StatCounts } from '../app/types.js';
 

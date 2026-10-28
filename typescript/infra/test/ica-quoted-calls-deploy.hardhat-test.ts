@@ -15,7 +15,7 @@ import {
   Mailbox__factory,
   QuotedCalls__factory,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   ChainMap,
   ContractVerificationInput,
@@ -23,14 +23,14 @@ import {
   MultiProvider,
   OnchainHookType,
   PERMIT2_ADDRESS,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   addBufferToGasLimit,
   addressToBytes32,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEFAULT_OFFCHAIN_LOOKUP_ISM_URLS } from '../config/environments/utils.js';
 import { createMemoryChainStore } from '../src/aggregation-hook-upgrade/address-export.js';

@@ -22,7 +22,7 @@
 import yargs from 'yargs';
 
 import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@recoillink/sdk';
 
 import { getRegistry } from '../../config/registry.js';
 

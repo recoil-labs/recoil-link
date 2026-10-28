@@ -1,4 +1,4 @@
-import { TimelockController__factory } from '@hyperlane-xyz/core';
+import { TimelockController__factory } from '@recoillink/core';
 
 export const evmTimelockFactories = {
   TimelockController: new TimelockController__factory(),

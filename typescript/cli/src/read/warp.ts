@@ -4,9 +4,9 @@ import {
   HypXERC20Lockbox__factory,
   HypXERC20__factory,
   IXERC20__factory,
-} from '@hyperlane-xyz/core';
-import { createWarpTokenReader } from '@hyperlane-xyz/deploy-sdk';
-import { hasProtocol } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/core';
+import { createWarpTokenReader } from '@recoillink/deploy-sdk';
+import { hasProtocol } from '@recoillink/provider-sdk';
 import {
   type ChainMap,
   type ChainName,
@@ -17,7 +17,7 @@ import {
   TokenStandard,
   type WarpCoreConfig,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
@@ -25,7 +25,7 @@ import {
   objFilter,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray, logRed, logTable } from '../logger.js';

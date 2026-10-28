@@ -8,8 +8,8 @@ import {
   ChainMap,
   ChainName,
   defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import { getArgs } from '../agent-utils.js';

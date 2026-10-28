@@ -2,7 +2,7 @@ import { expect } from 'chai';
 
 import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { retryAsync, rootLogger } from '@recoillink/utils';
 
 import { WarpRouteIds } from '../config/environments/mainnet3/warp/warpIds.js';
 

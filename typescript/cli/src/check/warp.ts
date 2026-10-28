@@ -8,7 +8,7 @@ import {
   type WarpRouteCheckResult,
   type WarpRouteDeployConfigMailboxRequired,
   checkWarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type ObjectDiff,
   assert,
@@ -16,7 +16,7 @@ import {
   isEVMLike,
   keepOnlyDiffObjects,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readWarpRouteDeployConfig } from '../config/warp.js';
 import { type CommandContext } from '../context/types.js';

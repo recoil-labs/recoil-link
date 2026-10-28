@@ -5,7 +5,7 @@ import { expect } from 'chai';
 import Fastify from 'fastify';
 import { pino } from 'pino';
 
-import { assert, isNullish } from '@hyperlane-xyz/utils';
+import { assert, isNullish } from '@recoillink/utils';
 
 import { CCIP_KEEP_ALIVE_TIMEOUT_MS } from '../../src/http.js';
 import { closeServers } from '../../src/utils/shutdown.js';

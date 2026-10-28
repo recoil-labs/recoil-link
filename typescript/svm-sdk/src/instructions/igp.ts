@@ -16,7 +16,7 @@ import {
   getU64Codec,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { simulateInstructionAccountMetas } from '../simulation.js';
 import type { SvmRpc } from '../types.js';

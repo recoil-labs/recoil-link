@@ -13,8 +13,8 @@ import {
   TokenStandard,
   WarpTxCategory,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { assert, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, ProtocolType } from '@recoillink/utils';
 
 import { ExternalBridgeType } from '../config/types.js';
 import type { IExternalBridge } from '../interfaces/IExternalBridge.js';

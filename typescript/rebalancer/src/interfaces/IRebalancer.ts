@@ -2,7 +2,7 @@ import {
   type EvmMovableCollateralAdapter,
   type IToken,
   type TokenAmount,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import {
   type InventoryRoute,

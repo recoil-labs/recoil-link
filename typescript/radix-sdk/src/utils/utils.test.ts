@@ -1,7 +1,7 @@
 import { InstructionsKind } from '@radixdlt/radix-engine-toolkit';
 import { expect } from 'chai';
 
-import { addressToBytes32, assert, strip0x } from '@hyperlane-xyz/utils';
+import { addressToBytes32, assert, strip0x } from '@recoillink/utils';
 
 import { getTransferRemoteManifest } from '../warp/populate.js';
 

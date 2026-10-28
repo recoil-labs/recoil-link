@@ -1,6 +1,6 @@
 import { join } from 'path';
 
-import { ChainMap } from '@hyperlane-xyz/sdk';
+import { ChainMap } from '@recoillink/sdk';
 
 import { getInfraPath } from '../../utils/utils.js';
 

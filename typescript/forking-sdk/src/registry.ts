@@ -1,5 +1,5 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 
 import { ForkManagerFactory } from './types.js';
 

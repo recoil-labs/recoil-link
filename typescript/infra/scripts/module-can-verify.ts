@@ -1,5 +1,5 @@
-import { moduleCanCertainlyVerify } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { moduleCanCertainlyVerify } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getArgs } from './agent-utils.js';
 import { getHyperlaneCore } from './core-utils.js';

@@ -5,7 +5,7 @@ import {
   isQuery,
   isTypes,
   type pagination,
-} from '@hyperlane-xyz/cosmos-types';
+} from '@recoillink/cosmos-types';
 
 type ISM =
   | isTypes.NoopISM

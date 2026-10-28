@@ -18,18 +18,18 @@ Node 22 or newer is required.
 
 ```bash
 # Install with NPM
-npm install -g @hyperlane-xyz/cli
+npm install -g @recoillink/cli
 # Or uninstall old versions
-npm uninstall -g @hyperlane-xyz/cli
+npm uninstall -g @recoillink/cli
 ```
 
 **Option 2: Temp install:**
 
 ```bash
 # Run via NPM's npx command
-npx @hyperlane-xyz/cli
+npx @recoillink/cli
 # Or via pnpm's dlx command
-pnpm dlx @hyperlane-xyz/cli
+pnpm dlx @recoillink/cli
 ```
 
 **Option 3: Run from source:**

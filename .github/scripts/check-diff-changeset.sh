@@ -99,6 +99,6 @@ if "$SCRIPT_DIR/check-solidity-changeset.sh" "$REQUIRED_LEVEL" "$BASE_REF"; then
   exit 0
 else
   echo ""
-  echo "ERROR: $CHANGE_DESC require a changeset for @hyperlane-xyz/core with at least a '$REQUIRED_LEVEL' bump."
+  echo "ERROR: $CHANGE_DESC require a changeset for @recoillink/core with at least a '$REQUIRED_LEVEL' bump."
   exit 1
 fi

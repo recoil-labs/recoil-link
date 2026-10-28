@@ -1,10 +1,10 @@
-import type { DerivedCollateralWarpConfig } from '@hyperlane-xyz/provider-sdk/warp';
+import type { DerivedCollateralWarpConfig } from '@recoillink/provider-sdk/warp';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { zeroAddress } from 'viem';
 
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/core';
-import { ProtocolType, addressToBytes32 } from '@hyperlane-xyz/utils';
+import { CrossCollateralRouter__factory } from '@recoillink/core';
+import { ProtocolType, addressToBytes32 } from '@recoillink/utils';
 
 import {
   test1,

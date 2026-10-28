@@ -1,5 +1,5 @@
-import { type CoreConfig, HookType, IsmType } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { type CoreConfig, HookType, IsmType } from '@recoillink/sdk';
+import { type Address, ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -18,7 +18,7 @@ import {
   updateProtocolFeeCoreConfig,
 } from '../helpers.js';
 
-describe('hyperlane core deploy (Starknet E2E tests)', async function () {
+describe('rlink core deploy (Starknet E2E tests)', async function () {
   this.timeout(STARKNET_E2E_TEST_TIMEOUT);
   const isSmokeTier = process.env.CLI_E2E_TIER === 'smoke';
 

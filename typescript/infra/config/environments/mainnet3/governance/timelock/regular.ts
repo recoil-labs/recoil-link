@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 export const regularTimelocks: ChainMap<Address> = {
   // Jul 18, 2025 - Timelock for "Regular" aka "Multisig A" Safe

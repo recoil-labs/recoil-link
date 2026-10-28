@@ -1,11 +1,11 @@
 import { QueryClient } from '@cosmjs/stargate';
 import { connectComet } from '@cosmjs/tendermint-rpc';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type DeployedHookArtifact,
@@ -14,8 +14,8 @@ import {
   type RawHookArtifactConfigs,
   altVmHookTypeToProviderHookType,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { LazyAsync, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { LazyAsync, assert } from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { setupPostDispatchExtension } from '../hyperlane/post_dispatch/query.js';

@@ -2,7 +2,7 @@ import { AccountRole, address as parseAddress } from '@solana/kit';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   LOADER_V3_PROGRAM_ADDRESS,

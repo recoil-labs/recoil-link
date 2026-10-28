@@ -1,4 +1,4 @@
-import * as types from '@hyperlane-xyz/cosmos-types';
+import * as types from '@recoillink/cosmos-types';
 
 type RawCosmosModuleMessageRegistry<T> = {
   [Key in keyof Omit<

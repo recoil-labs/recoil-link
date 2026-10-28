@@ -4,8 +4,8 @@ import { pino } from 'pino';
 import { Registry } from 'prom-client';
 import sinon from 'sinon';
 
-import { InterchainAccount, MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert, isNullish } from '@hyperlane-xyz/utils';
+import { InterchainAccount, MultiProvider } from '@recoillink/sdk';
+import { assert, isNullish } from '@recoillink/utils';
 
 import type { CcipApp, CcipRequest } from '../../src/http.js';
 import { CallCommitmentsService } from '../../src/services/CallCommitmentsService.js';

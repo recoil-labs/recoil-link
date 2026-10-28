@@ -1,13 +1,13 @@
 import type { Hex } from 'viem';
 import { isAddress } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   addressToBytes32,
   assert,
   isEVMLike,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { IToken } from '../token/IToken.js';
 import { Token } from '../token/Token.js';

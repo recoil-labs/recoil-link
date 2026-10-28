@@ -6,8 +6,8 @@ import {
   type DerivedWarpRouteDeployConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -29,7 +29,7 @@ import {
 } from '../../constants.js';
 import { assertWarpRouteConfig } from '../../utils.js';
 
-describe('hyperlane warp read (Aleo E2E tests)', async function () {
+describe('rlink warp read (Aleo E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const nativeTokenData =
@@ -132,7 +132,7 @@ describe('hyperlane warp read (Aleo E2E tests)', async function () {
     });
   });
 
-  describe('hyperlane warp read (no args)', () => {
+  describe('rlink warp read (no args)', () => {
     it('should exit early if no symbol or no chain and address', async () => {
       const output = await hyperlaneWarp.readRaw({}).nothrow();
 
@@ -141,7 +141,7 @@ describe('hyperlane warp read (Aleo E2E tests)', async function () {
     });
   });
 
-  describe('hyperlane warp read --warpRouteId ...', () => {
+  describe('rlink warp read --warpRouteId ...', () => {
     it('should successfully read the complete warp route config from all chains', async () => {
       const output = await hyperlaneWarp
         .readRaw({
@@ -167,7 +167,7 @@ describe('hyperlane warp read (Aleo E2E tests)', async function () {
     });
   });
 
-  describe('hyperlane warp read --chain ... --warp-route-id ...', () => {
+  describe('rlink warp read --chain ... --warp-route-id ...', () => {
     it('should be able to read a warp route from a single chain', async function () {
       const warpReadResult = await hyperlaneWarp.readConfig(
         TEST_CHAIN_NAMES_BY_PROTOCOL.aleo.CHAIN_NAME_1,

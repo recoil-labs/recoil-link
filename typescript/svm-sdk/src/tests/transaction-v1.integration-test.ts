@@ -24,8 +24,8 @@ import {
 } from '@solana/kit';
 import { expect } from 'chai';
 import { before, after, describe, it } from 'mocha';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert, pollAsync } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { assert, pollAsync } from '@recoillink/utils';
 import { SvmSigner } from '../clients/signer.js';
 import { createRpc } from '../rpc.js';
 import { buildTransactionMessage } from '../tx.js';

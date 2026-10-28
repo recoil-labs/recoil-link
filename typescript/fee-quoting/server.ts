@@ -5,5 +5,5 @@ export type { QuoteServiceOptions } from './src/services/quoteService.js';
 export { ServerConfigSchema, QuoteMode } from './src/config.js';
 export type { ServerConfig } from './src/config.js';
 
-// Client types have been moved to @hyperlane-xyz/sdk
+// Client types have been moved to @recoillink/sdk
 // (FeeQuotingClient, FeeQuotingCommand, etc.)

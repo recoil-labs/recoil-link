@@ -3,7 +3,7 @@ description: 'Run pnpm build using pnpm cache'
 
 inputs:
   build-filter:
-    description: 'Optional turbo filter to scope the build (e.g. @hyperlane-xyz/cli...)'
+    description: 'Optional turbo filter to scope the build (e.g. @recoillink/cli...)'
     required: false
 runs:
   using: 'composite'

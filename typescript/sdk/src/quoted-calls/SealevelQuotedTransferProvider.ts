@@ -2,8 +2,8 @@ import { Connection, PublicKey, TransactionInstruction } from '@solana/web3.js';
 import { ethers } from 'ethers';
 import { bytesToHex, hexToBytes, keccak256 } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { addressToBytes32, assert, isNullish } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { addressToBytes32, assert, isNullish } from '@recoillink/utils';
 
 import { ProviderType } from '../providers/ProviderType.js';
 import { IToken } from '../token/IToken.js';

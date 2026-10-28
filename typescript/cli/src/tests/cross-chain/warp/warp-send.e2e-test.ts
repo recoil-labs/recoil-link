@@ -7,10 +7,10 @@ import { type StartedTestContainer } from 'testcontainers';
 import {
   createSignerWithPrivateKey,
   runCosmosNode,
-} from '@hyperlane-xyz/cosmos-sdk/testing';
+} from '@recoillink/cosmos-sdk/testing';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType, type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { TokenType, type WarpRouteDeployConfig } from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -37,7 +37,7 @@ chai.use(chaiAsPromised);
 const expect = chai.expect;
 chai.should();
 
-describe('hyperlane warp send cross-chain e2e tests', async function () {
+describe('rlink warp send cross-chain e2e tests', async function () {
   this.timeout(CROSS_CHAIN_E2E_TEST_TIMEOUT);
 
   let cosmosNativeDeployerAddress: Address;

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { $ } from 'zx';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { localTestRunCmdPrefix } from './ethereum/commands/helpers.js';
 
@@ -27,13 +27,13 @@ const TEST_ADDRESSES = {
 
 $.verbose = false;
 
-describe('hyperlane address e2e tests', async function () {
+describe('rlink address e2e tests', async function () {
   this.timeout(30_000);
 
   describe('to-bytes32', () => {
     it('should convert EVM address to bytes32', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${TEST_ADDRESSES[ProtocolType.Ethereum].address}`.nothrow();
 
       expect(exitCode).to.equal(0);
@@ -43,7 +43,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert EVM address to bytes32 with explicit protocol', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${TEST_ADDRESSES[ProtocolType.Ethereum].address} \
         --protocol ${ProtocolType.Ethereum}`.nothrow();
 
@@ -57,7 +57,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert Solana address to bytes32 using aliases', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         -a ${TEST_ADDRESSES[ProtocolType.Sealevel].address} \
         -p ${ProtocolType.Sealevel}`.nothrow();
 
@@ -68,7 +68,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert Cosmos address to bytes32', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${TEST_ADDRESSES[ProtocolType.Cosmos].address} \
         --protocol ${ProtocolType.Cosmos}`.nothrow();
 
@@ -80,7 +80,7 @@ describe('hyperlane address e2e tests', async function () {
     it('should handle already converted bytes32 address', async () => {
       const bytes32 = TEST_ADDRESSES[ProtocolType.Ethereum].bytes32;
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${bytes32}`.nothrow();
 
       expect(exitCode).to.equal(0);
@@ -89,7 +89,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should fail with clear error for invalid address', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address invalid_address`.nothrow();
 
       expect(exitCode).to.equal(1);
@@ -101,7 +101,7 @@ describe('hyperlane address e2e tests', async function () {
   describe('from-bytes32', () => {
     it('should convert bytes32 to EVM address', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${TEST_ADDRESSES[ProtocolType.Ethereum].bytes32} \
         --protocol ${ProtocolType.Ethereum}`.nothrow();
 
@@ -112,7 +112,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert bytes32 to Solana address using aliases', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         -b ${TEST_ADDRESSES[ProtocolType.Sealevel].bytes32} \
         -p ${ProtocolType.Sealevel}`.nothrow();
 
@@ -123,7 +123,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert bytes32 to Cosmos address with prefix', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${TEST_ADDRESSES[ProtocolType.Cosmos].bytes32} \
         --protocol ${ProtocolType.Cosmos} \
         --prefix ${TEST_ADDRESSES[ProtocolType.Cosmos].prefix}`.nothrow();
@@ -140,7 +140,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should convert bytes32 to Cosmos address with chain name', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${TEST_ADDRESSES[ProtocolType.Cosmos].bytes32} \
         --protocol ${ProtocolType.Cosmos} \
         --chain cosmoshub`.nothrow();
@@ -156,7 +156,7 @@ describe('hyperlane address e2e tests', async function () {
       const bytes32WithoutPrefix =
         TEST_ADDRESSES[ProtocolType.Ethereum].bytes32.slice(2);
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${bytes32WithoutPrefix} \
         --protocol ${ProtocolType.Ethereum}`.nothrow();
 
@@ -166,7 +166,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should fail with clear error when prefix is missing for Cosmos', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${TEST_ADDRESSES[ProtocolType.Cosmos].bytes32} \
         --protocol ${ProtocolType.Cosmos}`.nothrow();
 
@@ -178,7 +178,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should fail when both prefix and chain are provided', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${TEST_ADDRESSES[ProtocolType.Cosmos].bytes32} \
         --protocol ${ProtocolType.Cosmos} \
         --prefix cosmos \
@@ -191,7 +191,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should fail with clear error for invalid bytes32 format', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 0xinvalid \
         --protocol ${ProtocolType.Ethereum}`.nothrow();
 
@@ -203,7 +203,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should fail with clear error for too short bytes32', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 0x1234 \
         --protocol ${ProtocolType.Ethereum}`.nothrow();
 
@@ -219,7 +219,7 @@ describe('hyperlane address e2e tests', async function () {
 
       // Convert to bytes32
       const { stdout: bytes32Output } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${originalAddress}`;
 
       const bytes32Match = bytes32Output.match(/Bytes32: (0x[a-fA-F0-9]{64})/);
@@ -228,7 +228,7 @@ describe('hyperlane address e2e tests', async function () {
 
       // Convert back to address
       const { stdout: addressOutput } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${bytes32} \
         --protocol ${ProtocolType.Ethereum}`;
 
@@ -240,7 +240,7 @@ describe('hyperlane address e2e tests', async function () {
 
       // Convert to bytes32
       const { stdout: bytes32Output } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 \
         --address ${originalAddress} \
         --protocol ${ProtocolType.Sealevel}`;
 
@@ -250,7 +250,7 @@ describe('hyperlane address e2e tests', async function () {
 
       // Convert back to address
       const { stdout: addressOutput } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 \
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 \
         --bytes32 ${bytes32} \
         --protocol ${ProtocolType.Sealevel}`;
 
@@ -261,7 +261,7 @@ describe('hyperlane address e2e tests', async function () {
   describe('help output', () => {
     it('should display address command help', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address --help`.nothrow();
+        await $`${localTestRunCmdPrefix()} rlink address --help`.nothrow();
 
       expect(exitCode).to.equal(0);
       expect(stdout).to.include('Address conversion utilities for Hyperlane');
@@ -271,7 +271,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should display to-bytes32 help', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address to-bytes32 --help`.nothrow();
+        await $`${localTestRunCmdPrefix()} rlink address to-bytes32 --help`.nothrow();
 
       expect(exitCode).to.equal(0);
       expect(stdout).to.include('Convert an address to bytes32 format');
@@ -280,7 +280,7 @@ describe('hyperlane address e2e tests', async function () {
 
     it('should display from-bytes32 help', async () => {
       const { exitCode, stdout } =
-        await $`${localTestRunCmdPrefix()} hyperlane address from-bytes32 --help`.nothrow();
+        await $`${localTestRunCmdPrefix()} rlink address from-bytes32 --help`.nothrow();
 
       expect(exitCode).to.equal(0);
       expect(stdout).to.include('Convert bytes32 to an address');

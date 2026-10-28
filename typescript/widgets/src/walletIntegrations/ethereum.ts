@@ -9,21 +9,21 @@ import { useCallback } from 'react';
 import { Chain as ViemChain } from 'viem';
 import { useConfig } from 'wagmi';
 
-import { chainMetadataToViemChain } from '@hyperlane-xyz/sdk/metadata/chainMetadataConversion';
+import { chainMetadataToViemChain } from '@recoillink/sdk/metadata/chainMetadataConversion';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import { LOCKBOX_STANDARDS } from '@hyperlane-xyz/sdk/token/TokenStandard';
+} from '@recoillink/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@recoillink/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@recoillink/sdk/token/ITokenMetadata';
+import { LOCKBOX_STANDARDS } from '@recoillink/sdk/token/TokenStandard';
 import type {
   IHypTokenAdapter,
   IMovableCollateralRouterAdapter,
-} from '@hyperlane-xyz/sdk/token/adapters/ITokenAdapter';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { ProtocolType, assert, sleep } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/token/adapters/ITokenAdapter';
+import type { ChainName } from '@recoillink/sdk/types';
+import type { WarpTypedTransaction } from '@recoillink/sdk/warp/types';
+import { ProtocolType, assert, sleep } from '@recoillink/utils';
 
 import { widgetLogger } from '../logger.js';
 
@@ -85,7 +85,7 @@ export function useEthereumWatchAsset(
       let tokenAddress = '';
       if (LOCKBOX_STANDARDS.includes(token.standard)) {
         const { createEvmHypAdapter } =
-          await import('@hyperlane-xyz/sdk/token/adapters/evmHyp');
+          await import('@recoillink/sdk/token/adapters/evmHyp');
         const adapter = createEvmHypAdapter(multiProvider, token);
         assert(
           adapter,

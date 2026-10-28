@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import {
   FeeParamsType,
   FeeStrategyType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 import {
   feeStrategiesEqual,

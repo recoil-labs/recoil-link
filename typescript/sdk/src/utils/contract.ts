@@ -1,7 +1,7 @@
 import { compareVersions } from 'compare-versions';
 import { providers } from 'ethers';
 
-import { PackageVersioned__factory } from '@hyperlane-xyz/core';
+import { PackageVersioned__factory } from '@recoillink/core';
 import {
   Address,
   Logger,
@@ -9,7 +9,7 @@ import {
   isNullish,
   rootLogger,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getNestedJsonRpcError } from '../providers/SmartProvider/jsonRpcError.js';
 
@@ -265,7 +265,7 @@ export async function contractHasString(
 
 /**
  * Version reported for contracts that predate PACKAGE_VERSION (introduced in
- * @hyperlane-xyz/core@5.4.0); such a contract reverts the call with empty
+ * @recoillink/core@5.4.0); such a contract reverts the call with empty
  * return data (missing selector).
  * https://github.com/hyperlane-xyz/hyperlane-monorepo/releases/tag/%40hyperlane-xyz%2Fcore%405.4.0
  */

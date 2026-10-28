@@ -5,8 +5,8 @@ import {
   type MultiProtocolProvider,
   type MultiProvider,
   Token,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

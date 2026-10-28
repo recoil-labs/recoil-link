@@ -4,28 +4,28 @@
   "commit": true,
   "fixed": [
     [
-      "@hyperlane-xyz/aleo-sdk",
-      "@hyperlane-xyz/starknet-core",
-      "@hyperlane-xyz/ccip-server",
-      "@hyperlane-xyz/cli",
-      "@hyperlane-xyz/cosmos-sdk",
-      "@hyperlane-xyz/cosmos-types",
-      "@hyperlane-xyz/github-proxy",
-      "@hyperlane-xyz/helloworld",
-      "@hyperlane-xyz/http-registry-server",
-      "@hyperlane-xyz/infra",
-      "@hyperlane-xyz/radix-sdk",
-      "@hyperlane-xyz/sealevel-sdk",
-      "@hyperlane-xyz/sdk",
-      "@hyperlane-xyz/tsconfig",
-      "@hyperlane-xyz/utils",
-      "@hyperlane-xyz/widgets"
+      "@recoillink/aleo-sdk",
+      "@recoillink/starknet-core",
+      "@recoillink/ccip-server",
+      "@recoillink/cli",
+      "@recoillink/cosmos-sdk",
+      "@recoillink/cosmos-types",
+      "@recoillink/github-proxy",
+      "@recoillink/helloworld",
+      "@recoillink/http-registry-server",
+      "@recoillink/infra",
+      "@recoillink/radix-sdk",
+      "@recoillink/sealevel-sdk",
+      "@recoillink/sdk",
+      "@recoillink/tsconfig",
+      "@recoillink/utils",
+      "@recoillink/widgets"
     ]
   ],
   "linked": [
     [
-      "@hyperlane-xyz/deploy-sdk",
-      "@hyperlane-xyz/provider-sdk"
+      "@recoillink/deploy-sdk",
+      "@recoillink/provider-sdk"
     ]
   ],
   "access": "public",

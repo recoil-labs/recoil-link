@@ -9,7 +9,7 @@ import {
   PartialRegistry,
   RegistryType,
 } from '@hyperlane-xyz/registry';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { RegistryService } from '../../src/services/registryService.js';
 import { IWatcher } from '../../src/services/watcherService.js';

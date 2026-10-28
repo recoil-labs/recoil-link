@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+import { ProtocolType, isEVMLike } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

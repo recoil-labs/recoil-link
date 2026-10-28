@@ -1,9 +1,10 @@
 import { Logger } from 'pino';
 import { z } from 'zod';
 
-import { DEFAULT_GITHUB_REGISTRY, IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk/providers/MultiProvider';
+import { MultiProvider } from '@recoillink/sdk/providers/MultiProvider';
+import { RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk/consts/registry';
 
 import type { CcipApp } from '../http.js';
 
@@ -54,7 +55,7 @@ export abstract class BaseService {
   protected static async getRegistry(
     registryUri: string[] | undefined,
   ): Promise<IRegistry> {
-    const registryUris = registryUri ?? [DEFAULT_GITHUB_REGISTRY];
+    const registryUris = registryUri ?? [RECOIL_LINK_REGISTRY_URL];
     const registry = getRegistry({
       registryUris: registryUris,
       enableProxy: true,

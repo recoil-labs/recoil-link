@@ -8,8 +8,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, isObjEmpty } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, isObjEmpty } from '@recoillink/utils';
 
 import {
   TEST_CHAIN_METADATA_BY_PROTOCOL,

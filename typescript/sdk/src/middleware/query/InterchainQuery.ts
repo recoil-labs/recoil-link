@@ -1,4 +1,4 @@
-import { InterchainQueryRouter } from '@hyperlane-xyz/core';
+import { InterchainQueryRouter } from '@recoillink/core';
 
 import { appFromAddressesMapHelper } from '../../contracts/contracts.js';
 import {

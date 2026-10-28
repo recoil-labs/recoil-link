@@ -5,8 +5,8 @@ import {
   HypERC20Collateral__factory,
   MockMailbox__factory,
   MockValueTransferBridge__factory,
-} from '@hyperlane-xyz/core';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import type { Address } from '@recoillink/utils';
 
 import {
   ANVIL_BRIDGE_CONTROLLER_KEY,

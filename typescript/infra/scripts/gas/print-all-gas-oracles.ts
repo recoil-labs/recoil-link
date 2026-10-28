@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { stringifyObject } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { stringifyObject } from '@recoillink/utils';
 
 import { getChains } from '../../config/registry.js';
 import {

@@ -13,7 +13,7 @@ alone. The program retains the current minimum and validates the beneficiary.
 ## Build a claim
 
 - Kit: `buildClaimProtocolFeesInstruction(mailboxProgramId, beneficiary)` from
-  `@hyperlane-xyz/sealevel-sdk` returns an instruction for `SealevelSigner.send({ instructions: [claim] })`.
+  `@recoillink/sealevel-sdk` returns an instruction for `SealevelSigner.send({ instructions: [claim] })`.
   It supports the signer's v0 default and explicitly enabled v1 configuration.
 - Legacy SDK: `SealevelCoreAdapter.createClaimProtocolFeesInstruction(beneficiary)`
   builds an instruction for the derived outbox PDA. Supply the mailbox's configured

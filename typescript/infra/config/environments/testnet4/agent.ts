@@ -8,8 +8,8 @@ import {
   MatchingList,
   ModuleType,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import {
   AgentChainConfig,

@@ -1,6 +1,6 @@
 import { StargateClient } from '@cosmjs/stargate';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 export function shouldCacheStargateClient(url: string): boolean {
   return !url.startsWith('ws://') && !url.startsWith('wss://');

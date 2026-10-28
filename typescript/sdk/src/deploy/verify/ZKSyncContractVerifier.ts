@@ -1,8 +1,8 @@
 import fetch from 'cross-fetch';
 import { Logger } from 'pino';
 
-import { buildArtifact } from '@hyperlane-xyz/core/buildArtifact-zksync.js';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { buildArtifact } from '@recoillink/core/buildArtifact-zksync.js';
+import { rootLogger } from '@recoillink/utils';
 
 import { MultiProvider } from '../../providers/MultiProvider.js';
 import { ChainName } from '../../types.js';

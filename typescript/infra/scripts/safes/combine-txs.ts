@@ -5,8 +5,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import yargs from 'yargs';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { rootLogger } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { writeAndFormatJsonAtPath } from '../../src/utils/utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

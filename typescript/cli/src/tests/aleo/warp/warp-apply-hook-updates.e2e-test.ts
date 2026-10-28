@@ -1,6 +1,6 @@
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { TokenType } from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -23,7 +23,7 @@ import {
 } from '../../constants.js';
 import { createHookUpdateTests } from '../../helpers/warp-hook-test-factory.js';
 
-describe('hyperlane warp apply Hook updates (Aleo E2E tests)', async function () {
+describe('rlink warp apply Hook updates (Aleo E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const nativeTokenData =

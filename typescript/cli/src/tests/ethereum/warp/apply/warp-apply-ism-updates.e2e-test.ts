@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { RateLimitedIsm__factory } from '@hyperlane-xyz/core';
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { RateLimitedIsm__factory } from '@recoillink/core';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type IsmConfig,
   IsmType,
@@ -10,8 +10,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';
@@ -34,7 +34,7 @@ import { deployTestOffchainLookupISM } from '../../commands/helpers.js';
 
 const { TokenType } = AltVM;
 
-describe('hyperlane warp apply E2E (ISM updates)', async function () {
+describe('rlink warp apply E2E (ISM updates)', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const evmChain2Core = new HyperlaneE2ECoreTestCommands(

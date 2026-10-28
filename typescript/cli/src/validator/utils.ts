@@ -1,9 +1,9 @@
 import {
   type MerkleTreeHook,
   type ValidatorAnnounce,
-} from '@hyperlane-xyz/core';
-import { getValidatorFromStorageLocation } from '@hyperlane-xyz/sdk';
-import { type BaseValidator } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { getValidatorFromStorageLocation } from '@recoillink/sdk';
+import { type BaseValidator } from '@recoillink/utils';
 
 import { logDebug } from '../logger.js';
 

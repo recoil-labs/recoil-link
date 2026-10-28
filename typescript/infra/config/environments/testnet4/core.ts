@@ -19,8 +19,8 @@ import {
   RoutingIsmConfig,
   defaultMultisigConfigs,
   multisigConfigToIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { Address, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, objMap } from '@recoillink/utils';
 
 import { getChain } from '../../registry.js';
 

@@ -1,5 +1,5 @@
 import type { Keypair } from '@solana/web3.js';
-import { Address, Domain, Numberish } from '@hyperlane-xyz/utils';
+import { Address, Domain, Numberish } from '@recoillink/utils';
 
 import { EthJsonRpcBlockParameterTag } from '../../metadata/chainMetadataTypes.js';
 import type { PredicateAttestation } from '../../predicate/PredicateApiClient.js';

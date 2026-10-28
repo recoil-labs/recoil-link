@@ -1,9 +1,9 @@
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { AltVM, ProtocolType } from '@recoillink/provider-sdk';
 import type {
   RadixSDKReceipt,
   RadixSDKTransaction,
-} from '@hyperlane-xyz/radix-sdk/runtime';
-import { RadixSigner } from '@hyperlane-xyz/radix-sdk/runtime';
+} from '@recoillink/radix-sdk/runtime';
+import { RadixSigner } from '@recoillink/radix-sdk/runtime';
 
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 import { SendTransactionOptions } from '../../providers/MultiProvider.js';

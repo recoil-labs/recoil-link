@@ -8,19 +8,19 @@ import {
   ProtocolProvider,
   SignerConfig,
   TransactionSubmitterConfig,
-} from '@hyperlane-xyz/provider-sdk';
-import { IProvider } from '@hyperlane-xyz/provider-sdk/altvm';
-import { IRawHookArtifactManager } from '@hyperlane-xyz/provider-sdk/hook';
-import { IRawIsmArtifactManager } from '@hyperlane-xyz/provider-sdk/ism';
-import { IRawMailboxArtifactManager } from '@hyperlane-xyz/provider-sdk/mailbox';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk';
+import { IProvider } from '@recoillink/provider-sdk/altvm';
+import { IRawHookArtifactManager } from '@recoillink/provider-sdk/hook';
+import { IRawIsmArtifactManager } from '@recoillink/provider-sdk/ism';
+import { IRawMailboxArtifactManager } from '@recoillink/provider-sdk/mailbox';
+import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
 import {
   FeeReadContext,
   IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { IRawValidatorAnnounceArtifactManager } from '@hyperlane-xyz/provider-sdk/validator-announce';
-import type { IRawWarpArtifactManager } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/fee';
+import { IRawValidatorAnnounceArtifactManager } from '@recoillink/provider-sdk/validator-announce';
+import type { IRawWarpArtifactManager } from '@recoillink/provider-sdk/warp';
+import { assert } from '@recoillink/utils';
 
 import { RadixHookArtifactManager } from '../hook/hook-artifact-manager.js';
 import { RadixIsmArtifactManager } from '../ism/ism-artifact-manager.js';

@@ -5,7 +5,7 @@ import { join } from 'path';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { TurnkeyEvmSigner } from '@hyperlane-xyz/sdk';
+import { TurnkeyEvmSigner } from '@recoillink/sdk';
 
 import {
   ExternalSignerType,

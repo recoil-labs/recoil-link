@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { assert, eqAddress, objMap } from '@hyperlane-xyz/utils';
+import { assert, eqAddress, objMap } from '@recoillink/utils';
 
 import { ZChainName } from '../../../../metadata/customZodTypes.js';
 import { ChainMap, ChainName } from '../../../../types.js';

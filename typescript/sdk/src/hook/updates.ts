@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { Address, deepCopy, eqAddress } from '@hyperlane-xyz/utils';
+import { Address, deepCopy, eqAddress } from '@recoillink/utils';
 
 import { CCIPContractCache } from '../ccip/utils.js';
 import { ContractVerifier } from '../deploy/verify/ContractVerifier.js';

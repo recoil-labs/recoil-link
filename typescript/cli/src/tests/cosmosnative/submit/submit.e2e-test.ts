@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { rmSync, writeFileSync } from 'fs';
 import { $ } from 'zx';
 
-import { ChainMetadataSchema, randomAddress } from '@hyperlane-xyz/sdk';
-import { randomInt } from '@hyperlane-xyz/utils';
+import { ChainMetadataSchema, randomAddress } from '@recoillink/sdk';
+import { randomInt } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { localTestRunCmdPrefix } from '../../commands/helpers.js';
@@ -40,7 +40,7 @@ describe('hyperlane cosmosnative submit e2e tests', function () {
 
     try {
       const output =
-        await $`${localTestRunCmdPrefix()} hyperlane submit --registry ${REGISTRY_PATH} --transactions ${transactionsPath} --signer-config ${signerConfigPath} --yes`.nothrow();
+        await $`${localTestRunCmdPrefix()} rlink submit --registry ${REGISTRY_PATH} --transactions ${transactionsPath} --signer-config ${signerConfigPath} --yes`.nothrow();
 
       expect(output.exitCode).to.equal(1);
       expect(output.text()).to.include(

@@ -1,5 +1,5 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { type TestChainMetadata } from '@recoillink/provider-sdk/chain';
 
 // Single source of truth for the Agave/Solana version used in tests.
 // When bumping, also update the Dockerfile ARG + SHA256 and rebuild the image.

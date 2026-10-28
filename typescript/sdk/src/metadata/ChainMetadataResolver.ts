@@ -1,4 +1,4 @@
-import { assert, isNullish } from '@hyperlane-xyz/utils';
+import { assert, isNullish } from '@recoillink/utils';
 
 import type { ChainMap, ChainNameOrId } from '../types.js';
 

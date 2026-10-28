@@ -10,8 +10,8 @@ import {
   TokenType,
   WarpCoreConfig,
   WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 // Mock constants from existing registry tests
 export const MOCK_CHAIN_NAME = 'mockchain';

@@ -10,8 +10,8 @@ import chaiAsPromised from 'chai-as-promised';
 
 chai.use(chaiAsPromised);
 
-import { assert } from '@hyperlane-xyz/utils';
-import type { CompositeIsmArtifactConfig } from '@hyperlane-xyz/provider-sdk/ism';
+import { assert } from '@recoillink/utils';
+import type { CompositeIsmArtifactConfig } from '@recoillink/provider-sdk/ism';
 
 import { SYSTEM_PROGRAM_ADDRESS } from '../constants.js';
 import { getSetCompositeIsmDomainInstruction } from '../instructions/composite-ism.js';

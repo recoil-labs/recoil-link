@@ -4,8 +4,8 @@ import {
   Wait,
 } from 'testcontainers';
 
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { retryAsync, sleep } from '@hyperlane-xyz/utils';
+import { type TestChainMetadata } from '@recoillink/provider-sdk/chain';
+import { retryAsync, sleep } from '@recoillink/utils';
 
 import {
   ALEO_DEVNODE_IMAGE,

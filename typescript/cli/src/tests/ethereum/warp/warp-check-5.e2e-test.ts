@@ -2,15 +2,15 @@ import { expect } from 'chai';
 import { type Signer, Wallet, ethers } from 'ethers';
 import { zeroAddress } from 'viem';
 
-import { type ERC20Test, Mailbox__factory } from '@hyperlane-xyz/core';
+import { type ERC20Test, Mailbox__factory } from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
   HookType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -32,7 +32,7 @@ import {
   getWarpRouteId,
 } from '../consts.js';
 
-describe('hyperlane warp check e2e tests', async function () {
+describe('rlink warp check e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let signer: Signer;
@@ -97,7 +97,7 @@ describe('hyperlane warp check e2e tests', async function () {
     };
   });
 
-  describe('hyperlane warp check --warp-route-id ...', () => {
+  describe('rlink warp check --warp-route-id ...', () => {
     it(`should find differences in the hook config between the local and on chain config if it needs to be expanded`, async function () {
       warpConfig[CHAIN_NAME_2].hook = {
         type: HookType.MERKLE_TREE,

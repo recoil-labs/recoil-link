@@ -3,7 +3,7 @@ import { GetObjectCommand, S3Client } from '@aws-sdk/client-s3';
 // eslint-disable-next-line import/no-nodejs-modules
 import { Readable } from 'stream';
 
-import { streamToString } from '@hyperlane-xyz/utils';
+import { streamToString } from '@recoillink/utils';
 
 export const S3_BUCKET_REGEX =
   /^(?:https?:\/\/)?(.*)\.s3\.(.*)\.amazonaws.com\/?$/;

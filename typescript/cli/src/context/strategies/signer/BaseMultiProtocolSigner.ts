@@ -4,8 +4,8 @@ import { type Signer } from 'ethers';
 import {
   type MultiProtocolProvider,
   type TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { type ExtendedChainSubmissionStrategy } from '../../../submitters/types.js';
 

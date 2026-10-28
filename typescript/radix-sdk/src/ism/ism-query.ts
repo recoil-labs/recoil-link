@@ -1,6 +1,6 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { assert, ensure0x } from '@hyperlane-xyz/utils';
+import { assert, ensure0x } from '@recoillink/utils';
 
 import {
   getComponentOwner,

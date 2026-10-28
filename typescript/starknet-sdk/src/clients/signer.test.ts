@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { RpcProvider } from 'starknet';
 
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { AltVM, ProtocolType } from '@recoillink/provider-sdk';
 
 import { normalizeStarknetAddressSafe } from '../contracts.js';
 import { StarknetAnnotatedTx, StarknetTxReceipt } from '../types.js';

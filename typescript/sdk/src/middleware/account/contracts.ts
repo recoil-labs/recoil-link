@@ -1,4 +1,4 @@
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
+import { InterchainAccountRouter__factory } from '@recoillink/core';
 
 export const interchainAccountFactories = {
   interchainAccountRouter: new InterchainAccountRouter__factory(),

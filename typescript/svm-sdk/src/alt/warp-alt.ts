@@ -1,21 +1,21 @@
 import { type Address, address as parseAddress } from '@solana/kit';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   isArtifactDeployed,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type FeeArtifactConfig,
   type FeeReadContext,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 import {
   type DeployedWarpAddress,
   type WarpArtifactConfig,
   buildFeeReadContextFromWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   assert,
   chunk,
@@ -23,7 +23,7 @@ import {
   nonEmptyArray,
   strip0x,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DEFAULT_ROUTER } from '../codecs/fee.js';
 import { WILDCARD_DOMAIN, WILDCARD_SENDER } from '../codecs/igp.js';

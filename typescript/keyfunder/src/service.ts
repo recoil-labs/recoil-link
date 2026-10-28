@@ -3,17 +3,21 @@ import 'zod/compile';
 
 import { Wallet } from 'ethers';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { ChainMetadata, HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
+import {
+  ChainMetadata,
+  HyperlaneIgp,
+  MultiProvider,
+  RECOIL_LINK_REGISTRY_URL,
+} from '@recoillink/sdk';
+import { TronWallet } from '@recoillink/tron-sdk';
 import {
   ProtocolType,
   applyRpcUrlOverridesFromEnv,
   assert,
   createServiceLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { KeyFunderConfigLoader } from './config/KeyFunderConfig.js';
 import { KeyFunder } from './core/KeyFunder.js';
@@ -50,7 +54,7 @@ async function main(): Promise<void> {
     const configuredChains = configLoader.getConfiguredChains();
     logger.info({ chains: configuredChains }, 'Loaded keyfunder configuration');
 
-    const registryUri = process.env.REGISTRY_URI ?? DEFAULT_GITHUB_REGISTRY;
+    const registryUri = process.env.REGISTRY_URI ?? RECOIL_LINK_REGISTRY_URL;
     const registry = getRegistry({
       registryUris: [registryUri],
       enableProxy: true,

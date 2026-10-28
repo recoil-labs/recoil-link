@@ -3,7 +3,7 @@ import {
   ProxyAdmin__factory,
   QuotedCalls__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import { HyperlaneAddresses } from '../contracts/types.js';
 

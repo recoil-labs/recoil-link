@@ -5,7 +5,7 @@ import {
   HyperlaneCore,
   MultiProvider,
   serializeContractsMap,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { prodConfigs } from '../deploy/config.js';
 import { HelloWorldDeployer } from '../deploy/deploy.js';

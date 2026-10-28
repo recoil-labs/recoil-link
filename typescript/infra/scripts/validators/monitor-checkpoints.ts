@@ -27,12 +27,12 @@ import { Gauge, Registry } from 'prom-client';
 import {
   MerkleTreeHook__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
-import { submitMetrics } from '@hyperlane-xyz/metrics';
+} from '@recoillink/core';
+import { submitMetrics } from '@recoillink/metrics';
 import {
   MultiProvider,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   BaseValidator,
   LogFormat,
@@ -42,8 +42,8 @@ import {
   configureRootLogger,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import type { Checkpoint } from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
+import type { Checkpoint } from '@recoillink/utils';
 
 import { getChainAddresses } from '../../config/registry.js';
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';

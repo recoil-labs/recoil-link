@@ -7,7 +7,7 @@ import {
   MultiProtocolProvider,
   MultiProvider,
   OwnableConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import { CloudAgentKey } from '../agents/keys.js';

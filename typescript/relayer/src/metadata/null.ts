@@ -1,5 +1,5 @@
-import { IsmType, MultiProvider, NullIsmConfig } from '@hyperlane-xyz/sdk';
-import { WithAddress, assert, eqAddress } from '@hyperlane-xyz/utils';
+import { IsmType, MultiProvider, NullIsmConfig } from '@recoillink/sdk';
+import { WithAddress, assert, eqAddress } from '@recoillink/utils';
 
 import type {
   MetadataBuilder,

@@ -1,20 +1,20 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+} from '@recoillink/provider-sdk';
+import { ISigner } from '@recoillink/provider-sdk/altvm';
 import {
   ArtifactNew,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   DeployedFeeAddress,
   DeployedFeeArtifact,
   FeeArtifactConfig,
   FeeReadContext,
   IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@recoillink/provider-sdk/fee';
+import { AnnotatedTx, TxReceipt } from '@recoillink/provider-sdk/module';
 
 import { FeeReader } from './fee-reader.js';
 

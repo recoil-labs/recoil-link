@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { BigNumber, constants, utils } from 'ethers';
 
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@recoillink/utils';
 
 import { TronTransaction, TronTransactionBuilder } from './TronWallet.js';
 

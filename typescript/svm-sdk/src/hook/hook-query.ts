@@ -1,6 +1,6 @@
 import { type Address, type Rpc, type SolanaRpcApi } from '@solana/kit';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@recoillink/provider-sdk/altvm';
 
 import {
   decodeIgpAccount,

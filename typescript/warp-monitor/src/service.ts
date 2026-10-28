@@ -33,12 +33,10 @@
  *   WARP_ROUTE_ID=ETH/ethereum-base COINGECKO_API_KEY=... node dist/service.js
  *   WARP_ROUTE_ALL=true node dist/service.js
  */
-import {
-  DEFAULT_GITHUB_REGISTRY,
-  type IRegistry,
-} from '@hyperlane-xyz/registry';
+import { type IRegistry } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk/consts/registry';
+import { rootLogger } from '@recoillink/utils';
 
 import { DEFAULT_EXPLORER_QUERY_LIMIT } from './constants.js';
 import { MultiWarpMonitor } from './multi-monitor.js';
@@ -110,7 +108,7 @@ async function main(): Promise<void> {
   try {
     // Initialize registry (uses env var or defaults to GitHub registry)
     // For GitHub registries, REGISTRY_URI can include /tree/{commit} to pin to a specific version
-    const registryUri = process.env.REGISTRY_URI ?? DEFAULT_GITHUB_REGISTRY;
+    const registryUri = process.env.REGISTRY_URI ?? RECOIL_LINK_REGISTRY_URL;
     const registry = getRegistry({
       registryUris: [registryUri],
       enableProxy: true,

@@ -1,16 +1,16 @@
 {
-  "name": "@hyperlane-xyz/tron-sdk",
+  "name": "@recoillink/tron-sdk",
   "version": "26.0.1",
-  "description": "Hyperlane TypeScript SDK for Tron",
+  "description": "Recoil Link TypeScript SDK for Tron",
   "keywords": [
     "blockchain",
     "hyperlane",
     "sdk",
     "tron"
   ],
-  "homepage": "https://www.hyperlane.xyz",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/recoil-labs/recoil-link",
   "files": [
     "/dist",
     "local-node"
@@ -43,16 +43,16 @@
   "dependencies": {
     "@ethersproject/abi": "*",
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "bignumber.js": "catalog:",
     "ethers": "catalog:",
     "tronweb": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

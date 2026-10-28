@@ -4,16 +4,16 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
+import { airdropSol } from '@recoillink/sealevel-sdk/testing';
 import {
   type CompositeIsmNodeConfig,
   CompositeIsmNodeType,
   IsmType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, addressToBytes32, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -91,7 +91,7 @@ function readCompositeIsmRoot(
   return ism.root;
 }
 
-describe('hyperlane warp composite ISM rateLimited recipient CLI e2e tests (Sealevel)', function () {
+describe('rlink warp composite ISM rateLimited recipient CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_COMPOSITE_ISM_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

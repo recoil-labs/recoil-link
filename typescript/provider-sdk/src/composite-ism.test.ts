@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { IsmType as AltVMIsmType } from './altvm.js';
 import {

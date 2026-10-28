@@ -23,14 +23,14 @@ import type { PartialDeep, Prompt } from '@inquirer/type';
 import ansiEscapes from 'ansi-escapes';
 import chalk from 'chalk';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { ProxyAdmin__factory } from '@recoillink/core';
 import { BaseRegistry, type IRegistry } from '@hyperlane-xyz/registry';
 import {
   type ChainName,
   type DeployedOwnableConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { isAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { isAddress, rootLogger } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray } from '../logger.js';

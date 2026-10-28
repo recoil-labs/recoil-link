@@ -10,7 +10,7 @@ import { custom, http, isHex, stringify } from 'viem';
 import { toAccount } from 'viem/accounts';
 import { z } from 'zod';
 
-import { LazyAsync, addBufferToGasLimit, assert } from '@hyperlane-xyz/utils';
+import { LazyAsync, addBufferToGasLimit, assert } from '@recoillink/utils';
 
 import { HyperlaneSmartProvider } from './SmartProvider/SmartProvider.js';
 import { getReadRpcRevert } from './SmartProvider/jsonRpcError.js';

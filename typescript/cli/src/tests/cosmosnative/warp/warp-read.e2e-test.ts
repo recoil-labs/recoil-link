@@ -2,8 +2,8 @@ import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 import { expect } from 'chai';
 
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType, type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { TokenType, type WarpRouteDeployConfig } from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -24,7 +24,7 @@ import {
   WARP_DEPLOY_CONFIG_PATH_1,
 } from '../consts.js';
 
-describe('hyperlane warp read e2e tests', async function () {
+describe('rlink warp read e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore1 = new HyperlaneE2ECoreTestCommands(
@@ -95,7 +95,7 @@ describe('hyperlane warp read e2e tests', async function () {
     writeYamlOrJson(WARP_DEPLOY_CONFIG_PATH_1, warpConfig);
   });
 
-  describe('hyperlane warp read (no args)', () => {
+  describe('rlink warp read (no args)', () => {
     it('should exit early if no symbol or no chain and address', async () => {
       await hyperlaneWarp.deploy(HYP_KEY, WARP_DEPLOY_1_ID);
 
@@ -106,7 +106,7 @@ describe('hyperlane warp read e2e tests', async function () {
     });
   });
 
-  describe('hyperlane warp read --warp-route-id <symbol-only> ...', () => {
+  describe('rlink warp read --warp-route-id <symbol-only> ...', () => {
     it('should successfully read the complete warp route config from all the chains', async () => {
       const readOutputPath = `${TEMP_PATH}/warp-read-all-chain-with-symbol.yaml`;
       const warpRouteId = 'READTEST/cosmosnative-warp-read-symbol';
@@ -153,7 +153,7 @@ describe('hyperlane warp read e2e tests', async function () {
     });
   });
 
-  describe('hyperlane warp read --chain ... --warp-route-id ...', () => {
+  describe('rlink warp read --chain ... --warp-route-id ...', () => {
     it('should be able to read a warp route', async function () {
       await hyperlaneWarp.deploy(HYP_KEY, WARP_DEPLOY_1_ID);
 

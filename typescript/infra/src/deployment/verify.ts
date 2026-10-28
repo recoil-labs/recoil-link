@@ -1,6 +1,6 @@
-import { BuildArtifact, ChainMap } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { BuildArtifact, ChainMap } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { fetchGCPSecret } from '../utils/gcloud.js';
 

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/ism';
+import { IsmType } from '@recoillink/provider-sdk/ism';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { createRpc } from '../rpc.js';

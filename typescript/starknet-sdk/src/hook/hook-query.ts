@@ -1,6 +1,6 @@
 import { type RpcProvider } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 
 import {
   StarknetContractName,

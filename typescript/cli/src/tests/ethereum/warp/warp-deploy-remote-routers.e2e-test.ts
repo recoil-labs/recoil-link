@@ -7,13 +7,13 @@ import {
   TokenType,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   addressToBytes32,
   assert,
   isObjEmpty,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -38,7 +38,7 @@ import {
 chai.use(chaiAsPromised);
 const expect = chai.expect;
 
-describe('hyperlane warp deploy with user-specified remote routers', async function () {
+describe('rlink warp deploy with user-specified remote routers', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Addresses: ChainAddresses = {};

@@ -22,9 +22,9 @@ import sinon from 'sinon';
 
 chai.use(chaiAsPromised);
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { assert } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { COMPUTE_BUDGET_PROGRAM_ID } from '../constants.js';

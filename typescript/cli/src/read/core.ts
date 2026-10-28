@@ -1,11 +1,11 @@
-import { createCoreReader } from '@hyperlane-xyz/deploy-sdk';
+import { createCoreReader } from '@recoillink/deploy-sdk';
 import {
   type ChainName,
   type CoreConfig,
   EvmCoreReader,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, ProtocolType, assert } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed } from '../logger.js';

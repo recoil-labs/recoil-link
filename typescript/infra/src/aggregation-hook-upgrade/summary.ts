@@ -1,4 +1,4 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { ChainName } from '@recoillink/sdk';
 
 import { logTable } from '../utils/log.js';
 

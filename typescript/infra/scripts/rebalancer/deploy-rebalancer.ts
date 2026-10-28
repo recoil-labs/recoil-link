@@ -6,7 +6,7 @@ import {
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import {

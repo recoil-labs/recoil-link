@@ -6,7 +6,7 @@ import {
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { squadsConfigs } from '../../src/config/squads.js';
 import {

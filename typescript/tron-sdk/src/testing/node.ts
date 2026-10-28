@@ -1,7 +1,7 @@
 import { GenericContainer, StartedTestContainer, Wait } from 'testcontainers';
 import { TronWeb } from 'tronweb';
 
-import { pollAsync, retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { pollAsync, retryAsync, rootLogger } from '@recoillink/utils';
 
 import { TronJsonRpcProvider } from '../ethers/TronJsonRpcProvider.js';
 

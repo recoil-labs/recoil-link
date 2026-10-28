@@ -4,7 +4,7 @@ import {
   Wait,
 } from 'testcontainers';
 
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { retryAsync } from '@recoillink/utils';
 
 const CONTAINER_PORT = 8545; // Port inside the container (fixed)
 const DEFAULT_CHAIN_ID = 31337;

@@ -6,8 +6,8 @@ import type {
   DerivedIsmConfig,
   DispatchedMessage,
   IsmType,
-} from '@hyperlane-xyz/sdk';
-import type { Address, SignatureLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { Address, SignatureLike } from '@recoillink/utils';
 
 import type { AggregationMetadata } from './aggregation.js';
 import type { ArbL2ToL1Metadata } from './arbL2ToL1.js';

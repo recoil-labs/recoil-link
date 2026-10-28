@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { type StartedTestContainer } from 'testcontainers';
 
-import { runAleoNode } from '@hyperlane-xyz/aleo-sdk/testing';
+import { runAleoNode } from '@recoillink/aleo-sdk/testing';
 
 import {
   REGISTRY_PATH,

@@ -3,7 +3,7 @@ import {
   HypTokenRouterConfig,
   OwnableConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { SEALEVEL_WARP_ROUTE_HANDLER_GAS_AMOUNT } from '../consts.js';

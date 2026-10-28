@@ -1,6 +1,6 @@
 import { address as parseAddress } from '@solana/kit';
 
-import { type FeeReadContext } from '@hyperlane-xyz/provider-sdk/fee';
+import { type FeeReadContext } from '@recoillink/provider-sdk/fee';
 import {
   type IRawWarpQuoteReader,
   type ReadStandingQuotesOpts,
@@ -9,8 +9,8 @@ import {
   WARP_TARGET_ROUTER_NONE,
   type WarpQuoteScope,
   enumerateWarpQuoteCandidates,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert, chunk, fromHexString } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/quote';
+import { assert, chunk, fromHexString } from '@recoillink/utils';
 
 import { decodeStandingQuotePda } from '../accounts/fee.js';
 import { FeeStrategyKind } from '../fee/types.js';

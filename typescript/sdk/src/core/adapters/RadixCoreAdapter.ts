@@ -5,7 +5,7 @@ import {
   ensure0x,
   messageId,
   pollAsync,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseRadixAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

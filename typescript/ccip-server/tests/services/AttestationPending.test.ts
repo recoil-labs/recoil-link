@@ -4,7 +4,7 @@ import { pino } from 'pino';
 import { Registry } from 'prom-client';
 import sinon from 'sinon';
 
-import { CctpService__factory } from '@hyperlane-xyz/core';
+import { CctpService__factory } from '@recoillink/core';
 
 import { type CcipApp, MAX_CCIP_PARAMETER_LENGTH } from '../../src/http.js';
 import { CCTPAttestationService } from '../../src/services/CCTPAttestationService.js';

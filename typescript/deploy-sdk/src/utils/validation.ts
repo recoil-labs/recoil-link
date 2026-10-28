@@ -4,12 +4,12 @@
  * The provider-sdk has a limited subset of ISM types compared to the full SDK.
  * These utilities validate ISM configs and provide clear error messages for unsupported types.
  */
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 import {
   IsmConfig,
   IsmType,
   assertValidDomainRoutingMultisig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 
 /**
  * ISM types supported by provider-sdk for Alt-VM chains.

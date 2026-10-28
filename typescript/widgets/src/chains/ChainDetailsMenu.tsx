@@ -2,12 +2,12 @@ import { clsx } from 'clsx';
 import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
 import { stringify as yamlStringify } from 'yaml';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk/consts/registry';
 import {
   isValidChainMetadata,
   mergeChainMetadata,
   type ChainMetadata,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
+} from '@recoillink/sdk/metadata/chainMetadataTypes';
 import {
   Result,
   failure,
@@ -17,7 +17,7 @@ import {
   objOmit,
   success,
   tryParseJsonOrYaml,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ColorPalette } from '../color.js';
 import { CopyButton } from '../components/CopyButton.js';
@@ -112,7 +112,7 @@ function ButtonRow({ chainMetadata, onRemoveChain }: ChainDetailsMenuProps) {
         <BoxArrowIcon width={13} height={13} />
         <a
           // TODO support alternative registries here
-          href={`${DEFAULT_GITHUB_REGISTRY}/tree/main/chains/${name}`}
+          href={`${RECOIL_LINK_REGISTRY_URL}/tree/main/chains/${name}`}
           target="_blank"
           rel="noopener noreferrer"
           className="htw-text-sm hover:htw-underline htw-underline-offset-2 active:htw-opacity-70 htw-transition-all"

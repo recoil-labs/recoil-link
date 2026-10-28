@@ -4,7 +4,7 @@ import { Wallet, ethers } from 'ethers';
 import {
   type ERC20Test,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -16,12 +16,12 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   addressToBytes32,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { getContext } from '../../../context/context.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
@@ -44,7 +44,7 @@ import {
   getCombinedWarpRoutePath,
 } from '../consts.js';
 
-describe('hyperlane warp check --ica e2e tests', async function () {
+describe('rlink warp check --ica e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain2Addresses: ChainAddresses = {};

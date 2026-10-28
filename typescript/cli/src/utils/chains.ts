@@ -8,8 +8,8 @@ import {
   type ChainMetadata,
   ChainStatus,
   type MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType, toTitleCase } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type ProtocolType, toTitleCase } from '@recoillink/utils';
 
 import { log } from '../logger.js';
 
@@ -185,7 +185,7 @@ function handleNewChain(chainNames: string[]) {
   if (chainNames.includes(NEW_CHAIN_MARKER)) {
     log(
       chalk.blue('Use the'),
-      chalk.magentaBright('hyperlane registry init'),
+      chalk.magentaBright('rlink registry init'),
       chalk.blue('command to create new configs'),
     );
     process.exit(0);

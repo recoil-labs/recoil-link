@@ -6,7 +6,7 @@ import {
   type HookConfig,
   type IsmConfig,
   type OwnableConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { type CommandContext } from '../context/types.js';
 import { tryResolveSignerAddress } from '../context/strategies/signer/resolveSignerAddress.js';

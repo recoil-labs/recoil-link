@@ -3,7 +3,7 @@ import { BinaryReader, BinaryWriter } from 'borsh';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { Domain } from '@hyperlane-xyz/utils';
+import { Domain } from '@recoillink/utils';
 
 import {
   SealevelIgpAdapter,

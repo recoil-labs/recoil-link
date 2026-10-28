@@ -1,4 +1,4 @@
-import type { ChainMetadataManager } from '@hyperlane-xyz/sdk/metadata/ChainMetadataManager';
+import type { ChainMetadataManager } from '@recoillink/sdk/metadata/ChainMetadataManager';
 
 import { useMessage } from './useMessage.js';
 import { useMessageStage } from './useMessageStage.js';

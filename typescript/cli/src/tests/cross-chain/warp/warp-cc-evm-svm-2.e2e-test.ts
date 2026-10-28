@@ -11,19 +11,19 @@ import {
   TokenFeeType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   FALLBACK_SIMULATION_PAYER,
   SealevelSigner,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/sealevel-sdk';
 import {
   type SolanaTestValidator,
   airdropSol,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sealevel-sdk/testing';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -53,7 +53,7 @@ const EVM_KEY = HYP_KEY_BY_PROTOCOL.ethereum;
 const SVM_KEY = HYP_KEY_BY_PROTOCOL.sealevel;
 const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/cc-evm-svm-warp-deploy.yaml`;
 
-describe('hyperlane warp crossCollateral EVM+SVM e2e tests', function () {
+describe('rlink warp crossCollateral EVM+SVM e2e tests', function () {
   this.timeout(CROSS_CHAIN_E2E_TEST_TIMEOUT);
 
   let evmNodeInstance: StartedTestContainer;
@@ -124,7 +124,7 @@ describe('hyperlane warp crossCollateral EVM+SVM e2e tests', function () {
       svmCore.deploy(SVM_KEY),
     ]);
 
-    // CAST: hyperlane core deploy writes the expected ChainAddresses structure.
+    // CAST: rlink core deploy writes the expected ChainAddresses structure.
     svmCoreAddresses = readYamlOrJson(
       CORE_ADDRESSES_PATH_BY_PROTOCOL.sealevel.CHAIN_NAME_1,
     ) as ChainAddresses;

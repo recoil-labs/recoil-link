@@ -1,4 +1,4 @@
-import { type MinimumRequiredGasByAction } from '@hyperlane-xyz/provider-sdk';
+import { type MinimumRequiredGasByAction } from '@recoillink/provider-sdk';
 
 export const ETHEREUM_MINIMUM_GAS: MinimumRequiredGasByAction = {
   CORE_DEPLOY_GAS: BigInt(1e8),

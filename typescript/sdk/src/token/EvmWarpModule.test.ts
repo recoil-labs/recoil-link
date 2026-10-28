@@ -6,8 +6,8 @@ import {
   ProxyAdmin__factory,
   TimelockController__factory,
   TokenBridgeCctpBase__factory,
-} from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { assert } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';

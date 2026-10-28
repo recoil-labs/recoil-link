@@ -6,7 +6,7 @@ import {
 } from '@solana/web3.js';
 import { serialize } from 'borsh';
 
-import { Address, Domain } from '@hyperlane-xyz/utils';
+import { Address, Domain } from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import {

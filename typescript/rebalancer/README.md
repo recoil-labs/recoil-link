@@ -1,4 +1,4 @@
-# @hyperlane-xyz/rebalancer
+# @recoillink/rebalancer
 
 Hyperlane Warp Route Collateral Rebalancer Service - maintains optimal collateral distribution across chains for Hyperlane warp routes.
 
@@ -24,7 +24,7 @@ The rebalancer monitors collateral balances across warp route deployments and au
 pnpm install
 
 # Build the package
-pnpm --filter @hyperlane-xyz/rebalancer build
+pnpm --filter @recoillink/rebalancer build
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Execute a one-off rebalance using the CLI:
 
 ```bash
 # Via CLI package
-pnpm --filter @hyperlane-xyz/cli hyperlane warp rebalancer \
+pnpm --filter @recoillink/cli hyperlane warp rebalancer \
   --config /path/to/rebalancer-config.yaml \
   --manual \
   --origin ethereum \
@@ -54,7 +54,7 @@ export HYP_KEY=your_private_key
 export COINGECKO_API_KEY=your_api_key
 
 # Start the service
-pnpm --filter @hyperlane-xyz/rebalancer start
+pnpm --filter @recoillink/rebalancer start
 
 # Or with direct node
 node dist/service.js
@@ -63,7 +63,7 @@ node dist/service.js
 ### Programmatic Usage
 
 ```typescript
-import { RebalancerService } from '@hyperlane-xyz/rebalancer';
+import { RebalancerService } from '@recoillink/rebalancer';
 
 const service = new RebalancerService(
   multiProvider,
@@ -257,9 +257,9 @@ typescript/rebalancer/
 
 ### Dependencies
 
-- `@hyperlane-xyz/sdk`: Core SDK with MultiProvider and WarpCore
-- `@hyperlane-xyz/provider-sdk`: Protocol-agnostic provider abstractions
-- `@hyperlane-xyz/utils`: Shared utilities and types
+- `@recoillink/sdk`: Core SDK with MultiProvider and WarpCore
+- `@recoillink/provider-sdk`: Protocol-agnostic provider abstractions
+- `@recoillink/utils`: Shared utilities and types
 - `prom-client`: Prometheus metrics
 - `pino`: Structured logging
 
@@ -268,24 +268,24 @@ typescript/rebalancer/
 ### Running Tests
 
 ```bash
-pnpm --filter @hyperlane-xyz/rebalancer test
+pnpm --filter @recoillink/rebalancer test
 ```
 
 ### Local Development
 
 ```bash
 # Watch mode
-pnpm --filter @hyperlane-xyz/rebalancer dev
+pnpm --filter @recoillink/rebalancer dev
 
 # Start with test config
 HYP_KEY=your_test_key \
 REBALANCER_CONFIG_FILE=./test-config.yaml \
-pnpm --filter @hyperlane-xyz/rebalancer start:dev
+pnpm --filter @recoillink/rebalancer start:dev
 ```
 
 ## Migration from CLI
 
-This package replaces the rebalancer functionality previously embedded in `@hyperlane-xyz/cli`. Key changes:
+This package replaces the rebalancer functionality previously embedded in `@recoillink/cli`. Key changes:
 
 1. **Dedicated Package**: Now a standalone service package
 2. **Direct Entry Point**: K8s deployments use `service.ts` directly (no CLI wrapper)

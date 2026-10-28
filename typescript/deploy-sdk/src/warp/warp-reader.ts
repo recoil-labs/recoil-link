@@ -1,30 +1,30 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk';
+import { assert } from '@recoillink/utils';
 import {
   Artifact,
   ArtifactReader,
   isArtifactDeployed,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@recoillink/provider-sdk/artifact';
+import { ChainLookup } from '@recoillink/provider-sdk/chain';
 import {
   DeployedFeeAddress,
   DeployedFeeArtifact,
   FeeArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 import {
   DeployedHookAddress,
   DeployedHookArtifact,
   HookArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@recoillink/provider-sdk/hook';
 import {
   DeployedIsmAddress,
   DeployedIsmArtifact,
   IsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/ism';
 import {
   DeployedWarpAddress,
   DeployedWarpArtifact,
@@ -33,7 +33,7 @@ import {
   WarpArtifactConfig,
   buildFeeReadContextFromWarpArtifactConfig,
   warpArtifactToDerivedConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { createFeeReader } from '../fee/fee-reader.js';
 import { HookReader, createHookReader } from '../hook/hook-reader.js';

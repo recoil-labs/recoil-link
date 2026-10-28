@@ -30,7 +30,7 @@ import {
 const TEST_REGISTRY_PATH = './test-configs/test-registry';
 const SEALEVEL_CHAIN = 'sealevel1';
 
-describe('hyperlane send message e2e tests', async function () {
+describe('rlink send message e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   before(async () => {
@@ -57,7 +57,7 @@ describe('hyperlane send message e2e tests', async function () {
 
     it('should fail with clear error when origin chain is non-EVM', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane send message \
+        await $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${TEST_REGISTRY_PATH} \
         --origin ${SEALEVEL_CHAIN} \
         --destination ${CHAIN_NAME_2} \
@@ -74,7 +74,7 @@ describe('hyperlane send message e2e tests', async function () {
 
     it('should fail with clear error when destination chain is non-EVM', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane send message \
+        await $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${TEST_REGISTRY_PATH} \
         --origin ${CHAIN_NAME_2} \
         --destination ${SEALEVEL_CHAIN} \
@@ -91,7 +91,7 @@ describe('hyperlane send message e2e tests', async function () {
 
     it('should fail with clear error when both origin and destination are non-EVM', async () => {
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane send message \
+        await $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${TEST_REGISTRY_PATH} \
         --origin ${SEALEVEL_CHAIN} \
         --destination ${SEALEVEL_CHAIN} \
@@ -124,7 +124,7 @@ describe('hyperlane send message e2e tests', async function () {
         },
       ];
 
-      const output = $`${localTestRunCmdPrefix()} hyperlane send message \
+      const output = $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${REGISTRY_PATH} \
         --verbosity debug \
         --quick \
@@ -167,7 +167,7 @@ describe('hyperlane send message e2e tests', async function () {
       // Note: The strategy's privateKey takes precedence over HYP_KEY env var,
       // so this test verifies strategy-based keys work even if HYP_KEY is set
       const { exitCode, stdout, stderr } =
-        await $`${localTestRunCmdPrefix()} hyperlane send message \
+        await $`${localTestRunCmdPrefix()} rlink send message \
         --registry ${REGISTRY_PATH} \
         --origin ${CHAIN_NAME_2} \
         --destination ${CHAIN_NAME_3} \

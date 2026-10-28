@@ -8,7 +8,7 @@ import {
   getLogFormat,
   rootLogger,
   safelyAccessEnvVar,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 let logger = rootLogger;
 

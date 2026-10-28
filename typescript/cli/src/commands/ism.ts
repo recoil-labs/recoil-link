@@ -28,9 +28,9 @@ export const ismCommand: CommandModule = {
 
 // Examples for testing:
 // Deploy a multisig ISM:
-//     hyperlane ism deploy --chain sepolia --config ./ism-config.yaml
+//     rlink ism deploy --chain sepolia --config ./ism-config.yaml
 // Deploy with output file:
-//     hyperlane ism deploy --chain sepolia --config ./ism-config.yaml --out ./deployed-ism.json
+//     rlink ism deploy --chain sepolia --config ./ism-config.yaml --out ./deployed-ism.json
 export const deploy: CommandModuleWithWriteContext<{
   chain: string;
   config: string;
@@ -66,11 +66,11 @@ export const deploy: CommandModuleWithWriteContext<{
 
 // Examples for testing:
 // Top-level aggregation ISM on celo (may take 10s)
-//     hyperlane ism read --chain celo --address 0x99e8E56Dce3402D6E09A82718937fc1cA2A9491E
+//     rlink ism read --chain celo --address 0x99e8E56Dce3402D6E09A82718937fc1cA2A9491E
 // Aggregation ISM for bsc domain on inevm (may take 5s)
-//     hyperlane ism read --chain inevm --address 0x79A7c7Fe443971CBc6baD623Fdf8019C379a7178
+//     rlink ism read --chain inevm --address 0x79A7c7Fe443971CBc6baD623Fdf8019C379a7178
 // Test ISM on sepolia testnet
-//     hyperlane ism read --chain sepolia --address 0xdB52E4853b6A40D2972E6797E0BDBDb3eB761966
+//     rlink ism read --chain sepolia --address 0xdB52E4853b6A40D2972E6797E0BDBDb3eB761966
 export const read: CommandModuleWithContext<{
   chain: string;
   address: string;

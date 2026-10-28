@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import { RpcProvider } from 'starknet';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { TokenType } from '@recoillink/provider-sdk/warp';
+import { ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 import { StarknetSigner } from '../clients/signer.js';
 import { StarknetAnnotatedTx, StarknetTxReceipt } from '../types.js';

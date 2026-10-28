@@ -1,11 +1,11 @@
 import { type ethers } from 'ethers';
 
-import { loadProtocolProviders } from '@hyperlane-xyz/deploy-sdk';
+import { loadProtocolProviders } from '@recoillink/deploy-sdk';
 import {
   type AltVM,
   getProtocolProvider,
   hasProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import { type IRegistry } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
 import {
@@ -13,13 +13,13 @@ import {
   type ChainName,
   MultiProtocolProvider,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   isEVMLike,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { isSignCommand } from '../commands/signCommands.js';
 import { readChainSubmissionStrategyConfig } from '../config/strategy.js';

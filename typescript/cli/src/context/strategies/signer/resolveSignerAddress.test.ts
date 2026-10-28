@@ -6,8 +6,8 @@ import {
   IsmType,
   MultiProtocolProvider,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, normalizeAddressEvm } from '@recoillink/utils';
 
 import { createTrustedRelayerConfig } from '../../../config/ism.js';
 import { type CommandContext } from '../../types.js';

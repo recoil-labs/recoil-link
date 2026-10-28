@@ -1,14 +1,14 @@
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   DeployedRawValidatorAnnounceArtifact,
   DeployedValidatorAnnounceAddress,
   IRawValidatorAnnounceArtifactManager,
   RawValidatorAnnounceArtifactConfigs,
   ValidatorAnnounceType,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@recoillink/provider-sdk/validator-announce';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

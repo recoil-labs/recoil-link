@@ -1,5 +1,5 @@
 import { IRegistry } from '@hyperlane-xyz/registry';
-import { ChainMap, ChainMetadata, ChainName } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainMetadata, ChainName } from '@recoillink/sdk';
 
 import { getRegistryForEnvironment } from '../../../src/config/chain.js';
 import { isEthereumProtocolChain } from '../../../src/utils/utils.js';

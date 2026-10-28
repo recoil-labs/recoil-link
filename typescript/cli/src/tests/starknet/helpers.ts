@@ -8,12 +8,12 @@ import {
   HookType,
   IsmType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   assert,
   normalizeAddressStarknet,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 

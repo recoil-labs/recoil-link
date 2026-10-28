@@ -1,4 +1,4 @@
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@recoillink/utils';
 
 /**
  * Converts a numeric value coming from an RPC or a block explorer to a number.

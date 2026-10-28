@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 
 import { StarknetWarpArtifactManager } from '../warp/warp-artifact-manager.js';
 

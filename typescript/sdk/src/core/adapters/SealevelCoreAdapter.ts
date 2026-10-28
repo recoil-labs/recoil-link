@@ -11,7 +11,7 @@ import {
   ensure0x,
   pollAsync,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import {

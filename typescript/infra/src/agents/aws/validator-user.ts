@@ -8,7 +8,7 @@ import {
   S3Client,
 } from '@aws-sdk/client-s3';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { ChainName } from '@recoillink/sdk';
 
 import { Contexts } from '../../../config/contexts.js';
 import type { AgentContextConfig } from '../../config/agent/agent.js';

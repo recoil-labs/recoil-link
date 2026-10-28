@@ -1,4 +1,4 @@
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 
@@ -6,7 +6,7 @@ import {
   PROTOCOL_TO_HYP_NATIVE_STANDARD,
   type Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 const REBALANCEABLE_TOKEN_COLLATERALIZED_STANDARDS = new Set<TokenStandard>([
   TokenStandard.EvmHypCollateral,

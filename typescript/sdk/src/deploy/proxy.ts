@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import { Provider as ZKSyncProvider } from 'zksync-ethers';
 import { z } from 'zod';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { ProxyAdmin__factory } from '@recoillink/core';
 import {
   Address,
   ChainId,
@@ -10,7 +10,7 @@ import {
   eqAddress,
   isValidAddressEvm,
   retryAsync,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import { ZNzUint } from '../metadata/customZodTypes.js';

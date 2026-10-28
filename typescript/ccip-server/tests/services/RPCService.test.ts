@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { RPCService } from '../../src/services/RPCService';
 

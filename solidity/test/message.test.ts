@@ -1,7 +1,7 @@
 import {expect} from "chai";
 import {utils} from "ethers";
 
-import {addressToBytes32, formatMessage, messageId} from "@hyperlane-xyz/utils";
+import {addressToBytes32, formatMessage, messageId} from "@recoillink/utils";
 
 import testCases from "../../vectors/message.json" with {type: "json"};
 import {

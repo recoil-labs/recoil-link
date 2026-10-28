@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import {

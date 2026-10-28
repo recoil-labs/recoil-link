@@ -1,4 +1,4 @@
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+import { type TestChainMetadata } from '@recoillink/provider-sdk/chain';
 
 import { AleoSigner } from '../clients/signer.js';
 

@@ -8,7 +8,7 @@ import {
   type ForkedChainMetadata,
   type IForkManager,
   waitUntilReady,
-} from '@hyperlane-xyz/forking-sdk';
+} from '@recoillink/forking-sdk';
 import {
   type ChainName,
   type EventAssertion,
@@ -18,13 +18,13 @@ import {
   type MultiProvider,
   type RevertAssertion,
   TransactionDataType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   assert,
   deepEquals,
   timeout,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { logDebug, logGray } from '../logger.js';
 

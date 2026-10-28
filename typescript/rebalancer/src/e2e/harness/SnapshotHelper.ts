@@ -1,7 +1,7 @@
 import { ethers, providers } from 'ethers';
 
-import { MultiProvider, revertToSnapshot, snapshot } from '@hyperlane-xyz/sdk';
-import { assert, retryAsync } from '@hyperlane-xyz/utils';
+import { MultiProvider, revertToSnapshot, snapshot } from '@recoillink/sdk';
+import { assert, retryAsync } from '@recoillink/utils';
 
 import { ANVIL_TEST_PRIVATE_KEY, TEST_CHAINS } from '../fixtures/routes.js';
 import { createLocalProvider } from './LocalProvider.js';

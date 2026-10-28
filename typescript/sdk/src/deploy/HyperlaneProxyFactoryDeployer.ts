@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { attachContracts } from '../contracts/contracts.js';
 import { HyperlaneContracts } from '../contracts/types.js';

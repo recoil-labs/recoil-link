@@ -5,7 +5,7 @@ import {
   FeeParamsType,
   FeeType,
   type LinearFeeConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmLinearFeeReader, SvmLinearFeeWriter } from '../fee/linear-fee.js';

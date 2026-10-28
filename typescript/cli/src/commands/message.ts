@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 import type { CommandModule } from 'yargs';
 
-import type { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ProtocolType } from '@recoillink/utils';
 import {
   addressToBytes32,
   bytesToProtocolAddress,
@@ -10,7 +10,7 @@ import {
   parseMessage,
   parseWarpRouteMessage,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { log, logGreen } from '../logger.js';

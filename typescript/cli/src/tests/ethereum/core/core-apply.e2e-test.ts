@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 import { type Signer, Wallet, ethers } from 'ethers';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { ProxyAdmin__factory } from '@recoillink/core';
 import {
   type ChainMetadata,
   type CoreConfig,
   type DerivedCoreConfig,
   type ProtocolFeeHookConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   type Domain,
   ProtocolType,
   addressToBytes32,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -34,7 +34,7 @@ import {
 const CORE_READ_CHAIN_2_CONFIG_PATH = `${TEMP_PATH}/${CHAIN_NAME_2}/core-config-read.yaml`;
 const CORE_READ_CHAIN_3_CONFIG_PATH = `${TEMP_PATH}/${CHAIN_NAME_3}/core-config-read.yaml`;
 
-describe('hyperlane core apply e2e tests', async function () {
+describe('rlink core apply e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

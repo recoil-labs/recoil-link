@@ -1,7 +1,7 @@
 import {
   RebalancerConfig,
   getStrategyChainNames,
-} from '@hyperlane-xyz/rebalancer';
+} from '@recoillink/rebalancer';
 import {
   type ChainName,
   type DeployedCoreAddresses,
@@ -9,8 +9,8 @@ import {
   EvmCoreModule,
   TxSubmitterType,
   WarpCoreConfigSchema,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert, isEVMLike } from '@recoillink/utils';
 
 import { CommandType } from '../../../commands/signCommands.js';
 import { readCoreDeployConfigs } from '../../../config/core.js';
@@ -391,7 +391,7 @@ async function resolveSendMessageChains(
         .map((chain) => `'${chain}' (${multiProvider.getProtocol(chain)})`)
         .join(', ');
       throw new Error(
-        `'hyperlane send message' only supports EVM chains. Non-EVM chains found: ${chainDetails}`,
+        `'rlink send message' only supports EVM chains. Non-EVM chains found: ${chainDetails}`,
       );
     }
   }

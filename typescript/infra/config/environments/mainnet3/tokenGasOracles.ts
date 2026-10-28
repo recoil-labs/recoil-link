@@ -1,5 +1,5 @@
-import { ChainMap, IgpConfig } from '@hyperlane-xyz/sdk';
-import { objMap, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap, IgpConfig } from '@recoillink/sdk';
+import { objMap, rootLogger } from '@recoillink/utils';
 
 import {
   getLocalStorageGasOracleConfigOverride,

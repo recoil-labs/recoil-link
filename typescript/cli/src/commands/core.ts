@@ -6,8 +6,8 @@ import {
   type DeployedCoreAddresses,
   DeployedCoreAddressesSchema,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { diffObjMerge } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { diffObjMerge } from '@recoillink/utils';
 
 import {
   createCoreDeployConfig,

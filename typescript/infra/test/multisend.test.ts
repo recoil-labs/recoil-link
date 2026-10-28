@@ -4,8 +4,8 @@ import { SafeTransaction } from '@safe-global/types-kit';
 import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
-import { CallData } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
+import { CallData } from '@recoillink/utils';
 
 import {
   SAFE_NONCE_OVERRIDES,

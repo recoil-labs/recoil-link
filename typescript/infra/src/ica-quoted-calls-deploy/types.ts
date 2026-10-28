@@ -7,8 +7,8 @@ import type {
   ContractVerificationInput,
   ContractVerifier,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import type { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { Address, Logger } from '@recoillink/utils';
 
 import type { IcaExportStore, RegistryBefore } from './export.js';
 

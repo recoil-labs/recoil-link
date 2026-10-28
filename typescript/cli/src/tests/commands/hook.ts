@@ -1,7 +1,7 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainName, type DerivedHookConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainName, type DerivedHookConfig } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../utils/files.js';
 
@@ -41,7 +41,7 @@ export class HyperlaneE2EHookTestCommands {
     configPath: string,
     outPath: string,
   ): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane hook deploy \
+    return $`${this.cmdPrefix} rlink hook deploy \
       --registry ${this.registryPath} \
       --chain ${this.chain} \
       --config ${configPath} \
@@ -55,7 +55,7 @@ export class HyperlaneE2EHookTestCommands {
    * Reads a hook config from the specified address into `outPath`.
    */
   public read(address: string, outPath: string): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane hook read \
+    return $`${this.cmdPrefix} rlink hook read \
       --registry ${this.registryPath} \
       --chain ${this.chain} \
       --address ${address} \
@@ -71,7 +71,7 @@ export class HyperlaneE2EHookTestCommands {
     address: string,
     configPath: string,
   ): ProcessPromise {
-    return $`${this.cmdPrefix} hyperlane hook apply \
+    return $`${this.cmdPrefix} rlink hook apply \
       --registry ${this.registryPath} \
       --chain ${this.chain} \
       --address ${address} \

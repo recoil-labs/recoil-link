@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { Registry } from 'prom-client';
 
-import { deleteMetrics } from '@hyperlane-xyz/metrics';
+import { deleteMetrics } from '@recoillink/metrics';
 
 import { checkWarpDeployConfig } from '../../config/environments/mainnet3/warp/checkWarpDeploy.js';
 import { getArgs } from '../agent-utils.js';

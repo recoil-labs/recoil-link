@@ -8,10 +8,10 @@ import {
   legacyDeployer,
 } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { ContractType } from '@hyperlane-xyz/starknet-core/runtime';
-import { assert } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { ContractType } from '@recoillink/starknet-core/runtime';
+import { assert } from '@recoillink/utils';
 
 import {
   StarknetContractName,
@@ -140,7 +140,7 @@ export class StarknetSigner
     receipt: GetTransactionReceiptResponse;
   }> {
     const { getCompiledContract, getContractArtifact } =
-      await import('@hyperlane-xyz/starknet-core');
+      await import('@recoillink/starknet-core');
     const compiledContract = getCompiledContract(
       params.contractName,
       params.contractType,

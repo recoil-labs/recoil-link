@@ -1,7 +1,7 @@
 import {
   FeeType,
   type ProgressiveFeeConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 import { SvmLeafFeeReader, SvmLeafFeeWriter } from './leaf-fee.js';
 

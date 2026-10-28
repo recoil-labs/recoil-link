@@ -1,13 +1,13 @@
 {
-  "name": "@hyperlane-xyz/http-registry-server",
+  "name": "@recoillink/http-registry-server",
   "version": "45.0.1",
   "private": true,
-  "description": "An HTTP server for the Hyperlane registry",
-  "homepage": "https://www.hyperlane.xyz",
+  "description": "An HTTP server for the Recoil Link registry",
+  "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperlane-xyz/hyperlane-monorepo"
+    "url": "https://github.com/recoil-labs/recoil-link"
   },
   "type": "module",
   "main": "dist/index.js",
@@ -27,8 +27,8 @@
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
     "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@solana/kit": "catalog:",
     "ethers": "catalog:",
     "express": "^5.1.0",
@@ -36,7 +36,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/express": "^5.0.3",

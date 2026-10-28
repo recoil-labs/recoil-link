@@ -11,8 +11,8 @@ import {
 import {
   ContractType,
   getContractAbi,
-} from '@hyperlane-xyz/starknet-core/runtime';
-import { Address, eqAddressStarknet } from '@hyperlane-xyz/utils';
+} from '@recoillink/starknet-core/runtime';
+import { Address, eqAddressStarknet } from '@recoillink/utils';
 
 import { DispatchedMessage } from '../core/types.js';
 import { ChainMap, ChainName } from '../types.js';

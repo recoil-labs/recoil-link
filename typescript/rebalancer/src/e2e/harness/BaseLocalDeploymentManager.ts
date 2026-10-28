@@ -10,14 +10,14 @@ import {
   Mailbox__factory,
   MerkleTreeHook__factory,
   TrustedRelayerIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { type IRegistry, PartialRegistry } from '@hyperlane-xyz/registry';
 import {
   type ChainMetadata,
   type ChainName,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, retryAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, retryAsync } from '@recoillink/utils';
 
 import {
   ANVIL_TEST_PRIVATE_KEY,

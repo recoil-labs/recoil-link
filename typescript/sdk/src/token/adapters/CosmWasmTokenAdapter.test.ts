@@ -9,7 +9,7 @@ import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 import { GasPrice, SigningStargateClient } from '@cosmjs/stargate';
 import { Tendermint37Client } from '@cosmjs/tendermint-rpc';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 import { TestChainName, testCosmosChain } from '../../consts/testChains.js';
 import { CosmWasmCoreAdapter } from '../../core/adapters/CosmWasmCoreAdapter.js';

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { ZERO_ADDRESS_HEX_32, assert } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32, assert } from '@recoillink/utils';
 
 import { RATE_LIMIT_DEFAULT_DURATION_SECONDS } from '../types.js';
 

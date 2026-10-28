@@ -1,4 +1,4 @@
-import { HexString, ProtocolType } from '@hyperlane-xyz/utils';
+import { HexString, ProtocolType } from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../providers/MultiProviderAdapter.js';
 import { ChainName } from '../types.js';

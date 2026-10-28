@@ -7,8 +7,8 @@ import {
   HookType,
   type ProtocolFeeHookConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -29,7 +29,7 @@ import {
   REGISTRY_PATH,
 } from '../consts.js';
 
-describe('hyperlane core deploy e2e tests', async function () {
+describe('rlink core deploy e2e tests', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -61,7 +61,7 @@ describe('hyperlane core deploy e2e tests', async function () {
     configOwnerAddress = coreInputConfig.owner;
   });
 
-  describe('hyperlane core deploy', () => {
+  describe('rlink core deploy', () => {
     it('should create a core deployment with the signer as the mailbox owner', async () => {
       const steps: TestPromptAction[] = [
         SELECT_MAINNET_CHAIN_TYPE_STEP,
@@ -107,7 +107,7 @@ describe('hyperlane core deploy e2e tests', async function () {
     });
   });
 
-  describe('hyperlane core deploy --yes', () => {
+  describe('rlink core deploy --yes', () => {
     it('should fail if the --chain flag is not provided but the --yes flag is', async () => {
       const steps: TestPromptAction[] = [
         SETUP_CHAIN_SIGNER_MANUALLY_STEP(ANVIL_KEY),
@@ -125,7 +125,7 @@ describe('hyperlane core deploy e2e tests', async function () {
     });
   });
 
-  describe('hyperlane core deploy --key ...', () => {
+  describe('rlink core deploy --key ...', () => {
     it('should create a core deployment with the signer as the mailbox owner', async () => {
       const steps: TestPromptAction[] = [
         SELECT_MAINNET_CHAIN_TYPE_STEP,
@@ -170,7 +170,7 @@ describe('hyperlane core deploy e2e tests', async function () {
     });
   });
 
-  describe('HYP_KEY= ... hyperlane core deploy', () => {
+  describe('HYP_KEY= ... rlink core deploy', () => {
     it('should create a core deployment with the signer as the mailbox owner', async () => {
       const steps: TestPromptAction[] = [
         SELECT_MAINNET_CHAIN_TYPE_STEP,
@@ -217,7 +217,7 @@ describe('hyperlane core deploy e2e tests', async function () {
     });
   });
 
-  describe('hyperlane core deploy --yes --key ...', () => {
+  describe('rlink core deploy --yes --key ...', () => {
     it('should create a core deployment with the config owner as the mailbox owner', async () => {
       await hyperlaneCore.deploy(ANVIL_KEY);
 

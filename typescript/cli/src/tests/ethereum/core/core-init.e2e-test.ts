@@ -7,12 +7,12 @@ import {
   type MerkleTreeHookConfig,
   type ProtocolFeeHookConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   normalizeAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -31,7 +31,7 @@ import {
   REGISTRY_PATH,
 } from '../consts.js';
 
-describe('hyperlane core init e2e tests', async function () {
+describe('rlink core init e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -62,7 +62,7 @@ describe('hyperlane core init e2e tests', async function () {
     );
   }
 
-  describe('hyperlane core init', () => {
+  describe('rlink core init', () => {
     it('should successfully generate the core contract deployment config', async () => {
       const output = hyperlaneCore.init().stdio('pipe');
 
@@ -105,7 +105,7 @@ describe('hyperlane core init e2e tests', async function () {
     });
   });
 
-  describe('HYP_KEY=... hyperlane core init', () => {
+  describe('HYP_KEY=... rlink core init', () => {
     it('should successfully generate the core contract deployment config when confirming owner prompts', async () => {
       const owner = new Wallet(ANVIL_KEY).address;
       const steps: TestPromptAction[] = [
@@ -162,7 +162,7 @@ describe('hyperlane core init e2e tests', async function () {
     });
   });
 
-  describe('hyperlane core init --key ...', () => {
+  describe('rlink core init --key ...', () => {
     it('should successfully generate the core contract deployment config when confirming owner prompts', async () => {
       const owner = new Wallet(ANVIL_KEY).address;
       const steps: TestPromptAction[] = [

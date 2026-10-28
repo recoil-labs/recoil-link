@@ -1,5 +1,5 @@
 {
-  "extends": "@hyperlane-xyz/tsconfig/tsconfig.json",
+  "extends": "@recoillink/tsconfig/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/",
     "rootDir": ".",

@@ -1,7 +1,7 @@
 import {
   GasPaymentEnforcementPolicyType,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { RootAgentConfig } from '../../../src/config/agent/agent.js';
 import { ALL_KEY_ROLES } from '../../../src/roles.js';

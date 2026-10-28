@@ -1,5 +1,5 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ChainName } from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 // Standard EVM chains derive CREATE addresses from the creator's nonce, are
 // covered by the SDK's explorer verifier, and can be forked locally. Tron does

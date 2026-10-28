@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { inCIMode, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { inCIMode, rootLogger } from '@recoillink/utils';
 
 import {
   AlertType,

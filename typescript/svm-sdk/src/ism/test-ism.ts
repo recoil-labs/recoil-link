@@ -1,14 +1,14 @@
 import { address as parseAddress } from '@solana/kit';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { TestIsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
+} from '@recoillink/provider-sdk/artifact';
+import type { TestIsmConfig } from '@recoillink/provider-sdk/ism';
 
 import { resolveProgram } from '../deploy/resolve-program.js';
 import { getInitTestIsmInstruction } from '../instructions/test-ism.js';

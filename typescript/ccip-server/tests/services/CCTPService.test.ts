@@ -4,9 +4,9 @@ import pino from 'pino';
 import { Registry } from 'prom-client';
 import sinon from 'sinon';
 
-import { IMessageTransmitter__factory } from '@hyperlane-xyz/core';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { formatMessage } from '@hyperlane-xyz/utils';
+import { IMessageTransmitter__factory } from '@recoillink/core';
+import { MultiProvider } from '@recoillink/sdk';
+import { formatMessage } from '@recoillink/utils';
 
 import { CCTPService } from '../../src/services/CCTPService.js';
 import { initializeMetrics } from '../../src/utils/prometheus.js';

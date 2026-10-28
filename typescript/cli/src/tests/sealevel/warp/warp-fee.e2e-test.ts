@@ -4,14 +4,14 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
+import { airdropSol } from '@recoillink/sealevel-sdk/testing';
 import {
   TokenFeeType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 import {
   TOKEN_2022_PROGRAM_ID,
   getAssociatedTokenAddressSync,
@@ -39,7 +39,7 @@ const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/svm-fee-warp-deploy.yaml`;
 
 const SVM_WARP_FEE_TIMEOUT = 600_000;
 
-describe('hyperlane warp fee CLI e2e tests (Sealevel)', function () {
+describe('rlink warp fee CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_WARP_FEE_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

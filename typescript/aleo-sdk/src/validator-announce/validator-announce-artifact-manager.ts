@@ -1,13 +1,13 @@
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedValidatorAnnounceAddress,
   type IRawValidatorAnnounceArtifactManager,
   type RawValidatorAnnounceArtifactConfigs,
   type ValidatorAnnounceType,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@recoillink/provider-sdk/validator-announce';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

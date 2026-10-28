@@ -1,6 +1,6 @@
 import { MsgSendEncodeObject } from '@cosmjs/stargate';
 
-import type { MsgRemoteTransferEncodeObject } from '@hyperlane-xyz/cosmos-sdk/runtime';
+import type { MsgRemoteTransferEncodeObject } from '@recoillink/cosmos-sdk/runtime';
 import {
   Address,
   Domain,
@@ -9,7 +9,7 @@ import {
   assert,
   convertToProtocolAddress,
   isAddressCosmos,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseCosmNativeAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

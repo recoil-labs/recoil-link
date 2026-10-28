@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { BigNumber, providers, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

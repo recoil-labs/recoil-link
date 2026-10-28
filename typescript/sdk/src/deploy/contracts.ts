@@ -7,7 +7,7 @@ import {
   StaticMerkleRootWeightedMultisigIsmFactory__factory,
   StaticMessageIdMultisigIsmFactory__factory,
   StaticMessageIdWeightedMultisigIsmFactory__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 // Any name changes here should also be reflected in the example artifacts.
 // E.g. typescript/cli/examples/contract-artifacts.yaml

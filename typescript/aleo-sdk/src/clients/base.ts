@@ -7,7 +7,7 @@ import type {
   ProgramManager as TestnetProgramManager,
 } from '@provablehq/sdk/testnet.js';
 
-import { assert, retryAsync } from '@hyperlane-xyz/utils';
+import { assert, retryAsync } from '@recoillink/utils';
 
 import {
   getNetworkPrefix,

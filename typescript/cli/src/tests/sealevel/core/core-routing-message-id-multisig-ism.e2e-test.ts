@@ -5,8 +5,8 @@ import {
   type DerivedCoreConfig,
   HookType,
   IsmType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -27,7 +27,7 @@ const SVM_DEPLOY_TIMEOUT = 600_000;
 // original input is kept apart for `core check` to compare chain state against.
 const CORE_INPUT_PATH = `${TEMP_PATH}/svmlocal1/core-routing-message-id-multisig-ism-input.yaml`;
 
-describe('hyperlane core deploy/read/check with a routingMessageIdMultisigIsm defaultIsm (Sealevel E2E tests)', async function () {
+describe('rlink core deploy/read/check with a routingMessageIdMultisigIsm defaultIsm (Sealevel E2E tests)', async function () {
   this.timeout(SVM_DEPLOY_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

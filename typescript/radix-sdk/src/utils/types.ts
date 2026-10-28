@@ -5,8 +5,8 @@ import {
   TransactionManifest,
 } from '@radixdlt/radix-engine-toolkit';
 
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { Annotated } from '@hyperlane-xyz/utils';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
+import { Annotated } from '@recoillink/utils';
 
 export interface RadixSDKTransaction {
   networkId: number;

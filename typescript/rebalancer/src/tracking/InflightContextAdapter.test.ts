@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import Sinon from 'sinon';
 
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
+import type { MultiProvider } from '@recoillink/sdk';
 
 import type { IActionTracker } from './IActionTracker.js';
 import { InflightContextAdapter } from './InflightContextAdapter.js';

@@ -4,7 +4,7 @@ import { assert, expect } from 'chai';
 import hre from 'hardhat';
 import sinon from 'sinon';
 
-import { Address, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+import { Address, objMap, promiseObjAll } from '@recoillink/utils';
 
 import { TestChainName, testChains } from '../consts/testChains.js';
 import { HyperlaneContractsMap } from '../contracts/types.js';

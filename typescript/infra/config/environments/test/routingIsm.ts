@@ -1,4 +1,4 @@
-import { IsmType, RoutingIsmConfig } from '@hyperlane-xyz/sdk';
+import { IsmType, RoutingIsmConfig } from '@recoillink/sdk';
 
 import { multisigIsm } from './multisigIsm.js';
 

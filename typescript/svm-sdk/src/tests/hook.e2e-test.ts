@@ -4,16 +4,16 @@ import { before, describe, it } from 'mocha';
 
 chai.use(chaiAsPromised);
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   MerkleTreeHookConfig,
   IgpHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { assert, sleep } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/hook';
+import { assert, sleep } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmHookArtifactManager } from '../hook/hook-artifact-manager.js';

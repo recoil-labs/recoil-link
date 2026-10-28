@@ -6,12 +6,12 @@ import {
   HyperlaneCoreChecker,
   InterchainAccount,
   TestChainName,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   formatStandardHookMetadata,
   parseStandardHookMetadata,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { HyperlaneHaasGovernor } from './HyperlaneHaasGovernor.js';
 import { HyperlaneICAChecker } from './HyperlaneICAChecker.js';

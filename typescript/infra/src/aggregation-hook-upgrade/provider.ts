@@ -1,4 +1,4 @@
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
+import { ChainName, MultiProvider } from '@recoillink/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import type { EnvironmentConfig } from '../config/environment.js';

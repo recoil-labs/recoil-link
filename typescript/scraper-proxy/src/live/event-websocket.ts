@@ -2,8 +2,8 @@ import type { IncomingMessage, Server } from 'node:http';
 import { isIP } from 'node:net';
 import type { Duplex } from 'node:stream';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
+import { rootLogger } from '@recoillink/utils';
+import { formatError } from '@recoillink/utils/errors';
 import { WebSocket, WebSocketServer } from 'ws';
 
 import { config } from '../config.js';

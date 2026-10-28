@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
 import type { IRegistry } from '@hyperlane-xyz/registry';
-import type { WarpCoreConfig } from '@hyperlane-xyz/sdk';
+import type { WarpCoreConfig } from '@recoillink/sdk';
 
 import type { CommandContext } from '../context/types.js';
 

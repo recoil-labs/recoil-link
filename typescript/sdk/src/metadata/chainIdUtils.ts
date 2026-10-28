@@ -1,4 +1,4 @@
-import { isNullish } from '@hyperlane-xyz/utils';
+import { isNullish } from '@recoillink/utils';
 
 import type { ChainMetadata } from './chainMetadataTypes.js';
 

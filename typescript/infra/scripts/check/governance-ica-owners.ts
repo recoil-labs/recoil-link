@@ -1,14 +1,14 @@
 import chalk from 'chalk';
 
-import { ISafe__factory } from '@hyperlane-xyz/core';
+import { ISafe__factory } from '@recoillink/core';
 import {
   type AccountConfig,
   type AcceptedInactiveOwner,
   type ChainName,
   InterchainAccount,
   type MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { type Address, eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, eqAddress } from '@recoillink/utils';
 
 // A nonce-less / lazily-deployed governance ICA (Tron and other AltVM) has no
 // contract code and no nonce, so the ownerStatus virtual check derives it as

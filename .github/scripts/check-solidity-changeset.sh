@@ -1,5 +1,5 @@
 #!/bin/bash
-# Checks if @hyperlane-xyz/core has a changeset at or above the required level,
+# Checks if @recoillink/core has a changeset at or above the required level,
 # OR if the version in solidity/package.json was manually bumped by an adequate amount.
 #
 # Usage: check-solidity-changeset.sh <required-level> <base-ref>
@@ -20,7 +20,7 @@ set -euo pipefail
 
 REQUIRED_LEVEL=${1:-}
 BASE_REF=${2:-}
-PACKAGE="@hyperlane-xyz/core"
+PACKAGE="@recoillink/core"
 
 if [ -z "$REQUIRED_LEVEL" ] || [ -z "$BASE_REF" ]; then
 	echo "Usage: check-solidity-changeset.sh <patch|minor|major> <base-ref>"
@@ -73,7 +73,7 @@ fi
 CHANGESET_CONTENT=$(echo "$NEW_CHANGESETS" | xargs cat 2>/dev/null || true)
 
 # Search for the package and extract bump level
-# Format in changeset files: '@hyperlane-xyz/core': minor
+# Format in changeset files: '@recoillink/core': minor
 FOUND_LEVEL=""
 if echo "$CHANGESET_CONTENT" | grep -q "$PACKAGE"; then
 	# Found the package, extract the level (major > minor > patch)

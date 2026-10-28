@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { ethers } from 'ethers';
 import sinon from 'sinon';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { EIP1967_IMPLEMENTATION_SLOT } from '../deploy/proxy.js';

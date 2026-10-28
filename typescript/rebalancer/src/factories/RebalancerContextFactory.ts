@@ -10,14 +10,14 @@ import {
   type Token,
   WarpCore,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   assert,
   isEVMLike,
   ProtocolType,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

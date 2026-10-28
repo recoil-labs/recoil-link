@@ -7,8 +7,8 @@ import {
   type WarpRouteDeployConfig,
   normalizeConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, type WithAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, type WithAddress } from '@recoillink/utils';
 
 import { writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';
@@ -27,7 +27,7 @@ import {
   TEST_CHAIN_NAMES_BY_PROTOCOL,
 } from '../../../constants.js';
 
-describe('hyperlane warp apply E2E (hook updates)', async function () {
+describe('rlink warp apply E2E (hook updates)', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const evmChain2Core = new HyperlaneE2ECoreTestCommands(

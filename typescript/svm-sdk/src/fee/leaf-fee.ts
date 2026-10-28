@@ -4,15 +4,15 @@ import type {
   LinearFeeConfig,
   ProgressiveFeeConfig,
   RegressiveFeeConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { computeBps, FeeParamsType } from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
+import { computeBps, FeeParamsType } from '@recoillink/provider-sdk/fee';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   assert,
   eqAddressSol,
@@ -20,7 +20,7 @@ import {
   isNullish,
   isZeroishAddress,
   ZERO_ADDRESS_HEX_32,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { resolveProgram } from '../deploy/resolve-program.js';

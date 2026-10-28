@@ -16,8 +16,8 @@ import {
 import { use as chaiUse, expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { SvmTransactionCodec } from '../../src/signer/svmCodec.js';
 

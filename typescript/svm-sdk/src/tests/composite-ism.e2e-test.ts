@@ -2,16 +2,16 @@ import { address, type Address, generateKeyPairSigner } from '@solana/kit';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@recoillink/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import type {
   CompositeIsmArtifactConfig,
   CompositeIsmNodeArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { assert } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

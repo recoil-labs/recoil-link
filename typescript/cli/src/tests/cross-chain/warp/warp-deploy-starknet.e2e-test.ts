@@ -2,15 +2,15 @@ import { expect } from 'chai';
 import { Wallet } from 'ethers';
 import { type StartedTestContainer } from 'testcontainers';
 
-import { TEST_STARKNET_ACCOUNT_ADDRESS } from '@hyperlane-xyz/starknet-sdk/testing';
+import { TEST_STARKNET_ACCOUNT_ADDRESS } from '@recoillink/starknet-sdk/testing';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMap,
   type DerivedWarpRouteDeployConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -33,7 +33,7 @@ import { runEvmNode, runStarknetNode } from '../../nodes.js';
 import { assertWarpRouteConfig } from '../../utils.js';
 import { expectStarknetWarpConfig } from '../../starknet/helpers.js';
 
-describe('hyperlane warp deploy e2e tests (Starknet x EVM)', async function () {
+describe('rlink warp deploy e2e tests (Starknet x EVM)', async function () {
   this.timeout(2 * CROSS_CHAIN_E2E_TEST_TIMEOUT);
 
   const starknetTokenData =

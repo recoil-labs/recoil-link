@@ -3,8 +3,8 @@ import {
   type HookConfig,
   HookConfigSchema,
   isHookCompatible,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { readYamlOrJson } from '../utils/files.js';

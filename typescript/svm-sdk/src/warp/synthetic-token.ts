@@ -4,17 +4,17 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   TokenType,
   type RawSyntheticWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   assert,
   isNullish,
   isZeroishAddress,
   ZERO_ADDRESS_HEX_32,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import {
   type Address,
   getAddressEncoder,

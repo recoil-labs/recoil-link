@@ -2,7 +2,7 @@ import { TransactionReceipt } from '@ethersproject/providers';
 import { ContractReceipt, Signer } from 'ethers';
 import { Logger } from 'pino';
 
-import { assert, formatError, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, formatError, rootLogger } from '@recoillink/utils';
 
 import { MultiProvider } from '../../../MultiProvider.js';
 import { AnnotatedEV5Transaction } from '../../../ProviderType.js';

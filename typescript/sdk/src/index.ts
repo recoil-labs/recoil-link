@@ -122,6 +122,7 @@ export {
   TOKEN_EXCHANGE_RATE_SCALE_ETHEREUM,
 } from './consts/igp.js';
 export { MAILBOX_VERSION } from './consts/mailbox.js';
+export { RECOIL_LINK_REGISTRY_URL } from './consts/registry.js';
 export {
   AW_VALIDATOR_ALIAS,
   defaultMultisigConfigs,
@@ -341,7 +342,7 @@ export {
 } from './hook/utils.js';
 export { EvmIsmReader } from './ism/EvmIsmReader.js';
 export { HyperlaneIsmFactory } from './ism/HyperlaneIsmFactory.js';
-// Note: MetadataBuilder types are now exported from @hyperlane-xyz/relayer
+// Note: MetadataBuilder types are now exported from @recoillink/relayer
 export {
   buildAggregationIsmConfigs,
   buildMultisigIsmConfigs,

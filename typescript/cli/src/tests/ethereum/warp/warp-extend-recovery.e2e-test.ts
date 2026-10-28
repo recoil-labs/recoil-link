@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { TokenRouter__factory } from '@hyperlane-xyz/core';
+import { TokenRouter__factory } from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { getContext } from '../../../context/context.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
@@ -33,7 +33,7 @@ import {
   WARP_DEPLOY_2_ID,
 } from '../consts.js';
 
-describe('hyperlane warp apply recovery extension tests', async function () {
+describe('rlink warp apply recovery extension tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let chain3Addresses: ChainAddresses = {};

@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { RpcProvider } from 'starknet';
 
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { getContractClassHash } from '@hyperlane-xyz/starknet-core/runtime';
+import { AltVM, ProtocolType } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { getContractClassHash } from '@recoillink/starknet-core/runtime';
 
 import { normalizeStarknetAddressSafe } from '../contracts.js';
 import { StarknetIsmArtifactManager } from './ism-artifact-manager.js';

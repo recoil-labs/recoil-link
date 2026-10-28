@@ -1,8 +1,8 @@
 import { type RpcProvider } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { getContractClassHash } from '@hyperlane-xyz/starknet-core/runtime';
-import { assert } from '@hyperlane-xyz/utils';
+import { AltVM } from '@recoillink/provider-sdk';
+import { getContractClassHash } from '@recoillink/starknet-core/runtime';
+import { assert } from '@recoillink/utils';
 
 import {
   StarknetContractName,

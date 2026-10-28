@@ -2,7 +2,7 @@ import { address, generateKeyPairSigner } from '@solana/kit';
 import { expect } from 'chai';
 import { after, before, describe, it } from 'mocha';
 
-import { assert, isNullish, pollAsync } from '@hyperlane-xyz/utils';
+import { assert, isNullish, pollAsync } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import {

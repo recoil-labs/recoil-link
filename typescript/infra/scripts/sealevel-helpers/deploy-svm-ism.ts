@@ -38,21 +38,21 @@ import {
   getMultisigIsmTransferOwnershipInstruction,
   getProgramUpgradeAuthority,
   getSetUpgradeAuthorityInstruction,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/sealevel-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
 import {
   type DomainMultisigConfig,
   type RoutingMessageIdMultisigIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { ChainName } from '@hyperlane-xyz/sdk';
+} from '@recoillink/provider-sdk/ism';
+import { ChainName } from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
   eqAddressSol,
   nonEmptyArray,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 import { address } from '@solana/kit';
 import { Contexts } from '../../config/contexts.js';
 import { getChain } from '../../config/registry.js';

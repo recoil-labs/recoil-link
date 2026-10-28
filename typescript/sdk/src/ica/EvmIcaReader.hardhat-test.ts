@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import hre from 'hardhat';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { EvmCoreModule } from '../core/EvmCoreModule.js';

@@ -1,4 +1,4 @@
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, rootLogger } from '@recoillink/utils';
 import { z } from 'zod';
 
 const DEFAULT_PREDICATE_API_URL = 'https://api.predicate.io/v2/attestation';

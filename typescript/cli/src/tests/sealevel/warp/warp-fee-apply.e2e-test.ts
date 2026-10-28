@@ -4,15 +4,15 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { FeeType } from '@hyperlane-xyz/provider-sdk/fee';
+import { FeeType } from '@recoillink/provider-sdk/fee';
 import {
   DEFAULT_FEE_SALT,
   SealevelSigner,
   SvmFeeArtifactManager,
   SvmWarpArtifactManager,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol, createSplMint } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@recoillink/sealevel-sdk';
+import { airdropSol, createSplMint } from '@recoillink/sealevel-sdk/testing';
 import {
   TOKEN_2022_PROGRAM_ID,
   getAssociatedTokenAddressSync,
@@ -23,8 +23,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -48,7 +48,7 @@ const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/svm-fee-apply-deploy.yaml`;
 
 const SVM_WARP_FEE_APPLY_TIMEOUT = 600_000;
 
-describe('hyperlane warp fee apply CLI e2e tests (Sealevel)', function () {
+describe('rlink warp fee apply CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_WARP_FEE_APPLY_TIMEOUT);
 
   let signer: Awaited<ReturnType<typeof SealevelSigner.connectWithSigner>>;

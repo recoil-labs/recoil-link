@@ -1,10 +1,10 @@
 import { type Address, address as parseAddress } from '@solana/kit';
 
-import { type ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactDeployed } from '@recoillink/provider-sdk/artifact';
 import {
   type CrossCollateralWarpArtifactConfig,
   type DeployedWarpAddress,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import { fetchMintTokenProgram } from '../accounts/mint.js';
 import {

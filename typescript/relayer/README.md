@@ -1,4 +1,4 @@
-# @hyperlane-xyz/relayer
+# @recoillink/relayer
 
 Hyperlane Message Relayer Service - relays interchain messages across Hyperlane-connected chains.
 
@@ -9,7 +9,7 @@ Hyperlane Message Relayer Service - relays interchain messages across Hyperlane-
 pnpm install
 
 # Build the package
-pnpm --filter @hyperlane-xyz/relayer build
+pnpm --filter @recoillink/relayer build
 ```
 
 ## Usage
@@ -19,8 +19,8 @@ pnpm --filter @hyperlane-xyz/relayer build
 The main export is browser-safe and can be used in any JavaScript environment:
 
 ```typescript
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
-import { HyperlaneCore } from '@hyperlane-xyz/sdk';
+import { HyperlaneRelayer } from '@recoillink/relayer';
+import { HyperlaneCore } from '@recoillink/sdk';
 
 // Direct usage (browser-safe)
 const addresses = /* chain -> contract addresses map */;
@@ -39,7 +39,7 @@ relayer.start();
 For metadata builders without the relayer runtime API, use the `/metadata` export:
 
 ```typescript
-import { BaseMetadataBuilder } from '@hyperlane-xyz/relayer/metadata';
+import { BaseMetadataBuilder } from '@recoillink/relayer/metadata';
 ```
 
 ### Node.js Daemon Mode
@@ -47,7 +47,7 @@ import { BaseMetadataBuilder } from '@hyperlane-xyz/relayer/metadata';
 For Node.js environments with filesystem access, use the `/fs` export:
 
 ```typescript
-import { RelayerService, loadConfig } from '@hyperlane-xyz/relayer/fs';
+import { RelayerService, loadConfig } from '@recoillink/relayer/fs';
 
 // Load config from file
 const relayerConfig = loadConfig('./config.yaml');
@@ -114,9 +114,9 @@ cacheFile: ./relayer-cache.json
 
 | Export                            | Description                               | Browser-safe |
 | --------------------------------- | ----------------------------------------- | ------------ |
-| `@hyperlane-xyz/relayer`          | Core relayer, metadata builders, schemas  | Yes          |
-| `@hyperlane-xyz/relayer/metadata` | Metadata builders only                    | Yes          |
-| `@hyperlane-xyz/relayer/fs`       | RelayerService, loadConfig (file loading) | No (Node.js) |
+| `@recoillink/relayer`          | Core relayer, metadata builders, schemas  | Yes          |
+| `@recoillink/relayer/metadata` | Metadata builders only                    | Yes          |
+| `@recoillink/relayer/fs`       | RelayerService, loadConfig (file loading) | No (Node.js) |
 
 ## Prometheus Metrics
 

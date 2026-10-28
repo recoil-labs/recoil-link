@@ -1,7 +1,7 @@
 import { SecretManagerServiceClient } from '@google-cloud/secret-manager';
 import fs from 'fs';
 
-import { retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { retryAsync, rootLogger } from '@recoillink/utils';
 
 import { DockerImageNames } from '../../config/docker.js';
 import { rm, writeFile } from 'fs/promises';

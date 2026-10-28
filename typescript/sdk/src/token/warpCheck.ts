@@ -9,12 +9,12 @@ import {
   Ownable__factory,
   ProxyAdmin__factory,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   createWarpTokenReader,
   loadProtocolProviders,
-} from '@hyperlane-xyz/deploy-sdk';
-import type { DerivedWarpConfig } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/deploy-sdk';
+import type { DerivedWarpConfig } from '@recoillink/provider-sdk/warp';
 import {
   type Address,
   type ObjectDiff,
@@ -36,7 +36,7 @@ import {
   objFilter,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { isProxy, proxyAdmin } from '../deploy/proxy.js';
 import { IsmType } from '../ism/types.js';
@@ -88,7 +88,7 @@ export const WARP_ROUTE_CHECK_SCALE_TYPE = 'ScaleMismatch';
 // non-EVM protocol is a checkable altVM: e.g. legacy (non-native) Cosmos SDK chains
 // have no registered protocol provider and no warp token reader, so treating them
 // as "altVM" would attempt an on-chain read that always throws. Keep this in sync
-// with the switch in `@hyperlane-xyz/deploy-sdk`'s loadProtocolProviders.
+// with the switch in `@recoillink/deploy-sdk`'s loadProtocolProviders.
 const ALTVM_CHECK_PROTOCOLS: ReadonlySet<ProtocolType> = new Set([
   ProtocolType.CosmosNative,
   ProtocolType.Radix,

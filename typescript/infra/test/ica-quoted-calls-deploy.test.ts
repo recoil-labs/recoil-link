@@ -11,8 +11,8 @@ import {
   MultiProvider,
   OnchainHookType,
   PERMIT2_ADDRESS,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, ProtocolType, addressToBytes32 } from '@recoillink/utils';
 
 import {
   createFileChainStore,

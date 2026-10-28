@@ -15,7 +15,7 @@ import {
 } from '@safe-global/safe-deployments';
 import { BigNumber } from 'ethers';
 
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getGovernanceSigners } from '../../config/environments/mainnet3/governance/utils.js';

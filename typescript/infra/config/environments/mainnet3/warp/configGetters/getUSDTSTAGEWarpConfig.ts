@@ -1,4 +1,4 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
+import { ChainMap, HypTokenRouterConfig, TokenType } from '@recoillink/sdk';
 import { ethers } from 'ethers';
 
 import {

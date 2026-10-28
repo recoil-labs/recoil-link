@@ -7,9 +7,9 @@ import {
   Token,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { getXERC20Info } from './balance.js';
 

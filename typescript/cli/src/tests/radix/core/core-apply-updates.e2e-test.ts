@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import {
@@ -12,7 +12,7 @@ import {
 } from '../../constants.js';
 import { createCoreUpdateTests } from '../../helpers/core-ism-hook-test-factory.js';
 
-describe('hyperlane core apply ISM/Hook updates (Radix E2E tests)', async function () {
+describe('rlink core apply ISM/Hook updates (Radix E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

@@ -6,8 +6,8 @@ import { syncBuiltinESMExports } from 'module';
 import { rejects } from 'node:assert/strict';
 import sinon from 'sinon';
 
-import { AgentSignerKeyType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { AgentSignerKeyType } from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 import { Contexts } from '../config/contexts.js';
 import { agents } from '../config/environments/mainnet3/agent.js';

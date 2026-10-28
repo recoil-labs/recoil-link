@@ -4,7 +4,7 @@ import os from 'os';
 import path from 'path';
 import { $ } from 'zx';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { hyperlaneCoreDeploy } from './commands/core.js';
 import {
@@ -43,7 +43,7 @@ function extractDispatchTx(output: string): string {
   return match[1];
 }
 
-describe('hyperlane status e2e tests', async function () {
+describe('rlink status e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   before(async () => {
@@ -168,7 +168,7 @@ describe('hyperlane status e2e tests', async function () {
 
       // Try status with --relay but without key
       // Use timeout and nothrow since it will hang waiting for input
-      const statusProcess = $`${localTestRunCmdPrefix()} hyperlane status \
+      const statusProcess = $`${localTestRunCmdPrefix()} rlink status \
         --registry ${REGISTRY_PATH} \
         --origin ${CHAIN_NAME_2} \
         --id ${messageId} \
@@ -236,7 +236,7 @@ describe('hyperlane status e2e tests', async function () {
 
       // Run status with two registries: base + overlay with unreachable chain.
       // Before the fix, the command would crash trying to connect to unreachable-chain.
-      const { exitCode } = await $`${localTestRunCmdPrefix()} hyperlane status \
+      const { exitCode } = await $`${localTestRunCmdPrefix()} rlink status \
         --registry ${REGISTRY_PATH} \
         --registry ${tempDir} \
         --origin ${CHAIN_NAME_2} \

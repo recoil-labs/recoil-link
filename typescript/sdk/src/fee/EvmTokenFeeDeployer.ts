@@ -4,8 +4,8 @@ import {
   CrossCollateralRoutingFee,
   OffchainQuotedLinearFee,
   RoutingFee,
-} from '@hyperlane-xyz/core';
-import { assert, eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { assert, eqAddress } from '@recoillink/utils';
 
 import type { HyperlaneContracts } from '../contracts/types.js';
 import {

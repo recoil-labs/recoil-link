@@ -3,7 +3,7 @@ import { ethers, providers } from 'ethers';
 import {
   ERC20Test__factory,
   HypERC20Collateral__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 
 import {
   type ChainDeployment,

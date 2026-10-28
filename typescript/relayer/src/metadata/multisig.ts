@@ -1,6 +1,6 @@
 import { joinSignature, splitSignature } from 'ethers/lib/utils.js';
 
-import { MerkleTreeHook__factory } from '@hyperlane-xyz/core';
+import { MerkleTreeHook__factory } from '@recoillink/core';
 import {
   ChainName,
   HyperlaneCore,
@@ -9,7 +9,7 @@ import {
   MultisigIsmConfig,
   defaultMultisigConfigs,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   Checkpoint,
@@ -28,7 +28,7 @@ import {
   rootLogger,
   strip0x,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   type MetadataBuilder,

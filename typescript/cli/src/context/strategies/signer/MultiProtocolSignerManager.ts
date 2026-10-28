@@ -8,14 +8,14 @@ import {
   type MultiProvider,
   type ProtocolMap,
   isJsonRpcSubmitterConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   type Address,
   ProtocolType,
   assert,
   isEVMLike,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { type ExtendedChainSubmissionStrategy } from '../../../submitters/types.js';
 import { type SignerKeyProtocolMap } from '../../types.js';

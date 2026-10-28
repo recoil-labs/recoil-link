@@ -1,6 +1,6 @@
 import { confirm } from '@inquirer/prompts';
 
-import { sleep } from '@hyperlane-xyz/utils';
+import { sleep } from '@recoillink/utils';
 
 import { InfrastructureConfig } from '../../config/infrastructure.js';
 import {

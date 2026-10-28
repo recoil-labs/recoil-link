@@ -4,13 +4,13 @@ import {
   constants as ethersConstants,
 } from 'ethers';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
+import { ERC20__factory } from '@recoillink/core';
 import {
   Address,
   Domain,
   addressToBytes32,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 import { ChainName } from '../../types.js';

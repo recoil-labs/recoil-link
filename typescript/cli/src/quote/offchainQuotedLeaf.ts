@@ -4,8 +4,8 @@ import {
   type DerivedRoutingFeeConfig,
   type DerivedTokenFeeConfig,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert } from '@recoillink/utils';
 
 interface OffchainQuotedLeaf {
   address: string;

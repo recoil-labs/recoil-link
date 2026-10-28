@@ -1,19 +1,19 @@
 import { type DeliverTxResponse } from '@cosmjs/stargate';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@recoillink/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/artifact';
 import {
   type DeployedWarpAddress,
   type RawSyntheticWarpArtifactConfig,
   computeRemoteRoutersUpdates,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { eqAddressCosmos } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/warp';
+import { eqAddressCosmos } from '@recoillink/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { getNewContractAddress } from '../utils/base.js';

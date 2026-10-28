@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 import { IsmType as AltVMIsmType } from './altvm.js';
 import { ArtifactState } from './artifact.js';

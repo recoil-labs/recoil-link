@@ -3,8 +3,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import yargs from 'yargs';
 
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { assert, rootLogger } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import { SafeMultiSend } from '../../src/govern/multisend.js';

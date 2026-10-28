@@ -4,8 +4,8 @@ import { createServer, type Server } from 'node:http';
 import {
   MAX_EVM_TRANSACTION_BYTES,
   SIGNER_JSON_PAYLOAD_LIMIT_BYTES,
-} from '@hyperlane-xyz/http-registry-server';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/http-registry-server';
+import { assert } from '@recoillink/utils';
 
 import { HttpSignerClient } from './HttpSignerClient.js';
 

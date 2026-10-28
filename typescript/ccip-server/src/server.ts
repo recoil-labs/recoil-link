@@ -4,8 +4,8 @@ import cors from '@fastify/cors';
 import Fastify, { LogController } from 'fastify';
 import { Registry } from 'prom-client';
 
-import { startMetricsServer } from '@hyperlane-xyz/metrics/dist/server.js';
-import { createServiceLogger } from '@hyperlane-xyz/utils';
+import { startMetricsServer } from '@recoillink/metrics/dist/server.js';
+import { createServiceLogger } from '@recoillink/utils';
 
 import { getEnabledModules } from './config.js';
 import { CCIP_KEEP_ALIVE_TIMEOUT_MS, CCIP_ROUTER_OPTIONS } from './http.js';

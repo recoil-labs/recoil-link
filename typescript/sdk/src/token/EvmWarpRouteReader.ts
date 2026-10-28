@@ -29,8 +29,8 @@ import {
   TokenBridgeCctpV2__factory,
   TokenBridgeDepositAddress__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+} from '@recoillink/core';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   Address,
   addressToBytes32,
@@ -46,7 +46,7 @@ import {
   promiseObjAll,
   rootLogger,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';

@@ -1,5 +1,5 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { TestChainMetadata } from '@recoillink/provider-sdk/chain';
 
 /**
  * Test timeout for operations that require node startup and deployment

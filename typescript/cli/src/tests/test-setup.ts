@@ -1,4 +1,4 @@
-import { LogFormat, LogLevel, configureRootLogger } from '@hyperlane-xyz/utils';
+import { LogFormat, LogLevel, configureRootLogger } from '@recoillink/utils';
 
 // mute logging in tests
 process.env.NODE_ENV === 'test' &&

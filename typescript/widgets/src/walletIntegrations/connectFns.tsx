@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { type KnownProtocolType, ProtocolType } from '@hyperlane-xyz/utils';
+import { type KnownProtocolType, ProtocolType } from '@recoillink/utils';
 
 import { useAleoConnectFn } from './aleoWallet.js';
 import { useCosmosConnectFn } from './cosmosWallet.js';

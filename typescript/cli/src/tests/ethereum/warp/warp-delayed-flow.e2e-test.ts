@@ -4,7 +4,7 @@ import { Wallet, providers } from 'ethers';
 import {
   type DelayedFlowRouterHookIsm,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -16,8 +16,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -82,7 +82,7 @@ function domainOf(chain: string): number {
 // relayer retries `MessageNotReadyUntil` reverts.
 const MAX_DELAY_SECONDS = 5;
 
-describe('hyperlane warp deploy with DelayedFlowRouterHookIsm e2e tests', async function () {
+describe('rlink warp deploy with DelayedFlowRouterHookIsm e2e tests', async function () {
   this.timeout(3 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const deployerAddress = new Wallet(ANVIL_KEY).address;

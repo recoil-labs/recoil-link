@@ -4,7 +4,7 @@ import {
   objKeys,
   rootLogger,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 import { ChainMap, ChainName } from '../types.js';

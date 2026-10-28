@@ -7,9 +7,9 @@ import {
   InterchainAccountRouter__factory,
   InterchainGasPaymaster__factory,
   QuotedCalls__factory,
-} from '@hyperlane-xyz/core';
-import { isMissingSelectorCallException } from '@hyperlane-xyz/sdk/utils/contract';
-import { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@recoillink/core';
+import { isMissingSelectorCallException } from '@recoillink/sdk/utils/contract';
+import { Address, Logger } from '@recoillink/utils';
 
 import { createEvmChainReader } from '../aggregation-hook-upgrade/reader.js';
 

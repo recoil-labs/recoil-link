@@ -3,7 +3,7 @@ import { utils as ethersUtils } from 'ethers';
 import {
   type CreateWarpQuoteRequest,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
+} from '@recoillink/provider-sdk/quote';
 
 import {
   type Eip712Signable,

@@ -2,7 +2,7 @@ import type { Logger } from 'pino';
 import { Pushgateway, type Registry } from 'prom-client';
 import { format } from 'util';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 function getStatusCode(response: unknown): number | 'unknown' {
   if (

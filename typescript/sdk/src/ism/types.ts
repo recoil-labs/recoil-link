@@ -19,14 +19,14 @@ import {
   TestIsm,
   TrustedRelayerIsm,
   BlacklistIsm,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import type {
   Address,
   Domain,
   NonEmptyArray,
   ValueOf,
   WithAddress,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import {
   addressToBytes32,
   isEmptyAddress,
@@ -34,7 +34,7 @@ import {
   isNullish,
   isValidAddressSealevel,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   ZBigNumberish,

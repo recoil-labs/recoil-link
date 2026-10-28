@@ -5,10 +5,10 @@ import {
   GasAction,
   MockSigner,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk';
-import type { WarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
+} from '@recoillink/provider-sdk';
+import type { WarpArtifactConfig } from '@recoillink/provider-sdk/warp';
+import { MultiProvider } from '@recoillink/sdk';
+import type { ChainMetadata } from '@recoillink/sdk';
 
 import { nativeBalancesAreSufficient } from './balances.js';
 

@@ -9,8 +9,8 @@ import {
   FeeQuotingCommand,
   HookType,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/provider-sdk';
 
 import type { QuoteMode } from '../../src/config.js';
 import {

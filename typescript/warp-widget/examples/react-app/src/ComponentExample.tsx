@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { HyperlaneWarpWidget } from '@hyperlane-xyz/warp-widget/react';
-import type { WarpWidgetConfig, WarpWidgetEvent } from '@hyperlane-xyz/warp-widget';
+import { HyperlaneWarpWidget } from '@recoillink/warp-widget/react';
+import type { WarpWidgetConfig, WarpWidgetEvent } from '@recoillink/warp-widget';
 
 const themes: Record<string, WarpWidgetConfig> = {
   blue: {
@@ -46,7 +46,7 @@ export function ComponentExample() {
     <div>
       <h2>React Component</h2>
       <p>
-        <code>{'<HyperlaneWarpWidget />'}</code> from <code>@hyperlane-xyz/warp-widget/react</code>
+        <code>{'<HyperlaneWarpWidget />'}</code> from <code>@recoillink/warp-widget/react</code>
         {events.length > 0 && (
           <span style={{ color: '#22c55e', marginLeft: 8 }}>
             {events.length} event{events.length > 1 ? 's' : ''}

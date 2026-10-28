@@ -2,15 +2,15 @@ import util from 'util';
 import { stringify as yamlStringify } from 'yaml';
 import { type CommandModule } from 'yargs';
 
-import { RebalancerConfig, RebalancerService } from '@hyperlane-xyz/rebalancer';
-import { checkWarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { RebalancerConfig, RebalancerService } from '@recoillink/rebalancer';
+import { checkWarpRouteDeployConfig } from '@recoillink/sdk';
 import {
   assert,
   difference,
   intersection,
   isEVMLike,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import {
   checkCrossCollateralWarpRoute,

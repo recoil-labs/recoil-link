@@ -5,7 +5,7 @@ import {
   type ERC20Test,
   EverclearTokenBridge__factory,
   type MockEverclearAdapter,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type EverclearCollateralTokenConfig,
   HypTokenRouterConfigMailboxOptionalSchema,
@@ -13,14 +13,14 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   addressToBytes32,
   assert,
   normalizeAddressEvm,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';
@@ -45,7 +45,7 @@ import {
 } from '../../commands/helpers.js';
 import { WarpTestFixture } from '../../fixtures/warp-test-fixture.js';
 
-describe('hyperlane warp apply owner update tests', async function () {
+describe('rlink warp apply owner update tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const fixture = new WarpTestFixture({

@@ -11,7 +11,7 @@ import {
   MultisigIsmConfigSchema,
   type TrustedRelayerIsmConfig,
   isStaticIsm,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { type CommandContext } from '../context/types.js';
 import { tryResolveSignerAddress } from '../context/strategies/signer/resolveSignerAddress.js';

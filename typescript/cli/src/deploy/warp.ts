@@ -1,12 +1,12 @@
 import { confirm } from '@inquirer/prompts';
 import { stringify as yamlStringify } from 'yaml';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   AltVMJsonRpcSubmitter,
   createWarpTokenWriter,
-} from '@hyperlane-xyz/deploy-sdk';
-import { AltVMFileSubmitter } from '@hyperlane-xyz/deploy-sdk/AltVMFileSubmitter';
+} from '@recoillink/deploy-sdk';
+import { AltVMFileSubmitter } from '@recoillink/deploy-sdk/AltVMFileSubmitter';
 import {
   type AltVM,
   type FileSubmitterConfig,
@@ -15,16 +15,16 @@ import {
   ProtocolType,
   SubmitterType,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk/module';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
 import {
   type WarpArtifactConfig,
   warpConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 import {
   type AddWarpRouteConfigOptions,
   type ChainAddresses,
@@ -82,9 +82,9 @@ import {
   planWarpRouteHybrids,
   splitWarpCoreAndExtendedConfigs,
   tokenTypeToStandard,
-} from '@hyperlane-xyz/sdk';
-import { mapHybridHookNodes } from '@hyperlane-xyz/sdk/hook/utils';
-import { mapHybridIsmNodes } from '@hyperlane-xyz/sdk/utils/ism';
+} from '@recoillink/sdk';
+import { mapHybridHookNodes } from '@recoillink/sdk/hook/utils';
+import { mapHybridIsmNodes } from '@recoillink/sdk/utils/ism';
 import {
   type Address,
   type Annotated,
@@ -100,7 +100,7 @@ import {
   promiseObjAll,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { requestAndSaveApiKeys } from '../context/apiKeys.js';
 import { type WriteCommandContext } from '../context/types.js';
@@ -2195,6 +2195,6 @@ export async function runWarpRouteCombine({
 
   logGreen(`✅ Combined ${routes.length} routes into "${mergedId}"`);
   log(
-    `Run "warp apply" for each route to apply on-chain enrollment:\n${routes.map((r) => `  hyperlane warp apply --warp-route-id ${r.id}`).join('\n')}`,
+    `Run "warp apply" for each route to apply on-chain enrollment:\n${routes.map((r) => `  rlink warp apply --warp-route-id ${r.id}`).join('\n')}`,
   );
 }

@@ -6,13 +6,13 @@ import {
   type DerivedCoreConfig,
   HookType,
   IsmType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
   isValidAddressSealevel,
-} from '@hyperlane-xyz/utils';
-import { SealevelIgpHookReader, createRpc } from '@hyperlane-xyz/sealevel-sdk';
+} from '@recoillink/utils';
+import { SealevelIgpHookReader, createRpc } from '@recoillink/sealevel-sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -30,7 +30,7 @@ import {
 // so the suite needs a generous timeout.
 const SVM_DEPLOY_TIMEOUT = 600_000;
 
-describe('hyperlane core deploy (Sealevel E2E tests)', async function () {
+describe('rlink core deploy (Sealevel E2E tests)', async function () {
   this.timeout(SVM_DEPLOY_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(

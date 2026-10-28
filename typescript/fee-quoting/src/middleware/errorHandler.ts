@@ -5,7 +5,7 @@ import {
   NO_QUOTE_AVAILABLE_ERROR,
   type NoQuoteAvailableError as NoQuoteAvailableErrorBody,
   NoQuoteAvailableReason,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 /**
  * Base class for HTTP errors thrown by route handlers. Subclasses override

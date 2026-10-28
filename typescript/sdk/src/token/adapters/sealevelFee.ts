@@ -9,7 +9,7 @@ import {
 } from '@solana/web3.js';
 import { deserializeUnchecked, serialize } from 'borsh';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import {

@@ -1,7 +1,7 @@
 import { before, describe, it } from 'mocha';
 
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { TokenType } from '@recoillink/provider-sdk/warp';
+import { retryAsync } from '@recoillink/utils';
 import { expect } from 'chai';
 import { createRpc } from '../rpc.js';
 import { SvmWarpArtifactManager } from '../warp/warp-artifact-manager.js';

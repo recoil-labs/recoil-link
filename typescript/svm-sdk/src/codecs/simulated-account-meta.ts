@@ -5,7 +5,7 @@ import {
   type AccountMeta,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { readAddress } from './account-data.js';
 import { ByteCursor } from './binary.js';

@@ -2,14 +2,14 @@ import { join } from 'path';
 import { pathToFileURL } from 'url';
 import prompts from 'prompts';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   ChainName,
   ContractVerifier,
   ExplorerLicenseType,
   getDomainId as resolveDomainId,
-} from '@hyperlane-xyz/sdk';
-import { assert, inCIMode, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, inCIMode, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { legacyCoreHookRecoveryChains } from '../../config/environments/mainnet3/core.js';

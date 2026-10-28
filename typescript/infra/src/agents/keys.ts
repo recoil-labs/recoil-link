@@ -1,8 +1,8 @@
 import { ethers } from 'ethers';
 import { Provider as ZkProvider, Wallet as ZkWallet } from 'zksync-ethers';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { HexString, ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+import { ChainName } from '@recoillink/sdk';
+import { HexString, ProtocolType, isEVMLike } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import type { DeployEnvironment } from '../config/deploy-environment.js';

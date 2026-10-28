@@ -8,8 +8,8 @@ import {
   HyperlaneCore,
   MultiProvider,
   RouterApp,
-} from '@hyperlane-xyz/sdk';
-import { Address, addBufferToGasLimit, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, addBufferToGasLimit, rootLogger } from '@recoillink/utils';
 
 import { HelloWorld } from '../types/index.js';
 

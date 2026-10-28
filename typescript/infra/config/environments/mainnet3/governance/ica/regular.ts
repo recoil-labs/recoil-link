@@ -1,6 +1,6 @@
 // Found by running:
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 // REGISTRY_URI=/Users/pbio/work/tmpauditq2/hyperlane-registry \
 // pnpm tsx scripts/keys/get-owner-ica.ts -e mainnet3 --ownerChain ethereum --deploy \

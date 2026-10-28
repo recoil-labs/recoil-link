@@ -6,7 +6,7 @@ import {
   ProtocolType,
   assert,
   isEVMLike,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import type { MultiProviderAdapter } from '../providers/MultiProviderAdapter.js';
 import { ChainName } from '../types.js';

@@ -3,8 +3,8 @@ import {
   TOKEN_COLLATERALIZED_STANDARDS,
   WarpCore,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logBlue, logGreen, logTable, warnYellow } from '../logger.js';

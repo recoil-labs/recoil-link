@@ -8,14 +8,14 @@ import {
   SealevelSigner,
   SvmCrossCollateralTokenReader,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol, createSplMint } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@recoillink/sealevel-sdk';
+import { airdropSol, createSplMint } from '@recoillink/sealevel-sdk/testing';
 import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -42,7 +42,7 @@ const WARP_DEPLOY_OUTPUT_PATH = `${TEMP_PATH}/svm-cc-warp-deploy.yaml`;
 // SVM deploys programs from bytes — needs generous timeout
 const SVM_WARP_CC_TIMEOUT = 600_000;
 
-describe('hyperlane warp crossCollateral CLI e2e tests (Sealevel)', function () {
+describe('rlink warp crossCollateral CLI e2e tests (Sealevel)', function () {
   this.timeout(SVM_WARP_CC_TIMEOUT);
 
   let rpc: ReturnType<typeof createRpc>;
@@ -130,7 +130,7 @@ describe('hyperlane warp crossCollateral CLI e2e tests (Sealevel)', function () 
 
     // Combine routes to cross-enroll CC routers
     const mergedWarpRouteId = 'MULTI/test-svm-cc';
-    await $`${localTestRunCmdPrefix()} hyperlane warp combine \
+    await $`${localTestRunCmdPrefix()} rlink warp combine \
       --registry ${REGISTRY_PATH} \
       --routes ${`${warpIdA},${warpIdB}`} \
       --output-warp-route-id ${mergedWarpRouteId} \

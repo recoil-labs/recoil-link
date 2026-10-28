@@ -1,6 +1,6 @@
 import { type RpcProvider } from 'starknet';
 
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32 } from '@recoillink/utils';
 
 import {
   StarknetContractName,

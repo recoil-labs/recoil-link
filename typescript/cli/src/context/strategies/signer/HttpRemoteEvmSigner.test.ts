@@ -2,9 +2,9 @@ import { expect } from 'chai';
 import { ethers, Wallet } from 'ethers';
 import { createServer, type IncomingMessage, type Server } from 'node:http';
 
-import { ChainTechnicalStack, MultiProtocolProvider } from '@hyperlane-xyz/sdk';
-import { SignerTransactionRequestSchema } from '@hyperlane-xyz/http-registry-server';
-import { ProtocolType, assert, ensure0x, strip0x } from '@hyperlane-xyz/utils';
+import { ChainTechnicalStack, MultiProtocolProvider } from '@recoillink/sdk';
+import { SignerTransactionRequestSchema } from '@recoillink/http-registry-server';
+import { ProtocolType, assert, ensure0x, strip0x } from '@recoillink/utils';
 
 import { HttpRemoteEvmSigner } from './HttpRemoteEvmSigner.js';
 import { HttpSignerClient } from './HttpSignerClient.js';

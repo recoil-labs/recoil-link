@@ -4,7 +4,7 @@ import { Wallet, providers } from 'ethers';
 import {
   NetFlowRateLimitedHookIsm__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -16,8 +16,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, eqAddress } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { assert, eqAddress } from '@recoillink/utils';
 
 import { syncWarpDeployConfigToRegistry } from '../../commands/warp-config-sync.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
@@ -58,7 +58,7 @@ const METADATA_BY_CHAIN: Record<string, ChainMetadata> = {
   [CHAIN_NAME_3]: readYamlOrJson(CHAIN_3_METADATA_PATH),
 };
 
-describe('hyperlane warp deploy with NetFlowRateLimitedHookIsm e2e tests', async function () {
+describe('rlink warp deploy with NetFlowRateLimitedHookIsm e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   const deployerAddress = new Wallet(ANVIL_KEY).address;

@@ -7,7 +7,7 @@ import {
   InterchainAccountRouter,
   TestRecipient,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   AccountConfig,
   ChainMap,
@@ -29,8 +29,8 @@ import {
   TestCoreApp,
   TestCoreDeployer,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { Address, CallData, eqAddress, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address, CallData, eqAddress, objMap } from '@recoillink/utils';
 
 import { HyperlaneAppGovernor } from '../src/govern/HyperlaneAppGovernor.js';
 import { AnnotatedCallData } from '../src/govern/types.js';

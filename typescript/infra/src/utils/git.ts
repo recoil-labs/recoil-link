@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { getRegistry } from '../../config/registry.js';
 

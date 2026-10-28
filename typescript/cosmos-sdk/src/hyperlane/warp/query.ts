@@ -1,6 +1,6 @@
 import { type QueryClient, createProtobufRpcClient } from '@cosmjs/stargate';
 
-import { warpQuery } from '@hyperlane-xyz/cosmos-types';
+import { warpQuery } from '@recoillink/cosmos-types';
 
 export interface WarpExtension {
   readonly warp: {

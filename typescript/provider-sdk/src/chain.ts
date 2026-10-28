@@ -1,4 +1,4 @@
-import { ChainId, Domain } from '@hyperlane-xyz/utils';
+import { ChainId, Domain } from '@recoillink/utils';
 
 import { ProtocolType } from './protocolType.js';
 

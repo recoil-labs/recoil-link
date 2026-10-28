@@ -4,8 +4,8 @@ import {
   MultisigIsmConfig,
   TestChainName,
   WeightedMultisigIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { Address } from '@recoillink/utils';
 
 // the addresses here must line up with the e2e test's validator addresses
 // Validators are anvil accounts 4-7

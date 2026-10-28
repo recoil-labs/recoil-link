@@ -17,8 +17,8 @@ import { concatBytes } from '@noble/hashes/utils';
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

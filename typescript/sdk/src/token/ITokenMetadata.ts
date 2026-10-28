@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { Address, Numberish, ProtocolType } from '@hyperlane-xyz/utils';
+import { Address, Numberish, ProtocolType } from '@recoillink/utils';
 
 import { ZChainName, ZUint } from '../metadata/customZodTypes.js';
 import type { ChainName } from '../types.js';

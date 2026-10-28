@@ -1,13 +1,13 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
-import { createCoreWriter } from '@hyperlane-xyz/deploy-sdk';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
+import { createCoreWriter } from '@recoillink/deploy-sdk';
 import {
   GasAction,
   ProtocolType,
   coreConfigToArtifact,
   coreResultToDeployedAddresses,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainName,
@@ -17,8 +17,8 @@ import {
   EvmCoreModule,
   ExplorerLicenseType,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
-import { deepEquals, mustGet } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { deepEquals, mustGet } from '@recoillink/utils';
 
 import { type MultiProtocolSignerManager } from '../context/strategies/signer/MultiProtocolSignerManager.js';
 import { type WriteCommandContext } from '../context/types.js';
@@ -34,7 +34,7 @@ import {
   validateCoreIsmCompatibility,
 } from './utils.js';
 import { getSubmitterByStrategy } from './warp.js';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
 
 interface DeployParams {
   context: WriteCommandContext;

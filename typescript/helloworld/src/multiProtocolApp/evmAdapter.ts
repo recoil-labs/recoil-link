@@ -5,9 +5,9 @@ import {
   EthersV5Transaction,
   EvmRouterAdapter,
   ProviderType,
-} from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import { Address, addBufferToGasLimit } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import type { MultiProviderAdapter } from '@recoillink/sdk/providers/MultiProviderAdapter';
+import { Address, addBufferToGasLimit } from '@recoillink/utils';
 
 import { HelloWorld, HelloWorld__factory } from '../types/index.js';
 

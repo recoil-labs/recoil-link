@@ -5,8 +5,8 @@ import {
   type Token,
   TokenStandard,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { type Address, isNullish } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, isNullish } from '@recoillink/utils';
 
 import type { WarpMetricsGauges } from './gauges.js';
 import type {

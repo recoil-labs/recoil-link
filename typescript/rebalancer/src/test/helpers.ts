@@ -12,7 +12,7 @@ import {
   type Token,
   TokenAmount,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import type { RebalancerConfig } from '../config/RebalancerConfig.js';
 import { RebalancerStrategyOptions } from '../config/types.js';

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import type { ProtocolType } from '@hyperlane-xyz/utils';
-import { readYamlOrJson } from '@hyperlane-xyz/utils/fs';
+import type { ProtocolType } from '@recoillink/utils';
+import { readYamlOrJson } from '@recoillink/utils/fs';
 
 import type { InventorySignerConfig } from '../core/InventoryRebalancer.js';
 import {

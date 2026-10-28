@@ -1,5 +1,5 @@
-import { Mailbox, Mailbox__factory } from '@hyperlane-xyz/core';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { Mailbox, Mailbox__factory } from '@recoillink/core';
+import { addressToBytes32 } from '@recoillink/utils';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

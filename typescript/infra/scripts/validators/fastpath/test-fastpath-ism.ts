@@ -26,9 +26,9 @@ import {
   DispatchedMessage,
   HyperlaneCore,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { mergeJson, readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sdk';
+import { assert, rootLogger } from '@recoillink/utils';
+import { mergeJson, readJson } from '@recoillink/utils/fs';
 
 import { join } from 'path';
 

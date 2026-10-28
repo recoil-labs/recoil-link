@@ -4,7 +4,7 @@ import 'zod/compile';
 import chalk from 'chalk';
 import yargs from 'yargs';
 
-import type { LogFormat, LogLevel } from '@hyperlane-xyz/utils';
+import type { LogFormat, LogLevel } from '@recoillink/utils';
 
 import { avsCommand } from './src/commands/avs.js';
 import { configCommand } from './src/commands/config.js';
@@ -50,7 +50,7 @@ function ignoreBrokenPipe(stream: NodeJS.WriteStream) {
 ignoreBrokenPipe(process.stdout);
 ignoreBrokenPipe(process.stderr);
 
-console.log(chalk.blue('Hyperlane'), chalk.magentaBright('CLI'));
+console.log(chalk.blue('Recoil Link'), chalk.magentaBright('CLI'));
 
 if (!process.env.CI && process.env.HYPERLANE_SKIP_VERSION_CHECK !== '1') {
   await checkVersion();
@@ -58,7 +58,7 @@ if (!process.env.CI && process.env.HYPERLANE_SKIP_VERSION_CHECK !== '1') {
 
 try {
   await yargs(process.argv.slice(2))
-    .scriptName('hyperlane')
+    .scriptName('rlink')
     .option('log', logFormatCommandOption)
     .option('verbosity', logLevelCommandOption)
     .option('registry', registryUrisCommandOption)

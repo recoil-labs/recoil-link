@@ -4,7 +4,7 @@ import type { SealevelQuoteV2Entry, SealevelSignedQuote } from './types.js';
 
 /**
  * Byte layout of `SvmSignedQuote` on-chain. Mirrors
- * `@hyperlane-xyz/sealevel-sdk`'s `SvmSignedQuote` Borsh struct without
+ * `@recoillink/sealevel-sdk`'s `SvmSignedQuote` Borsh struct without
  * importing from svm-sdk (per `[no-svm-sdk-dep-in-main-sdk]`).
  *
  * - `context`: 44 bytes (non-CC) or 76 bytes (CC) — variable.

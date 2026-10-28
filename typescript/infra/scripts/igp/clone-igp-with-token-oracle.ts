@@ -33,8 +33,8 @@ import {
   HyperlaneIgpDeployer,
   IgpConfig,
   getLocalStorageGasOracleConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert, rootLogger } from '@recoillink/utils';
 
 import { ethers } from 'ethers';
 

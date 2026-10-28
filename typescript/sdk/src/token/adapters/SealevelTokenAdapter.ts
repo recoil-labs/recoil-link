@@ -31,7 +31,7 @@ import {
   isNullish,
   median,
   padBytesToLength,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import { SEALEVEL_SPL_NOOP_ADDRESS } from '../../consts/sealevel.js';

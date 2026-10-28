@@ -1,4 +1,4 @@
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 export const awSigners: Address[] = [
   '0xa7ECcdb9Be08178f896c26b7BbD8C3D4E844d9Ba', // 1

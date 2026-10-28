@@ -5,7 +5,7 @@ import yargs from 'yargs/yargs';
 
 import { IRegistry } from '@hyperlane-xyz/registry';
 import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@recoillink/utils';
 
 import { FeeQuotingServer } from '../FeeQuotingServer.js';
 import { ServerConfigSchema } from '../src/config.js';

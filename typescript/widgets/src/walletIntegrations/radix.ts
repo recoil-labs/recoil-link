@@ -1,15 +1,15 @@
 import { useCallback } from 'react';
 
-import type { RadixSDKTransaction } from '@hyperlane-xyz/radix-sdk/runtime';
+import type { RadixSDKTransaction } from '@recoillink/radix-sdk/runtime';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { assert, retryAsync } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@recoillink/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@recoillink/sdk/token/ITokenMetadata';
+import type { ChainName } from '@recoillink/sdk/types';
+import type { WarpTypedTransaction } from '@recoillink/sdk/warp/types';
+import { assert, retryAsync } from '@recoillink/utils';
 
 import { useGatewayApi } from './radix/hooks/useGatewayApi.js';
 import { useRdt } from './radix/hooks/useRdt.js';

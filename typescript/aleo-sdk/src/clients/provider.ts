@@ -1,12 +1,12 @@
 import { BigNumber } from 'bignumber.js';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 import {
   composeWarpDeployGas,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/warp';
+import { assert, strip0x } from '@recoillink/utils';
 
 import {
   ALEO_NATIVE_DENOM,

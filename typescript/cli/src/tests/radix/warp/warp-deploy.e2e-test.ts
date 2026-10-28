@@ -6,8 +6,8 @@ import {
   type DerivedWarpRouteDeployConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -30,7 +30,7 @@ import {
 } from '../../constants.js';
 import { assertWarpRouteConfig } from '../../utils.js';
 
-describe('hyperlane warp deploy (Radix E2E tests)', async function () {
+describe('rlink warp deploy (Radix E2E tests)', async function () {
   this.timeout(DEFAULT_E2E_TEST_TIMEOUT);
 
   const nativeTokenData =

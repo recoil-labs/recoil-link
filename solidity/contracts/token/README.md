@@ -2,7 +2,7 @@
 
 This repo contains contracts and SDK tooling for Hyperlane-connected ERC20 and ERC721 tokens. The contracts herein can be used to create [Hyperlane Warp Routes](https://docs.hyperlane.xyz/docs/reference/applications/warp-routes) across different chains.
 
-For instructions on deploying Warp Routes, see [the deployment documentation](https://docs.hyperlane.xyz/docs/deploy-hyperlane#deploy-a-warp-route) and the [Hyperlane CLI](https://www.npmjs.com/package/@hyperlane-xyz/cli).
+For instructions on deploying Warp Routes, see [the deployment documentation](https://docs.hyperlane.xyz/docs/deploy-hyperlane#deploy-a-warp-route) and the [Hyperlane CLI](https://www.npmjs.com/package/@recoillink/cli).
 
 ## Warp Route Architecture
 

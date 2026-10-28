@@ -12,16 +12,16 @@ import {
   type ChainAddresses,
   createWarpRouteConfigId,
 } from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
+import { SealevelSigner, createRpc } from '@recoillink/sealevel-sdk';
 import {
   type SolanaTestValidator,
   airdropSol,
   createSplMint,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
-import { TokenType, type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, sleep, strip0x } from '@hyperlane-xyz/utils';
+} from '@recoillink/sealevel-sdk/testing';
+import { TokenType, type WarpRouteDeployConfig } from '@recoillink/sdk';
+import { ProtocolType, assert, sleep, strip0x } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -53,7 +53,7 @@ function getSvmWeb3Keypair(privateKey: string): Keypair {
   return Keypair.fromSeed(keyBytes);
 }
 
-describe('hyperlane warp send EVM+SVM e2e tests', function () {
+describe('rlink warp send EVM+SVM e2e tests', function () {
   this.timeout(CROSS_CHAIN_E2E_TEST_TIMEOUT);
 
   let evmNodeInstance: StartedTestContainer;

@@ -1,6 +1,6 @@
 import { type ContractFactory } from 'ethers';
 
-import { buildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   type ChainMap,
   type DeployableTokenType,
@@ -16,8 +16,8 @@ import {
   isProxy,
   proxyImplementation,
   verificationUtils,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert, objFilter } from '@recoillink/utils';
 
 import { requestAndSaveApiKeys } from '../context/apiKeys.js';
 import { type CommandContext } from '../context/types.js';

@@ -1,4 +1,4 @@
-import { PackageVersioned__factory } from '@hyperlane-xyz/core';
+import { PackageVersioned__factory } from '@recoillink/core';
 import sinon from 'sinon';
 
 /**

@@ -10,7 +10,7 @@ import {
   VersionedTransaction,
 } from '@solana/web3.js';
 
-import { Address, ProtocolType, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType, rootLogger, sleep } from '@recoillink/utils';
 
 import { SEALEVEL_PRIORITY_FEES } from '../../consts/sealevel.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

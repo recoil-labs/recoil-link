@@ -2,9 +2,9 @@ import { ethers } from 'ethers';
 import type { Logger } from 'pino';
 import { address as parseSvmAddress } from '@solana/kit';
 
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
-import { ChainTechnicalStack } from '@hyperlane-xyz/sdk';
-import { ProtocolType, eqAddressEvm } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@recoillink/sdk';
+import { ChainTechnicalStack } from '@recoillink/sdk';
+import { ProtocolType, eqAddressEvm } from '@recoillink/utils';
 
 import { ApiError } from '../errors/ApiError.js';
 import type { RegistryService } from '../services/registryService.js';

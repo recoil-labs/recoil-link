@@ -3,8 +3,8 @@ import { Separator, checkbox, confirm } from '@inquirer/prompts';
 import select from '@inquirer/select';
 import { ethers } from 'ethers';
 
-import { ChainName, parseCustomRpcHeaders } from '@hyperlane-xyz/sdk';
-import { assert, isEVMLike, timeout } from '@hyperlane-xyz/utils';
+import { ChainName, parseCustomRpcHeaders } from '@recoillink/sdk';
+import { assert, isEVMLike, timeout } from '@recoillink/utils';
 
 import { getChain } from '../../config/registry.js';
 import { getEnvironmentConfig } from '../../scripts/core-utils.js';

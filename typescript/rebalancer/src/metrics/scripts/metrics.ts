@@ -11,9 +11,9 @@ import {
   updateNativeWalletBalanceMetrics as sharedUpdateNativeWalletBalanceMetrics,
   updateTokenBalanceMetrics as sharedUpdateTokenBalanceMetrics,
   updateXERC20LimitsMetrics as sharedUpdateXERC20LimitsMetrics,
-} from '@hyperlane-xyz/metrics';
-import { type ChainName, type Token, type WarpCore } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/metrics';
+import { type ChainName, type Token, type WarpCore } from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 export const metricsRegister = new Registry();
 

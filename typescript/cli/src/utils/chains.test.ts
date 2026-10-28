@@ -5,8 +5,8 @@ import {
   type ChainMetadata,
   ChainStatus,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import {
   filterChainMetadataByProtocol,

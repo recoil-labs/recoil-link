@@ -8,8 +8,8 @@ import {
   getTransactionEncoder,
 } from '@solana/kit';
 
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
-import { eqAddressSol, fromHexString } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@recoillink/sdk';
+import { eqAddressSol, fromHexString } from '@recoillink/utils';
 
 import type { SignerAccount, TransactionCodec } from './types.js';
 

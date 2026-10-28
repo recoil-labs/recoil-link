@@ -1,4 +1,4 @@
-import { objMap } from '@hyperlane-xyz/utils';
+import { objMap } from '@recoillink/utils';
 
 import { KeyFunderConfig } from '../../../src/config/funding.js';
 import { Role } from '../../../src/roles.js';

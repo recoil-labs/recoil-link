@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@recoillink/utils';
 
 import { Modal } from '../layout/Modal.js';
 import { PROTOCOL_TO_LOGO } from '../logos/protocols.js';

@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@hyperlane-xyz/warp-widget':
+      '@recoillink/warp-widget':
         specifier: ^1.0.0
         version: 1.0.0(react@18.3.1)
       react:
@@ -266,7 +266,7 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hyperlane-xyz/warp-widget@1.0.0':
+  '@recoillink/warp-widget@1.0.0':
     resolution: {integrity: sha512-8N4GyapWISnGQunH+X0Wx0jjK9nJbX9a8MSpYO7upg0az6PQxC9yQOuF1aKiVpglftsYj/5g4WOAmdRUbucq+w==}
     peerDependencies:
       react: ^18 || ^19
@@ -1210,7 +1210,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@hyperlane-xyz/warp-widget@1.0.0(react@18.3.1)':
+  '@recoillink/warp-widget@1.0.0(react@18.3.1)':
     optionalDependencies:
       react: 18.3.1
 

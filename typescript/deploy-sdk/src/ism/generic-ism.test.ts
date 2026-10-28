@@ -1,16 +1,16 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+import { ProtocolType } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import { ChainLookup } from '@recoillink/provider-sdk/chain';
 import {
   DeployedRawIsmArtifact,
   IRawIsmArtifactManager,
   IsmConfig,
   ismArtifactToDerivedConfig,
   ismConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/provider-sdk/ism';
+import { assert } from '@recoillink/utils';
 
 import { IsmReader } from './generic-ism.js';
 

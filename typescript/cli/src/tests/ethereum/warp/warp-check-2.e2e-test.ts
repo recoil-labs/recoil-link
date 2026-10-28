@@ -5,7 +5,7 @@ import { zeroAddress } from 'viem';
 import {
   type ERC20Test,
   HypERC20Collateral__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
@@ -17,8 +17,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address, assert } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';
@@ -39,7 +39,7 @@ import {
   getCombinedWarpRoutePath,
 } from '../consts.js';
 
-describe('hyperlane warp check e2e tests', async function () {
+describe('rlink warp check e2e tests', async function () {
   this.timeout(2 * DEFAULT_E2E_TEST_TIMEOUT);
 
   let signer: Signer;
@@ -114,7 +114,7 @@ describe('hyperlane warp check e2e tests', async function () {
     };
   });
 
-  describe('hyperlane warp check --warp-route-id ...', () => {
+  describe('rlink warp check --warp-route-id ...', () => {
     it(`should not find any differences between the on chain config and the local one`, async function () {
       await deployAndExportWarpRoute();
 

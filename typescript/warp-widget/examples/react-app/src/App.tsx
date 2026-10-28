@@ -12,7 +12,7 @@ export default function App() {
       <div style={{ maxWidth: 500, margin: '0 auto' }}>
         <h1>Warp Widget — React Examples</h1>
         <p>
-          Two ways to use <code>@hyperlane-xyz/warp-widget</code> in React.
+          Two ways to use <code>@recoillink/warp-widget</code> in React.
         </p>
 
         <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>

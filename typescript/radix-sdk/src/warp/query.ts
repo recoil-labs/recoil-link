@@ -2,7 +2,7 @@ import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 import { generateRandomNonce } from '@radixdlt/radix-engine-toolkit';
 import { BigNumber } from 'bignumber.js';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { getKeysFromKvStore } from '../utils/base-query.js';
 import { RadixBase } from '../utils/base.js';

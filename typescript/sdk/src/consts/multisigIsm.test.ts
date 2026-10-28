@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { isAddress, isZeroishAddress } from '@hyperlane-xyz/utils';
+import { isAddress, isZeroishAddress } from '@recoillink/utils';
 
 import { defaultMultisigConfigs } from './multisigIsm.js';
 

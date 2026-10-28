@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import type { Mailbox } from '@hyperlane-xyz/core';
-import type { Address, ParsedMessage } from '@hyperlane-xyz/utils';
+import type { Mailbox } from '@recoillink/core';
+import type { Address, ParsedMessage } from '@recoillink/utils';
 
 import type { UpgradeConfig } from '../deploy/proxy.js';
 import type { CheckerViolation } from '../deploy/types.js';

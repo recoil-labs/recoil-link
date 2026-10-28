@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { Annotated, ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+import { Annotated, ProtocolType, rootLogger } from '@recoillink/utils';
 
 import {
   ProtocolTypedReceipt,

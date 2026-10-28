@@ -1,8 +1,8 @@
 import { compareVersions } from 'compare-versions';
 import { z } from 'zod';
 
-import { CONTRACTS_PACKAGE_VERSION } from '@hyperlane-xyz/core';
-import { assert, isAddressEvm, objMap } from '@hyperlane-xyz/utils';
+import { CONTRACTS_PACKAGE_VERSION } from '@recoillink/core';
+import { assert, isAddressEvm, objMap } from '@recoillink/utils';
 
 import { TokenFeeConfigInput, TokenFeeType } from '../fee/types.js';
 import { HookConfig, HookType } from '../hook/types.js';
@@ -31,7 +31,7 @@ export const contractVersionMatchesDependency = (version: string) => {
   return compareVersions(version, CONTRACTS_PACKAGE_VERSION) === 0;
 };
 
-export const VERSION_ERROR_MESSAGE = `Contract version must match the @hyperlane-xyz/core dependency version (${CONTRACTS_PACKAGE_VERSION})`;
+export const VERSION_ERROR_MESSAGE = `Contract version must match the @recoillink/core dependency version (${CONTRACTS_PACKAGE_VERSION})`;
 
 /**
  * Coerces string to bigint at runtime with positivity check.

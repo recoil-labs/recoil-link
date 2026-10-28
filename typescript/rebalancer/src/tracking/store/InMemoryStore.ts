@@ -1,4 +1,4 @@
-import type { Domain } from '@hyperlane-xyz/utils';
+import type { Domain } from '@recoillink/utils';
 
 import type { TrackedActionBase } from '../types.js';
 

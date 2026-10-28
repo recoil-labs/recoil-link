@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { TokenStandard, type WarpCoreConfig } from '@hyperlane-xyz/sdk';
+import { TokenStandard, type WarpCoreConfig } from '@recoillink/sdk';
 
 import { checkCrossCollateralWarpRoute } from './warp.js';
 

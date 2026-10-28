@@ -3,7 +3,7 @@ import { Keypair } from '@solana/web3.js';
 import { BigNumber, ethers } from 'ethers';
 import { bytesToHex } from 'viem';
 
-import { Address, exclude, objMap, randomElement } from '@hyperlane-xyz/utils';
+import { Address, exclude, objMap, randomElement } from '@recoillink/utils';
 
 import { testChains } from '../consts/testChains.js';
 import { HyperlaneContractsMap } from '../contracts/types.js';

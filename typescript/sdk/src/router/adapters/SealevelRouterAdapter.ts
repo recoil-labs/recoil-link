@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { Address, Domain } from '@hyperlane-xyz/utils';
+import { Address, Domain } from '@recoillink/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

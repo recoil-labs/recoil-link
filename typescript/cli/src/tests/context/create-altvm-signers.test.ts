@@ -6,12 +6,12 @@ import {
   type ChainMetadataForAltVM,
   ProtocolType,
   type ProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@recoillink/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { TxSubmitterType } from '@hyperlane-xyz/sdk';
+} from '@recoillink/provider-sdk/module';
+import { TxSubmitterType } from '@recoillink/sdk';
 
 import { altVmPrompts, createAltVMSigners } from '../../context/altvm.js';
 import { type SignerKeyProtocolMap } from '../../context/types.js';

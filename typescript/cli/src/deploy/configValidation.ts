@@ -7,13 +7,13 @@
  * These functions validate that SDK configs are compatible with provider-sdk
  * requirements and provide clear error messages for unsupported features.
  */
-import { validateIsmConfig } from '@hyperlane-xyz/deploy-sdk';
-import { type CoreConfig as ProviderCoreConfig } from '@hyperlane-xyz/provider-sdk/core';
-import { type HookConfig as ProviderHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { type IsmConfig as ProviderIsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
-import { type CoreConfig, type HookConfig } from '@hyperlane-xyz/sdk';
-import { type ProtocolType } from '@hyperlane-xyz/utils';
-export { validateWarpConfigForAltVM } from '@hyperlane-xyz/sdk';
+import { validateIsmConfig } from '@recoillink/deploy-sdk';
+import { type CoreConfig as ProviderCoreConfig } from '@recoillink/provider-sdk/core';
+import { type HookConfig as ProviderHookConfig } from '@recoillink/provider-sdk/hook';
+import { type IsmConfig as ProviderIsmConfig } from '@recoillink/provider-sdk/ism';
+import { type CoreConfig, type HookConfig } from '@recoillink/sdk';
+import { type ProtocolType } from '@recoillink/utils';
+export { validateWarpConfigForAltVM } from '@recoillink/sdk';
 
 const ALT_VM_SUPPORTED_HOOK_TYPES: ReadonlySet<string> = new Set([
   'interchainGasPaymaster',

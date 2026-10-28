@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@recoillink/utils';
 
 import { CallData, CallDataSchema } from './types.js';
 

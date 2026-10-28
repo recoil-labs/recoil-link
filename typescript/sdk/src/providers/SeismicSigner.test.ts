@@ -16,7 +16,7 @@ import sinon from 'sinon';
 import { isHex } from 'viem';
 import { z } from 'zod';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { SeismicSigner } from './SeismicSigner.js';
 import { HyperlaneSmartProvider } from './SmartProvider/SmartProvider.js';

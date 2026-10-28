@@ -1,5 +1,5 @@
-import { IMessageTransmitter__factory } from '@hyperlane-xyz/core';
-import { objFilter, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+import { IMessageTransmitter__factory } from '@recoillink/core';
+import { objFilter, objMap, promiseObjAll } from '@recoillink/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainMap } from '../types.js';

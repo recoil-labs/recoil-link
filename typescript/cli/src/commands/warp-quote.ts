@@ -1,8 +1,8 @@
 import { stringify as yamlStringify } from 'yaml';
 import { type CommandModule } from 'yargs';
 
-import { WarpQuoteAmountKind } from '@hyperlane-xyz/provider-sdk/quote';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { WarpQuoteAmountKind } from '@recoillink/provider-sdk/quote';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import {
   type CommandModuleWithContext,

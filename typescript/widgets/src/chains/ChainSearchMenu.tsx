@@ -4,9 +4,9 @@ import {
   mergeChainMetadataMap,
   type ChainMetadata,
   ChainStatus,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
-import type { ChainMap, ChainName } from '@hyperlane-xyz/sdk/types';
-import { ProtocolType, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk/metadata/chainMetadataTypes';
+import type { ChainMap, ChainName } from '@recoillink/sdk/types';
+import { ProtocolType, objMap } from '@recoillink/utils';
 
 import {
   SearchMenu,

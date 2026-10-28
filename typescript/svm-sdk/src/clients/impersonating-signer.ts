@@ -5,15 +5,15 @@ import {
   partiallySignTransactionMessageWithSigners,
 } from '@solana/kit';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { type AltVM } from '@recoillink/provider-sdk';
+import type { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 import {
   assert,
   eqAddressSol,
   isNullish,
   type Logger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { FORK_IMPERSONATION_FEE_PAYER } from '../fork/impersonation.js';
 import type { SvmReceipt, SvmRpc, SvmTransaction } from '../types.js';

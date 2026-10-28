@@ -1,8 +1,8 @@
-import { type ArtifactNew } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactNew } from '@recoillink/provider-sdk/artifact';
 import {
   TokenType,
   type RawWarpArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@recoillink/provider-sdk/warp';
 
 import {
   type StarknetRemoteRoutersOnChain,

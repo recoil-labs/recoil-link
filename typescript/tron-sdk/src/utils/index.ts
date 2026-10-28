@@ -1,6 +1,6 @@
 import { TronWeb } from 'tronweb';
 
-import { assert, isNullish, strip0x } from '@hyperlane-xyz/utils';
+import { assert, isNullish, strip0x } from '@recoillink/utils';
 
 import { IABI, TronReceipt } from './types.js';
 import { BigNumber, providers, utils } from 'ethers';

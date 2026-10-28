@@ -1,5 +1,5 @@
-import { type ChainName, type MultiProvider } from '@hyperlane-xyz/sdk';
-import { isEVMLike } from '@hyperlane-xyz/utils';
+import { type ChainName, type MultiProvider } from '@recoillink/sdk';
+import { isEVMLike } from '@recoillink/utils';
 
 /**
  * Orders warp send path defaults consistently:

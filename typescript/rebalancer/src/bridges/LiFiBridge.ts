@@ -13,13 +13,13 @@ import {
   config as lifiConfig,
 } from '@lifi/sdk';
 import bs58 from 'bs58';
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
+import type { ChainMetadata } from '@recoillink/sdk';
 import {
   ProtocolType,
   assert,
   ensure0x,
   isEVMLike,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 import type { Logger } from 'pino';
 import { type Chain, createWalletClient, http } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';

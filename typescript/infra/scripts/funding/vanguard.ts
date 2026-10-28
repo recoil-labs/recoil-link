@@ -2,8 +2,8 @@ import chalk from 'chalk';
 import { formatUnits, parseUnits } from 'ethers/lib/utils.js';
 import yargs from 'yargs';
 
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { Address, rootLogger } from '@recoillink/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { DEPLOYER } from '../../config/environments/mainnet3/owners.js';

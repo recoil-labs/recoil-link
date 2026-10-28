@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { Contract, RpcProvider } from 'starknet';
 
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM, ProtocolType } from '@recoillink/provider-sdk';
+import { ChainMetadataForAltVM } from '@recoillink/provider-sdk/chain';
 
 import { StarknetContractName } from '../contracts.js';
 import { getCreateMailboxTx } from '../mailbox/mailbox-tx.js';

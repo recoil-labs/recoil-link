@@ -1,8 +1,8 @@
 import { type QueryClient } from '@cosmjs/stargate';
 
-import { warpTypes } from '@hyperlane-xyz/cosmos-types';
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { warpTypes } from '@recoillink/cosmos-types';
+import { AltVM } from '@recoillink/provider-sdk';
+import { assert, rootLogger } from '@recoillink/utils';
 
 import { type WarpExtension } from '../hyperlane/warp/query.js';
 import {

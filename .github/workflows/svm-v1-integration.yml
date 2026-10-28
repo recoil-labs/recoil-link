@@ -41,7 +41,7 @@ jobs:
           persist-credentials: false
       - uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/sealevel-sdk...'
+          build-filter: '@recoillink/sealevel-sdk...'
       - name: Install pinned Agave 4.2.0
         shell: bash
         run: |

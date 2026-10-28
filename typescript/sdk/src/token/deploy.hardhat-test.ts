@@ -27,7 +27,7 @@ import {
   XERC20Test__factory,
   XERC20VSTest,
   XERC20VSTest__factory,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import {
   Address,
   ProtocolType,
@@ -38,7 +38,7 @@ import {
   isNullish,
   isZeroishAddress,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { TestCoreApp } from '../core/TestCoreApp.js';

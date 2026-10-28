@@ -1,15 +1,15 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ArtifactReader } from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@recoillink/provider-sdk';
+import { ArtifactReader } from '@recoillink/provider-sdk/artifact';
 import {
   DeployedFeeAddress,
   DeployedFeeArtifact,
   FeeArtifactConfig,
   FeeReadContext,
   IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@recoillink/provider-sdk/fee';
 
 /**
  * Factory function to create a FeeReader instance.

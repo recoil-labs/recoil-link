@@ -1,11 +1,11 @@
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { DeployedRawWarpArtifact } from '@hyperlane-xyz/provider-sdk/warp';
+import { AltVM } from '@recoillink/provider-sdk';
+import { ArtifactState } from '@recoillink/provider-sdk/artifact';
+import type { DeployedRawWarpArtifact } from '@recoillink/provider-sdk/warp';
 
-import { isNullish } from '@hyperlane-xyz/utils';
+import { isNullish } from '@recoillink/utils';
 
 import { AleoSigner } from '../clients/signer.js';
 import { AleoHookArtifactManager } from '../hook/hook-artifact-manager.js';

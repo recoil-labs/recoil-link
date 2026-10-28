@@ -128,7 +128,7 @@ export async function runScenarioWithRebalancers(
 
     // Apply initial imbalance if specified
     if (file.initialImbalance) {
-      const { ERC20Test__factory } = await import('@hyperlane-xyz/core');
+      const { ERC20Test__factory } = await import('@recoillink/core');
       const provider = new ethers.providers.JsonRpcProvider(options.anvilRpc);
       // Match the simulation engine's polling for sequential local mint receipts.
       provider.pollingInterval = 100;

@@ -1,7 +1,7 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainName } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { type ChainName } from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { ANVIL_KEY, REGISTRY_PATH } from '../consts.js';
 
@@ -29,7 +29,7 @@ export function hyperlaneIcaDeployRaw({
 }): ProcessPromise {
   return $`${
     hypKey ? ['HYP_KEY=' + hypKey] : []
-  } ${localTestRunCmdPrefix()} hyperlane ica deploy \
+  } ${localTestRunCmdPrefix()} rlink ica deploy \
         --registry ${REGISTRY_PATH} \
         ${origin ? ['--origin', origin] : []} \
         ${chains?.length ? chains.flatMap((d) => ['--chains', d]) : []} \

@@ -1,5 +1,5 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { Address, deepEquals, eqAddress } from '@hyperlane-xyz/utils';
+import { ChainName } from '@recoillink/sdk';
+import { Address, deepEquals, eqAddress } from '@recoillink/utils';
 
 import type { ChainStore } from '../aggregation-hook-upgrade/address-export.js';
 

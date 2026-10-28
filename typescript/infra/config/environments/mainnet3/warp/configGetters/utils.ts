@@ -9,7 +9,7 @@ import {
   TokenFeeType,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   Address,
   addressToBytes32,
@@ -17,7 +17,7 @@ import {
   assert,
   intersection,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { getChainAddresses, getRegistry } from '../../../../registry.js';

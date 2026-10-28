@@ -4,8 +4,8 @@ import { expect } from 'chai';
 import { ContractReceipt } from 'ethers';
 import hre from 'hardhat';
 
-import { TestMailbox, TestRecipient__factory } from '@hyperlane-xyz/core';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { TestMailbox, TestRecipient__factory } from '@recoillink/core';
+import { addressToBytes32 } from '@recoillink/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HyperlaneProxyFactoryDeployer } from '../deploy/HyperlaneProxyFactoryDeployer.js';

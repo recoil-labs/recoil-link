@@ -1,7 +1,7 @@
 import { providers } from 'ethers';
 
-import { Mailbox__factory, ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+import { Mailbox__factory, ProxyAdmin__factory } from '@recoillink/core';
+import { Address, assert, rootLogger } from '@recoillink/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { proxyAdmin } from '../deploy/proxy.js';

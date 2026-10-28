@@ -1,6 +1,6 @@
 import type { ethers } from 'ethers';
 
-import { ERC20Test__factory } from '@hyperlane-xyz/core';
+import { ERC20Test__factory } from '@recoillink/core';
 
 import type {
   ChainMetrics,

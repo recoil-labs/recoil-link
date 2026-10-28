@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { type DispatchedMessage, type MultiProvider } from '@hyperlane-xyz/sdk';
+import { type DispatchedMessage, type MultiProvider } from '@recoillink/sdk';
 
 import { filterRelayableMessages } from './message.js';
 

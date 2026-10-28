@@ -32,8 +32,8 @@ import {
   TokenBridgeDepositAddress__factory,
   XERC20LockboxTest__factory,
   XERC20Test__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+} from '@recoillink/core';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   ContractVerifier,
   ExplorerFamily,
@@ -47,8 +47,8 @@ import {
   proxyAdmin,
   proxyImplementation,
   test3,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert, randomInt } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { addressToBytes32, assert, randomInt } from '@recoillink/utils';
 
 import { TestCoreApp } from '../core/TestCoreApp.js';
 import { TestCoreDeployer } from '../core/TestCoreDeployer.js';

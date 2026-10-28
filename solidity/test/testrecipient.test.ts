@@ -1,7 +1,7 @@
 import {expect} from "chai";
 import {utils} from "ethers";
 
-import {addressToBytes32} from "@hyperlane-xyz/utils";
+import {addressToBytes32} from "@recoillink/utils";
 
 import {TestRecipient, TestRecipient__factory} from "../core-utils/typechain";
 

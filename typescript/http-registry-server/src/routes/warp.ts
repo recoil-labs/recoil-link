@@ -8,7 +8,7 @@ import {
 import {
   WarpCoreConfigSchema,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 
 import { AppConstants } from '../constants/AppConstants.js';
 import {

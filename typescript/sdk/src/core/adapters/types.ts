@@ -1,4 +1,4 @@
-import type { HexString } from '@hyperlane-xyz/utils';
+import type { HexString } from '@recoillink/utils';
 
 import type { BaseAppAdapter } from '../../app/MultiProtocolApp.js';
 import type { TypedTransactionReceipt } from '../../providers/ProviderType.js';

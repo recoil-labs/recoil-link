@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import { TronWeb } from 'tronweb';
 
-import { strip0x } from '@hyperlane-xyz/utils';
+import { strip0x } from '@recoillink/utils';
 
 import { TronReceiptResult, assertTronReceiptSuccess } from './index.js';
 

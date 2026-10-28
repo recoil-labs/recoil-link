@@ -1,8 +1,8 @@
 import os from 'os';
 import { type Options } from 'yargs';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { LogFormat, LogLevel } from '@hyperlane-xyz/utils';
+import { RECOIL_LINK_REGISTRY_URL } from '@recoillink/sdk';
+import { LogFormat, LogLevel } from '@recoillink/utils';
 
 import { ENV } from '../utils/env.js';
 
@@ -27,7 +27,7 @@ export const stringArrayOptionConfig = (
 
 /* Global options */
 
-export const DEFAULT_LOCAL_REGISTRY = `${os.homedir()}/.hyperlane`;
+export const DEFAULT_LOCAL_REGISTRY = `${os.homedir()}/.recoil-link`;
 
 export const demandOption = (option: Options): Options => ({
   ...option,
@@ -52,7 +52,7 @@ export const registryUrisCommandOption: Options = {
   description:
     'List of Github or local path registries, later registry takes priority over previous',
   alias: 'r',
-  default: [DEFAULT_GITHUB_REGISTRY, DEFAULT_LOCAL_REGISTRY],
+  default: [RECOIL_LINK_REGISTRY_URL, DEFAULT_LOCAL_REGISTRY],
 };
 
 export const githubAuthTokenOption: Options = {

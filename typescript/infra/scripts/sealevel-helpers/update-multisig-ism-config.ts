@@ -13,13 +13,13 @@ import {
   MultiProtocolProvider,
   SealevelCoreAdapter,
   SvmMultiProtocolSignerAdapter,
-} from '@hyperlane-xyz/sdk';
+} from '@recoillink/sdk';
 import {
   createRpc,
   fetchMailboxInboxAccount,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { ProtocolType, assert, rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@recoillink/sealevel-sdk';
+import { ProtocolType, assert, rootLogger } from '@recoillink/utils';
+import { readJson } from '@recoillink/utils/fs';
 import { address } from '@solana/kit';
 
 import { Contexts } from '../../config/contexts.js';

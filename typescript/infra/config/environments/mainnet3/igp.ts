@@ -4,8 +4,8 @@ import {
   HookType,
   IgpConfig,
   IgpVersion,
-} from '@hyperlane-xyz/sdk';
-import { exclude, objMap } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { exclude, objMap } from '@recoillink/utils';
 
 import {
   AllStorageGasOracleConfigs,

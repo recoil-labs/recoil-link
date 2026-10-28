@@ -1,4 +1,4 @@
-import { InterchainQueryRouter__factory } from '@hyperlane-xyz/core';
+import { InterchainQueryRouter__factory } from '@recoillink/core';
 
 import { proxiedFactories } from '../../router/types.js';
 

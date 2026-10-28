@@ -9,7 +9,7 @@ import {
   type MockEverclearAdapter,
   type XERC20LockboxTest,
   type XERC20VSTest,
-} from '@hyperlane-xyz/core';
+} from '@recoillink/core';
 import { type ChainAddresses } from '@hyperlane-xyz/registry';
 import {
   type ChainMap,
@@ -18,8 +18,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@recoillink/sdk';
+import { type Address } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { createLocalProvider } from '../localProvider.js';

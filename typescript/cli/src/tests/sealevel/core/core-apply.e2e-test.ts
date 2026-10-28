@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { type CoreConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type CoreConfig } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
@@ -20,7 +20,7 @@ const CORE_APPLY_CONFIG_PATH = './examples/sealevel/core-config-apply.yaml';
 // so the suite needs a generous timeout.
 const SVM_DEPLOY_TIMEOUT = 600_000;
 
-describe('hyperlane core apply (Sealevel E2E tests)', async function () {
+describe('rlink core apply (Sealevel E2E tests)', async function () {
   this.timeout(SVM_DEPLOY_TIMEOUT);
 
   const hyperlaneCore = new HyperlaneE2ECoreTestCommands(
@@ -46,7 +46,7 @@ describe('hyperlane core apply (Sealevel E2E tests)', async function () {
     await hyperlaneCore.deploy(HYP_KEY_BY_PROTOCOL.sealevel);
   });
 
-  describe('hyperlane core apply (mailbox updates)', function () {
+  describe('rlink core apply (mailbox updates)', function () {
     it('should update the mailbox owner to the specified one', async () => {
       const coreConfig: CoreConfig = await readYamlOrJson(
         CORE_APPLY_CONFIG_PATH,

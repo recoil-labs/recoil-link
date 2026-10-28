@@ -1,7 +1,7 @@
 import type { Logger } from 'pino';
 
-import type { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ChainMap, ChainMetadata } from '@recoillink/sdk';
+import { ProtocolType } from '@recoillink/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 

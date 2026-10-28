@@ -1,6 +1,6 @@
 import { createPublicClient, http } from 'viem';
 
-import { isNumeric } from '@hyperlane-xyz/utils';
+import { isNumeric } from '@recoillink/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type { ViemProvider } from '../ProviderType.js';

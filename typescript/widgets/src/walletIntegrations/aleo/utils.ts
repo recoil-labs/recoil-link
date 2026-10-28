@@ -1,7 +1,7 @@
 import { Network } from '@provablehq/aleo-types';
 import type { ShieldWalletAdapter } from '@provablehq/aleo-wallet-adaptor-shield';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 let adapter: ShieldWalletAdapter | null = null;
 let adapterPromise: Promise<ShieldWalletAdapter> | null = null;

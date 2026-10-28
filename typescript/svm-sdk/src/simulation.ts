@@ -13,7 +13,7 @@ import {
   setTransactionMessageLifetimeUsingBlockhash,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import { decodeSimulatedAccountMetas } from './codecs/simulated-account-meta.js';
 import type { SvmRpc } from './types.js';

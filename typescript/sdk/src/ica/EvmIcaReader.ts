@@ -1,5 +1,5 @@
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import { InterchainAccountRouter__factory } from '@recoillink/core';
+import { Address, rootLogger } from '@recoillink/utils';
 
 import { EvmRouterReader } from '../router/EvmRouterReader.js';
 import { throwIfNotMissingSelector } from '../utils/contract.js';

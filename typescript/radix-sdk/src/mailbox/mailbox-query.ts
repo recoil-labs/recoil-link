@@ -1,7 +1,7 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 import { generateRandomNonce } from '@radixdlt/radix-engine-toolkit';
 
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@recoillink/utils';
 
 import {
   getComponentOwner,

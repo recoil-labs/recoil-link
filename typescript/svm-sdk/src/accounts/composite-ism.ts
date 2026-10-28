@@ -4,7 +4,7 @@ import {
   type ReadonlyUint8Array,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@recoillink/utils';
 
 import {
   decodeAccountData,

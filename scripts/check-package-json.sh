@@ -39,7 +39,7 @@ for pkg in $PACKAGE_FILES; do
 
     # Check if package has @hyperlane-xyz scope (published packages)
     NAME=$(jq -r '.name // ""' "$pkg")
-    if [[ ! "$NAME" =~ ^@hyperlane-xyz/ ]]; then
+    if [[ ! "$NAME" =~ ^@recoillink/ ]]; then
         continue
     fi
 

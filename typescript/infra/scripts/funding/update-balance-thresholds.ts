@@ -1,8 +1,8 @@
 import { input, select } from '@inquirer/prompts';
 import yargs from 'yargs';
 
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@recoillink/sdk';
+import { rootLogger } from '@recoillink/utils';
 
 import rawDailyBurn from '../../config/environments/mainnet3/balances/dailyRelayerBurn.json' with { type: 'json' };
 import rawDesiredRelayerBalanceOverrides from '../../config/environments/mainnet3/balances/desiredRelayerBalanceOverrides.json' with { type: 'json' };

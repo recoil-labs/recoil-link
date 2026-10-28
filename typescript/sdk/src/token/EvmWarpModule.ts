@@ -17,8 +17,8 @@ import {
   TokenBridgeCctpBase__factory,
   TokenBridgeCctpV2__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+} from '@recoillink/core';
+import { buildArtifact as coreBuildArtifact } from '@recoillink/core/buildArtifact.js';
 import {
   Address,
   Domain,
@@ -42,7 +42,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@recoillink/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import { CCIPContractCache } from '../ccip/utils.js';
@@ -3002,7 +3002,7 @@ export class EvmWarpModule extends HyperlaneModule<
     }
 
     // You can only upgrade to the contract version (see `PackageVersioned`)
-    // defined by the @hyperlane-xyz/core package
+    // defined by the @recoillink/core package
     assert(
       contractVersionMatchesDependency(expectedConfig.contractVersion),
       VERSION_ERROR_MESSAGE,
