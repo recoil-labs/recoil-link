@@ -97,7 +97,7 @@ async function main() {
 
   const registry: IRegistry = getRegistry({
     registryUris: [config.registryUri],
-    enableProxy: true,
+    enableProxy: false,
     logger: rootLogger,
   });
 

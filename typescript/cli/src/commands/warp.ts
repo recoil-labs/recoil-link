@@ -176,7 +176,7 @@ const balances: CommandModuleWithContext<
     },
   },
   handler: async ({ context, warpRouteId, chains, out, address, raw }) => {
-    logCommandHeader('Hyperlane Warp Balances');
+    logCommandHeader('Recoil Link Warp Balances');
     await runWarpRouteBalances({
       context,
       warpRouteId,
@@ -221,7 +221,7 @@ export const apply: CommandModuleWithWarpApplyContext<
     relay,
     warpRouteId,
   }) => {
-    logCommandHeader('Hyperlane Warp Apply');
+    logCommandHeader('Recoil Link Warp Apply');
 
     if (strategyUrl)
       ExtendedChainSubmissionStrategySchema.parse(readYamlOrJson(strategyUrl));
@@ -244,7 +244,7 @@ export const deploy: CommandModuleWithWarpDeployContext<WarpRouteOptions> = {
   describe: 'Deploy Warp Route contracts',
   builder: WARP_ROUTE_OPTIONS,
   handler: async ({ context, warpRouteId }) => {
-    logCommandHeader(`Hyperlane Warp Route Deployment`);
+    logCommandHeader(`Recoil Link Warp Route Deployment`);
 
     await runWarpRouteDeploy({
       context,
@@ -278,7 +278,7 @@ const combine: CommandModuleWithWriteContext<{
     },
   },
   handler: async ({ context, routes, 'output-warp-route-id': outputId }) => {
-    logCommandHeader('Hyperlane Warp Combine');
+    logCommandHeader('Recoil Link Warp Combine');
 
     const routeIds = routes
       .split(',')
@@ -316,7 +316,7 @@ export const init: CommandModuleWithContext<{
     out: outputFileCommandOption(),
   },
   handler: async ({ context, advanced, out }) => {
-    logCommandHeader('Hyperlane Warp Configure');
+    logCommandHeader('Recoil Link Warp Configure');
 
     await createWarpRouteDeployConfig({
       context,
@@ -349,7 +349,7 @@ export const read: CommandModuleWithContext<
     out: outputFileCommandOption(),
   },
   handler: async ({ context, chain, address, warpRouteId, out }) => {
-    logCommandHeader('Hyperlane Warp Reader');
+    logCommandHeader('Recoil Link Warp Reader');
 
     const config = await runWarpRouteRead({
       context,
@@ -385,7 +385,7 @@ const getFees: CommandModuleWithContext<
     },
   },
   handler: async ({ context, warpRouteId, amount }) => {
-    logCommandHeader('Hyperlane Warp Route Fees');
+    logCommandHeader('Recoil Link Warp Route Fees');
     await runWarpRouteFees({
       context,
       warpRouteId,
@@ -634,7 +634,7 @@ export const check: CommandModuleWithContext<
     originOwner,
     chains,
   }) => {
-    logCommandHeader('Hyperlane Warp Check');
+    logCommandHeader('Recoil Link Warp Check');
 
     // CROSS route case: resolver set warpCoreConfig but not warpDeployConfig
     // (combined CROSS routes have no deploy config of their own)
@@ -775,7 +775,7 @@ export const rebalancer: CommandModuleWithWriteContext<{
       amount,
     } = args;
 
-    logCommandHeader('Hyperlane Warp Route Rebalancer');
+    logCommandHeader('Recoil Link Warp Route Rebalancer');
 
     try {
       // Load rebalancer configuration
@@ -832,7 +832,7 @@ export const verify: CommandModuleWithWriteContext<WarpRouteOptions> = {
   describe: 'Verify deployed contracts on explorers',
   builder: WARP_ROUTE_OPTIONS,
   handler: async ({ context, warpRouteId }) => {
-    logCommandHeader('Hyperlane Warp Verify');
+    logCommandHeader('Recoil Link Warp Verify');
 
     const { warpCoreConfig } = await getWarpConfigsFromContextOrRegistry({
       context,

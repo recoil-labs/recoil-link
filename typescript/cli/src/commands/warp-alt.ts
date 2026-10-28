@@ -29,7 +29,7 @@ const check: CommandModuleWithContext<{
     chain: { ...chainCommandOption, demandOption: false },
   },
   handler: async ({ context, warpRouteId, chain }) => {
-    logCommandHeader('Hyperlane Warp ALT Check');
+    logCommandHeader('Recoil Link Warp ALT Check');
     await runWarpAltCheck({ context, warpRouteId, chain });
     process.exit(0);
   },
@@ -63,7 +63,7 @@ const create: CommandModuleWithWriteContext<{
     },
   },
   handler: async ({ context, warpRouteId, chain, force, fullForce }) => {
-    logCommandHeader('Hyperlane Warp ALT Create');
+    logCommandHeader('Recoil Link Warp ALT Create');
     await runWarpAltCreate({ context, warpRouteId, chain, force, fullForce });
     process.exit(0);
   },
@@ -82,7 +82,7 @@ const read: CommandModuleWithContext<{
     out: outputFileCommandOption(),
   },
   handler: async ({ context, warpRouteId, chain, out }) => {
-    logCommandHeader('Hyperlane Warp ALT Reader');
+    logCommandHeader('Recoil Link Warp ALT Reader');
 
     const result = await runWarpAltRead({ context, warpRouteId, chain });
 

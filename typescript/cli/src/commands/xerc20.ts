@@ -83,7 +83,7 @@ const apply: CommandModuleWithWriteContext<
     ),
   },
   handler: async ({ context, warpRouteId, chains, strategy, receipts }) => {
-    logCommandHeader('Hyperlane XERC20 Apply');
+    logCommandHeader('Recoil Link XERC20 Apply');
 
     const { warpDeployConfig, warpCoreConfig } = await getWarpConfigs({
       context,
@@ -156,7 +156,7 @@ const read: CommandModuleWithContext<
     },
   },
   handler: async ({ context, warpRouteId, chains }) => {
-    logCommandHeader('Hyperlane XERC20 Read');
+    logCommandHeader('Recoil Link XERC20 Read');
 
     const { warpDeployConfig, warpCoreConfig } = await getWarpConfigs({
       context,

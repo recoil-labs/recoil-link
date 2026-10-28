@@ -10,4 +10,6 @@ export const ETHEREUM_MINIMUM_GAS: MinimumRequiredGasByAction = {
 };
 
 export const PROXY_DEPLOYED_URL = 'https://proxy.hyperlane.xyz';
-export const EXPLORER_URL = 'https://explorer.hyperlane.xyz';
+// No Recoil Link explorer yet; explorer.hyperlane.xyz only indexes Hyperlane's
+// own deployments, so links are omitted until ours exists.
+export const EXPLORER_URL: string | undefined = undefined;

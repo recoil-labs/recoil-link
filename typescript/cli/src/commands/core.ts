@@ -80,7 +80,7 @@ export const apply: CommandModuleWithWriteContext<{
     config: configFilePath,
     strategy: strategyUrl,
   }) => {
-    logCommandHeader(`Hyperlane Core Apply`);
+    logCommandHeader(`Recoil Link Core Apply`);
 
     const addresses = (await context.registry.getChainAddresses(
       chain,
@@ -127,7 +127,7 @@ export const deploy: CommandModuleWithWriteContext<{
     config: configFilePath,
     multiProtocolSigner,
   }) => {
-    logCommandHeader(`Hyperlane Core deployment`);
+    logCommandHeader(`Recoil Link Core deployment`);
 
     await runCoreDeploy({
       context,
@@ -159,7 +159,7 @@ export const init: CommandModuleWithContext<{
     ),
   },
   handler: async ({ context, advanced, config: configFilePath }) => {
-    logCommandHeader('Hyperlane Core Configure');
+    logCommandHeader('Recoil Link Core Configure');
 
     await createCoreDeployConfig({
       context,
@@ -195,7 +195,7 @@ export const read: CommandModuleWithContext<{
     ),
   },
   handler: async ({ context, chain, mailbox, config: configFilePath }) => {
-    logCommandHeader('Hyperlane Core Read');
+    logCommandHeader('Recoil Link Core Read');
 
     const coreConfig = await executeCoreRead({
       context,
@@ -236,7 +236,7 @@ export const check: CommandModuleWithContext<{
     }),
   },
   handler: async ({ context, chain, mailbox, config: configFilePath }) => {
-    logCommandHeader('Hyperlane Core Check');
+    logCommandHeader('Recoil Link Core Check');
 
     const expectedCoreConfig: CoreConfig = await readYamlOrJson(configFilePath);
     const onChainCoreConfig = await executeCoreRead({

@@ -71,7 +71,7 @@ export async function createMultisigConfig({
 }) {
   logBlue('Creating a new multisig config');
   log(
-    'Select your own chain below to run your own validators. If you want to reuse existing Hyperlane validators instead of running your own, do not select additional mainnet or testnet chains.',
+    'Select your own chain below to run your own validators. If you want to reuse existing Recoil Link validators instead of running your own, do not select additional mainnet or testnet chains.',
   );
   const chains = await runMultiChainSelectionStep({
     chainMetadata: context.chainMetadata,
@@ -89,7 +89,7 @@ export async function createMultisigConfig({
     }
     if (Object.keys(chainAddresses).includes(chain)) {
       const reuseCoreConfig = await confirm({
-        message: 'Use existing Hyperlane validators for this chain?',
+        message: 'Use existing Recoil Link validators for this chain?',
       });
       if (reuseCoreConfig) continue;
     }

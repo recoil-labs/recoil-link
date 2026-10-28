@@ -36,7 +36,7 @@ export const init: CommandModuleWithWriteContext<{
     out: outputFileCommandOption(DEFAULT_STRATEGY_CONFIG_PATH),
   },
   handler: async ({ context, out }) => {
-    logCommandHeader(`Hyperlane Strategy Init`);
+    logCommandHeader(`Recoil Link Strategy Init`);
 
     await createStrategyConfig({
       context,
@@ -59,7 +59,7 @@ export const read: CommandModuleWithWriteContext<{
     },
   },
   handler: async ({ strategy: strategyUrl }) => {
-    logCommandHeader(`Hyperlane Strategy Read`);
+    logCommandHeader(`Recoil Link Strategy Read`);
 
     const strategy = await readChainSubmissionStrategyConfig(strategyUrl);
     const maskedConfig = maskSensitiveData(strategy);

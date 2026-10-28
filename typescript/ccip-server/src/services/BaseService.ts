@@ -58,7 +58,7 @@ export abstract class BaseService {
     const registryUris = registryUri ?? [RECOIL_LINK_REGISTRY_URL];
     const registry = getRegistry({
       registryUris: registryUris,
-      enableProxy: true,
+      enableProxy: false,
     });
     return registry;
   }

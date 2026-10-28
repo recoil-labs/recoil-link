@@ -51,7 +51,7 @@ async function main() {
   const getRegistryInstance = async (): Promise<IRegistry> => {
     return getRegistry({
       registryUris: [registry],
-      enableProxy: true,
+      enableProxy: false,
       logger: rootLogger,
       authToken,
     });

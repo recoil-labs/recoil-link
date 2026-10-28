@@ -753,7 +753,9 @@ async function executeDelivery({
     `Sent transfer from sender (${signerAddress}) on ${origin} to recipient (${recipientAddress}) on ${destination}.`,
   );
   logBlue(`Message ID: ${messageId}`);
-  logBlue(`Explorer Link: ${EXPLORER_URL}/message/${messageId}`);
+  if (EXPLORER_URL) {
+    logBlue(`Explorer Link: ${EXPLORER_URL}/message/${messageId}`);
+  }
   if (
     (transferReceipt.type === ProviderType.EthersV5 ||
       transferReceipt.type === ProviderType.Tron) &&
@@ -858,7 +860,9 @@ async function executeDelivery({
           if (fallbackMsg.includes('not implemented')) {
             warnYellow(
               `On-chain delivery polling not supported for '${destination}' (${destinationProtocol}). ` +
-                `Track at ${EXPLORER_URL}/message/${messageId}`,
+                (EXPLORER_URL
+                  ? `Track at ${EXPLORER_URL}/message/${messageId}`
+                  : `Track message ${messageId} manually.`),
             );
             return;
           } else {

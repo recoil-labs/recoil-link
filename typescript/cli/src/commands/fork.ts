@@ -16,7 +16,7 @@ export const forkCommand: CommandModuleWithContext<{
 }> = {
   command: 'fork',
   describe:
-    'Fork Hyperlane chains (Anvil for EVM, arc-anvil for Arc, surfpool for Sealevel) and replay governance transactions',
+    'Fork Recoil Link chains (Anvil for EVM, arc-anvil for Arc, surfpool for Sealevel) and replay governance transactions',
   builder: forkCommandOptions,
   handler: async ({ context, port, kill, forkConfig: forkConfigPath }) => {
     let forkConfig: ForkConfigByChain;

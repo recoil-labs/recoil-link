@@ -221,7 +221,7 @@ export async function getContext({
   key,
   requiresKey,
   skipConfirmation,
-  disableProxy = false,
+  disableProxy = true,
   strategyPath,
   authToken,
   skipLocalSigner = false,
