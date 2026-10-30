@@ -32,7 +32,7 @@ contract Deploy is Script {
         vm.stopBroadcast();
 
         require(address(oracle.MAILBOX()) == mailbox, "mailbox not set");
-        console.log("chain id:         ", block.chainid);
+        console.log(string.concat("chain id:          ", vm.toString(block.chainid)));
         console.log("mailbox:          ", mailbox);
         console.log("RecoilLinkOracle: ", address(oracle));
     }
