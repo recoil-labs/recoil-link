@@ -1,6 +1,7 @@
 {
   "name": "@recoillink/rebalancer",
   "version": "29.0.4",
+  "private": true,
   "description": "Recoil Link Warp Route Collateral Rebalancer Service",
   "keywords": [
     "blockchain",
@@ -40,15 +41,15 @@
   },
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@recoillink/core": "workspace:*",
-    "@recoillink/metrics": "workspace:*",
-    "@recoillink/provider-sdk": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@recoillink/sdk": "workspace:*",
-    "@recoillink/utils": "workspace:*",
     "@inquirer/prompts": "catalog:",
     "@inquirer/select": "catalog:",
     "@lifi/sdk": "catalog:",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/metrics": "workspace:*",
+    "@recoillink/provider-sdk": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@solana/web3.js": "catalog:",
     "bignumber.js": "catalog:",
     "bs58": "catalog:",

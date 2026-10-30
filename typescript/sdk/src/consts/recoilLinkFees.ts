@@ -19,9 +19,3 @@ export const RECOIL_LINK_PROTOCOL_FEE = '0';
 // token at deploy time. MAX_PROTOCOL_FEE is immutable on EVM, so it must leave
 // room to switch the fee on later.
 export const RECOIL_LINK_MAX_PROTOCOL_FEE_USD = 1;
-
-// Fee on token routes operated by Recoil Labs (e.g. RecoilPay), applied with a
-// LinearFee contract: rate = maxFee / (2 * halfAmount), capped at maxFee.
-// 5 bps up to a 25 token cap gives halfAmount = 25 / (2 * 0.0005) = 25,000.
-export const RECOIL_LINK_ROUTE_FEE_BPS = 5;
-export const RECOIL_LINK_ROUTE_FEE_MAX_TOKENS = 25;

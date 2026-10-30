@@ -1,8 +1,10 @@
 # Recoil Link
 
-Recoil Link is an interchain messaging protocol by [Recoil Labs](https://github.com/recoil-labs) that lets applications send messages and tokens between blockchains.
+Recoil Link is a cross-chain **messaging and proof layer** by [Recoil Labs](https://github.com/recoil-labs). An application sends a message on one chain; Recoil Link's validators attest to it and its relayer delivers it, so a contract on another chain can act on proof that something happened.
 
-Developers use Recoil Link to share state across chains and build applications that live natively on many networks at once: EVM chains, Solana (SVM), Cosmos, Starknet, Aleo, Radix and Tron today, with Move-based chains (the Aptos and Sui families) on the roadmap.
+The main use is proving cross-chain intent fills: Recoil Link can serve as the oracle for the [Open Intents Framework](https://github.com/openintentsframework) (see `oif-oracle/`), replacing development-only oracles such as `AlwaysYesOracle`. Token bridging ("warp routes") is not part of Recoil Link's product: that upstream code is kept dormant, never deployed, and its CLI commands are disabled.
+
+Supported networks: EVM chains, Solana (SVM), Cosmos, Starknet, Aleo, Radix and Tron today, with Move-based chains (the Aptos and Sui families) on the roadmap.
 
 ## Quick start
 
