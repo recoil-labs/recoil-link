@@ -90,7 +90,7 @@ export const read: CommandModuleWithContext<{
     out: outputFileCommandOption(),
   },
   handler: async (argv) => {
-    logGray('Hyperlane ISM Read');
+    logGray('Recoil Link ISM Read');
     logGray('------------------');
     await readIsmConfig(argv);
     process.exit(0);

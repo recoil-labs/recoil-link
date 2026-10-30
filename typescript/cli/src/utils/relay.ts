@@ -127,6 +127,8 @@ export async function logDeliveryTime(
       multiProvider.getProvider(destination),
     );
     const processedBlockNum = await mailbox.processedAt(messageId);
+    // A lagging RPC can report 0 (not yet processed); block 0 is genesis.
+    if (processedBlockNum === 0) return;
     const [dispatchBlock, processedBlock] = await Promise.all([
       multiProvider.getProvider(origin).getBlock(dispatchBlockNumber),
       multiProvider.getProvider(destination).getBlock(processedBlockNum),

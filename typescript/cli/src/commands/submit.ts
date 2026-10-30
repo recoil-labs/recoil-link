@@ -54,7 +54,7 @@ export const submitCommand: CommandModuleWithWriteContext<{
     signerConfig: signerConfigPath,
     receipts: receiptsFilepath,
   }) => {
-    logGray(`Hyperlane Submit`);
+    logGray(`Recoil Link Submit`);
     logGray(`----------------`);
 
     // Defensive check: if receiptsFilepath exists and is a file, fail with clear error

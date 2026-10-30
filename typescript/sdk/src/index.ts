@@ -122,6 +122,15 @@ export {
   TOKEN_EXCHANGE_RATE_SCALE_ETHEREUM,
 } from './consts/igp.js';
 export { MAILBOX_VERSION } from './consts/mailbox.js';
+export {
+  RECOIL_LINK_IGP_MARGIN_PCT,
+  RECOIL_LINK_MAX_PROTOCOL_FEE_USD,
+  RECOIL_LINK_MIN_USD_PER_MESSAGE,
+  RECOIL_LINK_MIN_USD_PER_SVM_MESSAGE,
+  RECOIL_LINK_PROTOCOL_FEE,
+  RECOIL_LINK_ROUTE_FEE_BPS,
+  RECOIL_LINK_ROUTE_FEE_MAX_TOKENS,
+} from './consts/recoilLinkFees.js';
 export { RECOIL_LINK_REGISTRY_URL } from './consts/registry.js';
 export {
   AW_VALIDATOR_ALIAS,

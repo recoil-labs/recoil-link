@@ -47,7 +47,7 @@ const listCommand: CommandModuleWithContext<{ type: ChainType }> = {
   },
   handler: async ({ type, context }) => {
     const logChainsForType = (type: ChainType) => {
-      logBlue(`\nHyperlane ${type} chains:`);
+      logBlue(`\nRecoil Link ${type} chains:`);
       logGray('------------------------------');
       const chains = Object.values(
         filterOutDisabledChains(context.chainMetadata),
@@ -106,12 +106,12 @@ const addressesCommand: CommandModuleWithContext<{
         return;
       }
 
-      logBlue('Hyperlane contract addresses for:', name);
+      logBlue('Recoil Link contract addresses for:', name);
       logGray('---------------------------------');
       log(JSON.stringify(result, null, 2));
     } else {
       const result = await context.registry.getAddresses();
-      logBlue('Hyperlane contract addresses:');
+      logBlue('Recoil Link contract addresses:');
       logGray('----------------------------------');
       log(JSON.stringify(result, null, 2));
     }

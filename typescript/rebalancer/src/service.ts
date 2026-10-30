@@ -125,7 +125,7 @@ async function main(): Promise<void> {
     const registryUri = process.env.REGISTRY_URI || RECOIL_LINK_REGISTRY_URL;
     const registry = getRegistry({
       registryUris: [registryUri],
-      enableProxy: true,
+      enableProxy: false,
       logger: rootLogger,
     });
     logger.info({ registryUri }, '✅ Initialized registry');

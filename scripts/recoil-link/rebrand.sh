@@ -56,6 +56,18 @@ git ls-files "$CLI/src/commands" | xargs -r perl -pi -e '
   s{\b(an|An) Recoil Link\b}{a Recoil Link}g;
 '
 
+echo "==> CLI log output and command headers"
+git ls-files "$CLI/src" | grep -vE '(\.test\.ts|/tests/)' | xargs -r perl -pi -e '
+  s{(?:\b|(?<=\\n))Hyperlane\b(?! AVS)}{Recoil Link}g
+    if /\b(log[A-Za-z]*|warnYellow|errorRed)\(/;
+'
+
+# Prompts that refer to deployments/validators in *our* registry. Hyperlane
+# proxy and "Hyperlane Cosmos module" stay: those name real Hyperlane things.
+perl -pi -e 's{existing Hyperlane validators}{existing Recoil Link validators}g' "$CLI/src/config/multisig.ts"
+perl -pi -e 's{to the Hyperlane registry}{to the Recoil Link registry}g' "$CLI/src/config/chain.ts"
+perl -pi -e "s{'Fork Hyperlane chains}{'Fork Recoil Link chains}" "$CLI/src/commands/fork.ts"
+
 echo "==> package.json descriptions"
 # Keep "<Chain> Hyperlane SDK module": that names the on-chain module, not our brand.
 git ls-files "*package.json" | xargs -r perl -pi -e '

@@ -11,6 +11,9 @@ import {
   ProtocolAgnositicGasOracleConfig,
   ProtocolAgnositicGasOracleConfigSchema,
   ProtocolAgnositicGasOracleConfigWithTypicalCost,
+  RECOIL_LINK_IGP_MARGIN_PCT,
+  RECOIL_LINK_MIN_USD_PER_MESSAGE,
+  RECOIL_LINK_MIN_USD_PER_SVM_MESSAGE,
   ZBigNumberish,
   defaultMultisigConfigs,
   getLocalStorageGasOracleConfig,
@@ -98,8 +101,8 @@ export function loadAndValidateGasOracleConfig(
   }
 }
 
-// Overcharge by 50% to account for market making risk
-export const EXCHANGE_RATE_MARGIN_PCT = 50;
+// Overcharge to account for market making risk (Recoil Link fee policy).
+export const EXCHANGE_RATE_MARGIN_PCT = RECOIL_LINK_IGP_MARGIN_PCT;
 
 // Gets the StorageGasOracleConfigWithTypicalCost for each remote chain for a particular local chain.
 // Accommodates small non-integer gas prices by scaling up the gas price
@@ -302,8 +305,8 @@ export function getTypicalRemoteGasAmount(
 }
 
 function getMinUsdCost(local: ChainName, remote: ChainName): number {
-  // By default, min cost is 20 cents
-  let minUsdCost = 0.2;
+  // Default minimum cost per message (Recoil Link fee policy)
+  let minUsdCost = RECOIL_LINK_MIN_USD_PER_MESSAGE;
 
   // Break-even floor for messages to/from katana. Katana is polygoncdk with no
   // getL1Fee predeploy, so tollkeeper models its delivery cost from a flat DA
@@ -315,9 +318,9 @@ function getMinUsdCost(local: ChainName, remote: ChainName): number {
     minUsdCost = 0.06;
   }
 
-  // For all SVM chains, min cost is 0.50 USD to cover rent needs
+  // For all SVM chains, a higher minimum covers rent needs
   if (getChain(remote).protocol === ProtocolType.Sealevel) {
-    minUsdCost = Math.max(minUsdCost, 0.5);
+    minUsdCost = Math.max(minUsdCost, RECOIL_LINK_MIN_USD_PER_SVM_MESSAGE);
   }
 
   const remoteMinCostOverrides: ChainMap<number> = {

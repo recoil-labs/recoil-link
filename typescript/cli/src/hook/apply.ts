@@ -41,7 +41,7 @@ export async function runHookApply({
   configPath,
   strategyUrl,
 }: HookApplyParams): Promise<void> {
-  logCommandHeader('Hyperlane Hook Apply');
+  logCommandHeader('Recoil Link Hook Apply');
 
   const { multiProvider, registry } = context;
 

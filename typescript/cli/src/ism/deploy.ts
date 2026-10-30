@@ -43,7 +43,7 @@ export async function runIsmDeploy({
   configPath,
   outPath,
 }: IsmDeployParams): Promise<void> {
-  logCommandHeader('Hyperlane ISM Deploy');
+  logCommandHeader('Recoil Link ISM Deploy');
 
   const { multiProvider, registry, skipConfirmation, chainMetadata } = context;
 

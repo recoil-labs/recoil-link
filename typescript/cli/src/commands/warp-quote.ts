@@ -99,7 +99,7 @@ const create: CommandModuleWithWriteContext<{
     quoteSignerKey,
     targetRouter,
   }) => {
-    logCommandHeader('Hyperlane Warp Quote Create');
+    logCommandHeader('Recoil Link Warp Quote Create');
     await runWarpQuoteCreate({
       context,
       warpRouteId,
@@ -141,7 +141,7 @@ const read: CommandModuleWithContext<{
     out: outputFileCommandOption(),
   },
   handler: async ({ context, warpRouteId, chain, recipients, out }) => {
-    logCommandHeader('Hyperlane Warp Quote Read');
+    logCommandHeader('Recoil Link Warp Quote Read');
     // `addressToBytes32` auto-detects protocol from the address format
     // (EVM 0x-hex, Sealevel base58, etc.), so the CLI can convert here
     // without knowing the per-destination protocols of the warp route.

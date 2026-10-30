@@ -70,7 +70,7 @@ export async function runHookDeploy({
   configPath,
   outPath,
 }: HookDeployParams): Promise<void> {
-  logCommandHeader('Hyperlane Hook Deploy');
+  logCommandHeader('Recoil Link Hook Deploy');
 
   const { multiProvider, registry, skipConfirmation, chainMetadata } = context;
 

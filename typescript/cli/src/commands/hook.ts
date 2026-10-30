@@ -136,7 +136,7 @@ export const read: CommandModuleWithContext<{
     },
   },
   handler: async (args) => {
-    logGray('Hyperlane Hook Read');
+    logGray('Recoil Link Hook Read');
     logGray('------------------');
     await readHookConfig({
       ...args,

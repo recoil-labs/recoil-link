@@ -1,0 +1,44 @@
+# Recoil Link core deployment: basesepolia (testnet)
+# Deploy: rlink core deploy --chain basesepolia --config configs/recoil-link/testnet/basesepolia-core.yaml
+#
+# Owner and fee beneficiary: Recoil Labs treasury Safe (1-of-1 for now; add
+# signers before mainnet, the address stays the same).
+# Fee values follow typescript/sdk/src/consts/recoilLinkFees.ts.
+#
+# Gas oracle key: deployer wallet (testnet only; use a separate hot key on mainnet).
+# Validator: one Recoil Link validator key signs for both testnets.
+owner: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
+
+# Messages are accepted when signed by the Recoil Link validator (1 of 1).
+defaultIsm:
+  type: messageIdMultisigIsm
+  threshold: 1
+  validators:
+    - '0x9Fc49dA0660064Be72392fbDF9ed2bdF610969bB'
+
+# Runs on every message; apps cannot bypass it. Fee is 0 at launch.
+requiredHook:
+  type: protocolFee
+  owner: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
+  beneficiary: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
+  protocolFee: '0'
+  # ~$1 cap (immutable). Testnet value; mainnet is computed from live prices.
+  maxProtocolFee: '500000000000000' # 0.0005 ETH
+
+# Default for apps that don't set their own hook: record the message for
+# validators (merkle tree) and collect prepaid destination gas (IGP).
+defaultHook:
+  type: aggregationHook
+  hooks:
+    - type: merkleTreeHook
+    - type: interchainGasPaymaster
+      owner: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
+      beneficiary: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
+      oracleKey: '0xfd446002b2979559ef4Cd06e5DCC84bbCC6b49D3'
+      overhead:
+        sepolia: 151966 # multisigIsmVerificationCost(1, 1)
+      oracleConfig:
+        sepolia:
+          gasPrice: '2000000000' # 2 gwei; Sepolia is volatile, so priced high
+          # Both chains use ETH: rate 1.0 x 1e10 scale x 1.3 (30% margin).
+          tokenExchangeRate: '13000000000'

@@ -52,7 +52,7 @@ export const deploy: CommandModuleWithWriteContext<{
     },
   },
   handler: async ({ context, origin, chains, owner }) => {
-    logCommandHeader('Hyperlane ICA Deploy');
+    logCommandHeader('Recoil Link ICA Deploy');
 
     await runIcaDeploy({
       context,

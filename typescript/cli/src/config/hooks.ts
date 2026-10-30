@@ -14,6 +14,8 @@ import {
   HooksConfigMapSchema,
   type IgpHookConfig,
   MultiProtocolProvider,
+  RECOIL_LINK_IGP_MARGIN_PCT,
+  RECOIL_LINK_PROTOCOL_FEE,
   getGasPrice,
   getLocalStorageGasOracleConfig,
 } from '@recoillink/sdk';
@@ -38,7 +40,7 @@ import { detectAndConfirmOrPrompt, inputWithInfo } from '../utils/input.js';
 import { callWithConfigCreationLogs } from './utils.js';
 
 const MAX_PROTOCOL_FEE_DEFAULT: string = toWei('0.1');
-const PROTOCOL_FEE_DEFAULT: string = toWei('0');
+const PROTOCOL_FEE_DEFAULT: string = toWei(RECOIL_LINK_PROTOCOL_FEE);
 
 export function presetHookConfigs(owner: Address): HooksConfig {
   return {
@@ -149,7 +151,7 @@ export const createProtocolFeeConfig: (
       ? toWei(
           await inputWithInfo({
             message: `Enter max protocol fee for protocol fee hook (wei):`,
-            info: `The max protocol fee (ProtocolFee.MAX_PROTOCOL_FEE) is the maximum value the protocol fee on the ProtocolFee hook contract can ever be set to.\nDefault is set to ${MAX_PROTOCOL_FEE_DEFAULT} wei; between 0.001 and 0.1 wei is recommended.`,
+            info: `The max protocol fee (ProtocolFee.MAX_PROTOCOL_FEE) is the maximum value the protocol fee on the ProtocolFee hook contract can ever be set to.\nDefault is set to ${MAX_PROTOCOL_FEE_DEFAULT} wei (0.1 native token); between 0.001 and 0.1 native token is recommended.`,
           }),
         )
       : MAX_PROTOCOL_FEE_DEFAULT;
@@ -204,11 +206,11 @@ export const createIGPConfig = callWithConfigCreationLogs(
     );
     const prices = await getIgpTokenPrices(context, filteredMetadata);
 
-    // Get exchange rate margin percentage, defaulting to 10
+    // Get exchange rate margin percentage, defaulting to the Recoil Link policy
     const exchangeRateMarginPct = parseInt(
       await input({
         message: `Enter IGP margin percentage (e.g. 10 for 10%)`,
-        default: '10',
+        default: String(RECOIL_LINK_IGP_MARGIN_PCT),
       }),
       10,
     );
