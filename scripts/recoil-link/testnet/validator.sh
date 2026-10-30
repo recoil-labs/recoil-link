@@ -19,11 +19,19 @@ case "$CHAIN" in
 esac
 
 mkdir -p "$STATE/validator-$CHAIN/db" "$STATE/checkpoints/$CHAIN"
-export CONFIG_FILES="$PWD/configs/recoil-link/testnet/agent-config.json"
+REPO="$PWD"
+# Agents always load ./config/*.json from their working directory. Run from a
+# private folder whose config/ holds only our agent config, so upstream
+# Hyperlane chain configs (rust/main/config) are never merged in.
+WORK="$STATE/validator-$CHAIN"
+mkdir -p "$WORK/config"
+cp "$REPO/configs/recoil-link/testnet/agent-config.json" "$WORK/config/agent-config.json"
 export HYP_ORIGINCHAINNAME="$CHAIN"
 export HYP_DB="$STATE/validator-$CHAIN/db"
 export HYP_VALIDATOR_TYPE=hexKey
-export HYP_VALIDATOR_KEY="$(tr -d '[:space:]' < "$KEY_FILE")"
+KEY="$(tr -d '[:space:]' < "$KEY_FILE")"
+# Agents require the 0x prefix; key files may omit it.
+export HYP_VALIDATOR_KEY="0x${KEY#0x}"
 # Signer for the one-time announce transaction (macOS bash 3.2: no ${VAR^^}).
 CHAIN_UPPER="$(printf %s "$CHAIN" | tr "[:lower:]" "[:upper:]")"
 export "HYP_CHAINS_${CHAIN_UPPER}_SIGNER_TYPE=hexKey"
@@ -33,4 +41,5 @@ export HYP_CHECKPOINTSYNCER_PATH="$STATE/checkpoints/$CHAIN"
 export HYP_METRICSPORT="$PORT"
 export HYP_LOG_FORMAT=pretty
 
-exec rust/main/target/release/validator
+cd "$WORK"
+exec "$REPO/rust/main/target/release/validator"

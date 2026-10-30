@@ -13,15 +13,24 @@ KEY_FILE="$HOME/.recoil-link/keys/testnet-deployer"
 [ -r "$KEY_FILE" ] || { echo "missing $KEY_FILE" >&2; exit 1; }
 
 mkdir -p "$STATE/relayer/db"
-export CONFIG_FILES="$PWD/configs/recoil-link/testnet/agent-config.json"
+REPO="$PWD"
+# Agents always load ./config/*.json from their working directory. Run from a
+# private folder whose config/ holds only our agent config, so upstream
+# Hyperlane chain configs (rust/main/config) are never merged in.
+WORK="$STATE/relayer"
+mkdir -p "$WORK/config"
+cp "$REPO/configs/recoil-link/testnet/agent-config.json" "$WORK/config/agent-config.json"
 export HYP_RELAYCHAINS=sepolia,basesepolia
 export HYP_DB="$STATE/relayer/db"
 export HYP_DEFAULTSIGNER_TYPE=hexKey
-export HYP_DEFAULTSIGNER_KEY="$(tr -d '[:space:]' < "$KEY_FILE")"
+KEY="$(tr -d '[:space:]' < "$KEY_FILE")"
+# Agents require the 0x prefix; key files may omit it.
+export HYP_DEFAULTSIGNER_KEY="0x${KEY#0x}"
 # Validators write checkpoints to local folders on this machine.
 export HYP_ALLOWLOCALCHECKPOINTSYNCERS=true
 export HYP_GASPAYMENTENFORCEMENT='[{"type":"minimum","payment":"1"}]'
 export HYP_METRICSPORT=9090
 export HYP_LOG_FORMAT=pretty
 
-exec rust/main/target/release/relayer
+cd "$WORK"
+exec "$REPO/rust/main/target/release/relayer"
