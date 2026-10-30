@@ -95,12 +95,6 @@
         },
         {
           "http": "https://gateway.tenderly.co/public/sepolia"
-        },
-        {
-          "http": "https://sepolia.drpc.org"
-        },
-        {
-          "http": "https://1rpc.io/sepolia"
         }
       ],
       "domainRoutingIsmFactory": "0xd99E0C4F9f132eD5268020183CbeEAff26332Db3",
