@@ -10,11 +10,17 @@ import { supportedChainNames } from '../config/environments/mainnet3/supportedCh
 import tokenPrices from '../config/environments/mainnet3/tokenPrices.json' with { type: 'json' };
 import { tokens } from '../src/config/warp.js';
 import {
+  EXCHANGE_RATE_MARGIN_PCT,
   getLocalStorageGasOracleConfigOverride,
   getOverhead,
   getOverheadWithOverrides,
   getTypicalRemoteGasAmount,
 } from '../src/config/gas-oracle.js';
+
+// Expectations are written as cost before margin times this multiplier, so they
+// follow the fee policy (RECOIL_LINK_IGP_MARGIN_PCT) instead of a fixed 1.5x.
+const MARGIN = (100 + EXCHANGE_RATE_MARGIN_PCT) / 100;
+const withMargin = (value: number) => (value * MARGIN).toFixed(0);
 
 const feeTokens = {
   arc: [tokens.arc.USDC],
@@ -94,8 +100,8 @@ describe('mainnet3 stablecoin IGP gas oracles', () => {
       .mul(config.tokenExchangeRate)
       .mul(100_000)
       .div(exchangeRateScale);
-    // 100k gas * 1 gwei * $3000/ETH * 1.5 margin = $0.45.
-    expect(quote.toString()).to.equal('450000');
+    // 100k gas * 1 gwei * $3000/ETH = $0.30, plus margin.
+    expect(quote.toString()).to.equal(withMargin(300_000));
     expect(tokenPrices).to.deep.equal({ base: '2000', ethereum: '3000' });
   });
 
@@ -114,20 +120,22 @@ describe('mainnet3 stablecoin IGP gas oracles', () => {
       undefined,
       { price: '1', decimals: 6 },
     );
-    for (const [remote, expectedUsd] of [
-      ['ethereum', '1.58649370308'],
-      ['subtensor', '0.7667389224'],
+    // USD cost before margin.
+    for (const [remote, baseUsd] of [
+      ['ethereum', '1.05766246872'],
+      ['subtensor', '0.5111592816'],
     ]) {
       const config = configs[remote];
       const quote = BigNumber.from(config.gasPrice)
         .mul(config.tokenExchangeRate)
         .mul(216_887)
         .div(exchangeRateScale);
-      const expected = new BigNumberJs(expectedUsd)
-        .times(1_000_000)
-        .integerValue(BigNumberJs.ROUND_FLOOR)
-        .toFixed(0);
-      expect(quote.toString(), remote).to.equal(expected);
+      const expected = new BigNumberJs(baseUsd).times(MARGIN).times(1_000_000);
+      // Gas price rounding on-chain can move the quote by one unit.
+      expect(
+        expected.minus(quote.toString()).abs().lte(1),
+        `${remote}: ${quote.toString()} vs ${expected.toFixed(0)}`,
+      ).to.equal(true);
     }
   });
 
@@ -153,7 +161,7 @@ describe('mainnet3 stablecoin IGP gas oracles', () => {
             .times(new BigNumberJs(10).pow(gasPrices[remote].decimals))
             .times(gas)
             .times(tokenPrices[remote])
-            .times(1.5)
+            .times(MARGIN)
             .times(new BigNumberJs(10).pow(6 - 18))
             .integerValue(BigNumberJs.ROUND_FLOOR)
             .toFixed(0);
@@ -178,7 +186,7 @@ describe('mainnet3 stablecoin IGP gas oracles', () => {
       false,
     ).ethereum;
     expect(config.gasPrice).to.equal('2000000000');
-    expect(config.tokenExchangeRate).to.equal('15000000000');
+    expect(config.tokenExchangeRate).to.equal(withMargin(10_000_000_000));
   });
 
   it('uses six decimals for Arc fee payments and eighteen for Arc destination gas', () => {
@@ -212,10 +220,10 @@ describe('mainnet3 stablecoin IGP gas oracles', () => {
         .mul(config.tokenExchangeRate)
         .mul(100_000)
         .div(exchangeRateScale);
-    // Arc pays $0.45 in ERC20 USDC for Ethereum delivery, including margin.
-    expect(quote(arcOrigin).toString()).to.equal('450000');
-    // Arc delivery costs 100k * 20 gwei * $1/native USDC * 1.5 = $0.003.
-    expect(quote(arcDestination).toString()).to.equal('3000');
+    // Arc pays $0.30 in ERC20 USDC for Ethereum delivery, plus margin.
+    expect(quote(arcOrigin).toString()).to.equal(withMargin(300_000));
+    // Arc delivery costs 100k * 20 gwei * $1/native USDC = $0.002, plus margin.
+    expect(quote(arcDestination).toString()).to.equal(withMargin(2_000));
     expect(arcDestination.tokenDecimals).to.equal(18);
   });
 
