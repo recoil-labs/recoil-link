@@ -1,0 +1,4 @@
+out/
+cache/
+# Deployment records live in recoil-link-registry, not here.
+broadcast/

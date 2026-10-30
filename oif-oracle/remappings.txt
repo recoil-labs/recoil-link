@@ -1,0 +1,6 @@
+oif/=lib/oif-contracts/src/
+openzeppelin/=lib/oif-contracts/lib/openzeppelin-contracts/contracts/
+recoil-link/=../solidity/contracts/
+@openzeppelin/contracts/=../solidity/dependencies/@openzeppelin-contracts-4.9.3/contracts/
+@openzeppelin/contracts-upgradeable/=../solidity/dependencies/@openzeppelin-contracts-upgradeable-4.9.3/contracts/
+forge-std/=../solidity/dependencies/forge-std-1.9.2/src/

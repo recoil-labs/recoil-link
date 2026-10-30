@@ -1,6 +1,7 @@
 {
   "name": "@recoillink/warp-widget",
   "version": "2.0.0",
+  "private": true,
   "description": "Embed the Recoil Link Warp bridge widget in any web app",
   "keywords": [
     "Bridge",

@@ -1,0 +1,20 @@
+[profile.default]
+src = "src"
+test = "test"
+script = "script"
+out = "out"
+libs = ["lib", "../solidity/dependencies"]
+# Matches upstream OIF; the Recoil Link Mailbox compiles with it too.
+solc_version = "0.8.30"
+evm_version = "cancun"
+via_ir = true
+optimizer = true
+optimizer_runs = 10_000
+# The integration test compiles Recoil Link's real Mailbox from ../solidity.
+allow_paths = ["../solidity"]
+
+[fmt]
+sort_imports = true
+bracket_spacing = true
+multiline_func_header = "params_first"
+tab_width = 4
