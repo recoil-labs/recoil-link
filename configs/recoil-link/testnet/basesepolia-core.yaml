@@ -5,9 +5,8 @@
 # signers before mainnet, the address stays the same).
 # Fee values follow typescript/sdk/src/consts/recoilLinkFees.ts.
 #
-# Placeholders to replace before deploying:
-#   RECOIL_LINK_DEPLOYER   deployer wallet address; also the gas oracle key
-#   RECOIL_LINK_VALIDATOR  validator signing address (same key validates both testnets)
+# Gas oracle key: deployer wallet (testnet only; use a separate hot key on mainnet).
+# Validator: one Recoil Link validator key signs for both testnets.
 owner: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
 
 # Messages are accepted when signed by the Recoil Link validator (1 of 1).
@@ -15,7 +14,7 @@ defaultIsm:
   type: messageIdMultisigIsm
   threshold: 1
   validators:
-    - 'RECOIL_LINK_VALIDATOR'
+    - '0x9Fc49dA0660064Be72392fbDF9ed2bdF610969bB'
 
 # Runs on every message; apps cannot bypass it. Fee is 0 at launch.
 requiredHook:
@@ -35,7 +34,7 @@ defaultHook:
     - type: interchainGasPaymaster
       owner: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
       beneficiary: '0x020BC752682191Fa9997B3307A8FC9710aeA3365'
-      oracleKey: 'RECOIL_LINK_DEPLOYER'
+      oracleKey: '0xfd446002b2979559ef4Cd06e5DCC84bbCC6b49D3'
       overhead:
         sepolia: 151966 # multisigIsmVerificationCost(1, 1)
       oracleConfig:

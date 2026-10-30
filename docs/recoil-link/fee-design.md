@@ -73,4 +73,4 @@ Next:
 1. Create the 1-of-1 treasury Safe on the testnets (Sepolia, Base Sepolia).
 2. Testnet core deploy with ProtocolFee (required hook) + MerkleTree/IGP (default hook), owner and beneficiary = treasury Safe.
 3. Verify a message pays IGP, relayer delivers it, and `claim()` pays the Safe.
-4. Before mainnet: per-chain `maxProtocolFee` from live prices, price-updater service, relayer gas payment enforcement, add Safe signers.
+4. Before mainnet: per-chain `maxProtocolFee` from live prices, price-updater service, relayer gas payment enforcement, add Safe signers, and a deployer/oracle key separate from the Safe signer (testnet reuses the signer wallet).
