@@ -71,7 +71,11 @@ RUN --mount=type=cache,target=/usr/local/cargo/registry \
 # Minimal runtime image containing config, binaries, and runtime dependencies
 FROM ubuntu:22.04
 WORKDIR /app
-COPY rust/main/config /app/config
+# Recoil Link: agents load every JSON in ./config, and rust/main/config holds
+# Hyperlane's chain configs (their Mailboxes, their validators). Ship an empty
+# directory; the Recoil Link agent config is supplied at run time. See
+# docs/recoil-link/production-deployment.md.
+RUN mkdir -p /app/config
 COPY rust/main/app-contexts /app/app-contexts
 COPY --from=builder /release/* .
 
