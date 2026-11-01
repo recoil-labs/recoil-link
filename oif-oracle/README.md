@@ -19,6 +19,8 @@ A proof only counts if it came from the oracle the order named: anyone can send 
 | ------------ | -------- | -------------------------------------------- | -------------------------------------------- |
 | Sepolia      | 11155111 | `0x758759C9Ac7199629E965a5a2fE73eAa0Ba8ae8D` | `0xA066332EF9C28158BDCf45D1a6138219e86CB6c6` |
 | Base Sepolia | 84532    | `0xff10Fddc92192c9770E4E4085D96F45Ee60dF55c` | `0x078fba178e69c61cce09Fd7f1AE2f413B6c65c20` |
+| OP Sepolia   | 11155420 | `0x1a773548711e6Ccd40CF81CC2DBA778f54aC4101` | `0x0B10f22CDF275293f7B4a995699440B04799c3bC` |
+| BSC testnet  | 97       | `0xaa3e0A9DCF6c0d6b1E3Dcb9ed61601cAC0CEa525` | `0x7f3450D5f8Dc984ba38e3Cb8DAD31e2a3Ecd8893` |
 
 Live check: `scripts/recoil-link/testnet/oracle-proof-test.sh` fills 1 test USDC on Base Sepolia through RecoilPay's OIF output settler and waits until Sepolia's oracle reports it proven (first run 2026-10-30: proven 44 s after submit).
 

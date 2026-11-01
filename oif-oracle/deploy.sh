@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Deploy a RecoilLinkOracle on a testnet with a network-estimated gas limit.
-# Usage: oif-oracle/deploy.sh <sepolia|basesepolia>
+# Usage: oif-oracle/deploy.sh <sepolia|basesepolia|optimismsepolia|bsctestnet>
 #
 # Uses `forge create`, which asks the chain for the gas limit. `forge script`
 # simulates locally instead, and its EVM can underprice contract creation on
@@ -10,10 +10,12 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-CHAIN="${1:?usage: deploy.sh <sepolia|basesepolia>}"
+CHAIN="${1:?usage: deploy.sh <sepolia|basesepolia|optimismsepolia|bsctestnet>}"
 case "$CHAIN" in
   sepolia) RPC=https://ethereum-sepolia.publicnode.com; MAILBOX=0xA066332EF9C28158BDCf45D1a6138219e86CB6c6 ;;
   basesepolia) RPC=https://sepolia.base.org; MAILBOX=0x078fba178e69c61cce09Fd7f1AE2f413B6c65c20 ;;
+  optimismsepolia) RPC=https://sepolia.optimism.io; MAILBOX=0x0B10f22CDF275293f7B4a995699440B04799c3bC ;;
+  bsctestnet) RPC=https://bsc-testnet.publicnode.com; MAILBOX=0x7f3450D5f8Dc984ba38e3Cb8DAD31e2a3Ecd8893 ;;
   *) echo "unknown chain $CHAIN" >&2; exit 1 ;;
 esac
 KEY_FILE="$HOME/.recoil-link/keys/testnet-deployer"
@@ -26,6 +28,8 @@ ORACLE=$(forge create src/RecoilLinkOracle.sol:RecoilLinkOracle \
   --constructor-args "$MAILBOX" "$ZERO_ADDRESS" "$ZERO_ADDRESS" \
   | awk '/Deployed to:/ {print $3}')
 [ -n "$ORACLE" ] || { echo "deployment failed" >&2; exit 1; }
+# Load-balanced RPCs can lag a block behind the one that confirmed the deploy.
+for _ in $(seq 1 30); do [ "$(cast code --rpc-url "$RPC" "$ORACLE")" != "0x" ] && break; sleep 2; done
 
 echo "chain:            $CHAIN"
 echo "RecoilLinkOracle: $ORACLE"
