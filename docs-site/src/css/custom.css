@@ -1,0 +1,110 @@
+/**
+ * Recoil Link docs theme. Palette shared with the RecoilPay docs
+ * (recoil-pay-v2/recoil-core/docs-site/src/css/custom.css) so both Recoil Labs
+ * sites read as one family.
+ */
+:root {
+  --ifm-color-primary: #424af6;
+  --ifm-color-primary-dark: #2d36f4;
+  --ifm-color-primary-darker: #212bf3;
+  --ifm-color-primary-darkest: #0b16d0;
+  --ifm-color-primary-light: #5b62f8;
+  --ifm-color-primary-lighter: #6a71f8;
+  --ifm-color-primary-lightest: #969bfb;
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 74, 246, 0.1);
+  --cta-ink: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark']:root {
+  --ifm-background-color: #00071f;
+  --ifm-background-surface-color: #060c22;
+  --ifm-color-primary: #61e5fc;
+  --ifm-color-primary-dark: #3fdbfa;
+  --ifm-color-primary-darker: #2ed6fa;
+  --ifm-color-primary-darkest: #08b7de;
+  --ifm-color-primary-light: #83effd;
+  --ifm-color-primary-lighter: #94f2fd;
+  --ifm-color-primary-lightest: #c8f8fe;
+  --docusaurus-highlighted-code-line-bg: rgba(97, 229, 252, 0.12);
+  --cta-ink: #00071f;
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+.markdown > h1 {
+  --ifm-h1-font-size: 2.4rem;
+}
+
+/* Filled GitHub button in the navbar. */
+.navbar__link.navbar-cta {
+  background: var(--ifm-color-primary);
+  color: var(--cta-ink);
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.navbar__link.navbar-cta:hover {
+  background: var(--ifm-color-primary-dark);
+  color: var(--cta-ink);
+}
+
+/* Landing page */
+.hero-rl {
+  padding: 5rem 1rem 3rem;
+  text-align: center;
+}
+.hero-rl h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.hero-rl p {
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  opacity: 0.85;
+}
+.hero-rl .buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 16px;
+}
+.card-rl {
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--ifm-background-surface-color);
+}
+.card-rl h3 {
+  margin-bottom: 0.4rem;
+}
+.card-rl p {
+  margin: 0 0 0.6rem;
+  opacity: 0.85;
+}
+.stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 3rem;
+  opacity: 0.85;
+}
+.stats strong {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--ifm-color-primary);
+}
