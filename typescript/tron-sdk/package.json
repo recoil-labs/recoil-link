@@ -45,7 +45,6 @@
     "@ethersproject/providers": "*",
     "@recoillink/core": "workspace:*",
     "@recoillink/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/utils": "workspace:*",
     "bignumber.js": "catalog:",
     "ethers": "catalog:",

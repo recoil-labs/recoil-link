@@ -1,0 +1,18 @@
+# Packages Recoil Link publishes to npm (@recoillink scope), by directory.
+# These are the four developer-facing ones (core, sdk, utils, cli) plus every
+# @recoillink package they depend on. Every other workspace package is private.
+solidity
+starknet
+typescript/aleo-sdk
+typescript/cli
+typescript/cosmos-sdk
+typescript/cosmos-types
+typescript/deploy-sdk
+typescript/forking-sdk
+typescript/provider-sdk
+typescript/radix-sdk
+typescript/sdk
+typescript/starknet-sdk
+typescript/svm-sdk
+typescript/tron-sdk
+typescript/utils

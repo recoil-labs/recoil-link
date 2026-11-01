@@ -1,0 +1,61 @@
+# Publishes the @recoillink packages listed in scripts/recoil-link/npm/packages.txt.
+# Manual only. npm trusted publishing (OIDC): no npm token is stored; each
+# package's npm settings name this repo and this workflow file as its publisher.
+# Upstream's release.yml publishes Hyperlane's way and is not used here.
+name: Recoil Link npm publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      dist_tag:
+        description: 'npm dist-tag'
+        required: true
+        default: 'latest'
+        type: string
+      dry_run:
+        description: 'Pack and check only, publish nothing'
+        required: true
+        default: true
+        type: boolean
+
+concurrency:
+  group: recoil-link-npm-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'recoil-labs/recoil-link' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup Foundry
+        uses: ./.github/actions/setup-foundry
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Publish
+        env:
+          DIST_TAG: ${{ inputs.dist_tag }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: scripts/recoil-link/npm/publish.sh "$DIST_TAG" $DRY_RUN
