@@ -20,7 +20,7 @@ REPO="$PWD"
 WORK="$STATE/relayer"
 mkdir -p "$WORK/config"
 cp "$REPO/configs/recoil-link/testnet/agent-config.json" "$WORK/config/agent-config.json"
-export HYP_RELAYCHAINS=sepolia,basesepolia
+export HYP_RELAYCHAINS=sepolia,basesepolia,optimismsepolia,bsctestnet
 export HYP_DB="$STATE/relayer/db"
 export HYP_DEFAULTSIGNER_TYPE=hexKey
 KEY="$(tr -d '[:space:]' < "$KEY_FILE")"

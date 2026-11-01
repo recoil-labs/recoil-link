@@ -15,6 +15,9 @@ KEY_FILE="$HOME/.recoil-link/keys/testnet-validator"
 case "$CHAIN" in
   sepolia) PORT=9091 ;;
   basesepolia) PORT=9092 ;;
+  optimismsepolia) PORT=9093 ;;
+  polygonamoy) PORT=9094 ;;
+  bsctestnet) PORT=9095 ;;
   *) echo "unknown chain $CHAIN" >&2; exit 1 ;;
 esac
 
