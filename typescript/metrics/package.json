@@ -1,6 +1,7 @@
 {
   "name": "@recoillink/metrics",
   "version": "1.0.4",
+  "private": true,
   "description": "Shared Prometheus metrics utilities for Recoil Link monitoring",
   "keywords": [
     "hyperlane",

@@ -1,6 +1,7 @@
 {
   "name": "@recoillink/relayer",
   "version": "4.0.4",
+  "private": true,
   "description": "Recoil Link Message Relayer Service",
   "keywords": [
     "blockchain",
@@ -60,9 +61,9 @@
   "dependencies": {
     "@arbitrum/sdk": "catalog:",
     "@google-cloud/pino-logging-gcp-config": "catalog:",
+    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/core": "workspace:*",
     "@recoillink/metrics": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",
     "ethers": "catalog:",
@@ -74,9 +75,9 @@
   },
   "devDependencies": {
     "@ethersproject/providers": "*",
-    "@recoillink/tsconfig": "workspace:^",
     "@nomiclabs/hardhat-ethers": "catalog:",
     "@nomiclabs/hardhat-waffle": "catalog:",
+    "@recoillink/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

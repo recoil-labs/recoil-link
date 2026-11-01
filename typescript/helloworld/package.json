@@ -1,6 +1,7 @@
 {
   "name": "@recoillink/helloworld",
   "version": "45.0.1",
+  "private": true,
   "description": "A basic skeleton of a Recoil Link app",
   "keywords": [
     "HelloWorld",
@@ -29,12 +30,12 @@
     "test:ci": "pnpm test"
   },
   "dependencies": {
-    "@recoillink/core": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
-    "@recoillink/sdk": "workspace:*",
-    "@recoillink/utils": "workspace:*",
     "@openzeppelin/contracts": "catalog:",
     "@openzeppelin/contracts-upgradeable": "catalog:",
+    "@recoillink/core": "workspace:*",
+    "@recoillink/sdk": "workspace:*",
+    "@recoillink/utils": "workspace:*",
     "@solana/web3.js": "catalog:",
     "borsh": "catalog:",
     "ethers": "catalog:"
