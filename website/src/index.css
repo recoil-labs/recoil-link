@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* Recoil Link theme. Surfaces, text and violet primary follow the RecoilPay
+   app (recoil-pay-v2/recoil-website-v2/src/globals.css); cyan and blue come
+   from the Recoil logo mark and carry the "message in flight" accents. */
+:root,
+:root[data-theme="dark"] {
+  --bg: #161826;
+  --bg-deep: #121320;
+  --surface: #232532;
+  --surface-alt: #292b31;
+  --border: #3f424d;
+  --text: #e9e9ed;
+  --muted: #b2b6ca;
+  --faint: #9397ab;
+  --primary: #9184d9;
+  --primary-strong: #a7a1db;
+  --on-primary: #ffffff;
+  --cyan: #07dfff;
+  --blue: #0334f2;
+  --mint: #7cf6b5;
+  --lavender: #c4c7fc;
+  --grid: color-mix(in srgb, #e9e9ed 6%, transparent);
+  --header: color-mix(in srgb, #161826 72%, transparent);
+  --code-bg: #121320;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f3f5fe;
+  --bg-deep: #e9ecfa;
+  --surface: #ffffff;
+  --surface-alt: #f7f8fd;
+  --border: #cfd3e5;
+  --text: #161826;
+  --muted: #4a4e63;
+  --faint: #6b6f85;
+  --primary: #5d5294;
+  --primary-strong: #4a4078;
+  --on-primary: #ffffff;
+  --cyan: #0391b0;
+  --blue: #0334f2;
+  --mint: #138a55;
+  --lavender: #5d5294;
+  --grid: color-mix(in srgb, #161826 7%, transparent);
+  --header: color-mix(in srgb, #f3f5fe 80%, transparent);
+  --code-bg: #161826;
+  color-scheme: light;
+}
+
+@theme inline {
+  --font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-bg: var(--bg);
+  --color-bg-deep: var(--bg-deep);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-on-primary: var(--on-primary);
+  --color-cyan: var(--cyan);
+  --color-blue: var(--blue);
+  --color-mint: var(--mint);
+  --color-lavender: var(--lavender);
+  --color-code-bg: var(--code-bg);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 75%);
+}
+
+/* A packet travelling along a path (hero diagram). */
+@keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+.packet { animation: travel 3.2s cubic-bezier(.6,0,.4,1) infinite; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .packet { animation: none; offset-distance: 50%; }
+}
