@@ -1,4 +1,5 @@
 node_modules/
-build/
+# Docusaurus output only; docs/build/ is a docs section.
+/build/
 .docusaurus/
 .cache-loader/

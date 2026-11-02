@@ -9,21 +9,17 @@ Send a message from Sepolia to Base Sepolia with the `rlink` CLI and watch it ar
 
 ## Prerequisites
 
-- **Node.js 20+** and **pnpm**.
+- **Node.js 22+**.
 - A wallet with a little testnet ETH on **Sepolia** (gas plus the message fee, well under 0.001 ETH).
 
 ## 1. Install the CLI
 
-`rlink` is not on npm yet; build it from source:
-
 ```bash
-git clone https://github.com/recoil-labs/recoil-link.git
-cd recoil-link
-pnpm install
-pnpm turbo run build --filter=@recoillink/cli...
-alias rlink="node $PWD/typescript/cli/dist/cli.js"
+npm install -g @recoillink/cli
 rlink --help
 ```
+
+To run it once without installing, use `npx @recoillink/cli` in place of `rlink`.
 
 `rlink` reads chain metadata and Recoil Link's deployed addresses from the [Recoil Link registry](./reference/registry.md) on GitHub. No configuration is needed.
 

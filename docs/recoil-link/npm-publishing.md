@@ -33,6 +33,8 @@ scripts/recoil-link/npm/pack.sh            # writes ./npm-packs, publishes nothi
 
 ## First release (once, from a maintainer's machine)
 
+Done on 2026-11-02 for all 15 packages; kept here for packages added later.
+
 npm only lets you set up trusted publishing on a package that already exists, so the first version of each package goes out by hand:
 
 1. **Log in.** Run `npm login` with an account that belongs to the `recoillink` org, with 2FA on.
@@ -43,9 +45,12 @@ npm only lets you set up trusted publishing on a package that already exists, so
    while read -r dir; do
      name=$(node -p "require('./$dir/package.json').name")
      version=$(node -p "require('./$dir/package.json').version")
-     npm publish "npm-packs/$(echo "${name#@}" | tr / -)-$version.tgz" --access public
+     # The ./ matters: without it npm reads "npm-packs/x.tgz" as a GitHub repo.
+     npm publish "./npm-packs/$(echo "${name#@}" | tr / -)-$version.tgz" --access public
    done < npm-packs/order.txt
    ```
+
+   npm says "Your package is being processed" and can take 10–20 minutes to show a new package. Until then the package may show only a `0.0.0-stage` placeholder; that's normal.
 
 4. **Set up trusted publishing.** On npmjs.com, open each package's _Settings_, then _Trusted publishing_, and add GitHub Actions with:
    - organization `recoil-labs`

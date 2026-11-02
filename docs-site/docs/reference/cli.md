@@ -4,7 +4,7 @@ title: CLI (rlink)
 
 # CLI: `rlink`
 
-`rlink` deploys and inspects Recoil Link and sends test messages. It is not on npm yet; build it from source as in the [Quickstart](../quickstart.md).
+`rlink` deploys and inspects Recoil Link and sends test messages. Install it with `npm install -g @recoillink/cli` (Node.js 22+).
 
 It reads chain metadata and addresses from the [registry](./registry.md) (`--registry` to add local or other registries) and signs with `HYP_KEY` or `--key`.
 

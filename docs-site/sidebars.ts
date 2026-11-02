@@ -22,6 +22,7 @@ const sidebars: SidebarsConfig = {
         'build/send-messages',
         'build/receive-messages',
         'build/gas-and-fees',
+        'build/typescript-sdk',
         'build/developer-tools',
         'build/testing',
         'build/prove-intent-fills',
