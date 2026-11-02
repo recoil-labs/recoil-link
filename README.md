@@ -1,12 +1,36 @@
 # Recoil Link
 
+[![@recoillink/core](https://img.shields.io/npm/v/@recoillink/core?label=%40recoillink%2Fcore)](https://www.npmjs.com/package/@recoillink/core)
+[![@recoillink/sdk](https://img.shields.io/npm/v/@recoillink/sdk?label=%40recoillink%2Fsdk)](https://www.npmjs.com/package/@recoillink/sdk)
+[![@recoillink/cli](https://img.shields.io/npm/v/@recoillink/cli?label=%40recoillink%2Fcli)](https://www.npmjs.com/package/@recoillink/cli)
+[![@recoillink/utils](https://img.shields.io/npm/v/@recoillink/utils?label=%40recoillink%2Futils)](https://www.npmjs.com/package/@recoillink/utils)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](./LICENSE.md)
+
 Recoil Link is a cross-chain **messaging and proof layer** by [Recoil Labs](https://github.com/recoil-labs). An application sends a message on one chain; Recoil Link's validators attest to it and its relayer delivers it, so a contract on another chain can act on proof that something happened.
 
 The main use is proving cross-chain intent fills: Recoil Link can serve as the oracle for the [Open Intents Framework](https://github.com/openintentsframework) (see `oif-oracle/`), replacing development-only oracles such as `AlwaysYesOracle`. Token bridging ("warp routes") is not part of Recoil Link's product: that upstream code is kept dormant, never deployed, and its CLI commands are disabled.
 
 Supported networks: EVM chains, Solana (SVM), Cosmos, Starknet, Aleo, Radix and Tron today, with Move-based chains (the Aptos and Sui families) on the roadmap.
 
+## Packages
+
+| Package                                                                | Install                    | For                                                                 |
+| ---------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------- |
+| [`@recoillink/core`](https://www.npmjs.com/package/@recoillink/core)   | `npm i @recoillink/core`   | Solidity contracts and interfaces (`IMailbox`, `MockMailbox`, ISMs) |
+| [`@recoillink/sdk`](https://www.npmjs.com/package/@recoillink/sdk)     | `npm i @recoillink/sdk`    | Send, quote and track messages from TypeScript                      |
+| [`@recoillink/cli`](https://www.npmjs.com/package/@recoillink/cli)     | `npm i -g @recoillink/cli` | The `rlink` command                                                 |
+| [`@recoillink/utils`](https://www.npmjs.com/package/@recoillink/utils) | `npm i @recoillink/utils`  | Helpers used by the SDK                                             |
+
+All packages are listed under the [`recoillink`](https://www.npmjs.com/org/recoillink) npm org. Releases are on the [Releases](https://github.com/recoil-labs/recoil-link/releases) page; publishing is described in [`docs/recoil-link/npm-publishing.md`](./docs/recoil-link/npm-publishing.md).
+
 ## Quick start
+
+```sh
+npm install -g @recoillink/cli
+rlink --help
+```
+
+To build the CLI from source instead:
 
 ```sh
 pnpm install
