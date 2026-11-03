@@ -33,4 +33,4 @@ The scripts read keys from `~/.recoil-link/keys/` and run each agent from its ow
 
 ## Becoming a validator
 
-Adding a validator means adding its address to each chain's ISM, which only the contract owner (the treasury Safe) can do. Contact Recoil Labs if you want to run one.
+Adding a validator means adding its address to each chain's ISM, which only the contract owner (the treasury Safe) can do. Contact Recoil Labs if you want to run one; [Operators](./operators.md) covers what's expected of a validator operator.

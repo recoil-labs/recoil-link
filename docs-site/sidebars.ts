@@ -53,7 +53,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Operate',
-      items: ['operate/security', 'operate/run-agents'],
+      items: ['operate/security', 'operate/operators', 'operate/run-agents'],
     },
     {
       type: 'category',

@@ -28,4 +28,4 @@ The relayer is **permissionless**: it carries signatures, so it cannot forge or 
 
 ## Who runs them
 
-Recoil Labs runs one validator and one relayer today. Before mainnet the validator set grows to several independent operators: see [Security](../operate/security.md). To run agents yourself see [Run validators and relayers](../operate/run-agents.md).
+Recoil Labs runs one validator and one relayer today. Before mainnet the validator set grows to several independent operators: see [Security](../operate/security.md). Who should run them, and what they get from it, is in [Operators](../operate/operators.md). To run agents yourself see [Run validators and relayers](../operate/run-agents.md).
