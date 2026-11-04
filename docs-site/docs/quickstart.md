@@ -63,4 +63,5 @@ cast call --rpc-url https://sepolia.base.org \
 
 - [Send messages from a contract](./build/send-messages.md)
 - [Receive messages](./build/receive-messages.md)
+- [Examples repository](https://github.com/recoil-labs/recoil-link-examples): runnable send and receive, cross-chain governance and deposit proofs, each with tests and a testnet script.
 - Other routes: any pair of [supported networks](./reference/networks.md), e.g. `--origin bsctestnet --destination optimismsepolia`.

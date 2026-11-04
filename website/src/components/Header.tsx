@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Menu, Moon, Sun, X } from 'lucide-react';
 import { GithubIcon, Logo } from './Logo';
-import { GITHUB, docs } from '../links';
+import { EXAMPLES, GITHUB, docs } from '../links';
 
 const nav = [
   { label: 'How it works', href: '#how-it-works' },
   { label: 'Use cases', href: '#use-cases' },
   { label: 'Networks', href: '#networks' },
   { label: 'Security', href: '#security' },
+  { label: 'Examples', href: EXAMPLES },
   { label: 'Docs', href: docs('/docs/intro') },
 ];
 

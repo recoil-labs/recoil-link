@@ -1,7 +1,7 @@
 import { Header } from './components/Header';
 import { GithubIcon, Mark } from './components/Logo';
 import { Button, Section, SectionHeading, TextLink } from './components/ui';
-import { GITHUB, RECOILPAY, REGISTRY, docs } from './links';
+import { EXAMPLES, GITHUB, RECOILPAY, REGISTRY, docs } from './links';
 
 const chains = [
   { name: 'Sepolia', domain: '11155111', x: 90, y: 80 },
@@ -353,6 +353,9 @@ export default function App() {
           <div className="flex flex-wrap items-center gap-6">
             <a href={docs('/docs/intro')} className="hover:text-text">
               Docs
+            </a>
+            <a href={EXAMPLES} className="hover:text-text">
+              Examples
             </a>
             <a href={REGISTRY} className="hover:text-text">
               Registry
