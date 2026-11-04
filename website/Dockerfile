@@ -7,6 +7,8 @@ COPY . .
 # Where the "Docs" links point; set at build time.
 ARG VITE_DOCS_URL
 ENV VITE_DOCS_URL=$VITE_DOCS_URL
+ARG VITE_EXPLORER_URL
+ENV VITE_EXPLORER_URL=$VITE_EXPLORER_URL
 RUN npm run build
 
 FROM nginx:1.27-alpine
