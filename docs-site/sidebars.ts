@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
         'build/developer-tools',
         'build/testing',
         'build/prove-intent-fills',
+        'build/replace-alwaysyesoracle',
       ],
     },
     {
