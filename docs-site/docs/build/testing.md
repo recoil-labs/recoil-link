@@ -14,13 +14,24 @@ The contracts come from Recoil Link's Solidity package on npm:
 npm install @recoillink/core
 ```
 
-With Foundry, map the import prefix to it in `remappings.txt`:
+The contracts import OpenZeppelin 4.9.3, so your project must resolve those imports too. `MockMailbox` is at `@recoillink/core/contracts/mock/MockMailbox.sol`.
+
+**Foundry.** The package bundles the OpenZeppelin and forge-std versions it was built with. Point `remappings.txt` at them:
 
 ```text title="remappings.txt"
 @recoillink/core/=node_modules/@recoillink/core/
+@openzeppelin/contracts/=node_modules/@recoillink/core/dependencies/@openzeppelin-contracts-4.9.3/contracts/
+@openzeppelin/contracts-upgradeable/=node_modules/@recoillink/core/dependencies/@openzeppelin-contracts-upgradeable-4.9.3/contracts/
+forge-std/=node_modules/@recoillink/core/dependencies/forge-std-1.9.2/src/
 ```
 
-`MockMailbox` is at `@recoillink/core/contracts/mock/MockMailbox.sol`. Hardhat resolves `node_modules` imports without a remapping.
+Set `libs = ["node_modules"]` in `foundry.toml`. The [examples repository](https://github.com/recoil-labs/recoil-link-examples) has a working setup.
+
+**Hardhat.** Install the same OpenZeppelin versions next to it; Hardhat resolves the rest from `node_modules`:
+
+```bash
+npm install @openzeppelin/contracts@4.9.3 @openzeppelin/contracts-upgradeable@4.9.3
+```
 
 ## Example
 

@@ -6,5 +6,6 @@ const DOCS = (import.meta.env.VITE_DOCS_URL ?? 'http://localhost:3001').replace(
 
 export const docs = (path = '') => `${DOCS}${path}`;
 export const GITHUB = 'https://github.com/recoil-labs/recoil-link';
+export const EXAMPLES = 'https://github.com/recoil-labs/recoil-link-examples';
 export const REGISTRY = 'https://github.com/recoil-labs/recoil-link-registry';
 export const RECOILPAY = 'https://v2.recoilpay.com';

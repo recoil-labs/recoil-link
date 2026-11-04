@@ -4,7 +4,7 @@ title: Send messages
 
 # Send messages from a contract
 
-A contract sends a message by calling `dispatch` on its chain's Mailbox, paying the fee from `quoteDispatch`.
+A contract sends a message by calling `dispatch` on its chain's Mailbox, paying the fee from `quoteDispatch`. A runnable sender like the one below, with tests and a testnet script, is `HelloSender` in the [examples repository](https://github.com/recoil-labs/recoil-link-examples).
 
 ## Minimal sender
 
@@ -42,7 +42,7 @@ contract Sender {
 
 Deploy it with your chain's Mailbox address from [Networks](../reference/networks.md), for example Sepolia's `0xA066332EF9C28158BDCf45D1a6138219e86CB6c6`.
 
-Instead of declaring the interface yourself, you can import it from Recoil Link's Solidity package (`npm install @recoillink/core`, see [Testing](./testing.md#getting-the-contracts) for the Foundry remapping):
+Instead of declaring the interface yourself, you can import it from Recoil Link's Solidity package (`npm install @recoillink/core`, see [Testing](./testing.md#getting-the-contracts) for the setup):
 
 ```solidity
 import {IMailbox} from "@recoillink/core/contracts/interfaces/IMailbox.sol";

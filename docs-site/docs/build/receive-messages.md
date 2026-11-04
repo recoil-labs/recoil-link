@@ -6,6 +6,8 @@ title: Receive messages
 
 A recipient implements `handle`. The destination Mailbox calls it once per message, after the message's security module (ISM) has verified it.
 
+For complete, tested recipients that check the origin chain and sender, see the governance and deposit examples in the [examples repository](https://github.com/recoil-labs/recoil-link-examples).
+
 ## Minimal recipient
 
 ```solidity
