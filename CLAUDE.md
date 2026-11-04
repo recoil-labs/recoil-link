@@ -10,7 +10,7 @@ Upstream engineering guidance (build, test, architecture) is in AGENTS.md and st
 
 - `upstream` remote = hyperlane-xyz/hyperlane-monorepo, `origin` = recoil-labs/recoil-link (private until the audit).
 - **Keep the diff against upstream small** so Hyperlane security fixes can be merged. Rename only user-facing surfaces; keep internal names (`Mailbox`, `HyperlaneCore`, Rust crate names, Solidity contracts).
-- Mechanical renames live in `scripts/recoil-link/rebrand.sh` (idempotent). Upstream sync: `git fetch upstream && git merge upstream/main`, then re-run the script, then `pnpm install`.
+- Mechanical renames live in `scripts/recoil-link/rebrand.sh` (idempotent), which also runs `package-policy.mjs` (our package.json settings). Upstream sync: `scripts/recoil-link/sync-upstream.sh`, process in `docs/recoil-link/upstream-sync.md`. A hand edit to an upstream file must go in `scripts/recoil-link/protected-files.txt` (or into rebrand.sh / package-policy.mjs); `scripts/recoil-link/check-protected.sh` finds any that are missing.
 - npm scope `@recoillink/*`; CLI command `rlink`; local registry dir `~/.recoil-link`.
 - `@hyperlane-xyz/registry` is an external package we still consume; the default registry URL is `RECOIL_LINK_REGISTRY_URL` (`typescript/sdk/src/consts/registry.ts`) → recoil-labs/recoil-link-registry. Never default to Hyperlane's registry or deployments.
 - That registry package imports `@hyperlane-xyz/sdk` and `@hyperlane-xyz/utils` (types and runtime). Root `package.json` aliases those names to our workspace packages (`workspace:@recoillink/...`). Don't remove the aliases until we ship our own `@recoillink/registry`.

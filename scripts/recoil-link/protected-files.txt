@@ -1,0 +1,37 @@
+# Upstream (Hyperlane) files that carry hand-written Recoil Link changes.
+# scripts/recoil-link/sync-upstream.sh never auto-resolves a conflict in these:
+# it leaves them for a person, and lists them for review whenever upstream
+# changed them, even if the merge was clean.
+#
+# Everything else we changed is mechanical: rebrand.sh (with package-policy.mjs)
+# re-creates it from upstream's version. To check this list is still complete,
+# see "Keeping the protected list honest" in docs/recoil-link/upstream-sync.md.
+#
+# pnpm-lock.yaml is not here: the sync regenerates it.
+.gitignore
+.gitmodules
+AGENTS.md
+README.md
+package.json
+typescript/ccip-server/src/services/BaseService.ts
+typescript/cli/cli.ts
+typescript/cli/src/commands/config.ts
+typescript/cli/src/commands/options.ts
+typescript/cli/src/config/hooks.ts
+typescript/cli/src/consts.ts
+typescript/cli/src/context/context.ts
+typescript/cli/src/send/message.ts
+typescript/cli/src/send/transfer.ts
+typescript/cli/src/utils/relay.ts
+typescript/cli/src/utils/version-check.ts
+typescript/fee-quoting/scripts/run-server.ts
+typescript/http-registry-server/scripts/run-server.ts
+typescript/infra/src/config/gas-oracle.ts
+typescript/infra/test/token-gas-oracles.test.ts
+typescript/keyfunder/src/service.ts
+typescript/rebalancer/src/service.ts
+typescript/sdk/src/index.ts
+typescript/sdk/src/token/deploy.hardhat-test.ts
+typescript/warp-monitor/src/service.ts
+typescript/widgets/src/chains/ChainAddMenu.tsx
+typescript/widgets/src/chains/ChainDetailsMenu.tsx
