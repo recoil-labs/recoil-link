@@ -78,6 +78,9 @@ git ls-files "*package.json" | xargs -r perl -pi -e '
   }
 '
 
+echo "==> package.json policy (private packages, dependency and export edits)"
+node scripts/recoil-link/package-policy.mjs
+
 echo "==> format renamed TS files (longer names can overflow line width)"
 if [ -x node_modules/.bin/oxfmt ]; then
   # Every file carrying a renamed token: import order changes with the new scope.
