@@ -6,7 +6,7 @@ title: Prove intent fills (OIF oracle)
 
 In an intent system, a solver delivers funds on the **output chain** and is paid from an escrow on the **input chain**. The escrow needs proof that the fill happened. `RecoilLinkOracle` provides that proof over Recoil Link for [Open Intents Framework](https://github.com/openintentsframework/oif-contracts) (OIF) settlers, replacing development-only oracles such as `AlwaysYesOracle`, which approve every claim.
 
-[RecoilPay](https://v2.recoilpay.com) uses it for EVM↔EVM swaps between Recoil Link networks.
+[RecoilPay](https://v2.recoilpay.com) uses it for EVM↔EVM swaps between Recoil Link networks. Already running `AlwaysYesOracle`? Follow [Replace AlwaysYesOracle](./replace-alwaysyesoracle.md) for the step-by-step migration.
 
 ## What it is
 
