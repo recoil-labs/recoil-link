@@ -24,6 +24,8 @@ echo "==> rebranding upstream at $(git log -1 --format=%h "$base") in a temporar
 git worktree add -q --detach "$tmp/tree" "$base"
 mkdir -p "$tmp/tree/scripts/recoil-link"
 cp scripts/recoil-link/rebrand.sh scripts/recoil-link/package-policy.mjs "$tmp/tree/scripts/recoil-link/"
+mkdir -p "$tmp/tree/scripts/recoil-link/npm"
+cp scripts/recoil-link/npm/packages.txt "$tmp/tree/scripts/recoil-link/npm/"
 ln -s "$root/node_modules" "$tmp/tree/node_modules"
 (cd "$tmp/tree" && bash scripts/recoil-link/rebrand.sh > /dev/null)
 

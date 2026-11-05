@@ -4,7 +4,7 @@
   "description": "Recoil Link TypeScript SDK for Starknet artifact API support",
   "keywords": [
     "blockchain",
-    "hyperlane",
+    "recoil-link",
     "sdk",
     "starknet"
   ],

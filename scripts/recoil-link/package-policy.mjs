@@ -36,6 +36,23 @@ const ADD_EXPORTS = {
   },
 };
 
+// Published packages (scripts/recoil-link/npm/packages.txt): what npm shows.
+const PUBLISHED = readFileSync(
+  join(root, 'scripts/recoil-link/npm/packages.txt'),
+  'utf8',
+)
+  .split('\n')
+  .map((l) => l.trim())
+  .filter((l) => l && !l.startsWith('#'));
+
+// Descriptions that name upstream's on-chain modules, which Recoil Link doesn't deploy.
+const DESCRIPTIONS = {
+  'typescript/aleo-sdk': 'Recoil Link TypeScript SDK for Aleo',
+  'typescript/cosmos-sdk': 'Recoil Link TypeScript SDK for Cosmos',
+  'typescript/cosmos-types': 'Recoil Link TypeScript SDK types for Cosmos',
+  'typescript/radix-sdk': 'Recoil Link TypeScript SDK for Radix',
+};
+
 /** A copy of `obj` with `key: value` inserted after `afterKey` (or at the end). */
 function insertAfter(obj, afterKey, key, value) {
   const out = {};
@@ -57,6 +74,7 @@ const dirs = new Set([
   ...PRIVATE,
   ...Object.keys(REMOVE_DEPENDENCIES),
   ...Object.keys(ADD_EXPORTS),
+  ...PUBLISHED,
 ]);
 for (const dir of dirs) {
   const file = join(root, dir, 'package.json');
@@ -75,6 +93,22 @@ for (const dir of dirs) {
   for (const dep of REMOVE_DEPENDENCIES[dir] ?? []) {
     if (pkg.dependencies && dep in pkg.dependencies)
       delete pkg.dependencies[dep];
+  }
+
+  if (PUBLISHED.includes(dir)) {
+    // npm search and package pages: our name in place of upstream's.
+    if (
+      Array.isArray(pkg.keywords) &&
+      pkg.keywords.some((k) => /^hyperlane$/i.test(k))
+    ) {
+      pkg.keywords = [
+        ...new Set(
+          pkg.keywords.map((k) => (/^hyperlane$/i.test(k) ? 'recoil-link' : k)),
+        ),
+      ];
+    }
+    if (DESCRIPTIONS[dir] && pkg.description !== DESCRIPTIONS[dir])
+      pkg.description = DESCRIPTIONS[dir];
   }
 
   const add = ADD_EXPORTS[dir];

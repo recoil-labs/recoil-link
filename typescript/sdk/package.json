@@ -3,9 +3,9 @@
   "version": "45.1.0",
   "description": "The official SDK for Recoil Link",
   "keywords": [
-    "Hyperlane",
     "SDK",
-    "Typescript"
+    "Typescript",
+    "recoil-link"
   ],
   "homepage": "https://github.com/recoil-labs/recoil-link",
   "license": "Apache-2.0",

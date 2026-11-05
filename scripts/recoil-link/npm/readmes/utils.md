@@ -1,0 +1,23 @@
+# @recoillink/utils
+
+General utilities and types for [Recoil Link](https://github.com/recoil-labs/recoil-link): address conversion (`addressToBytes32`), protocol types, logging and more. Used by [`@recoillink/sdk`](https://www.npmjs.com/package/@recoillink/sdk).
+
+## Install
+
+```bash
+npm install @recoillink/utils
+```
+
+## Status
+
+Recoil Link is on **testnet** (Sepolia, Base Sepolia, OP Sepolia, BSC testnet), secured by one validator. Don't move real value with it yet.
+
+## Links
+
+- [Recoil Link on GitHub](https://github.com/recoil-labs/recoil-link)
+- [Documentation](https://github.com/recoil-labs/recoil-link/tree/main/docs-site/docs)
+- [Examples](https://github.com/recoil-labs/recoil-link-examples)
+
+## License
+
+Apache-2.0. Recoil Link is built on [Hyperlane](https://github.com/hyperlane-xyz/hyperlane-monorepo); see the repository's NOTICE.
