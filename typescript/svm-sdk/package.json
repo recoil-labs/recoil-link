@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/sealevel-sdk",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "Hand-crafted Solana/SVM client for Recoil Link Sealevel programs",
   "keywords": [
     "recoil-link",

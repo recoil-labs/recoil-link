@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/starknet-sdk",
-  "version": "30.0.5",
+  "version": "30.0.6-recoil.1",
   "description": "Recoil Link TypeScript SDK for Starknet artifact API support",
   "keywords": [
     "blockchain",

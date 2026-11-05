@@ -18,7 +18,15 @@ Packages keep Hyperlane's version numbers (`@recoillink/sdk@45.0.1` is built fro
 - **The contracts need it.** `@recoillink/core`'s version is compiled into every contract as `PACKAGE_VERSION`. The SDK compares it with Hyperlane version numbers to tell which features a deployed contract has (IGP, hooks, ISMs). Our deployed contracts report `12.2.0`, and a version of our own would break those checks.
 - **Merges stay cheap.** Upstream release PRs bump these version lines. Keeping their numbers means upstream merges don't conflict on them.
 
-So we publish **after each upstream sync**. For a Recoil-only fix in between, give the TypeScript packages a prerelease suffix (`45.0.1-recoil.1`). Never move `@recoillink/core` off upstream's version.
+So we publish **after each upstream sync**. For a Recoil-only release in between (a fix, or a README change), run:
+
+```bash
+node scripts/recoil-link/npm/recoil-version.mjs
+```
+
+It moves every published package to the **next patch with a `-recoil.N` suffix** (`45.1.0` → `45.1.1-recoil.1`, then `-recoil.2`), and regenerates the version constants the build derives from it. The next patch matters: `45.1.0-recoil.1` would sort _before_ `45.1.0` and look like a downgrade, while `45.1.1-recoil.1` sorts after our current release and before upstream's next one. Projects pinned to `^45.1.0` don't pick up prereleases; `npm install @recoillink/sdk` does, because we tag them `latest`. The next upstream sync takes upstream's versions again.
+
+`@recoillink/core` moves too (`12.2.0` → `12.2.1-recoil.1`), which changes the `PACKAGE_VERSION` compiled into newly built contracts. Deployed contracts keep reporting their own version, and the SDK's feature checks compare against older upstream versions, which `12.2.1-recoil.1` still sorts above.
 
 ## What npm shows
 

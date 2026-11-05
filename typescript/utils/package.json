@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/utils",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "General utilities and types for Recoil Link",
   "keywords": [
     "Typescript",

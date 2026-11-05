@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/starknet-core",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "Core cairo contracts for Recoil Link",
   "keywords": [
     "Cairo",
