@@ -11,9 +11,28 @@ out="$(mkdir -p "${1:-$root/npm-packs}" && cd "${1:-$root/npm-packs}" && pwd)"
 rm -f "$out"/*.tgz
 
 node "$root/scripts/recoil-link/npm/order.mjs" > "$out/order.txt"
+# Each package is published with our README from scripts/recoil-link/npm/readmes/,
+# swapped in only while packing: upstream's README stays in the repo untouched,
+# so upstream syncs never conflict over it.
+readmes="$root/scripts/recoil-link/npm/readmes"
+swapped=""
+restore_readme() {
+  [ -n "$swapped" ] || return 0
+  if [ -f "$swapped.upstream" ]; then mv "$swapped.upstream" "$swapped"; else rm -f "$swapped"; fi
+  swapped=""
+}
+trap restore_readme EXIT
+
 while read -r dir; do
+  name=$(node -p "require('$root/$dir/package.json').name")
+  ours="$readmes/${name#@recoillink/}.md"
+  [ -f "$ours" ] || { echo "error: no README for $name in $readmes" >&2; exit 1; }
+  swapped="$root/$dir/README.md"
+  [ -f "$swapped" ] && mv "$swapped" "$swapped.upstream"
+  cp "$ours" "$swapped"
   # pnpm pack (not npm pack) turns workspace:* into real version ranges.
   (cd "$root/$dir" && pnpm pack --pack-destination "$out" > /dev/null)
+  restore_readme
 done < "$out/order.txt"
 
 for tgz in "$out"/*.tgz; do

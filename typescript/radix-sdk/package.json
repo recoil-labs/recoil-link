@@ -1,11 +1,11 @@
 {
   "name": "@recoillink/radix-sdk",
   "version": "45.1.0",
-  "description": "Recoil Link TypeScript SDK for the Radix Hyperlane SDK module",
+  "description": "Recoil Link TypeScript SDK for Radix",
   "keywords": [
     "blockchain",
-    "hyperlane",
     "radix",
+    "recoil-link",
     "sdk"
   ],
   "homepage": "https://github.com/recoil-labs/recoil-link",

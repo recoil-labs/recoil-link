@@ -64,7 +64,7 @@
   "homepage": "https://github.com/recoil-labs/recoil-link",
   "repository": "https://github.com/recoil-labs/recoil-link",
   "keywords": [
-    "Hyperlane",
+    "recoil-link",
     "Solidity"
   ],
   "license": "Apache-2.0",

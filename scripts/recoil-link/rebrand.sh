@@ -81,10 +81,12 @@ git ls-files "*package.json" | xargs -r perl -pi -e '
 echo "==> package.json policy (private packages, dependency and export edits)"
 node scripts/recoil-link/package-policy.mjs
 
-echo "==> format renamed TS files (longer names can overflow line width)"
+echo "==> format renamed files (longer names can overflow line width)"
 if [ -x node_modules/.bin/oxfmt ]; then
-  # Every file carrying a renamed token: import order changes with the new scope.
-  git grep -lE '@recoillink/|Recoil Link|rlink' -- '*.ts' '*.tsx' '*.mts' '*.mjs' |
+  # Every file carrying a renamed token: import and dependency order change with
+  # the new scope. package.json too, as the pre-commit hook formats it, so the
+  # output here matches what gets committed.
+  git grep -lE '@recoillink/|Recoil Link|rlink' -- '*.ts' '*.tsx' '*.mts' '*.mjs' '*package.json' |
     xargs -r node_modules/.bin/oxfmt --ignore-path .gitignore --write >/dev/null
 else
   echo "    skipped: run pnpm install, then re-run this script"

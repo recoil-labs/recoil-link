@@ -3,7 +3,7 @@
   "version": "45.1.0",
   "description": "Hand-crafted Solana/SVM client for Recoil Link Sealevel programs",
   "keywords": [
-    "hyperlane",
+    "recoil-link",
     "sealevel",
     "solana",
     "svm"

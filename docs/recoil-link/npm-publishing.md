@@ -20,6 +20,16 @@ Packages keep Hyperlane's version numbers (`@recoillink/sdk@45.0.1` is built fro
 
 So we publish **after each upstream sync**. For a Recoil-only fix in between, give the TypeScript packages a prerelease suffix (`45.0.1-recoil.1`). Never move `@recoillink/core` off upstream's version.
 
+## What npm shows
+
+Each package's npm page shows the README and `package.json` of its latest published version.
+
+- **READMEs** are ours, in [`scripts/recoil-link/npm/readmes/`](../../scripts/recoil-link/npm/readmes/), one per package. `pack.sh` swaps each in only while packing and then restores upstream's README, so the repo keeps upstream's files and syncs never conflict over them. Every published package needs one; packing fails without it.
+- **Keywords and descriptions** that name Hyperlane are replaced by `package-policy.mjs` (run by `rebrand.sh`), so they stay fixed after every sync.
+- **What stays:** class names such as `HyperlaneCore` (the real API) and a one-line credit to Hyperlane in each README.
+
+A change here reaches npm with the next published version of each package.
+
 ## Check before publishing
 
 ```bash

@@ -1,11 +1,11 @@
 {
   "name": "@recoillink/cosmos-sdk",
   "version": "45.1.0",
-  "description": "Recoil Link TypeScript SDK for the Cosmos Hyperlane SDK module",
+  "description": "Recoil Link TypeScript SDK for Cosmos",
   "keywords": [
     "blockchain",
     "cosmos",
-    "hyperlane",
+    "recoil-link",
     "sdk"
   ],
   "homepage": "https://github.com/recoil-labs/recoil-link",
