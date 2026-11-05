@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/rebalancer",
-  "version": "29.0.4",
+  "version": "29.0.5",
   "private": true,
   "description": "Recoil Link Warp Route Collateral Rebalancer Service",
   "keywords": [

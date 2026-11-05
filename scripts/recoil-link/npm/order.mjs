@@ -16,14 +16,17 @@ const dirs = readFileSync(join(here, 'packages.txt'), 'utf8')
 const byName = new Map();
 for (const dir of dirs) {
   const pkg = JSON.parse(readFileSync(join(root, dir, 'package.json'), 'utf8'));
-  if (pkg.private) throw new Error(`${dir} is private but listed in packages.txt`);
+  if (pkg.private)
+    throw new Error(`${dir} is private but listed in packages.txt`);
   byName.set(pkg.name, { dir, pkg });
 }
 
-const runtimeDeps = (pkg) => Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies });
+const runtimeDeps = (pkg) =>
+  Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies });
 for (const { dir, pkg } of byName.values()) {
   for (const dep of runtimeDeps(pkg)) {
-    if (dep.startsWith('@hyperlane-xyz/')) throw new Error(`${dir} depends on ${dep}`);
+    if (dep.startsWith('@hyperlane-xyz/'))
+      throw new Error(`${dir} depends on ${dep}`);
     if (dep.startsWith('@recoillink/') && !byName.has(dep))
       throw new Error(`${dir} depends on ${dep}, which is not in packages.txt`);
   }
@@ -32,9 +35,11 @@ for (const { dir, pkg } of byName.values()) {
 const done = new Set();
 const visit = (name, path = []) => {
   if (done.has(name)) return;
-  if (path.includes(name)) throw new Error(`dependency cycle: ${[...path, name].join(' -> ')}`);
+  if (path.includes(name))
+    throw new Error(`dependency cycle: ${[...path, name].join(' -> ')}`);
   const { dir, pkg } = byName.get(name);
-  for (const dep of runtimeDeps(pkg)) if (byName.has(dep)) visit(dep, [...path, name]);
+  for (const dep of runtimeDeps(pkg))
+    if (byName.has(dep)) visit(dep, [...path, name]);
   done.add(name);
   console.log(dir);
 };

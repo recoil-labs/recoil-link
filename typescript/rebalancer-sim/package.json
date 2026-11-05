@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/rebalancer-sim",
-  "version": "0.2.45",
+  "version": "0.2.46",
   "private": true,
   "description": "Fast real-time simulation framework for testing Recoil Link warp route rebalancers",
   "keywords": [
@@ -32,10 +32,10 @@
     "test:ci": "mocha --config .mocharc.json './test/scenarios/**/*.test.ts' --exit"
   },
   "dependencies": {
+    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/core": "workspace:*",
     "@recoillink/provider-sdk": "workspace:*",
     "@recoillink/rebalancer": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",
     "ethers": "catalog:",

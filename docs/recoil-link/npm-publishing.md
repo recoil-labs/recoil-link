@@ -29,7 +29,7 @@ scripts/recoil-link/npm/pack.sh            # writes ./npm-packs, publishes nothi
 
 `pack.sh` packs each package the way npm would. It fails if a package depends on something users couldn't install (an unlisted `@recoillink` package, or any `@hyperlane-xyz` package, which would pull Hyperlane's SDK into their install) or still has a `workspace:` dependency.
 
-`@recoillink/core` is large (about 113 MB packed, about 19k files). That is expected: Hyperlane's own `@hyperlane-xyz/core` is the same.
+`@recoillink/core` is large (about 113 MB packed, about 19k files). That is expected: Hyperlane's own `@recoillink/core` is the same.
 
 ## First release (once, from a maintainer's machine)
 

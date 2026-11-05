@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/sealevel-sdk",
-  "version": "45.0.1",
+  "version": "45.1.0",
   "description": "Hand-crafted Solana/SVM client for Recoil Link Sealevel programs",
   "keywords": [
     "hyperlane",
@@ -46,11 +46,11 @@
     "test:unit": "mocha --require tsx --timeout 10000 'src/**/*.unit-test.ts'"
   },
   "dependencies": {
+    "@noble/curves": "^1.9.0",
+    "@noble/hashes": "^1.7.1",
     "@recoillink/forking-sdk": "workspace:*",
     "@recoillink/provider-sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",
-    "@noble/curves": "^1.9.0",
-    "@noble/hashes": "^1.7.1",
     "@solana-program/address-lookup-table": "^0.14.1",
     "@solana-program/loader-v3": "^0.6.1",
     "@solana-program/system": "^0.14.1",

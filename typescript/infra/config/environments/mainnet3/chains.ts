@@ -17,6 +17,18 @@ export const ethereumChainNames = supportedChainNames.filter(
 export const agentSpecificChainMetadataOverrides: ChainMap<
   Partial<ChainMetadata>
 > = {
+  elysium: {
+    transactionOverrides: {
+      // Temporary testing override: Alchemy does not expose eth_feeHistory
+      // on Elysium yet. Allow headroom above the observed ~0.1-gwei base fee.
+      gasPrice: 2 * 10 ** 8,
+    },
+  },
+  coti: {
+    transactionOverrides: {
+      priorityFeeCap: 50 * 10 ** 9, // 50 gwei
+    },
+  },
   ink: {
     transactionOverrides: {
       minGasPrice: 1, // 1 wei
@@ -44,6 +56,19 @@ export const agentSpecificChainMetadataOverrides: ChainMap<
       minGasPrice: 1 * 10 ** 6, // 0.001 gwei
       minFeePerGas: 1 * 10 ** 6, // 0.001 gwei
       minPriorityFeePerGas: 1 * 10 ** 6, // 0.001 gwei
+    },
+  },
+  polygon: {
+    transactionOverrides: {
+      minPriorityFeePerGas: 25 * 10 ** 9, // 25 gwei
+      priorityFeeCap: 250 * 10 ** 9, // 250 gwei
+    },
+  },
+  zerogravity: {
+    transactionOverrides: {
+      minFeePerGas: 2 * 10 ** 9, // Preserve the existing agent minimum.
+      minPriorityFeePerGas: 2 * 10 ** 9, // 2 gwei
+      priorityFeeCap: 30 * 10 ** 9, // 30 gwei
     },
   },
 };

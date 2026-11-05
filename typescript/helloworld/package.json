@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/helloworld",
-  "version": "45.0.1",
+  "version": "45.1.0",
   "private": true,
   "description": "A basic skeleton of a Recoil Link app",
   "keywords": [

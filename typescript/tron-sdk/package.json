@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/tron-sdk",
-  "version": "26.0.1",
+  "version": "26.0.2",
   "description": "Recoil Link TypeScript SDK for Tron",
   "keywords": [
     "blockchain",

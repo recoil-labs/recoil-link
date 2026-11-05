@@ -1483,7 +1483,11 @@
       "quotedCalls": "0x74e134E2b52f126336fa2C50B01357DabCA3d636",
       "universalRouter": "0x52dd779c1b5eeb54d5f218EfA72D52117ca04115",
       "interchainAccountRouterV3": "0x386591e7a270a7f354832D0786c8ccb21C041033",
-      "quotedCallsV3": "0x34BcA2e2b1ba1Aa86D7488584aDfa142618B6804"
+      "quotedCallsV3": "0x34BcA2e2b1ba1Aa86D7488584aDfa142618B6804",
+      "transactionOverrides": {
+        "minPriorityFeePerGas": 25000000000,
+        "priorityFeeCap": 250000000000
+      }
     },
     "solanamainnet": {
       "blockExplorers": [
@@ -1553,7 +1557,7 @@
       "blocks": {
         "confirmations": 1,
         "estimateBlockTime": 2,
-        "reorgPeriod": 15
+        "reorgPeriod": 90
       },
       "chainId": 88,
       "deployer": {
@@ -2637,7 +2641,10 @@
       "index": {
         "from": 66586
       },
-      "interchainAccountRouterV3": "0x4E5aa006BEAFDCCD96d95E9b46cC17AD96c22d13"
+      "interchainAccountRouterV3": "0x4E5aa006BEAFDCCD96d95E9b46cC17AD96c22d13",
+      "transactionOverrides": {
+        "priorityFeeCap": 50000000000
+      }
     },
     "kyve": {
       "bech32Prefix": "kyve",
@@ -2772,11 +2779,7 @@
       },
       "quotedCalls": "0x90f9a2E9eCe93516d65FdaB726a3c62F5960a1b9",
       "interchainAccountRouterV3": "0x530b6596af6B6aB4D355d7Af2b5FF12eAeef8261",
-      "quotedCallsV3": "0x6D6e6DDED88646Ed251BDefcf287a16f8BC0fCcB",
-      "transactionOverrides": {
-        "maxFeePerGas": 10000000,
-        "maxPriorityFeePerGas": 10000000
-      }
+      "quotedCallsV3": "0x6D6e6DDED88646Ed251BDefcf287a16f8BC0fCcB"
     },
     "edgenchain": {
       "blockExplorers": [
@@ -3481,7 +3484,8 @@
       },
       "transactionOverrides": {
         "minFeePerGas": 2000000000,
-        "minPriorityFeePerGas": 2000000000
+        "minPriorityFeePerGas": 2000000000,
+        "priorityFeeCap": 30000000000
       },
       "quotedCalls": "0x81EeE1B7B4EF1C0775012a948Ac16F285DA1278E",
       "interchainAccountRouterV3": "0x1B947F6246ACe28abAf073FF11c098F31ce4f899",
@@ -4826,7 +4830,7 @@
       "blockExplorers": [
         {
           "apiUrl": "https://explorer.arc.io/api",
-          "family": "blockscout",
+          "family": "other",
           "name": "Arc Explorer",
           "url": "https://explorer.arc.io"
         }
@@ -4959,6 +4963,75 @@
       "quotedCalls": "0x3AD8EA4a5f06054e6519BaD185DB309cd90b07B6",
       "interchainAccountRouterV3": "0x65747F62fd6FebaBBC1774DCB16AE451BD234ce3",
       "quotedCallsV3": "0x3AD8EA4a5f06054e6519BaD185DB309cd90b07B6"
+    },
+    "elysium": {
+      "blocks": {
+        "confirmations": 1,
+        "estimateBlockTime": 0.1,
+        "reorgPeriod": 5
+      },
+      "chainId": 99901,
+      "deployer": {
+        "name": "Abacus Works",
+        "url": "https://www.hyperlane.xyz"
+      },
+      "displayName": "Elysium",
+      "domainId": 99901,
+      "gasCurrencyCoinGeckoId": "hyperliquid",
+      "index": {
+        "from": 412977
+      },
+      "name": "elysium",
+      "nativeToken": {
+        "decimals": 18,
+        "name": "Hyperliquid",
+        "symbol": "HYPE"
+      },
+      "protocol": "ethereum",
+      "rpcUrls": [
+        {
+          "http": "https://rpc-elysium-mainnet.t.conduit.xyz"
+        }
+      ],
+      "technicalStack": "arbitrumnitro",
+      "aggregationHook": "0x80f281D85e4E86DF51CF3396BD1118a06694F063",
+      "domainRoutingIsm": "0xBD70Ea9D599a0FC8158B026797177773C3445730",
+      "domainRoutingIsmFactory": "0x1052eF3419f26Bec74Ed7CEf4a4FA6812Bc09908",
+      "fallbackRoutingHook": "0xe243Fb51d91c5DE62afAbE44F7Ed2D4DC51668C6",
+      "incrementalDomainRoutingIsmFactory": "0x0761b0827849abbf7b0cC09CE14e1C93D87f5004",
+      "interchainAccountRouter": "0x55E4F0bc6b7Bb493D50839A8592e7ad8d5e93cf7",
+      "interchainGasPaymaster": "0xcf678903c003651DB0bb933820259A16ea9d95e4",
+      "interchainSecurityModule": "0xb60fA8ddBe322cC1752B1De22e518fB52F90C59F",
+      "mailbox": "0x7f50C5776722630a0024fAE05fDe8b47571D7B39",
+      "merkleTreeHook": "0xaE7BCf37D4541d3CFc46c1459829c1246E11aE08",
+      "pausableHook": "0xB78Cd042723EdBf2F099e0192A2e19B6A7FC8985",
+      "pausableIsm": "0x03cF708E42C89623bd83B281A56935cB562b9258",
+      "protocolFee": "0x41E8CB810DBca0C73E6375F33e845D86D5046b0E",
+      "proxyAdmin": "0xeA87ae93Fa0019a82A727bfd3eBd1cFCa8f64f1D",
+      "quotedCalls": "0x721a6221493a9247c84Cb8b2Af8d5E078Cd4E364",
+      "staticAggregationHookFactory": "0xEb9FcFDC9EfDC17c1EC5E1dc085B98485da213D6",
+      "staticAggregationIsm": "0xb60fA8ddBe322cC1752B1De22e518fB52F90C59F",
+      "staticAggregationIsmFactory": "0x8F7454AC98228f3504Bb91eA3D8Adafe6406110A",
+      "staticMerkleRootMultisigIsmFactory": "0x2C1FAbEcd7bFBdEBF27CcdB67baADB38b6Df90fC",
+      "staticMerkleRootWeightedMultisigIsmFactory": "0x4Ed7d626f1E96cD1C0401607Bf70D95243E3dEd1",
+      "staticMessageIdMultisigIsmFactory": "0x8b83fefd896fAa52057798f6426E9f0B080FCCcE",
+      "staticMessageIdWeightedMultisigIsmFactory": "0x2f2aFaE1139Ce54feFC03593FeE8AB2aDF4a85A7",
+      "storageGasOracle": "0xA34ceDf9068C5deE726C67A4e1DCfCc2D6E2A7fD",
+      "testRecipient": "0xc4Da6b5451B2FFa70a4FDE761B72f7AbB1EDb770",
+      "validatorAnnounce": "0xC9c5A345b45Cf634CE71401Ec194b6688EA12c1e",
+      "interchainAccountRouterV3": "0x632b4F32d65F7b25B37a27C57dD510f8e4a58Bf9",
+      "quotedCallsV3": "0x721a6221493a9247c84Cb8b2Af8d5E078Cd4E364",
+      "blockExplorers": [
+        {
+          "apiUrl": "https://elysium.kinetiq.xyz/api",
+          "family": "other",
+          "name": "Elysium Explorer",
+          "url": "https://elysium.kinetiq.xyz/explorer"
+        }
+      ],
+      "transactionOverrides": {
+        "gasPrice": 200000000
+      }
     }
   },
   "ccrRouters": {
