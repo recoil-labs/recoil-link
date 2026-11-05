@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/cli",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "A command-line utility for common Recoil Link operations",
   "keywords": [
     "CLI",

@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/cosmos-types",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "Recoil Link TypeScript SDK types for Cosmos",
   "keywords": [
     "blockchain",

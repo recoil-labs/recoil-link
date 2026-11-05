@@ -1,7 +1,7 @@
 {
   "name": "@recoillink/core",
   "description": "Core solidity contracts for Recoil Link",
-  "version": "12.2.0",
+  "version": "12.2.1-recoil.1",
   "devDependencies": {
     "@ethersproject/abi": "*",
     "@ethersproject/providers": "*",

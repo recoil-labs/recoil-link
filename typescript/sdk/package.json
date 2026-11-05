@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/sdk",
-  "version": "45.1.0",
+  "version": "45.1.1-recoil.1",
   "description": "The official SDK for Recoil Link",
   "keywords": [
     "SDK",

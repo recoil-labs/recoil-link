@@ -33,11 +33,27 @@ protected() {
   grep -vE '^\s*(#|$)' scripts/recoil-link/protected-files.txt | grep -qxF -- "$1"
 }
 
+# Same content, ignoring a package.json "version" (set by releases, replaced by syncs).
+same() {
+  cmp -s "$1" "$2" && return 0
+  case "$1" in
+    *package.json)
+      node -e 'const r=(f)=>{const j=JSON.parse(require("fs").readFileSync(f,"utf8"));delete j.version;return JSON.stringify(j)};process.exit(r(process.argv[1])===r(process.argv[2])?0:1)' "$1" "$2"
+      ;;
+    *) return 1 ;;
+  esac
+}
+
 missing=()
 while IFS=$'\t' read -r status path; do
   [ "$status" = M ] || continue
   [ "$path" = pnpm-lock.yaml ] && continue
-  if ! cmp -s "$path" "$tmp/tree/$path" && ! protected "$path"; then
+  # Generated from package.json versions by the build (version:update); a
+  # Recoil-only release changes them, and a sync takes upstream's with the versions.
+  case "$path" in
+    solidity/contracts/PackageVersioned.sol | solidity/core-utils/index.ts | typescript/cli/src/version.ts) continue ;;
+  esac
+  if ! same "$path" "$tmp/tree/$path" && ! protected "$path"; then
     missing+=("$path")
   fi
 done < <(git diff --name-status --no-renames "$base")
