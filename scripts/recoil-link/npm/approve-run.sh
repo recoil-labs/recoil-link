@@ -32,10 +32,42 @@ echo "$staged" | awk '{printf "  %-40s %s\n", $1, $2}'
 [ "$mode" = --list ] && exit 0
 
 echo
+# npm scans each staged package before it can be approved and answers 409
+# "automated review hasn't finished" until then (several minutes for a large
+# package such as core). Retry that one error; stop on any other.
+REVIEW_WAIT=60   # seconds between attempts
+REVIEW_TRIES=20  # so up to 20 minutes per package
+out=$(mktemp)
+trap 'rm -f "$out"' EXIT
+
+approve() {
+  local spec=$1 id=$2 try
+  for try in $(seq 1 "$REVIEW_TRIES"); do
+    # Shown live (npm may ask you to authenticate), and kept to read the error.
+    if "${npm_stage[@]}" approve "$id" < /dev/tty 2>&1 | tee "$out"; [ "${PIPESTATUS[0]}" -eq 0 ]; then
+      return 0
+    fi
+    if ! grep -q "automated review hasn't finished" "$out"; then
+      echo "error: approving $spec failed (see above)." >&2
+      return 1
+    fi
+    [ "$try" -lt "$REVIEW_TRIES" ] || break
+    echo "    npm is still reviewing $spec; retrying in ${REVIEW_WAIT}s (attempt $try of $REVIEW_TRIES)"
+    sleep "$REVIEW_WAIT"
+  done
+  echo "error: npm was still reviewing $spec after $REVIEW_TRIES attempts; re-run this script later." >&2
+  return 1
+}
+
 echo "Approving (npm asks for your 2FA for each; accept 'skip for 5 minutes' if offered)..."
 while read -r spec id; do
   echo "==> $spec"
-  "${npm_stage[@]}" approve "$id" < /dev/tty
+  # Already live: approved earlier, e.g. by a previous run of this script.
+  if [ "$(npm view "$spec" version < /dev/null 2> /dev/null || true)" = "${spec##*@}" ]; then
+    echo "    already live, skipping"
+    continue
+  fi
+  approve "$spec" "$id" || exit 1
 done <<< "$staged"
 
 echo
