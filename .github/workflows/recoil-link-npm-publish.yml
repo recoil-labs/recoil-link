@@ -1,6 +1,8 @@
-# Publishes the @recoillink packages listed in scripts/recoil-link/npm/packages.txt.
+# Stages the @recoillink packages listed in scripts/recoil-link/npm/packages.txt
+# on npm; a maintainer then approves them with 2FA before they go live.
 # Manual only. npm trusted publishing (OIDC): no npm token is stored; each
-# package's npm settings name this repo and this workflow file as its publisher.
+# package's npm settings name this repo and this workflow file as its publisher,
+# allowed to stage only.
 # Upstream's release.yml publishes Hyperlane's way and is not used here.
 name: Recoil Link npm publish
 
@@ -50,6 +52,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      # npm stage publish needs npm 11.15 or later; Node's bundled npm may be older.
+      - name: npm with staged publishing
+        run: |
+          npm install -g npm@^11.15.0
+          npm --version
 
       - name: Build
         run: pnpm build

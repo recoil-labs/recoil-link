@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Publishes every package in packages.txt to npm, dependencies first.
-# Versions already on npm are skipped, so a failed run can be re-run.
+# Stages every package in packages.txt on npm, dependencies first. Nothing goes
+# live until a maintainer approves the staged versions with 2FA.
+# Versions already published are skipped. A version already staged makes npm
+# refuse it: approve or reject the staged ones before re-running.
 # Meant for .github/workflows/recoil-link-npm-publish.yml (npm trusted
 # publishing, no token); run `pnpm build` first.
 #
@@ -23,5 +25,7 @@ while read -r dir; do
     continue
   fi
   echo "publish $name@$version (tag $tag)"
-  npm publish "$tgz" --access public --provenance --tag "$tag" $dry_run
+  # Staged, not published: a maintainer approves each version on npm with 2FA
+  # (docs/recoil-link/npm-publishing.md). Trusted publishers may only stage.
+  npm stage publish "$tgz" --access public --provenance --tag "$tag" $dry_run
 done < "$out/order.txt"

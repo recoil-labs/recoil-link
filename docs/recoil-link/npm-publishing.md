@@ -52,17 +52,31 @@ npm only lets you set up trusted publishing on a package that already exists, so
 
    npm says "Your package is being processed" and can take 10–20 minutes to show a new package. Until then the package may show only a `0.0.0-stage` placeholder; that's normal.
 
-4. **Set up trusted publishing.** On npmjs.com, open each package's _Settings_, then _Trusted publishing_, and add GitHub Actions with:
+4. **Set up trusted publishing.** On npmjs.com, open each package's _Settings_, then _Trusted Publisher_, and add GitHub Actions with:
    - organization `recoil-labs`
    - repository `recoil-link`
    - workflow `recoil-link-npm-publish.yml`
+   - environment: empty
+   - _Allowed actions_: leave **"npm publish" unchecked** (staging only) and **"npm dist-tag" unchecked**
 5. **Turn off tokens.** On the same page, set _Publishing access_ to "Require two-factor authentication and disallow tokens".
 
-## Later releases (GitHub Actions)
+Trusted publisher configurations can **expire**: npm then rejects the workflow with `404 Not Found - PUT …`, and the package's page says "This trusted publisher configuration has expired. Delete it and create a new one." Before a release, check the Trusted Publisher section of a package or two.
 
-Run **Recoil Link npm publish** from the Actions tab on `main`:
+## Later releases (GitHub Actions, staged)
 
-- Run it first with `dry_run` on (the default). It builds, packs and runs `npm publish --dry-run`.
-- Then run it again with `dry_run` off. It publishes with provenance and skips versions already on npm, so a failed run can be re-run.
+Releases are **staged**: the workflow puts each new version in npm's staging area, and nothing goes live until a maintainer approves it with 2FA. A compromised workflow alone cannot ship a package.
+
+1. Run **Recoil Link npm publish** from the Actions tab on `main`, first with `dry_run` on (the default): it builds, packs and runs `npm stage publish --dry-run`.
+2. Run it again with `dry_run` off. It stages every new version with provenance and skips versions already published.
+3. **Approve** the staged versions, on each package's page on npmjs.com or from a terminal logged in to npm (npm 11.15 or later; `npx -y npm@^11.15.0` works with older installs):
+
+   ```bash
+   npm stage list @recoillink/sdk        # shows the stage id of each staged version
+   npm stage approve <stage-id>          # asks for your 2FA code
+   ```
+
+4. Check each version is live: `npm view @recoillink/sdk@<version> version`.
+
+If a run stops partway, the versions it staged block a re-run (npm treats a staged version as taken). Approve them, or reject them with `npm stage reject <stage-id>`, then run the workflow again; it skips anything already published.
 
 GitHub Actions is currently **off** for this repo. Turning it on also turns on every upstream workflow. Most need Hyperlane's own runners and secrets, so they fail harmlessly, but disable the ones you don't want (`gh workflow disable <name>`) first. Upstream's `release.yml` can't publish to our packages: npm only accepts the workflow named above.
