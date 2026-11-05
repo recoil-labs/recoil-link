@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/fee-quoting",
-  "version": "27.3.16",
+  "version": "27.3.17",
   "private": true,
   "description": "Offchain fee quoting service and client for Recoil Link",
   "license": "Apache-2.0",
@@ -27,8 +27,8 @@
   "dependencies": {
     "@fastify/cors": "catalog:",
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@recoillink/provider-sdk": "workspace:*",
     "@hyperlane-xyz/registry": "catalog:",
+    "@recoillink/provider-sdk": "workspace:*",
     "@recoillink/sdk": "workspace:*",
     "@recoillink/sealevel-sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",

@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/http-registry-server",
-  "version": "45.0.1",
+  "version": "45.1.0",
   "private": true,
   "description": "An HTTP server for the Recoil Link registry",
   "homepage": "https://github.com/recoil-labs/recoil-link",

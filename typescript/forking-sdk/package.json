@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/forking-sdk",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "description": "VM-agnostic local forking abstraction for Recoil Link",
   "license": "Apache-2.0",
   "repository": "https://github.com/recoil-labs/recoil-link",

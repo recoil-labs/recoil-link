@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/widgets",
-  "version": "45.0.1",
+  "version": "45.1.0",
   "private": true,
   "description": "Common react components for Recoil Link projects",
   "keywords": [

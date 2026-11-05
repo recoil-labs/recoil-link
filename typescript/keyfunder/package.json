@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/keyfunder",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "private": true,
   "description": "Recoil Link Key Funder Service - funds agent keys with native tokens",
   "keywords": [
@@ -35,9 +35,9 @@
   },
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
+    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/core": "workspace:*",
     "@recoillink/metrics": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/sdk": "workspace:*",
     "@recoillink/tron-sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",

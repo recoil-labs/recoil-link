@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/aleo-sdk",
-  "version": "45.0.1",
+  "version": "45.1.0",
   "description": "Recoil Link TypeScript SDK for the Aleo Hyperlane SDK module",
   "keywords": [
     "aleo",
@@ -53,9 +53,9 @@
     "test:e2e": "./scripts/run-e2e-test.sh"
   },
   "dependencies": {
+    "@provablehq/sdk": "0.12.0",
     "@recoillink/provider-sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",
-    "@provablehq/sdk": "0.12.0",
     "bignumber.js": "catalog:",
     "unzipper": "^0.12.3"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@recoillink/warp-monitor",
-  "version": "0.3.42",
+  "version": "0.3.43",
   "private": true,
   "description": "Recoil Link Warp Route Balance Monitor Service",
   "keywords": [
@@ -29,9 +29,9 @@
   },
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
+    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/core": "workspace:*",
     "@recoillink/metrics": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
     "@recoillink/sdk": "workspace:*",
     "@recoillink/utils": "workspace:*",
     "ethers": "catalog:",
