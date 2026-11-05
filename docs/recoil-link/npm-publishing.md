@@ -93,7 +93,7 @@ Releases are **staged**: the workflow puts each new version in npm's staging are
    scripts/recoil-link/npm/approve-run.sh <run-id>          # approve them, then check they're live
    ```
 
-   It approves in dependency order (so `@recoillink/sdk` goes live after the packages it uses) and asks for your 2FA for each; accept "skip for 5 minutes" if npm offers it. You can also approve on each package's page on npmjs.com, or by hand with `npx -y 'npm@^11.15.0' stage approve <stage-id>` (the ids are in the run's log).
+   It approves in dependency order (so `@recoillink/sdk` goes live after the packages it uses) and asks for your 2FA for each; accept "skip for 5 minutes" if npm offers it. npm scans each staged package before it can be approved; while it does, the script waits and retries (every minute, up to 20 attempts per package; `core`, the largest, took several minutes for 45.1.1-recoil.1). Versions already live are skipped, so running it again after an interruption picks up where it stopped. You can also approve on each package's page on npmjs.com, or by hand with `npx -y 'npm@^11.15.0' stage approve <stage-id>` (the ids are in the run's log).
 
 4. Check every version is live with provenance: `npm view @recoillink/sdk@<version> dist.attestations` prints the provenance details.
 
