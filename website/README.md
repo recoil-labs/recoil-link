@@ -15,18 +15,19 @@ npm run preview    # serves dist/
 
 ## Configuration
 
-| Variable        | Used at    | Purpose                                                         |
-| --------------- | ---------- | --------------------------------------------------------------- |
-| `VITE_DOCS_URL` | build time | Base URL of the docs site. Defaults to `http://localhost:3001`. |
+| Variable            | Used at    | Purpose                                                                   |
+| ------------------- | ---------- | ------------------------------------------------------------------------- |
+| `VITE_DOCS_URL`     | build time | Base URL of the docs site. Defaults to `https://docs.link.recoilpay.com`. |
+| `VITE_EXPLORER_URL` | build time | Explorer URL. Defaults to `https://recoil-link-explorer.vercel.app`.      |
 
-Set `VITE_DOCS_URL` for every non-local build, otherwise the "Docs" and "Start building" links point at localhost.
+The defaults are the production domains; set these only to point a build elsewhere (for example a local docs server at `http://localhost:3001`).
 
 ## Deploy
 
 The Dockerfile builds the site, then serves `dist/` with nginx on `$PORT` (default 8080), the same way RecoilPay's website runs on Cloud Run.
 
 ```bash
-docker build --build-arg VITE_DOCS_URL=https://docs.example.com -t recoil-link-website .
+docker build -t recoil-link-website .   # production links by default
 docker run -p 8080:8080 recoil-link-website
 ```
 

@@ -41,16 +41,16 @@ npm run build
 
 ## Configuration
 
-| Variable           | Used at    | Purpose                                                 |
-| ------------------ | ---------- | ------------------------------------------------------- |
-| `VITE_DOCS_URL`    | build time | Docs site base URL. Defaults to `http://localhost:3001` |
-| `VITE_WEBSITE_URL` | build time | Website URL. Defaults to `http://localhost:5173`        |
+| Variable           | Used at    | Purpose                                                           |
+| ------------------ | ---------- | ----------------------------------------------------------------- |
+| `VITE_DOCS_URL`    | build time | Docs site base URL. Defaults to `https://docs.link.recoilpay.com` |
+| `VITE_WEBSITE_URL` | build time | Website URL. Defaults to `https://link.recoilpay.com`             |
 
 ## Deploy
 
 Same as the website: the Dockerfile builds the site and serves `dist/` with nginx on `$PORT` (default 8080).
 
 ```bash
-docker build --build-arg VITE_DOCS_URL=https://docs.example.com --build-arg VITE_WEBSITE_URL=https://example.com -t recoil-link-explorer .
+docker build -t recoil-link-explorer .   # production links by default; pass --build-arg VITE_DOCS_URL=… to point elsewhere
 docker run -p 8080:8080 recoil-link-explorer
 ```
