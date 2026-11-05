@@ -68,15 +68,17 @@ Releases are **staged**: the workflow puts each new version in npm's staging are
 
 1. Run **Recoil Link npm publish** from the Actions tab on `main`, first with `dry_run` on (the default): it builds, packs and runs `npm stage publish --dry-run`.
 2. Run it again with `dry_run` off. It stages every new version with provenance and skips versions already published.
-3. **Approve** the staged versions, on each package's page on npmjs.com or from a terminal logged in to npm (npm 11.15 or later; `npx -y npm@^11.15.0` works with older installs):
+3. **Approve** the staged versions from a terminal logged in to npm (`npm login`), using the run id from the run's URL:
 
    ```bash
-   npm stage list @recoillink/sdk        # shows the stage id of each staged version
-   npm stage approve <stage-id>          # asks for your 2FA code
+   scripts/recoil-link/npm/approve-run.sh <run-id> --list   # what the run staged
+   scripts/recoil-link/npm/approve-run.sh <run-id>          # approve them, then check they're live
    ```
 
-4. Check each version is live: `npm view @recoillink/sdk@<version> version`.
+   It approves in dependency order (so `@recoillink/sdk` goes live after the packages it uses) and asks for your 2FA for each; accept "skip for 5 minutes" if npm offers it. You can also approve on each package's page on npmjs.com, or by hand with `npx -y 'npm@^11.15.0' stage approve <stage-id>` (the ids are in the run's log).
 
-If a run stops partway, the versions it staged block a re-run (npm treats a staged version as taken). Approve them, or reject them with `npm stage reject <stage-id>`, then run the workflow again; it skips anything already published.
+4. Check every version is live with provenance: `npm view @recoillink/sdk@<version> dist.attestations` prints the provenance details.
 
-GitHub Actions is currently **off** for this repo. Turning it on also turns on every upstream workflow. Most need Hyperlane's own runners and secrets, so they fail harmlessly, but disable the ones you don't want (`gh workflow disable <name>`) first. Upstream's `release.yml` can't publish to our packages: npm only accepts the workflow named above.
+If a run stops partway, the versions it staged block a re-run (npm treats a staged version as taken). Approve them with `approve-run.sh <run-id>` (or reject them with `npm stage reject <stage-id>`), fix the cause, then run the workflow again; it skips anything already published. The usual cause is an expired or missing trusted publisher on the package the run stopped at (`401` or `404` on its upload).
+
+GitHub Actions is on for this repo with every upstream workflow disabled; only this publish workflow runs. Re-enabling an upstream workflow (`gh workflow enable <name>`) is safe for publishing: upstream's `release.yml` can't publish to our packages, because npm only accepts the workflow named above.
