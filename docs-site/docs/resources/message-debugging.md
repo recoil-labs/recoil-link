@@ -6,7 +6,7 @@ title: Message debugging
 
 Check each stage in order. Examples use Sepolia → Base Sepolia; take addresses for your chains from [Networks](../reference/networks.md).
 
-The quickest first check is the [Recoil Link Explorer](https://github.com/recoil-labs/recoil-link/tree/main/explorer): paste the message id or the dispatch transaction hash to see whether the message was sent, paid for and delivered. The steps below go further.
+The quickest first check is the [Recoil Link Explorer](https://recoil-link-explorer.vercel.app): paste the message id or the dispatch transaction hash to see whether the message was sent, paid for and delivered. The steps below go further.
 
 ## 1. Was it dispatched?
 

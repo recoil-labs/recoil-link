@@ -9,7 +9,7 @@ const config: Config = {
 
   // Placeholder: set to the real domain once hosting is decided (used for
   // sitemaps and canonical links only; the site works without it).
-  url: 'https://docs.example.invalid',
+  url: 'https://docs.link.recoilpay.com',
   baseUrl: '/',
 
   organizationName: 'recoil-labs',
@@ -80,6 +80,11 @@ const config: Config = {
         },
         { to: '/docs/quickstart', label: 'Quickstart', position: 'left' },
         { to: '/docs/reference/networks', label: 'Networks', position: 'left' },
+        {
+          href: 'https://recoil-link-explorer.vercel.app',
+          label: 'Explorer',
+          position: 'right',
+        },
         {
           href: 'https://github.com/recoil-labs/recoil-link-registry',
           label: 'Registry',

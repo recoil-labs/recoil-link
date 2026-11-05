@@ -47,7 +47,7 @@ Message was delivered!
 Delivery time: 82s
 ```
 
-`--quick` returns right after dispatch; `rlink status --origin sepolia --id <messageId>` (or `--dispatchTx <hash>`) checks later.
+`--quick` returns right after dispatch; `rlink status --origin sepolia --id <messageId>` (or `--dispatchTx <hash>`) checks later, or paste the message id into the [explorer](https://recoil-link-explorer.vercel.app).
 
 ## 4. Check it on-chain
 

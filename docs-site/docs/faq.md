@@ -30,7 +30,7 @@ Sepolia, Base Sepolia, OP Sepolia and BSC testnet: [Networks](./reference/networ
 
 ### Is there an explorer?
 
-Not yet. Use the `Dispatch` and `ProcessId` events, `Mailbox.delivered(messageId)` and `rlink status`.
+Yes: the [Recoil Link Explorer](https://recoil-link-explorer.vercel.app). Paste a message id, or the hash of the transaction that sent or delivered it, to see whether it was paid for and delivered, and how long it took. From the command line, `rlink status` does the same.
 
 ### Can I use it on mainnet?
 

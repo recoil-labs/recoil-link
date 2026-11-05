@@ -15,7 +15,8 @@ Recoil Link is on **testnet** (Sepolia, Base Sepolia, OP Sepolia, BSC testnet), 
 ## Links
 
 - [Recoil Link on GitHub](https://github.com/recoil-labs/recoil-link)
-- [Documentation](https://github.com/recoil-labs/recoil-link/tree/main/docs-site/docs)
+- [Documentation](https://docs.link.recoilpay.com)
+- [Explorer](https://recoil-link-explorer.vercel.app): look up any message
 - [Examples](https://github.com/recoil-labs/recoil-link-examples)
 
 ## License
