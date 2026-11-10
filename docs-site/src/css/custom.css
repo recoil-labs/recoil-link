@@ -1,37 +1,66 @@
 /**
- * Recoil Link docs theme. Palette shared with the RecoilPay docs
- * (recoil-pay-v2/recoil-core/docs-site/src/css/custom.css) so both Recoil Labs
- * sites read as one family.
+ * Recoil Link docs theme, from the Recoil Labs media kit (website/Media Kit),
+ * shared with the website and explorer: near-black violet surfaces, the
+ * logo's lavender as primary.
  */
 :root {
-  --ifm-color-primary: #424af6;
-  --ifm-color-primary-dark: #2d36f4;
-  --ifm-color-primary-darker: #212bf3;
-  --ifm-color-primary-darkest: #0b16d0;
-  --ifm-color-primary-light: #5b62f8;
-  --ifm-color-primary-lighter: #6a71f8;
-  --ifm-color-primary-lightest: #969bfb;
+  --ifm-color-primary: #5b4fb0;
+  --ifm-color-primary-dark: #52479f;
+  --ifm-color-primary-darker: #4d4396;
+  --ifm-color-primary-darkest: #40377b;
+  --ifm-color-primary-light: #6c61bb;
+  --ifm-color-primary-lighter: #7569bf;
+  --ifm-color-primary-lightest: #9089cd;
+  --ifm-background-color: #f6f4fd;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #160e26;
   --ifm-code-font-size: 92%;
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
   --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
-  --docusaurus-highlighted-code-line-bg: rgba(66, 74, 246, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(91, 79, 176, 0.1);
   --cta-ink: #ffffff;
-  --card-border: rgba(0, 0, 0, 0.08);
+  --card-border: #d6cff0;
 }
 
 [data-theme='dark']:root {
-  --ifm-background-color: #00071f;
-  --ifm-background-surface-color: #060c22;
-  --ifm-color-primary: #61e5fc;
-  --ifm-color-primary-dark: #3fdbfa;
-  --ifm-color-primary-darker: #2ed6fa;
-  --ifm-color-primary-darkest: #08b7de;
-  --ifm-color-primary-light: #83effd;
-  --ifm-color-primary-lighter: #94f2fd;
-  --ifm-color-primary-lightest: #c8f8fe;
-  --docusaurus-highlighted-code-line-bg: rgba(97, 229, 252, 0.12);
-  --cta-ink: #00071f;
-  --card-border: rgba(255, 255, 255, 0.08);
+  --ifm-background-color: #0d0717;
+  --ifm-background-surface-color: #1a1030;
+  --ifm-font-color-base: #f1eefb;
+  --ifm-color-primary: #8d87cd;
+  --ifm-color-primary-dark: #7c75c5;
+  --ifm-color-primary-darker: #736cc1;
+  --ifm-color-primary-darkest: #5a51b3;
+  --ifm-color-primary-light: #9e99d5;
+  --ifm-color-primary-lighter: #a7a2d9;
+  --ifm-color-primary-lightest: #c2bee5;
+  --ifm-code-background: #1a1030;
+  --ifm-toc-border-color: #35295a;
+  --ifm-color-emphasis-200: #35295a;
+  --ifm-hr-background-color: #35295a;
+  --docusaurus-highlighted-code-line-bg: rgba(141, 135, 205, 0.14);
+  --cta-ink: #0d0717;
+  --card-border: #35295a;
+}
+
+/* Navbar and footer sit on the media kit's deepest violet. */
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .footer--dark {
+  background-color: #120a24;
+}
+.footer--dark {
+  --ifm-footer-background-color: #120a24;
+}
+
+/* Keep the announcement link readable on the violet bar. */
+div[class*='announcementBar'] a {
+  color: #89f2fe;
+}
+
+/* Hero backdrop: the media kit's indigo-to-violet glow. */
+[data-theme='dark'] .hero-rl {
+  background:
+    radial-gradient(ellipse 70% 60% at 85% 0%, rgba(80, 8, 156, 0.5), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 10% 100%, rgba(30, 7, 75, 0.8), transparent 70%);
 }
 
 .markdown > h1 {

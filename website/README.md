@@ -1,6 +1,6 @@
 # Recoil Link website
 
-The marketing site for Recoil Link: one static page built with Vite, React and Tailwind v4. Its colours and type follow RecoilPay's website (`recoil-pay-v2/recoil-website-v2`).
+The marketing site for Recoil Link: one static page built with Vite, React and Tailwind v4. Its colours and logo come from the Recoil Labs media kit (`Media Kit/`); the logo is cut out to `public/logo-mark*.png`.
 
 The developer docs are a separate site in [`../docs-site`](../docs-site).
 
