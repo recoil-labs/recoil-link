@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { GithubIcon, Mark } from './components/Logo';
+import { GithubIcon } from './components/Logo';
 import { Button, Section, SectionHeading, TextLink } from './components/ui';
 import { EXAMPLES, EXPLORER, GITHUB, RECOILPAY, REGISTRY, docs } from './links';
 
@@ -49,9 +49,22 @@ function HeroDiagram() {
         fill="var(--surface)"
         stroke="var(--primary)"
       />
-      <g transform="translate(246 182)">
-        <Mark className="h-9 w-auto" />
-      </g>
+      <image
+        href="/logo-mark.png"
+        x="239"
+        y="176"
+        width="42"
+        height="48"
+        className="logo-on-dark"
+      />
+      <image
+        href="/logo-mark-dark.png"
+        x="239"
+        y="176"
+        width="42"
+        height="48"
+        className="logo-on-light"
+      />
       {chains.map((c) => (
         <g key={c.name}>
           <rect
@@ -145,6 +158,7 @@ export default function App() {
       <Header />
       <main>
         <section className="relative overflow-hidden px-4 pt-16 pb-20 sm:px-6 sm:pt-24">
+          <div className="hero-glow pointer-events-none absolute inset-0" />
           <div className="grid-bg pointer-events-none absolute inset-0" />
           <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
             <div>
@@ -234,7 +248,7 @@ export default function App() {
               <p className="mb-4 font-mono text-xs text-faint">
                 Sender.sol: Sepolia → Base Sepolia
               </p>
-              <pre className="font-mono text-[13px] leading-relaxed text-[#e9e9ed]">
+              <pre className="font-mono text-[13px] leading-relaxed text-[#f1eefb]">
                 <code>{snippet}</code>
               </pre>
             </div>

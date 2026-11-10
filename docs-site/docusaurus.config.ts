@@ -5,7 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config: Config = {
   title: 'Recoil Link Docs',
   tagline: 'Cross-chain messaging and proof layer by Recoil Labs.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/favicon.png',
 
   // Placeholder: set to the real domain once hosting is decided (used for
   // sitemaps and canonical links only; the site works without it).
@@ -59,6 +59,8 @@ const config: Config = {
       id: 'testnet',
       content:
         'Recoil Link is live on testnets (Sepolia, Base Sepolia, OP Sepolia, BSC testnet). Mainnet follows a security audit. <a href="/docs/operate/security">Security status</a>',
+      backgroundColor: '#50089c',
+      textColor: '#f1eefb',
       isCloseable: true,
     },
     colorMode: {
@@ -69,7 +71,8 @@ const config: Config = {
       title: 'Recoil Link',
       logo: {
         alt: 'Recoil Link',
-        src: 'img/logo.svg',
+        src: 'img/logo-mark-dark.png',
+        srcDark: 'img/logo-mark.png',
       },
       items: [
         {

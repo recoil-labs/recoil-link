@@ -1,50 +1,57 @@
 @import "tailwindcss";
 
-/* Recoil Link theme. Surfaces, text and violet primary follow the RecoilPay
-   app (recoil-pay-v2/recoil-website-v2/src/globals.css); cyan and blue come
-   from the Recoil logo mark and carry the "message in flight" accents. */
+/* Recoil Link theme, from the Recoil Labs media kit (website/Media Kit):
+   near-black violet surfaces, a deep indigo-to-violet gradient, the logo's
+   lavender as primary, neon violet/magenta glows and the kit's cyan line
+   accent for "message in flight". */
 :root,
 :root[data-theme="dark"] {
-  --bg: #161826;
-  --bg-deep: #121320;
-  --surface: #232532;
-  --surface-alt: #292b31;
-  --border: #3f424d;
-  --text: #e9e9ed;
-  --muted: #b2b6ca;
-  --faint: #9397ab;
-  --primary: #9184d9;
-  --primary-strong: #a7a1db;
-  --on-primary: #ffffff;
-  --cyan: #07dfff;
-  --blue: #0334f2;
+  --bg: #0d0717;
+  --bg-deep: #120a24;
+  --surface: #1a1030;
+  --surface-alt: #22163d;
+  --border: #35295a;
+  --text: #f1eefb;
+  --muted: #bcb5d6;
+  --faint: #8f87ad;
+  --primary: #8d87cd;
+  --primary-strong: #a9a4e0;
+  --on-primary: #0d0717;
+  --cyan: #89f2fe;
+  --blue: #6a1fd0;
   --mint: #7cf6b5;
-  --lavender: #c4c7fc;
-  --grid: color-mix(in srgb, #e9e9ed 6%, transparent);
-  --header: color-mix(in srgb, #161826 72%, transparent);
-  --code-bg: #121320;
+  --lavender: #c4c0f2;
+  --magenta: #b44cff;
+  --glow-1: #1e074b;
+  --glow-2: #50089c;
+  --grid: color-mix(in srgb, #8d87cd 9%, transparent);
+  --header: color-mix(in srgb, #0d0717 72%, transparent);
+  --code-bg: #0a0512;
   color-scheme: dark;
 }
 
 :root[data-theme="light"] {
-  --bg: #f3f5fe;
-  --bg-deep: #e9ecfa;
+  --bg: #f6f4fd;
+  --bg-deep: #ece8fa;
   --surface: #ffffff;
-  --surface-alt: #f7f8fd;
-  --border: #cfd3e5;
-  --text: #161826;
-  --muted: #4a4e63;
-  --faint: #6b6f85;
-  --primary: #5d5294;
-  --primary-strong: #4a4078;
+  --surface-alt: #f8f6fe;
+  --border: #d6cff0;
+  --text: #160e26;
+  --muted: #4b4266;
+  --faint: #6d6589;
+  --primary: #5b4fb0;
+  --primary-strong: #463b94;
   --on-primary: #ffffff;
-  --cyan: #0391b0;
-  --blue: #0334f2;
+  --cyan: #0b8fa6;
+  --blue: #5a12c0;
   --mint: #138a55;
-  --lavender: #5d5294;
-  --grid: color-mix(in srgb, #161826 7%, transparent);
-  --header: color-mix(in srgb, #f3f5fe 80%, transparent);
-  --code-bg: #161826;
+  --lavender: #5b4fb0;
+  --magenta: #8a1fd6;
+  --glow-1: #ddd5fb;
+  --glow-2: #c9b6f5;
+  --grid: color-mix(in srgb, #50089c 7%, transparent);
+  --header: color-mix(in srgb, #f6f4fd 80%, transparent);
+  --code-bg: #160e26;
   color-scheme: light;
 }
 
@@ -66,6 +73,7 @@
   --color-blue: var(--blue);
   --color-mint: var(--mint);
   --color-lavender: var(--lavender);
+  --color-magenta: var(--magenta);
   --color-code-bg: var(--code-bg);
 }
 
@@ -77,6 +85,17 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Hero backdrop: the media kit's indigo-to-violet gradient glow. */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 85% 10%, color-mix(in srgb, var(--glow-2) 55%, transparent), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, color-mix(in srgb, var(--glow-1) 80%, transparent), transparent 70%);
+}
+
+/* Theme-specific logo artwork (white R on dark, ink R on light). */
+:root[data-theme="light"] .logo-on-dark,
+:root:not([data-theme="light"]) .logo-on-light { display: none; }
 
 .grid-bg {
   background-image:

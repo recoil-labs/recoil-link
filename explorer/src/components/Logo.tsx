@@ -1,26 +1,20 @@
-// Recoil mark (from RecoilPay) with a "Recoil Link" wordmark. Placeholder
-// until Recoil Link has its own logo.
-export function Mark({ className = 'h-6 w-auto' }: { className?: string }) {
+// Recoil Labs mark from the media kit (website/Media Kit/Logo (2).PNG),
+// cut out to transparent PNGs in public/: white R for the dark theme, ink R
+// for the light theme.
+export function Mark({ className = 'h-7 w-auto' }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 18 22"
-      fill="none"
-      className={className}
-      aria-hidden="true"
-    >
-      <path
-        d="M4.1 12.945v8.11h13v-8.11h-13Zm1.63 6.49v-4.9h9.7v4.87l-9.7.03Z"
-        fill="#07DFFF"
+    <>
+      <img
+        src="/logo-mark.png"
+        alt=""
+        className={`logo-on-dark ${className}`}
       />
-      <path
-        d="M.9.945v17.49h8.11V.945H.9Zm1.62 15.86V2.565h4.87v14.24H2.52Z"
-        fill="#0334F2"
+      <img
+        src="/logo-mark-dark.png"
+        alt=""
+        className={`logo-on-light ${className}`}
       />
-      <path
-        d="m9.01 12.945-1.652.079v1.65l1.759-.147-.107-1.582Z"
-        fill="#07DFFF"
-      />
-    </svg>
+    </>
   );
 }
 

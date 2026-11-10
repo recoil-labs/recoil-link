@@ -3,10 +3,10 @@
   <desc id="desc">A contract on the origin chain dispatches a message through the Mailbox, whose hooks record it in a Merkle tree and collect the delivery fee. Off-chain, validators sign a checkpoint once the origin block is final and publish the signature; the relayer collects signatures and calls process on the destination Mailbox, whose security module checks the signatures before the recipient's handle runs. Fees go to the Recoil Labs treasury, which funds the relayer's gas.</desc>
   <defs>
     <marker id="arrow-msg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L10 5L0 10z" fill="#9184d9"/>
+      <path d="M0 0L10 5L0 10z" fill="#8d87cd"/>
     </marker>
     <marker id="arrow-read" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L10 5L0 10z" fill="#9397ab"/>
+      <path d="M0 0L10 5L0 10z" fill="#8f87ad"/>
     </marker>
     <marker id="arrow-money" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#7CF6B5"/>
@@ -14,124 +14,124 @@
   </defs>
 
   <!-- Card -->
-  <rect width="960" height="772" rx="20" fill="#161826"/>
-  <text x="32" y="46" font-size="21" font-weight="600" fill="#e9e9ed">How a Recoil Link message travels</text>
-  <text x="32" y="70" font-size="13" fill="#b2b6ca">Contracts on two chains, agents in between. Validators attest to messages; the relayer only carries the proof.</text>
+  <rect width="960" height="772" rx="20" fill="#0d0717"/>
+  <text x="32" y="46" font-size="21" font-weight="600" fill="#f1eefb">How a Recoil Link message travels</text>
+  <text x="32" y="70" font-size="13" fill="#bcb5d6">Contracts on two chains, agents in between. Validators attest to messages; the relayer only carries the proof.</text>
 
   <!-- Columns -->
-  <rect x="24" y="96" width="288" height="424" rx="14" fill="#1d1f2e" stroke="#3f424d"/>
-  <text x="44" y="124" font-size="11" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#07DFFF">ORIGIN CHAIN</text>
-  <text x="44" y="142" font-size="12" fill="#9397ab">e.g. Base Sepolia</text>
+  <rect x="24" y="96" width="288" height="424" rx="14" fill="#120a24" stroke="#35295a"/>
+  <text x="44" y="124" font-size="11" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#89f2fe">ORIGIN CHAIN</text>
+  <text x="44" y="142" font-size="12" fill="#8f87ad">e.g. Base Sepolia</text>
 
-  <rect x="336" y="96" width="288" height="424" rx="14" fill="#1d1f2e" stroke="#3f424d"/>
-  <text x="356" y="124" font-size="11" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#a7a1db">OFF-CHAIN AGENTS</text>
-  <text x="356" y="142" font-size="12" fill="#9397ab">run by independent operators</text>
+  <rect x="336" y="96" width="288" height="424" rx="14" fill="#120a24" stroke="#35295a"/>
+  <text x="356" y="124" font-size="11" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#a9a4e0">OFF-CHAIN AGENTS</text>
+  <text x="356" y="142" font-size="12" fill="#8f87ad">run by independent operators</text>
 
-  <rect x="648" y="96" width="288" height="424" rx="14" fill="#1d1f2e" stroke="#3f424d"/>
+  <rect x="648" y="96" width="288" height="424" rx="14" fill="#120a24" stroke="#35295a"/>
   <text x="668" y="124" font-size="11" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#7CF6B5">DESTINATION CHAIN</text>
-  <text x="668" y="142" font-size="12" fill="#9397ab">e.g. OP Sepolia</text>
+  <text x="668" y="142" font-size="12" fill="#8f87ad">e.g. OP Sepolia</text>
 
   <!-- Connectors (drawn first, under the boxes) -->
   <g fill="none" stroke-width="1.5">
     <!-- 1 dispatch, 2 hooks -->
-    <path d="M168 212V250" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
-    <path d="M168 304V334" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
+    <path d="M168 212V250" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
+    <path d="M168 304V334" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
     <!-- 3 validators watch the Merkle tree -->
-    <path d="M276 388H316V192H358" stroke="#9397ab" stroke-dasharray="5 4" marker-end="url(#arrow-read)"/>
+    <path d="M276 388H316V192H358" stroke="#8f87ad" stroke-dasharray="5 4" marker-end="url(#arrow-read)"/>
     <!-- relayer reads Dispatch events and gas payments -->
-    <path d="M288 278H326V398H358" stroke="#9397ab" stroke-dasharray="5 4" marker-end="url(#arrow-read)"/>
+    <path d="M288 278H326V398H358" stroke="#8f87ad" stroke-dasharray="5 4" marker-end="url(#arrow-read)"/>
     <!-- 4 publish, 5 collect -->
-    <path d="M480 224V264" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
-    <path d="M480 318V358" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
+    <path d="M480 224V264" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
+    <path d="M480 318V358" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
     <!-- 6 process -->
-    <path d="M600 398H636V278H670" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
+    <path d="M600 398H636V278H670" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
     <!-- 7 verify, 8 handle -->
-    <path d="M792 304V344" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
-    <path d="M792 252V214" stroke="#9184d9" marker-end="url(#arrow-msg)"/>
+    <path d="M792 304V344" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
+    <path d="M792 252V214" stroke="#8d87cd" marker-end="url(#arrow-msg)"/>
     <!-- Money: fees to the treasury, treasury funds the relayer -->
     <path d="M276 440H300V572H334" stroke="#7CF6B5" marker-end="url(#arrow-money)"/>
     <path d="M480 548V438" stroke="#7CF6B5" marker-end="url(#arrow-money)"/>
   </g>
 
   <!-- Origin boxes -->
-  <rect x="48" y="160" width="240" height="52" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="64" y="182" font-size="14" font-weight="600" fill="#e9e9ed">Your contract</text>
-  <text x="64" y="201" font-size="12" fill="#b2b6ca">calls dispatch() and pays the fee</text>
+  <rect x="48" y="160" width="240" height="52" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="64" y="182" font-size="14" font-weight="600" fill="#f1eefb">Your contract</text>
+  <text x="64" y="201" font-size="12" fill="#bcb5d6">calls dispatch() and pays the fee</text>
 
-  <rect x="48" y="252" width="240" height="52" rx="10" fill="#232532" stroke="#9184d9" stroke-width="1.5"/>
-  <text x="64" y="274" font-size="14" font-weight="600" fill="#e9e9ed">Mailbox</text>
-  <text x="64" y="293" font-size="12" fill="#b2b6ca">records the message, returns its id</text>
+  <rect x="48" y="252" width="240" height="52" rx="10" fill="#1a1030" stroke="#8d87cd" stroke-width="1.5"/>
+  <text x="64" y="274" font-size="14" font-weight="600" fill="#f1eefb">Mailbox</text>
+  <text x="64" y="293" font-size="12" fill="#bcb5d6">records the message, returns its id</text>
 
-  <rect x="48" y="336" width="240" height="160" rx="10" fill="none" stroke="#3f424d" stroke-dasharray="4 4"/>
-  <text x="62" y="356" font-size="12" fill="#9397ab">Hooks</text>
-  <rect x="60" y="366" width="216" height="44" rx="8" fill="#232532" stroke="#3f424d"/>
-  <text x="74" y="385" font-size="13" font-weight="600" fill="#e9e9ed">Merkle tree hook</text>
-  <text x="74" y="401" font-size="11" fill="#b2b6ca">adds it to an append-only tree</text>
-  <rect x="60" y="418" width="216" height="44" rx="8" fill="#232532" stroke="#3f424d"/>
-  <text x="74" y="437" font-size="13" font-weight="600" fill="#e9e9ed">Gas paymaster</text>
-  <text x="74" y="453" font-size="11" fill="#b2b6ca">collects the delivery fee</text>
-  <text x="62" y="484" font-size="11" fill="#9397ab">+ protocol fee hook (0 today)</text>
+  <rect x="48" y="336" width="240" height="160" rx="10" fill="none" stroke="#35295a" stroke-dasharray="4 4"/>
+  <text x="62" y="356" font-size="12" fill="#8f87ad">Hooks</text>
+  <rect x="60" y="366" width="216" height="44" rx="8" fill="#1a1030" stroke="#35295a"/>
+  <text x="74" y="385" font-size="13" font-weight="600" fill="#f1eefb">Merkle tree hook</text>
+  <text x="74" y="401" font-size="11" fill="#bcb5d6">adds it to an append-only tree</text>
+  <rect x="60" y="418" width="216" height="44" rx="8" fill="#1a1030" stroke="#35295a"/>
+  <text x="74" y="437" font-size="13" font-weight="600" fill="#f1eefb">Gas paymaster</text>
+  <text x="74" y="453" font-size="11" fill="#bcb5d6">collects the delivery fee</text>
+  <text x="62" y="484" font-size="11" fill="#8f87ad">+ protocol fee hook (0 today)</text>
 
   <!-- Agent boxes -->
-  <rect x="360" y="160" width="240" height="64" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="376" y="182" font-size="14" font-weight="600" fill="#e9e9ed">Validators (m of n)</text>
-  <text x="376" y="200" font-size="12" fill="#b2b6ca">wait for finality, then sign</text>
-  <text x="376" y="215" font-size="12" fill="#b2b6ca">a checkpoint of the tree</text>
+  <rect x="360" y="160" width="240" height="64" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="376" y="182" font-size="14" font-weight="600" fill="#f1eefb">Validators (m of n)</text>
+  <text x="376" y="200" font-size="12" fill="#bcb5d6">wait for finality, then sign</text>
+  <text x="376" y="215" font-size="12" fill="#bcb5d6">a checkpoint of the tree</text>
 
-  <rect x="360" y="266" width="240" height="52" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="376" y="288" font-size="14" font-weight="600" fill="#e9e9ed">Signature storage</text>
-  <text x="376" y="307" font-size="12" fill="#b2b6ca">public bucket, announced on-chain</text>
+  <rect x="360" y="266" width="240" height="52" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="376" y="288" font-size="14" font-weight="600" fill="#f1eefb">Signature storage</text>
+  <text x="376" y="307" font-size="12" fill="#bcb5d6">public bucket, announced on-chain</text>
 
-  <rect x="360" y="360" width="240" height="76" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="376" y="382" font-size="14" font-weight="600" fill="#e9e9ed">Relayer</text>
-  <text x="376" y="400" font-size="12" fill="#b2b6ca">finds paid messages, collects</text>
-  <text x="376" y="415" font-size="12" fill="#b2b6ca">signatures, delivers them and</text>
-  <text x="376" y="430" font-size="12" fill="#b2b6ca">pays the destination gas</text>
+  <rect x="360" y="360" width="240" height="76" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="376" y="382" font-size="14" font-weight="600" fill="#f1eefb">Relayer</text>
+  <text x="376" y="400" font-size="12" fill="#bcb5d6">finds paid messages, collects</text>
+  <text x="376" y="415" font-size="12" fill="#bcb5d6">signatures, delivers them and</text>
+  <text x="376" y="430" font-size="12" fill="#bcb5d6">pays the destination gas</text>
 
   <!-- Destination boxes -->
-  <rect x="672" y="160" width="240" height="52" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="688" y="182" font-size="14" font-weight="600" fill="#e9e9ed">Recipient contract</text>
-  <text x="688" y="201" font-size="12" fill="#b2b6ca">handle() runs with the message</text>
+  <rect x="672" y="160" width="240" height="52" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="688" y="182" font-size="14" font-weight="600" fill="#f1eefb">Recipient contract</text>
+  <text x="688" y="201" font-size="12" fill="#bcb5d6">handle() runs with the message</text>
 
-  <rect x="672" y="252" width="240" height="52" rx="10" fill="#232532" stroke="#9184d9" stroke-width="1.5"/>
-  <text x="688" y="274" font-size="14" font-weight="600" fill="#e9e9ed">Mailbox</text>
-  <text x="688" y="293" font-size="12" fill="#b2b6ca">delivers each message exactly once</text>
+  <rect x="672" y="252" width="240" height="52" rx="10" fill="#1a1030" stroke="#8d87cd" stroke-width="1.5"/>
+  <text x="688" y="274" font-size="14" font-weight="600" fill="#f1eefb">Mailbox</text>
+  <text x="688" y="293" font-size="12" fill="#bcb5d6">delivers each message exactly once</text>
 
-  <rect x="672" y="346" width="240" height="64" rx="10" fill="#232532" stroke="#3f424d"/>
-  <text x="688" y="368" font-size="14" font-weight="600" fill="#e9e9ed">Security module (ISM)</text>
-  <text x="688" y="386" font-size="12" fill="#b2b6ca">checks m of n validator</text>
-  <text x="688" y="401" font-size="12" fill="#b2b6ca">signatures on the checkpoint</text>
+  <rect x="672" y="346" width="240" height="64" rx="10" fill="#1a1030" stroke="#35295a"/>
+  <text x="688" y="368" font-size="14" font-weight="600" fill="#f1eefb">Security module (ISM)</text>
+  <text x="688" y="386" font-size="12" fill="#bcb5d6">checks m of n validator</text>
+  <text x="688" y="401" font-size="12" fill="#bcb5d6">signatures on the checkpoint</text>
 
   <!-- Treasury -->
-  <rect x="336" y="548" width="288" height="48" rx="10" fill="#232532" stroke="#7CF6B5"/>
-  <text x="352" y="569" font-size="14" font-weight="600" fill="#e9e9ed">Recoil Labs treasury (Safe)</text>
-  <text x="352" y="586" font-size="12" fill="#b2b6ca">receives fees, funds the relayer's gas</text>
+  <rect x="336" y="548" width="288" height="48" rx="10" fill="#1a1030" stroke="#7CF6B5"/>
+  <text x="352" y="569" font-size="14" font-weight="600" fill="#f1eefb">Recoil Labs treasury (Safe)</text>
+  <text x="352" y="586" font-size="12" fill="#bcb5d6">receives fees, funds the relayer's gas</text>
   <text x="306" y="542" font-size="11" fill="#7CF6B5">fees</text>
   <text x="488" y="532" font-size="11" fill="#7CF6B5">gas funding</text>
 
   <!-- Step badges -->
-  <g font-size="11" font-weight="700" fill="#161826" text-anchor="middle">
-    <circle cx="168" cy="231" r="10" fill="#9184d9"/><text x="168" y="235">1</text>
-    <circle cx="168" cy="319" r="10" fill="#9184d9"/><text x="168" y="323">2</text>
-    <circle cx="296" cy="388" r="10" fill="#9397ab"/><text x="296" y="392">3</text>
-    <circle cx="480" cy="245" r="10" fill="#9184d9"/><text x="480" y="249">4</text>
-    <circle cx="480" cy="339" r="10" fill="#9184d9"/><text x="480" y="343">5</text>
-    <circle cx="636" cy="338" r="10" fill="#9184d9"/><text x="636" y="342">6</text>
-    <circle cx="792" cy="325" r="10" fill="#9184d9"/><text x="792" y="329">7</text>
-    <circle cx="792" cy="233" r="10" fill="#9184d9"/><text x="792" y="237">8</text>
+  <g font-size="11" font-weight="700" fill="#0d0717" text-anchor="middle">
+    <circle cx="168" cy="231" r="10" fill="#8d87cd"/><text x="168" y="235">1</text>
+    <circle cx="168" cy="319" r="10" fill="#8d87cd"/><text x="168" y="323">2</text>
+    <circle cx="296" cy="388" r="10" fill="#8f87ad"/><text x="296" y="392">3</text>
+    <circle cx="480" cy="245" r="10" fill="#8d87cd"/><text x="480" y="249">4</text>
+    <circle cx="480" cy="339" r="10" fill="#8d87cd"/><text x="480" y="343">5</text>
+    <circle cx="636" cy="338" r="10" fill="#8d87cd"/><text x="636" y="342">6</text>
+    <circle cx="792" cy="325" r="10" fill="#8d87cd"/><text x="792" y="329">7</text>
+    <circle cx="792" cy="233" r="10" fill="#8d87cd"/><text x="792" y="237">8</text>
   </g>
 
   <!-- Key -->
-  <line x1="32" y1="624" x2="928" y2="624" stroke="#3f424d"/>
-  <g font-size="13" fill="#e9e9ed">
-    <text x="48" y="654"><tspan font-weight="700" fill="#9184d9">1</tspan>  Your contract calls dispatch and pays the fee.</text>
-    <text x="48" y="680"><tspan font-weight="700" fill="#9184d9">2</tspan>  Hooks add it to the Merkle tree and record the payment.</text>
-    <text x="48" y="706"><tspan font-weight="700" fill="#9397ab">3</tspan>  Validators wait for finality, then sign a checkpoint.</text>
-    <text x="48" y="732"><tspan font-weight="700" fill="#9184d9">4</tspan>  Signatures go to public storage, announced on-chain.</text>
-    <text x="496" y="654"><tspan font-weight="700" fill="#9184d9">5</tspan>  The relayer finds paid messages and their signatures.</text>
-    <text x="496" y="680"><tspan font-weight="700" fill="#9184d9">6</tspan>  It calls process on the destination, paying the gas.</text>
-    <text x="496" y="706"><tspan font-weight="700" fill="#9184d9">7</tspan>  The security module checks m of n signatures.</text>
-    <text x="496" y="732"><tspan font-weight="700" fill="#9184d9">8</tspan>  The Mailbox marks it delivered and calls handle.</text>
+  <line x1="32" y1="624" x2="928" y2="624" stroke="#35295a"/>
+  <g font-size="13" fill="#f1eefb">
+    <text x="48" y="654"><tspan font-weight="700" fill="#8d87cd">1</tspan>  Your contract calls dispatch and pays the fee.</text>
+    <text x="48" y="680"><tspan font-weight="700" fill="#8d87cd">2</tspan>  Hooks add it to the Merkle tree and record the payment.</text>
+    <text x="48" y="706"><tspan font-weight="700" fill="#8f87ad">3</tspan>  Validators wait for finality, then sign a checkpoint.</text>
+    <text x="48" y="732"><tspan font-weight="700" fill="#8d87cd">4</tspan>  Signatures go to public storage, announced on-chain.</text>
+    <text x="496" y="654"><tspan font-weight="700" fill="#8d87cd">5</tspan>  The relayer finds paid messages and their signatures.</text>
+    <text x="496" y="680"><tspan font-weight="700" fill="#8d87cd">6</tspan>  It calls process on the destination, paying the gas.</text>
+    <text x="496" y="706"><tspan font-weight="700" fill="#8d87cd">7</tspan>  The security module checks m of n signatures.</text>
+    <text x="496" y="732"><tspan font-weight="700" fill="#8d87cd">8</tspan>  The Mailbox marks it delivered and calls handle.</text>
   </g>
-  <text x="48" y="758" font-size="11" fill="#9397ab">Dashed lines: agents reading chain data. Green: how fees flow. The relayer cannot forge messages; the ISM only accepts validator signatures.</text>
+  <text x="48" y="758" font-size="11" fill="#8f87ad">Dashed lines: agents reading chain data. Green: how fees flow. The relayer cannot forge messages; the ISM only accepts validator signatures.</text>
 </svg>
