@@ -18,7 +18,7 @@ It reads chain metadata and addresses from the [registry](./registry.md) (`--reg
 | `rlink message encode`                                                                | Build a packed message                                                                       |
 | `rlink address to-bytes32 -a <address>` / `from-bytes32`                              | Convert between addresses and the `bytes32` form messages use                                |
 
-Chain names are registry names: `sepolia`, `basesepolia`, `optimismsepolia`, `bsctestnet`.
+Chain names are registry names: `sepolia`, `basesepolia`, `optimismsepolia`, `bsctestnet`, `polygonamoy`.
 
 ## Registry
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Run the Recoil Link validator for one origin chain (testnet).
-# Usage: scripts/recoil-link/testnet/validator.sh <sepolia|basesepolia>
+# Usage: scripts/recoil-link/testnet/validator.sh <sepolia|basesepolia|optimismsepolia|bsctestnet|polygonamoy>
 #
 # Signs checkpoints of messages sent from <chain> and stores them locally.
 # The key is read from ~/.recoil-link/keys/testnet-validator and never logged.
